@@ -1,0 +1,51 @@
+version: 1
+project: microsoft-agentic-ai-weekly
+mixTarget:
+  independent: 0.60
+  official: 0.40
+
+sources:
+  official:
+    - name: Microsoft Copilot Studio Blog
+      url: https://www.microsoft.com/en-us/microsoft-copilot/blog/feed/
+      type: rss
+    - name: Microsoft Power Platform Blog
+      url: https://www.microsoft.com/en-us/power-platform/blog/feed/
+      type: rss
+    - name: Microsoft 365 Blog
+      url: https://www.microsoft.com/en-us/microsoft-365/blog/feed/
+      type: rss
+    - name: Azure Blog
+      url: https://azure.microsoft.com/en-us/blog/feed/
+      type: rss
+    - name: Semantic Kernel Dev Blog
+      url: https://devblogs.microsoft.com/semantic-kernel/feed/
+      type: rss
+
+  independent:
+    - name: Matthew Devaney
+      url: https://www.matthewdevaney.com/feed/
+      type: rss
+    - name: Nishant Rana
+      url: https://nishantrana.me/feed/
+      type: rss
+    - name: Power Community
+      url: https://www.powercommunity.com/feed/
+      type: rss
+    - name: Dianamics PCF Lady
+      url: https://dianabirkelbach.wordpress.com/feed/
+      type: rss
+    - name: Power Platform Exchange
+      url: https://powerplatformexchange.com
+      type: web
+
+scoring:
+  relevance: 0.40
+  actionability: 0.35
+  novelty: 0.15
+  credibility: 0.10
+
+cadence:
+  collect: Monday-Tuesday
+  draft: Wednesday
+  publish: Thursday 09:00 UTC

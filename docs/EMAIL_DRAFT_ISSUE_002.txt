@@ -1,0 +1,25 @@
+Subject: Microsoft Agentic AI Weekly #002 — MCP patterns, telemetry, and enterprise readiness
+
+Hi {{first_name}},
+
+Welcome to Microsoft Agentic AI Weekly — high-signal updates for builders shipping on Microsoft’s agent stack.
+
+This week’s signal:
+Agent operations is now the differentiator. Teams moving fastest are standardizing MCP/tooling patterns, improving grounding quality, and running weekly telemetry reviews.
+
+Read Issue #002:
+{{issue_url}}
+
+Top picks inside:
+- MCP server deployment into Copilot Studio (practical build path)
+- Dataverse grounding/search patterns that improve answer quality
+- Environment-aware flow design for cleaner ALM
+- Microsoft’s 2026 readiness framework + admin telemetry updates
+
+Builder takeaway:
+Don’t ship one-off agents. Build a repeatable operating model.
+
+If this was useful, forward to one teammate building agents this quarter.
+
+— {{sender_name}}
+{{sender_email}}
