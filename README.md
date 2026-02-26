@@ -33,6 +33,17 @@ python3 -m http.server 8080
 3. Publish markdown + html issue page
 4. Add issue to `archive.html`
 
+## Email automation (Buttondown)
+
+A simple API helper is included at `scripts/buttondown.py`.
+
+```bash
+python3 scripts/buttondown.py list --status draft
+python3 scripts/buttondown.py create --subject "Microsoft Agentic AI Weekly #002" --body-file docs/EMAIL_DRAFT_ISSUE_002.txt
+```
+
+Setup + operating notes: `docs/BUTTONDOWN_AUTOMATION.md`
+
 ## License
 
 Personal project; add a license file when ready.
