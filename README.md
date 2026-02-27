@@ -44,6 +44,16 @@ python3 scripts/buttondown.py create --subject "Microsoft Agentic AI Weekly #002
 
 Setup + operating notes: `docs/BUTTONDOWN_AUTOMATION.md`
 
+## Dev preview sync
+
+Sync `develop` branch content to the separate dev preview Pages site:
+
+```bash
+./scripts/sync-dev-site.sh
+```
+
+Dev URL: `https://ogradyliam5.github.io/microsoftagenticaiweekly-dev/`
+
 ## License
 
 Personal project; add a license file when ready.
