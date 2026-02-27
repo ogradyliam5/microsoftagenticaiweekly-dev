@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="627" viewBox="0 0 1200 627" role="img" aria-label="LinkedIn share image for Microsoft Agentic AI Weekly">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#070D1F"/>
+      <stop offset="55%" stop-color="#112F58"/>
+      <stop offset="100%" stop-color="#165AA4"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="627" fill="url(#bg)"/>
+  <circle cx="1030" cy="120" r="180" fill="#38BDF8" opacity="0.08"/>
+  <circle cx="980" cy="520" r="220" fill="#A78BFA" opacity="0.08"/>
+
+  <text x="72" y="245" fill="#F1F7FF" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="60" font-weight="700">Microsoft Agentic AI Weekly</text>
+  <text x="72" y="305" fill="#B7CFF3" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="31">Find the best Microsoft Agentic AI content in one place.</text>
+  <text x="72" y="352" fill="#B7CFF3" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="31">Delivered weekly.</text>
+
+  <rect x="72" y="390" width="460" height="3" fill="#60A5FA"/>
+</svg>

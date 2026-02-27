@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Open Graph share image for Microsoft Agentic AI Weekly">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#050A17"/>
+      <stop offset="60%" stop-color="#102849"/>
+      <stop offset="100%" stop-color="#1A4B8C"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22D3EE"/>
+      <stop offset="60%" stop-color="#3B82F6"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g opacity="0.2" stroke="url(#line)" fill="none">
+    <path d="M-20 500 C 170 430, 300 560, 480 500 C 690 430, 780 560, 1220 460" stroke-width="2.5"/>
+    <path d="M-20 555 C 210 490, 330 595, 550 550 C 760 500, 930 590, 1220 550" stroke-width="1.8"/>
+  </g>
+
+  <g stroke="#7DD3FC" stroke-opacity="0.35" fill="none">
+    <path d="M790 95 L950 150 L1060 260 L1010 410 L850 470 L720 405 L700 260 Z" stroke-width="1.8"/>
+    <path d="M790 95 L720 405" stroke-width="1.2"/>
+    <path d="M950 150 L720 405" stroke-width="1.2"/>
+  </g>
+
+  <text x="80" y="250" fill="#E5F0FF" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="62" font-weight="700">Microsoft Agentic AI Weekly</text>
+  <text x="80" y="305" fill="#A9C5EE" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="30" font-weight="400">The best Microsoft Agentic AI content, in one place, every week.</text>
+
+  <rect x="80" y="355" width="420" height="3" fill="url(#line)"/>
+
+  <text x="80" y="430" fill="#C9DCFA" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="24">Copilot Studio • Azure AI • Power Platform • Real-world patterns</text>
+</svg>
