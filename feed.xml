@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Microsoft Agentic AI Weekly</title>
+    <link>https://ogradyliam5.github.io/microsoftagenticaiweekly/</link>
+    <description>Weekly curated brief for Microsoft Agentic AI builders.</description>
+    <language>en-gb</language>
+    <item>
+      <title>Issue #002 — Agent operations is the new differentiator</title>
+      <link>https://ogradyliam5.github.io/microsoftagenticaiweekly/posts/issue-002.html</link>
+      <guid>https://ogradyliam5.github.io/microsoftagenticaiweekly/posts/issue-002.html</guid>
+      <pubDate>Mon, 16 Feb 2026 09:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Issue #001 — From MCP deployment patterns to admin telemetry</title>
+      <link>https://ogradyliam5.github.io/microsoftagenticaiweekly/posts/issue-001.html</link>
+      <guid>https://ogradyliam5.github.io/microsoftagenticaiweekly/posts/issue-001.html</guid>
+      <pubDate>Thu, 13 Feb 2026 09:00:00 GMT</pubDate>
+    </item>
+  </channel>
+</rss>

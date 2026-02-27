@@ -54,6 +54,23 @@ Sync `develop` branch content to the separate dev preview Pages site:
 
 Dev URL: `https://ogradyliam5.github.io/microsoftagenticaiweekly-dev/`
 
+## Weekly pipeline (approval-first)
+
+Run locally:
+
+```bash
+python3 scripts/pipeline/run_weekly.py
+```
+
+What it creates:
+- `artifacts/editorial_queue-<issue_id>.json`
+- `artifacts/editorial_queue-<issue_id>.md`
+- `posts/issue-<issue_id>.md`
+- `drafts/email-<issue_id>.md`
+- `artifacts/buttondown_drafts.json` (if Buttondown draft created)
+
+Full runbook: `docs/WEEKLY_PIPELINE.md`
+
 ## License
 
 Personal project; add a license file when ready.

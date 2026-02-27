@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Editorial Queue",
+  "type": "object",
+  "required": ["issue_id", "generated_at", "items", "clusters", "excluded"],
+  "properties": {
+    "issue_id": { "type": "string" },
+    "generated_at": { "type": "string" },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "title", "canonical_url", "publisher", "published_at", "product_area", "confidence"],
+        "properties": {
+          "id": { "type": "string" },
+          "title": { "type": "string", "minLength": 5 },
+          "url": { "type": "string" },
+          "canonical_url": { "type": "string", "minLength": 8 },
+          "author": { "type": "string" },
+          "publisher": { "type": "string" },
+          "published_at": { "type": "string" },
+          "product_area": { "type": "string" },
+          "source_type": { "type": "string" },
+          "summary_bullets": {
+            "type": "array",
+            "items": { "type": "string", "maxLength": 220 },
+            "maxItems": 4
+          },
+          "why_it_matters": { "type": "string", "maxLength": 180 },
+          "audience": { "type": "string" },
+          "effort": { "type": "string" },
+          "confidence": { "type": "string", "enum": ["High", "Medium", "Low"] },
+          "tags": { "type": "array", "items": { "type": "string" } },
+          "evidence": {
+            "type": "array",
+            "items": { "type": "string", "maxLength": 140 },
+            "description": "Short support excerpts for internal review only."
+          }
+        }
+      }
+    },
+    "clusters": { "type": "array" },
+    "excluded": { "type": "array" },
+    "questions_for_liam": { "type": "array", "items": { "type": "string" } }
+  }
+}

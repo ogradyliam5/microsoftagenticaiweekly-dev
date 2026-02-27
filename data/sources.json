@@ -1,0 +1,83 @@
+{
+  "version": 1,
+  "updated_at": "2026-02-27T00:00:00Z",
+  "policy": {
+    "approval_required_for_source_changes": true,
+    "notes": "Only add/remove tracked sources with Liam approval. Prefer RSS/official feeds and creator-friendly attribution."
+  },
+  "sources": [
+    {
+      "id": "microsoft-power-platform-blog",
+      "name": "Microsoft Power Platform Blog",
+      "type": "rss",
+      "url": "https://www.microsoft.com/en-us/power-platform/blog/feed/",
+      "product_area": "Power Platform",
+      "priority": 10,
+      "trust": "official"
+    },
+    {
+      "id": "microsoft-365-blog",
+      "name": "Microsoft 365 Blog",
+      "type": "rss",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/blog/feed/",
+      "product_area": "M365",
+      "priority": 9,
+      "trust": "official"
+    },
+    {
+      "id": "azure-updates",
+      "name": "Azure Updates",
+      "type": "rss",
+      "url": "https://azure.microsoft.com/en-us/updates/feed/",
+      "product_area": "Foundry",
+      "priority": 8,
+      "trust": "official"
+    },
+    {
+      "id": "microsoft-blogs-ai",
+      "name": "Microsoft AI Blog",
+      "type": "rss",
+      "url": "https://blogs.microsoft.com/ai/feed/",
+      "product_area": "Foundry",
+      "priority": 8,
+      "trust": "official"
+    },
+    {
+      "id": "github-microsoft-copilotstudio-samples",
+      "name": "GitHub Releases: Copilot Studio Samples",
+      "type": "github",
+      "url": "https://github.com/microsoft/CopilotStudioSamples/releases.atom",
+      "product_area": "Power Platform",
+      "priority": 7,
+      "trust": "official"
+    },
+    {
+      "id": "medium-tag-powerplatform",
+      "name": "Medium: Power Platform tag",
+      "type": "rss",
+      "url": "https://medium.com/feed/tag/power-platform",
+      "product_area": "Power Platform",
+      "priority": 5,
+      "trust": "community"
+    },
+    {
+      "id": "medium-tag-microsoft365",
+      "name": "Medium: Microsoft 365 tag",
+      "type": "rss",
+      "url": "https://medium.com/feed/tag/microsoft-365",
+      "product_area": "M365",
+      "priority": 5,
+      "trust": "community"
+    },
+    {
+      "id": "linkedin-discovery-note",
+      "name": "LinkedIn discovery list (manual intake only)",
+      "type": "manual",
+      "url": "https://www.linkedin.com/",
+      "product_area": "Mixed",
+      "priority": 4,
+      "trust": "community",
+      "notes": "Do not scrape LinkedIn. Only ingest linked public posts/articles if they have accessible canonical pages or feeds."
+    }
+  ]
+}

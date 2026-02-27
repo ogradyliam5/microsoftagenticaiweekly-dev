@@ -1,0 +1,52 @@
+name: weekly-editorial
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 7 * * 5" # Friday 07:00 UTC (08:00 Europe/Dublin in winter)
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Run editorial pipeline
+        env:
+          BUTTONDOWN_API_KEY: ${{ secrets.BUTTONDOWN_API_KEY }}
+        run: |
+          python3 scripts/pipeline/run_weekly.py
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: editorial-artifacts
+          path: |
+            artifacts/
+            drafts/
+            posts/
+
+      - name: Create PR
+        uses: peter-evans/create-pull-request@v6
+        with:
+          commit-message: "chore(editorial): weekly queue + draft issue"
+          title: "Weekly editorial draft"
+          body: |
+            Automated weekly editorial draft generated.
+
+            ## Includes
+            - editorial queue artifacts
+            - website issue draft
+            - Buttondown draft metadata (if created)
+
+            Please use the PR checklist before merge/send.
+          branch: chore/weekly-editorial
+          delete-branch: true
