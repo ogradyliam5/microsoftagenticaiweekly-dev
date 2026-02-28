@@ -1,26 +1,44 @@
 {
   "version": 1,
-  "updated_at": "2026-02-27T00:00:00Z",
+  "updated_at": "2026-02-28T04:49:10Z",
   "policy": {
     "approval_required_for_source_changes": true,
     "notes": "Only add/remove tracked sources with Liam approval. Prefer RSS/official feeds and creator-friendly attribution."
   },
   "sources": [
     {
-      "id": "microsoft-power-platform-blog",
-      "name": "Microsoft Power Platform Blog",
+      "id": "devblogs-powerplatform",
+      "name": "Microsoft Power Platform Developer Blog",
       "type": "rss",
-      "url": "https://www.microsoft.com/en-us/power-platform/blog/feed/",
+      "url": "https://devblogs.microsoft.com/powerplatform/feed/",
       "product_area": "Power Platform",
       "priority": 10,
       "trust": "official"
     },
     {
-      "id": "microsoft-365-blog",
-      "name": "Microsoft 365 Blog",
+      "id": "devblogs-m365dev",
+      "name": "Microsoft 365 Developer Blog",
       "type": "rss",
-      "url": "https://www.microsoft.com/en-us/microsoft-365/blog/feed/",
+      "url": "https://devblogs.microsoft.com/microsoft365dev/feed/",
       "product_area": "M365",
+      "priority": 10,
+      "trust": "official"
+    },
+    {
+      "id": "devblogs-semantic-kernel",
+      "name": "Semantic Kernel Dev Blog",
+      "type": "rss",
+      "url": "https://devblogs.microsoft.com/semantic-kernel/feed/",
+      "product_area": "Foundry",
+      "priority": 10,
+      "trust": "official"
+    },
+    {
+      "id": "azure-blog",
+      "name": "Azure Blog",
+      "type": "rss",
+      "url": "https://azure.microsoft.com/en-us/blog/feed/",
+      "product_area": "Foundry",
       "priority": 9,
       "trust": "official"
     },
@@ -34,12 +52,12 @@
       "trust": "official"
     },
     {
-      "id": "microsoft-blogs-ai",
-      "name": "Microsoft AI Blog",
+      "id": "blogs-microsoft-global",
+      "name": "Microsoft Blogs (Global)",
       "type": "rss",
-      "url": "https://blogs.microsoft.com/ai/feed/",
-      "product_area": "Foundry",
-      "priority": 8,
+      "url": "https://blogs.microsoft.com/feed/",
+      "product_area": "Mixed",
+      "priority": 7,
       "trust": "official"
     },
     {
@@ -52,21 +70,129 @@
       "trust": "official"
     },
     {
-      "id": "medium-tag-powerplatform",
-      "name": "Medium: Power Platform tag",
+      "id": "forwardforever",
+      "name": "Forward Forever",
       "type": "rss",
-      "url": "https://medium.com/feed/tag/power-platform",
+      "url": "https://forwardforever.com/feed/",
       "product_area": "Power Platform",
-      "priority": 5,
+      "priority": 9,
       "trust": "community"
     },
     {
-      "id": "medium-tag-microsoft365",
-      "name": "Medium: Microsoft 365 tag",
+      "id": "sharepains",
+      "name": "SharePains (Pieter Veenstra)",
       "type": "rss",
-      "url": "https://medium.com/feed/tag/microsoft-365",
+      "url": "https://sharepains.com/feed/",
+      "product_area": "Power Platform",
+      "priority": 9,
+      "trust": "community"
+    },
+    {
+      "id": "megan-v-walker",
+      "name": "Megan V. Walker",
+      "type": "rss",
+      "url": "https://meganvwalker.com/feed/",
+      "product_area": "Power Platform",
+      "priority": 9,
+      "trust": "community"
+    },
+    {
+      "id": "matthew-devaney",
+      "name": "Matthew Devaney",
+      "type": "rss",
+      "url": "https://www.matthewdevaney.com/feed/",
+      "product_area": "Power Platform",
+      "priority": 8,
+      "trust": "community"
+    },
+    {
+      "id": "nishant-rana",
+      "name": "Nishant Rana",
+      "type": "rss",
+      "url": "https://nishantrana.me/feed/",
+      "product_area": "Power Platform",
+      "priority": 8,
+      "trust": "community"
+    },
+    {
+      "id": "readyxrm",
+      "name": "ReadyXRM (Nick Doelman)",
+      "type": "rss",
+      "url": "https://readyxrm.blog/feed/",
+      "product_area": "Power Platform",
+      "priority": 8,
+      "trust": "community"
+    },
+    {
+      "id": "temmy-raharjo",
+      "name": "Temmy Raharjo",
+      "type": "rss",
+      "url": "https://temmyraharjo.wordpress.com/feed/",
+      "product_area": "Power Platform",
+      "priority": 7,
+      "trust": "community"
+    },
+    {
+      "id": "jonas-rapp",
+      "name": "Jonas Rapp",
+      "type": "rss",
+      "url": "https://jonasr.app/feed/",
+      "product_area": "Power Platform",
+      "priority": 7,
+      "trust": "community"
+    },
+    {
+      "id": "diana-birkelbach",
+      "name": "Diana Birkelbach (PCF Lady)",
+      "type": "rss",
+      "url": "https://dianabirkelbach.wordpress.com/feed/",
+      "product_area": "Power Platform",
+      "priority": 7,
+      "trust": "community"
+    },
+    {
+      "id": "michelcarlo",
+      "name": "Michel Mendes",
+      "type": "rss",
+      "url": "https://michelcarlo.com/feed/",
+      "product_area": "Power Platform",
+      "priority": 7,
+      "trust": "community"
+    },
+    {
+      "id": "rajeev-pentyala",
+      "name": "Rajeev Pentyala",
+      "type": "rss",
+      "url": "https://rajeevpentyala.com/feed/",
+      "product_area": "Power Platform",
+      "priority": 7,
+      "trust": "community"
+    },
+    {
+      "id": "priyesh-wagh",
+      "name": "Priyesh Wagh (D365 Demystified)",
+      "type": "rss",
+      "url": "https://d365demystified.com/feed/",
+      "product_area": "Power Platform",
+      "priority": 7,
+      "trust": "community"
+    },
+    {
+      "id": "power-addict",
+      "name": "Power Addict",
+      "type": "rss",
+      "url": "https://poweraddict.net/feed/",
+      "product_area": "Power Platform",
+      "priority": 6,
+      "trust": "community"
+    },
+    {
+      "id": "eliostruyf",
+      "name": "Elio Struyf",
+      "type": "rss",
+      "url": "https://www.eliostruyf.com/feed.xml",
       "product_area": "M365",
-      "priority": 5,
+      "priority": 8,
       "trust": "community"
     },
     {
@@ -79,5 +205,168 @@
       "trust": "community",
       "notes": "Do not scrape LinkedIn. Only ingest linked public posts/articles if they have accessible canonical pages or feeds."
     }
-  ]
+  ],
+  "candidates": {
+    "updated_at": "2026-02-28T04:49:10Z",
+    "policy": "Discovery only. Do not merge into sources[] without Liam approval.",
+    "add": [
+      {
+        "id": "forwardforever",
+        "name": "Forward Forever (community consultants)",
+        "type": "rss",
+        "url": "https://forwardforever.com/feed/",
+        "product_area": "Power Platform",
+        "trust": "community",
+        "status": "pending_approval",
+        "priority": 8,
+        "rationale": "Frequent, practical Copilot Studio engineering content with ALM/deployment depth.",
+        "evidence_posts": [
+          "https://forwardforever.com/errors-after-deploying-copilot-studio-agents-missing-or-out-of-date-components/",
+          "https://forwardforever.com/building-your-own-mcp-server-with-net-and-connecting-it-to-copilot-studio/"
+        ],
+        "last_checked": "2026-02-28"
+      },
+      {
+        "id": "megan-v-walker",
+        "name": "Megan V. Walker",
+        "type": "rss",
+        "url": "https://meganvwalker.com/feed/",
+        "product_area": "Power Platform",
+        "trust": "community",
+        "status": "pending_approval",
+        "priority": 8,
+        "rationale": "Frequent practical Power Platform build guidance (custom pages, connectors, process flows) with strong maker-to-pro patterns.",
+        "evidence_posts": [
+          "https://meganvwalker.com/show-loading-screen-in-your-custom-page/",
+          "https://meganvwalker.com/calculate-working-day-connector-in-power-automate/"
+        ],
+        "last_checked": "2026-02-28"
+      },
+      {
+        "id": "nishant-rana",
+        "name": "Nishant Rana",
+        "type": "rss",
+        "url": "https://nishantrana.me/feed/",
+        "product_area": "Power Platform",
+        "trust": "community",
+        "status": "pending_approval",
+        "priority": 8,
+        "rationale": "Very high-cadence Dataverse/Dynamics troubleshooting and ALM dependency fixes; useful for governance/ops-heavy readers.",
+        "evidence_posts": [
+          "https://nishantrana.me/2026/02/25/no-dependencies-shown-but-still-cant-delete-the-component-check-your-cloud-flows-dataverse-dynamics-365/",
+          "https://nishantrana.me/2026/02/24/solution-failed-to-import-missing-lookup-view-dependency-in-dataverse-dynamics-365/"
+        ],
+        "last_checked": "2026-02-28"
+      },
+      {
+        "id": "readyxrm",
+        "name": "ReadyXRM (Nick Doelman)",
+        "type": "rss",
+        "url": "https://readyxrm.blog/feed/",
+        "product_area": "Power Platform",
+        "trust": "community",
+        "status": "pending_approval",
+        "priority": 8,
+        "rationale": "Consistent practitioner posts on Power Pages/Dataverse architecture with direct implementation value for agent experiences and enterprise delivery.",
+        "evidence_posts": [
+          "https://readyxrm.blog/2026/02/26/the-end-of-power-pages-as-we-know-it/",
+          "https://readyxrm.blog/2026/02/18/power-pages-cache-conquered/"
+        ],
+        "last_checked": "2026-02-28"
+      },
+      {
+        "id": "eliostruyf",
+        "name": "Elio Struyf",
+        "type": "rss",
+        "url": "https://www.eliostruyf.com/feed.xml",
+        "product_area": "M365",
+        "trust": "community",
+        "status": "pending_approval",
+        "priority": 7,
+        "rationale": "Strong practitioner perspective on M365 extensibility/dev workflow and AI-assisted engineering; complements Power Platform-heavy mix.",
+        "evidence_posts": [
+          "https://www.eliostruyf.com/killing-indie-development-with-ai/",
+          "https://www.eliostruyf.com/stop-typing-start-talking/"
+        ],
+        "last_checked": "2026-02-28"
+      },
+      {
+        "id": "sharepains",
+        "name": "SharePains (Pieter Veenstra)",
+        "type": "rss",
+        "url": "https://sharepains.com/feed/",
+        "product_area": "Power Platform",
+        "trust": "community",
+        "status": "pending_approval",
+        "priority": 7,
+        "rationale": "Consistent practitioner writeups for Power Platform implementation details; useful for ops/governance-adjacent automation stories.",
+        "evidence_posts": [
+          "https://sharepains.com/2026/02/20/connection-references-power-automate/",
+          "https://sharepains.com/2026/02/20/copilot-rename-controls-power-apps/"
+        ],
+        "last_checked": "2026-02-28"
+      },
+      {
+        "id": "michelcarlo",
+        "name": "Michel Mendes (Power Platform)",
+        "type": "rss",
+        "url": "https://michelcarlo.com/feed/",
+        "product_area": "Power Platform",
+        "trust": "community",
+        "status": "pending_approval",
+        "priority": 6,
+        "rationale": "High-quality Dataverse/Power Pages deep-dives; less frequent but technically strong and implementation-oriented.",
+        "evidence_posts": [
+          "https://michelcarlo.com/2025/08/16/power-pages-using-dataverse-classic-real-time-workflows-for-server-side-validation-of-web-api-calls/",
+          "https://michelcarlo.com/2025/07/21/using-dataverse-low-code-plugins-to-validate-data-added-via-power-pages/"
+        ],
+        "last_checked": "2026-02-28"
+      },
+      {
+        "id": "medium-tag-powerplatform",
+        "name": "Medium: Power Platform tag",
+        "type": "rss",
+        "url": "https://medium.com/feed/tag/power-platform",
+        "product_area": "Power Platform",
+        "trust": "community",
+        "status": "discovery_only",
+        "priority": 3,
+        "rationale": "Noisy discovery tail only; do not use as core-ranked source."
+      },
+      {
+        "id": "medium-tag-microsoft365",
+        "name": "Medium: Microsoft 365 tag",
+        "type": "rss",
+        "url": "https://medium.com/feed/tag/microsoft-365",
+        "product_area": "M365",
+        "trust": "community",
+        "status": "discovery_only",
+        "priority": 3,
+        "rationale": "Noisy discovery tail only; do not use as core-ranked source."
+      }
+    ],
+    "reject": [
+      {
+        "id": "holgerimbery",
+        "url": "https://holgerimbery.blog/feed/",
+        "status": "rejected",
+        "reason": "Feed endpoint returned 404 during validation; keep on manual-watch until stable RSS is found.",
+        "last_checked": "2026-02-28"
+      },
+      {
+        "id": "powertricks",
+        "url": "https://powertricks.io/feed/",
+        "status": "rejected",
+        "reason": "Feed endpoint returned 406 (blocked/nonstandard); unsuitable for automated ingestion.",
+        "last_checked": "2026-02-28"
+      },
+      {
+        "id": "mmsharepoint",
+        "url": "https://mmsharepoint.wordpress.com/feed/",
+        "status": "rejected",
+        "reason": "Content quality is strong but recent activity is stale for this newsletter cadence.",
+        "last_checked": "2026-02-28"
+      }
+    ]
+  }
 }
