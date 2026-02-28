@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-02-28T04:49:10Z",
+  "updated_at": "2026-02-28T18:36:44Z",
   "policy": {
     "approval_required_for_source_changes": true,
     "notes": "Only add/remove tracked sources with Liam approval. Prefer RSS/official feeds and creator-friendly attribution."
@@ -204,10 +204,28 @@
       "priority": 4,
       "trust": "community",
       "notes": "Do not scrape LinkedIn. Only ingest linked public posts/articles if they have accessible canonical pages or feeds."
+    },
+    {
+      "id": "rob-quickenden",
+      "name": "Rob Quickenden",
+      "type": "rss",
+      "url": "https://robquickenden.blog/feed",
+      "product_area": "Mixed",
+      "priority": 8,
+      "trust": "community"
+    },
+    {
+      "id": "karlex",
+      "name": "Karl-Johan Spiik (Karlex)",
+      "type": "rss",
+      "url": "https://www.karlex.fi/feed",
+      "product_area": "Power Platform",
+      "priority": 8,
+      "trust": "community"
     }
   ],
   "candidates": {
-    "updated_at": "2026-02-28T04:49:10Z",
+    "updated_at": "2026-02-28T18:36:44Z",
     "policy": "Discovery only. Do not merge into sources[] without Liam approval.",
     "add": [
       {
@@ -321,28 +339,6 @@
           "https://michelcarlo.com/2025/07/21/using-dataverse-low-code-plugins-to-validate-data-added-via-power-pages/"
         ],
         "last_checked": "2026-02-28"
-      },
-      {
-        "id": "medium-tag-powerplatform",
-        "name": "Medium: Power Platform tag",
-        "type": "rss",
-        "url": "https://medium.com/feed/tag/power-platform",
-        "product_area": "Power Platform",
-        "trust": "community",
-        "status": "discovery_only",
-        "priority": 3,
-        "rationale": "Noisy discovery tail only; do not use as core-ranked source."
-      },
-      {
-        "id": "medium-tag-microsoft365",
-        "name": "Medium: Microsoft 365 tag",
-        "type": "rss",
-        "url": "https://medium.com/feed/tag/microsoft-365",
-        "product_area": "M365",
-        "trust": "community",
-        "status": "discovery_only",
-        "priority": 3,
-        "rationale": "Noisy discovery tail only; do not use as core-ranked source."
       }
     ],
     "reject": [
@@ -365,6 +361,20 @@
         "url": "https://mmsharepoint.wordpress.com/feed/",
         "status": "rejected",
         "reason": "Content quality is strong but recent activity is stale for this newsletter cadence.",
+        "last_checked": "2026-02-28"
+      },
+      {
+        "id": "medium-tag-powerplatform",
+        "url": "https://medium.com/feed/tag/power-platform",
+        "status": "rejected",
+        "reason": "High-noise aggregator tag feed; weak fit for individual-practitioner-first sourcing policy.",
+        "last_checked": "2026-02-28"
+      },
+      {
+        "id": "medium-tag-microsoft365",
+        "url": "https://medium.com/feed/tag/microsoft-365",
+        "status": "rejected",
+        "reason": "High-noise aggregator tag feed; weak fit for individual-practitioner-first sourcing policy.",
         "last_checked": "2026-02-28"
       }
     ]

@@ -1,16 +1,16 @@
 {
   "issue_id": "2026-09",
-  "generated_at": "2026-02-28T01:16:26.688435Z",
+  "generated_at": "2026-02-28T18:37:36.001777Z",
   "items": [
     {
-      "id": "a-conversation-with-kevin-scott-what-s-next-in-ai",
-      "title": "A conversation with Kevin Scott: What\u2019s next in AI",
-      "url": "https://blogs.microsoft.com/ai/a-conversation-with-kevin-scott-whats-next-in-ai/",
-      "canonical_url": "https://blogs.microsoft.com/ai/a-conversation-with-kevin-scott-whats-next-in-ai/",
+      "id": "agentic-cloud-operations-a-new-way-to-run-the-cloud",
+      "title": "Agentic cloud operations: A new way to run the cloud",
+      "url": "https://azure.microsoft.com/en-us/blog/agentic-cloud-operations-a-new-way-to-run-the-cloud/",
+      "canonical_url": "https://azure.microsoft.com/en-us/blog/agentic-cloud-operations-a-new-way-to-run-the-cloud/",
       "author": "",
-      "publisher": "Microsoft AI Blog",
-      "published_at": "Tue, 06 Dec 2022 17:29:09 +0000",
-      "fetched_at": "2026-02-28T01:16:25.703088Z",
+      "publisher": "Azure Blog",
+      "published_at": "Wed, 11 Feb 2026 22:00:00 +0000",
+      "fetched_at": "2026-02-28T18:37:08.459132Z",
       "product_area": "Foundry",
       "source_type": "rss",
       "summary_bullets": [
@@ -25,18 +25,18 @@
         "Official"
       ],
       "evidence": [
-        "Source title: A conversation with Kevin Scott: What\u2019s next in AI"
+        "Source title: Agentic cloud operations: A new way to run the cloud"
       ]
     },
     {
-      "id": "ai-mimi-is-building-inclusive-tv-experiences-for-deaf-and-hard-of-hearing-user-i",
-      "title": "AI-Mimi is building inclusive TV experiences for Deaf and Hard of Hearing user in Japan",
-      "url": "https://blogs.microsoft.com/accessibility/ai-mimi-is-building-inclusive-tv-experiences-for-deaf-and-hard-of-hearing-user-in-japan/",
-      "canonical_url": "https://blogs.microsoft.com/accessibility/ai-mimi-is-building-inclusive-tv-experiences-for-deaf-and-hard-of-hearing-user-in-japan/",
+      "id": "azure-reliability-resiliency-and-recoverability-build-continuity-by-design",
+      "title": "Azure reliability, resiliency, and recoverability: Build continuity by design",
+      "url": "https://azure.microsoft.com/en-us/blog/azure-reliability-resiliency-and-recoverability-build-continuity-by-design/",
+      "canonical_url": "https://azure.microsoft.com/en-us/blog/azure-reliability-resiliency-and-recoverability-build-continuity-by-design/",
       "author": "",
-      "publisher": "Microsoft AI Blog",
-      "published_at": "Wed, 06 Jul 2022 14:51:23 +0000",
-      "fetched_at": "2026-02-28T01:16:25.703493Z",
+      "publisher": "Azure Blog",
+      "published_at": "Tue, 17 Feb 2026 16:00:00 +0000",
+      "fetched_at": "2026-02-28T18:37:08.459087Z",
       "product_area": "Foundry",
       "source_type": "rss",
       "summary_bullets": [
@@ -51,18 +51,18 @@
         "Official"
       ],
       "evidence": [
-        "Source title: AI-Mimi is building inclusive TV experiences for Deaf and Hard of Hearing user in Japan"
+        "Source title: Azure reliability, resiliency, and recoverability: Build continuity by design"
       ]
     },
     {
-      "id": "ai-equipped-drones-study-dolphins-on-the-edge-of-extinction",
-      "title": "AI-equipped drones study dolphins on the edge of extinction",
-      "url": "https://news.microsoft.com/apac/features/ai-drones-dolphins-maui63/",
-      "canonical_url": "https://news.microsoft.com/apac/features/ai-drones-dolphins-maui63/",
+      "id": "can-high-temperature-superconductors-transform-the-power-infrastructure-of-datac",
+      "title": "Can high-temperature superconductors transform the power infrastructure of datacenters?",
+      "url": "https://azure.microsoft.com/en-us/blog/can-high-temperature-superconductors-transform-the-power-infrastructure-of-datacenters/",
+      "canonical_url": "https://azure.microsoft.com/en-us/blog/can-high-temperature-superconductors-transform-the-power-infrastructure-of-datacenters/",
       "author": "",
-      "publisher": "Microsoft AI Blog",
-      "published_at": "Thu, 21 Jul 2022 14:50:33 +0000",
-      "fetched_at": "2026-02-28T01:16:25.703296Z",
+      "publisher": "Azure Blog",
+      "published_at": "Tue, 10 Feb 2026 16:00:00 +0000",
+      "fetched_at": "2026-02-28T18:37:08.459157Z",
       "product_area": "Foundry",
       "source_type": "rss",
       "summary_bullets": [
@@ -77,18 +77,18 @@
         "Official"
       ],
       "evidence": [
-        "Source title: AI-equipped drones study dolphins on the edge of extinction"
+        "Source title: Can high-temperature superconductors transform the power infrastructure of datacenters?"
       ]
     },
     {
-      "id": "from-hot-wheels-to-handling-content-how-brands-are-using-microsoft-ai-to-be-more",
-      "title": "From Hot Wheels to handling content: How brands are using Microsoft AI to be more productive and imaginative",
-      "url": "https://blogs.microsoft.com/ai/from-hot-wheels-to-handling-content-how-brands-are-using-microsoft-ai-to-be-more-productive-and-imaginative/",
-      "canonical_url": "https://blogs.microsoft.com/ai/from-hot-wheels-to-handling-content-how-brands-are-using-microsoft-ai-to-be-more-productive-and-imaginative/",
+      "id": "claude-opus-4-6-anthropic-s-powerful-model-for-coding-agents-and-enterprise-work",
+      "title": "Claude Opus 4.6: Anthropic\u2019s powerful model for coding, agents, and enterprise workflows is now available in Microsoft Foundry",
+      "url": "https://azure.microsoft.com/en-us/blog/claude-opus-4-6-anthropics-powerful-model-for-coding-agents-and-enterprise-workflows-is-now-available-in-microsoft-foundry-on-azure/",
+      "canonical_url": "https://azure.microsoft.com/en-us/blog/claude-opus-4-6-anthropics-powerful-model-for-coding-agents-and-enterprise-workflows-is-now-available-in-microsoft-foundry-on-azure/",
       "author": "",
-      "publisher": "Microsoft AI Blog",
-      "published_at": "Wed, 12 Oct 2022 16:00:02 +0000",
-      "fetched_at": "2026-02-28T01:16:25.703170Z",
+      "publisher": "Azure Blog",
+      "published_at": "Thu, 05 Feb 2026 17:46:10 +0000",
+      "fetched_at": "2026-02-28T18:37:08.459218Z",
       "product_area": "Foundry",
       "source_type": "rss",
       "summary_bullets": [
@@ -103,18 +103,18 @@
         "Official"
       ],
       "evidence": [
-        "Source title: From Hot Wheels to handling content: How brands are using Microsoft AI to be more producti"
+        "Source title: Claude Opus 4.6: Anthropic\u2019s powerful model for coding, agents, and enterprise workflows i"
       ]
     },
     {
-      "id": "how-data-and-ai-will-transform-contact-centres-for-financial-services",
-      "title": "How data and AI will transform contact centres for financial services",
-      "url": "https://cloudblogs.microsoft.com/industry-blog/en-gb/financial-services/2022/07/25/how-data-and-ai-will-transform-contact-centres-for-financial-services/",
-      "canonical_url": "https://cloudblogs.microsoft.com/industry-blog/en-gb/financial-services/2022/07/25/how-data-and-ai-will-transform-contact-centres-for-financial-services/",
+      "id": "claude-sonnet-4-6-in-microsoft-foundry-frontier-performance-for-scale",
+      "title": "Claude Sonnet 4.6 in Microsoft Foundry-Frontier Performance for Scale",
+      "url": "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/claude-sonnet-4-6-in-microsoft-foundry-frontier-performance-for-scale/4494873",
+      "canonical_url": "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/claude-sonnet-4-6-in-microsoft-foundry-frontier-performance-for-scale/4494873",
       "author": "",
-      "publisher": "Microsoft AI Blog",
-      "published_at": "Mon, 25 Jul 2022 14:49:33 +0000",
-      "fetched_at": "2026-02-28T01:16:25.703258Z",
+      "publisher": "Azure Blog",
+      "published_at": "Tue, 17 Feb 2026 20:11:10 +0000",
+      "fetched_at": "2026-02-28T18:37:08.459065Z",
       "product_area": "Foundry",
       "source_type": "rss",
       "summary_bullets": [
@@ -129,18 +129,18 @@
         "Official"
       ],
       "evidence": [
-        "Source title: How data and AI will transform contact centres for financial services"
+        "Source title: Claude Sonnet 4.6 in Microsoft Foundry-Frontier Performance for Scale"
       ]
     },
     {
-      "id": "microsoft-open-sources-its-farm-of-the-future-toolkit",
-      "title": "Microsoft open sources its \u2018farm of the future\u2019 toolkit",
-      "url": "https://blogs.microsoft.com/ai/microsoft-open-sources-its-farm-of-the-future-toolkit/",
-      "canonical_url": "https://blogs.microsoft.com/ai/microsoft-open-sources-its-farm-of-the-future-toolkit/",
+      "id": "enhanced-storage-resiliency-with-azure-netapp-files-elastic-zone-redundant-servi",
+      "title": "Enhanced\u00a0storage\u00a0resiliency with Azure NetApp Files Elastic\u00a0zone-redundant service",
+      "url": "https://azure.microsoft.com/en-us/blog/enhanced-storage-resiliency-with-azure-netapp-files-elastic-zone-redundant-service/",
+      "canonical_url": "https://azure.microsoft.com/en-us/blog/enhanced-storage-resiliency-with-azure-netapp-files-elastic-zone-redundant-service/",
       "author": "",
-      "publisher": "Microsoft AI Blog",
-      "published_at": "Thu, 06 Oct 2022 14:58:15 +0000",
-      "fetched_at": "2026-02-28T01:16:25.703217Z",
+      "publisher": "Azure Blog",
+      "published_at": "Wed, 04 Feb 2026 16:00:00 +0000",
+      "fetched_at": "2026-02-28T18:37:08.459246Z",
       "product_area": "Foundry",
       "source_type": "rss",
       "summary_bullets": [
@@ -155,18 +155,18 @@
         "Official"
       ],
       "evidence": [
-        "Source title: Microsoft open sources its \u2018farm of the future\u2019 toolkit"
+        "Source title: Enhanced\u00a0storage\u00a0resiliency with Azure NetApp Files Elastic\u00a0zone-redundant service"
       ]
     },
     {
-      "id": "microsoft-s-framework-for-building-ai-systems-responsibly",
-      "title": "Microsoft\u2019s framework for building AI systems responsibly",
-      "url": "https://blogs.microsoft.com/on-the-issues/2022/06/21/microsofts-framework-for-building-ai-systems-responsibly/",
-      "canonical_url": "https://blogs.microsoft.com/on-the-issues/2022/06/21/microsofts-framework-for-building-ai-systems-responsibly/",
+      "id": "five-reasons-to-attend-sqlcon",
+      "title": "Five Reasons to attend SQLCon",
+      "url": "https://blog.fabric.microsoft.com/en-us/blog/32624",
+      "canonical_url": "https://blog.fabric.microsoft.com/en-us/blog/32624",
       "author": "",
-      "publisher": "Microsoft AI Blog",
-      "published_at": "Tue, 21 Jun 2022 17:50:03 +0000",
-      "fetched_at": "2026-02-28T01:16:25.703535Z",
+      "publisher": "Azure Blog",
+      "published_at": "Mon, 09 Feb 2026 15:12:12 +0000",
+      "fetched_at": "2026-02-28T18:37:08.459174Z",
       "product_area": "Foundry",
       "source_type": "rss",
       "summary_bullets": [
@@ -181,18 +181,18 @@
         "Official"
       ],
       "evidence": [
-        "Source title: Microsoft\u2019s framework for building AI systems responsibly"
+        "Source title: Five Reasons to attend SQLCon"
       ]
     },
     {
-      "id": "online-math-tutoring-service-uses-ai-to-help-boost-students-skills-and-confidenc",
-      "title": "Online math tutoring service uses AI to help boost students\u2019 skills and confidence",
-      "url": "https://blogs.microsoft.com/ai/eedi-online-math-quiz/",
-      "canonical_url": "https://blogs.microsoft.com/ai/eedi-online-math-quiz/",
+      "id": "introducing-budget-bytes-build-powerful-ai-apps-for-under-25",
+      "title": "Introducing Budget Bytes: Build powerful AI apps for under $25",
+      "url": "https://devblogs.microsoft.com/azure-sql/introducing-budget-bytes/",
+      "canonical_url": "https://devblogs.microsoft.com/azure-sql/introducing-budget-bytes/",
       "author": "",
-      "publisher": "Microsoft AI Blog",
-      "published_at": "Wed, 13 Jul 2022 12:59:50 +0000",
-      "fetched_at": "2026-02-28T01:16:25.703439Z",
+      "publisher": "Azure Blog",
+      "published_at": "Thu, 19 Feb 2026 17:02:52 +0000",
+      "fetched_at": "2026-02-28T18:37:08.459039Z",
       "product_area": "Foundry",
       "source_type": "rss",
       "summary_bullets": [
@@ -207,18 +207,18 @@
         "Official"
       ],
       "evidence": [
-        "Source title: Online math tutoring service uses AI to help boost students\u2019 skills and confidence"
+        "Source title: Introducing Budget Bytes: Build powerful AI apps for under $25"
       ]
     },
     {
-      "id": "singapore-develops-asia-s-first-ai-based-mobile-app-for-shark-and-ray-fin-identi",
-      "title": "Singapore develops Asia\u2019s first AI-based mobile app for shark and ray fin identification to combat illegal wildlife trade",
-      "url": "https://news.microsoft.com/en-sg/2022/06/08/singapore-develops-asias-first-ai-based-mobile-app-for-shark-and-ray-fin-identification-to-combat-illegal-wildlife-trade/",
-      "canonical_url": "https://news.microsoft.com/en-sg/2022/06/08/singapore-develops-asias-first-ai-based-mobile-app-for-shark-and-ray-fin-identification-to-combat-illegal-wildlife-trade/",
+      "id": "microsoft-sovereign-cloud-adds-governance-productivity-and-support-for-large-ai-",
+      "title": "Microsoft Sovereign Cloud adds governance, productivity, and support for large AI models securely running even when completely disconnected",
+      "url": "http://aka.ms/MicrosoftSovereignCloudDisconnectedBlog",
+      "canonical_url": "http://aka.ms/MicrosoftSovereignCloudDisconnectedBlog",
       "author": "",
-      "publisher": "Microsoft AI Blog",
-      "published_at": "Wed, 08 Jun 2022 21:04:42 +0000",
-      "fetched_at": "2026-02-28T01:16:25.703596Z",
+      "publisher": "Azure Blog",
+      "published_at": "Tue, 24 Feb 2026 10:20:00 +0000",
+      "fetched_at": "2026-02-28T18:37:08.458995Z",
       "product_area": "Foundry",
       "source_type": "rss",
       "summary_bullets": [
@@ -233,18 +233,18 @@
         "Official"
       ],
       "evidence": [
-        "Source title: Singapore develops Asia\u2019s first AI-based mobile app for shark and ray fin identification t"
+        "Source title: Microsoft Sovereign Cloud adds governance, productivity, and support for large AI models s"
       ]
     },
     {
-      "id": "the-opportunity-at-home-can-ai-drive-innovation-in-personal-assistant-devices-an",
-      "title": "The opportunity at home \u2013 can AI drive innovation in personal assistant devices and sign language?",
-      "url": "https://blogs.microsoft.com/accessibility/the-opportunity-at-home-can-ai-drive-innovation-in-personal-assistant-devices-and-sign-language/",
-      "canonical_url": "https://blogs.microsoft.com/accessibility/the-opportunity-at-home-can-ai-drive-innovation-in-personal-assistant-devices-and-sign-language/",
+      "id": "the-data-behind-the-design-how-pantone-built-agentic-ai-with-an-ai-ready-databas",
+      "title": "The data behind the design: How Pantone built agentic AI with an AI-ready database",
+      "url": "https://azure.microsoft.com/en-us/blog/the-data-behind-the-design-how-pantone-built-agentic-ai-with-an-ai-ready-database/",
+      "canonical_url": "https://azure.microsoft.com/en-us/blog/the-data-behind-the-design-how-pantone-built-agentic-ai-with-an-ai-ready-database/",
       "author": "",
-      "publisher": "Microsoft AI Blog",
-      "published_at": "Tue, 31 May 2022 21:06:06 +0000",
-      "fetched_at": "2026-02-28T01:16:25.703650Z",
+      "publisher": "Azure Blog",
+      "published_at": "Thu, 12 Feb 2026 16:00:00 +0000",
+      "fetched_at": "2026-02-28T18:37:08.459111Z",
       "product_area": "Foundry",
       "source_type": "rss",
       "summary_bullets": [
@@ -259,18 +259,18 @@
         "Official"
       ],
       "evidence": [
-        "Source title: The opportunity at home \u2013 can AI drive innovation in personal assistant devices and sign l"
+        "Source title: The data behind the design: How Pantone built agentic AI with an AI-ready database"
       ]
     },
     {
-      "id": "building-a-microsoft-365-identity-management-lab-from-scratch",
-      "title": "Building a Microsoft 365 Identity management lab from scratch",
-      "url": "https://medium.com/@RaneishC/building-a-microsoft-365-identity-management-lab-from-scratch-dc9c6f111f76?source=rss------microsoft_365-5",
-      "canonical_url": "https://medium.com/@RaneishC/building-a-microsoft-365-identity-management-lab-from-scratch-dc9c6f111f76?source=rss------microsoft_365-5",
+      "id": "copilot-studio-extension-for-visual-studio-code-is-now-generally-available",
+      "title": "Copilot Studio Extension for Visual Studio Code Is Now Generally Available",
+      "url": "https://devblogs.microsoft.com/microsoft365dev/copilot-studio-extension-for-visual-studio-code-is-now-generally-available/",
+      "canonical_url": "https://devblogs.microsoft.com/microsoft365dev/copilot-studio-extension-for-visual-studio-code-is-now-generally-available/",
       "author": "",
-      "publisher": "Medium: Microsoft 365 tag",
-      "published_at": "Tue, 24 Feb 2026 20:08:14 GMT",
-      "fetched_at": "2026-02-28T01:16:26.688242Z",
+      "publisher": "Microsoft 365 Developer Blog",
+      "published_at": "Wed, 14 Jan 2026 19:04:46 +0000",
+      "fetched_at": "2026-02-28T18:36:59.271986Z",
       "product_area": "M365",
       "source_type": "rss",
       "summary_bullets": [
@@ -279,285 +279,26 @@
       "why_it_matters": "Potentially relevant update for Microsoft Agentic AI builders.",
       "audience": "Dev",
       "effort": "TBD during editorial review",
-      "confidence": "Medium",
-      "tags": [
-        "M365",
-        "Community"
-      ],
-      "evidence": [
-        "Source title: Building a Microsoft 365 Identity management lab from scratch"
-      ]
-    },
-    {
-      "id": "microsoft-365-apps-for-business-complete-guide-for-2026",
-      "title": "Microsoft 365 Apps for Business: Complete Guide for 2026",
-      "url": "https://medium.com/@marketing1techzoidtechnologies/microsoft-365-apps-for-business-complete-guide-for-2026-2ead69357233?source=rss------microsoft_365-5",
-      "canonical_url": "https://medium.com/@marketing1techzoidtechnologies/microsoft-365-apps-for-business-complete-guide-for-2026-2ead69357233?source=rss------microsoft_365-5",
-      "author": "",
-      "publisher": "Medium: Microsoft 365 tag",
-      "published_at": "Thu, 26 Feb 2026 06:55:36 GMT",
-      "fetched_at": "2026-02-28T01:16:26.688172Z",
-      "product_area": "M365",
-      "source_type": "rss",
-      "summary_bullets": [
-        "Auto-collected candidate. Editorial rewrite required before publishing."
-      ],
-      "why_it_matters": "Potentially relevant update for Microsoft Agentic AI builders.",
-      "audience": "Dev",
-      "effort": "TBD during editorial review",
-      "confidence": "Medium",
-      "tags": [
-        "M365",
-        "Community"
-      ],
-      "evidence": [
-        "Source title: Microsoft 365 Apps for Business: Complete Guide for 2026"
-      ]
-    },
-    {
-      "id": "microsoft-365-pricing-is-changing-e3-vs-e5-in-2026",
-      "title": "Microsoft 365 Pricing is Changing \u2014 E3 vs. E5 in 2026",
-      "url": "https://medium.com/@neha2024june/microsoft-365-pricing-is-changing-e3-vs-e5-in-2026-e4be7777df06?source=rss------microsoft_365-5",
-      "canonical_url": "https://medium.com/@neha2024june/microsoft-365-pricing-is-changing-e3-vs-e5-in-2026-e4be7777df06?source=rss------microsoft_365-5",
-      "author": "",
-      "publisher": "Medium: Microsoft 365 tag",
-      "published_at": "Tue, 24 Feb 2026 15:08:51 GMT",
-      "fetched_at": "2026-02-28T01:16:26.688300Z",
-      "product_area": "M365",
-      "source_type": "rss",
-      "summary_bullets": [
-        "Auto-collected candidate. Editorial rewrite required before publishing."
-      ],
-      "why_it_matters": "Potentially relevant update for Microsoft Agentic AI builders.",
-      "audience": "Dev",
-      "effort": "TBD during editorial review",
-      "confidence": "Medium",
-      "tags": [
-        "M365",
-        "Community"
-      ],
-      "evidence": [
-        "Source title: Microsoft 365 Pricing is Changing \u2014 E3 vs. E5 in 2026"
-      ]
-    },
-    {
-      "id": "microsoft-introduces-user-site-permissions-report-in-sharepoint-admin-center",
-      "title": "Microsoft Introduces User Site Permissions Report in SharePoint Admin Center",
-      "url": "https://medium.com/@ryan.adams1277/microsoft-introduces-user-site-permissions-report-in-sharepoint-admin-center-e5034697f7a1?source=rss------microsoft_365-5",
-      "canonical_url": "https://medium.com/@ryan.adams1277/microsoft-introduces-user-site-permissions-report-in-sharepoint-admin-center-e5034697f7a1?source=rss------microsoft_365-5",
-      "author": "",
-      "publisher": "Medium: Microsoft 365 tag",
-      "published_at": "Wed, 25 Feb 2026 19:02:18 GMT",
-      "fetched_at": "2026-02-28T01:16:26.688199Z",
-      "product_area": "M365",
-      "source_type": "rss",
-      "summary_bullets": [
-        "Auto-collected candidate. Editorial rewrite required before publishing."
-      ],
-      "why_it_matters": "Potentially relevant update for Microsoft Agentic AI builders.",
-      "audience": "Dev",
-      "effort": "TBD during editorial review",
-      "confidence": "Medium",
-      "tags": [
-        "M365",
-        "Community"
-      ],
-      "evidence": [
-        "Source title: Microsoft Introduces User Site Permissions Report in SharePoint Admin Center"
-      ]
-    },
-    {
-      "id": "microsoft-purview-information-protection-kurumsal-sensitivity-label-tasar-m-b-l-",
-      "title": "Microsoft Purview Information Protection Kurumsal Sensitivity Label Tasar\u0131m\u0131 \u2014 B\u00f6l\u00fcm 1",
-      "url": "https://medium.com/@yigit_sener/microsoft-purview-information-protection-kurumsal-sensitivity-label-tasar%C4%B1m%C4%B1-b%C3%B6l%C3%BCm-1-0e6cc30aa609?source=rss------microsoft_365-5",
-      "canonical_url": "https://medium.com/@yigit_sener/microsoft-purview-information-protection-kurumsal-sensitivity-label-tasar%C4%B1m%C4%B1-b%C3%B6l%C3%BCm-1-0e6cc30aa609?source=rss------microsoft_365-5",
-      "author": "",
-      "publisher": "Medium: Microsoft 365 tag",
-      "published_at": "Tue, 24 Feb 2026 09:58:22 GMT",
-      "fetched_at": "2026-02-28T01:16:26.688331Z",
-      "product_area": "M365",
-      "source_type": "rss",
-      "summary_bullets": [
-        "Auto-collected candidate. Editorial rewrite required before publishing."
-      ],
-      "why_it_matters": "Potentially relevant update for Microsoft Agentic AI builders.",
-      "audience": "Dev",
-      "effort": "TBD during editorial review",
-      "confidence": "Medium",
-      "tags": [
-        "M365",
-        "Community"
-      ],
-      "evidence": [
-        "Source title: Microsoft Purview Information Protection Kurumsal Sensitivity Label Tasar\u0131m\u0131 \u2014 B\u00f6l\u00fcm 1"
-      ]
-    },
-    {
-      "id": "monthly-microsoft-license-update-february-2026",
-      "title": "Monthly Microsoft License Update February 2026",
-      "url": "https://karl-odoherty.medium.com/monthly-microsoft-license-update-february-2026-5804fcbb0483?source=rss------microsoft_365-5",
-      "canonical_url": "https://karl-odoherty.medium.com/monthly-microsoft-license-update-february-2026-5804fcbb0483?source=rss------microsoft_365-5",
-      "author": "",
-      "publisher": "Medium: Microsoft 365 tag",
-      "published_at": "Fri, 27 Feb 2026 14:36:35 GMT",
-      "fetched_at": "2026-02-28T01:16:26.688127Z",
-      "product_area": "M365",
-      "source_type": "rss",
-      "summary_bullets": [
-        "Auto-collected candidate. Editorial rewrite required before publishing."
-      ],
-      "why_it_matters": "Potentially relevant update for Microsoft Agentic AI builders.",
-      "audience": "Dev",
-      "effort": "TBD during editorial review",
-      "confidence": "Medium",
-      "tags": [
-        "M365",
-        "Community"
-      ],
-      "evidence": [
-        "Source title: Monthly Microsoft License Update February 2026"
-      ]
-    },
-    {
-      "id": "rahsi-invisible-intelligence-architecture-teams-surface-copilot-core-microsoft-3",
-      "title": "Rahsi\u2122 Invisible Intelligence Architecture | Teams Surface. Copilot Core. Microsoft 365 Memory.",
-      "url": "https://medium.com/@rs65aakash/rahsi-invisible-intelligence-architecture-teams-surface-copilot-core-microsoft-365-memory-9f42510dc24c?source=rss------microsoft_365-5",
-      "canonical_url": "https://medium.com/@rs65aakash/rahsi-invisible-intelligence-architecture-teams-surface-copilot-core-microsoft-365-memory-9f42510dc24c?source=rss------microsoft_365-5",
-      "author": "",
-      "publisher": "Medium: Microsoft 365 tag",
-      "published_at": "Tue, 24 Feb 2026 02:17:52 GMT",
-      "fetched_at": "2026-02-28T01:16:26.688384Z",
-      "product_area": "M365",
-      "source_type": "rss",
-      "summary_bullets": [
-        "Auto-collected candidate. Editorial rewrite required before publishing."
-      ],
-      "why_it_matters": "Potentially relevant update for Microsoft Agentic AI builders.",
-      "audience": "Dev",
-      "effort": "TBD during editorial review",
-      "confidence": "Medium",
-      "tags": [
-        "M365",
-        "Community"
-      ],
-      "evidence": [
-        "Source title: Rahsi\u2122 Invisible Intelligence Architecture | Teams Surface. Copilot Core. Microsoft 365 Me"
-      ]
-    },
-    {
-      "id": "reliable-microsoft-365-managed-services-for-modern-enterprises",
-      "title": "Reliable Microsoft 365 Managed Services for Modern Enterprises",
-      "url": "https://medium.com/@andrewcooper2503/reliable-microsoft-365-managed-services-for-modern-enterprises-f84f68aa0bf0?source=rss------microsoft_365-5",
-      "canonical_url": "https://medium.com/@andrewcooper2503/reliable-microsoft-365-managed-services-for-modern-enterprises-f84f68aa0bf0?source=rss------microsoft_365-5",
-      "author": "",
-      "publisher": "Medium: Microsoft 365 tag",
-      "published_at": "Tue, 24 Feb 2026 09:13:40 GMT",
-      "fetched_at": "2026-02-28T01:16:26.688353Z",
-      "product_area": "M365",
-      "source_type": "rss",
-      "summary_bullets": [
-        "Auto-collected candidate. Editorial rewrite required before publishing."
-      ],
-      "why_it_matters": "Potentially relevant update for Microsoft Agentic AI builders.",
-      "audience": "Dev",
-      "effort": "TBD during editorial review",
-      "confidence": "Medium",
-      "tags": [
-        "M365",
-        "Community"
-      ],
-      "evidence": [
-        "Source title: Reliable Microsoft 365 Managed Services for Modern Enterprises"
-      ]
-    },
-    {
-      "id": "sharepoint-governance-takes-a-step-forward",
-      "title": "SharePoint Governance Takes a Step Forward",
-      "url": "https://medium.com/@ryan.adams1277/sharepoint-governance-takes-a-step-forward-93fe9fb141b1?source=rss------microsoft_365-5",
-      "canonical_url": "https://medium.com/@ryan.adams1277/sharepoint-governance-takes-a-step-forward-93fe9fb141b1?source=rss------microsoft_365-5",
-      "author": "",
-      "publisher": "Medium: Microsoft 365 tag",
-      "published_at": "Wed, 25 Feb 2026 19:02:01 GMT",
-      "fetched_at": "2026-02-28T01:16:26.688220Z",
-      "product_area": "M365",
-      "source_type": "rss",
-      "summary_bullets": [
-        "Auto-collected candidate. Editorial rewrite required before publishing."
-      ],
-      "why_it_matters": "Potentially relevant update for Microsoft Agentic AI builders.",
-      "audience": "Dev",
-      "effort": "TBD during editorial review",
-      "confidence": "Medium",
-      "tags": [
-        "M365",
-        "Community"
-      ],
-      "evidence": [
-        "Source title: SharePoint Governance Takes a Step Forward"
-      ]
-    },
-    {
-      "id": "work-smarter-create-faster-the-power-of-microsoft-365-copilot-chat",
-      "title": "Work Smarter, Create Faster: The Power of Microsoft 365 Copilot Chat",
-      "url": "https://medium.com/@janarthanvijayakumar/work-smarter-create-faster-the-power-of-microsoft-365-copilot-chat-9820195769aa?source=rss------microsoft_365-5",
-      "canonical_url": "https://medium.com/@janarthanvijayakumar/work-smarter-create-faster-the-power-of-microsoft-365-copilot-chat-9820195769aa?source=rss------microsoft_365-5",
-      "author": "",
-      "publisher": "Medium: Microsoft 365 tag",
-      "published_at": "Tue, 24 Feb 2026 17:46:14 GMT",
-      "fetched_at": "2026-02-28T01:16:26.688265Z",
-      "product_area": "M365",
-      "source_type": "rss",
-      "summary_bullets": [
-        "Auto-collected candidate. Editorial rewrite required before publishing."
-      ],
-      "why_it_matters": "Potentially relevant update for Microsoft Agentic AI builders.",
-      "audience": "Dev",
-      "effort": "TBD during editorial review",
-      "confidence": "Medium",
-      "tags": [
-        "M365",
-        "Community"
-      ],
-      "evidence": [
-        "Source title: Work Smarter, Create Faster: The Power of Microsoft 365 Copilot Chat"
-      ]
-    },
-    {
-      "id": "everything-you-need-to-know-about-the-copilot-studio-kit",
-      "title": "Everything You Need to Know About the Copilot Studio Kit",
-      "url": "https://medium.com/@dgnilufer/everything-you-need-to-know-about-the-copilot-studio-kit-1ae2983223db?source=rss------power_platform-5",
-      "canonical_url": "https://medium.com/@dgnilufer/everything-you-need-to-know-about-the-copilot-studio-kit-1ae2983223db?source=rss------power_platform-5",
-      "author": "",
-      "publisher": "Medium: Power Platform tag",
-      "published_at": "Fri, 27 Feb 2026 09:46:02 GMT",
-      "fetched_at": "2026-02-28T01:16:26.308623Z",
-      "product_area": "Power Platform",
-      "source_type": "rss",
-      "summary_bullets": [
-        "Auto-collected candidate. Editorial rewrite required before publishing."
-      ],
-      "why_it_matters": "Potentially relevant update for Microsoft Agentic AI builders.",
-      "audience": "Dev",
-      "effort": "TBD during editorial review",
-      "confidence": "Medium",
+      "confidence": "High",
       "tags": [
         "Power Platform",
-        "Community"
+        "M365",
+        "Official"
       ],
       "evidence": [
-        "Source title: Everything You Need to Know About the Copilot Studio Kit"
+        "Source title: Copilot Studio Extension for Visual Studio Code Is Now Generally Available"
       ]
     },
     {
-      "id": "integrating-ai-into-power-platform-how-automation-meets-generative-intelligence",
-      "title": "Integrating AI Into Power Platform: How Automation Meets Generative Intelligence",
-      "url": "https://medium.com/@oladayoalimi362/integrating-ai-into-power-platform-how-automation-meets-generative-intelligence-f433e10b448d?source=rss------power_platform-5",
-      "canonical_url": "https://medium.com/@oladayoalimi362/integrating-ai-into-power-platform-how-automation-meets-generative-intelligence-f433e10b448d?source=rss------power_platform-5",
+      "id": "deprecation-notice-teams-live-events-meeting-creation-via-microsoft-graph",
+      "title": "Deprecation notice: Teams Live Events meeting creation via Microsoft Graph",
+      "url": "https://devblogs.microsoft.com/microsoft365dev/deprecation-notice-teams-live-events-meeting-creation-via-microsoft-graph/",
+      "canonical_url": "https://devblogs.microsoft.com/microsoft365dev/deprecation-notice-teams-live-events-meeting-creation-via-microsoft-graph/",
       "author": "",
-      "publisher": "Medium: Power Platform tag",
-      "published_at": "Thu, 26 Feb 2026 22:01:00 GMT",
-      "fetched_at": "2026-02-28T01:16:26.308669Z",
-      "product_area": "Power Platform",
+      "publisher": "Microsoft 365 Developer Blog",
+      "published_at": "Tue, 03 Feb 2026 16:55:49 +0000",
+      "fetched_at": "2026-02-28T18:36:59.271870Z",
+      "product_area": "M365",
       "source_type": "rss",
       "summary_bullets": [
         "Auto-collected candidate. Editorial rewrite required before publishing."
@@ -565,25 +306,25 @@
       "why_it_matters": "Potentially relevant update for Microsoft Agentic AI builders.",
       "audience": "Dev",
       "effort": "TBD during editorial review",
-      "confidence": "Medium",
+      "confidence": "High",
       "tags": [
-        "Power Platform",
-        "Community"
+        "M365",
+        "Official"
       ],
       "evidence": [
-        "Source title: Integrating AI Into Power Platform: How Automation Meets Generative Intelligence"
+        "Source title: Deprecation notice: Teams Live Events meeting creation via Microsoft Graph"
       ]
     },
     {
-      "id": "power-apps-delegation-warning-why-it-happens-and-how-to-fix-it-properly",
-      "title": "Power Apps Delegation Warning: Why It Happens and How to Fix It Properly",
-      "url": "https://medium.com/@mj0735593/power-apps-delegation-warning-why-it-happens-and-how-to-fix-it-properly-08cd4b166081?source=rss------power_platform-5",
-      "canonical_url": "https://medium.com/@mj0735593/power-apps-delegation-warning-why-it-happens-and-how-to-fix-it-properly-08cd4b166081?source=rss------power_platform-5",
+      "id": "dev-proxy-v2-1-with-configuration-hot-reload-and-stdio-proxying",
+      "title": "Dev Proxy v2.1 with configuration hot reload and stdio proxying",
+      "url": "https://devblogs.microsoft.com/microsoft365dev/dev-proxy-v2-1-with-configuration-hot-reload-and-stdio-proxying/",
+      "canonical_url": "https://devblogs.microsoft.com/microsoft365dev/dev-proxy-v2-1-with-configuration-hot-reload-and-stdio-proxying/",
       "author": "",
-      "publisher": "Medium: Power Platform tag",
-      "published_at": "Tue, 10 Feb 2026 10:48:36 GMT",
-      "fetched_at": "2026-02-28T01:16:26.308850Z",
-      "product_area": "Power Platform",
+      "publisher": "Microsoft 365 Developer Blog",
+      "published_at": "Thu, 29 Jan 2026 12:16:19 +0000",
+      "fetched_at": "2026-02-28T18:36:59.271893Z",
+      "product_area": "M365",
       "source_type": "rss",
       "summary_bullets": [
         "Auto-collected candidate. Editorial rewrite required before publishing."
@@ -591,25 +332,25 @@
       "why_it_matters": "Potentially relevant update for Microsoft Agentic AI builders.",
       "audience": "Dev",
       "effort": "TBD during editorial review",
-      "confidence": "Medium",
+      "confidence": "High",
       "tags": [
-        "Power Platform",
-        "Community"
+        "M365",
+        "Official"
       ],
       "evidence": [
-        "Source title: Power Apps Delegation Warning: Why It Happens and How to Fix It Properly"
+        "Source title: Dev Proxy v2.1 with configuration hot reload and stdio proxying"
       ]
     },
     {
-      "id": "power-apps-vibe-coding-is-impressive",
-      "title": "Power Apps Vibe Coding is Impressive",
-      "url": "https://medium.com/@arunkumar_r/power-apps-vibe-coding-is-impressive-3fefb2aa9353?source=rss------power_platform-5",
-      "canonical_url": "https://medium.com/@arunkumar_r/power-apps-vibe-coding-is-impressive-3fefb2aa9353?source=rss------power_platform-5",
+      "id": "handling-legacy-user-settings-in-sharepoint-framework",
+      "title": "Handling Legacy User Settings in SharePoint Framework",
+      "url": "https://devblogs.microsoft.com/microsoft365dev/handling-legacy-user-settings-in-sharepoint-framework/",
+      "canonical_url": "https://devblogs.microsoft.com/microsoft365dev/handling-legacy-user-settings-in-sharepoint-framework/",
       "author": "",
-      "publisher": "Medium: Power Platform tag",
-      "published_at": "Mon, 09 Feb 2026 20:13:10 GMT",
-      "fetched_at": "2026-02-28T01:16:26.308868Z",
-      "product_area": "Power Platform",
+      "publisher": "Microsoft 365 Developer Blog",
+      "published_at": "Thu, 12 Feb 2026 18:25:13 +0000",
+      "fetched_at": "2026-02-28T18:36:59.271827Z",
+      "product_area": "M365",
       "source_type": "rss",
       "summary_bullets": [
         "Auto-collected candidate. Editorial rewrite required before publishing."
@@ -617,29 +358,286 @@
       "why_it_matters": "Potentially relevant update for Microsoft Agentic AI builders.",
       "audience": "Dev",
       "effort": "TBD during editorial review",
-      "confidence": "Medium",
+      "confidence": "High",
       "tags": [
-        "Power Platform",
-        "Community"
+        "M365",
+        "Official"
       ],
       "evidence": [
-        "Source title: Power Apps Vibe Coding is Impressive"
+        "Source title: Handling Legacy User Settings in SharePoint Framework"
+      ]
+    },
+    {
+      "id": "increased-control-over-office-add-in-user-experiences",
+      "title": "Increased control over Office Add-in user experiences",
+      "url": "https://devblogs.microsoft.com/microsoft365dev/increased-control-over-office-add-in-user-experiences/",
+      "canonical_url": "https://devblogs.microsoft.com/microsoft365dev/increased-control-over-office-add-in-user-experiences/",
+      "author": "",
+      "publisher": "Microsoft 365 Developer Blog",
+      "published_at": "Wed, 25 Feb 2026 03:57:56 +0000",
+      "fetched_at": "2026-02-28T18:36:59.271802Z",
+      "product_area": "M365",
+      "source_type": "rss",
+      "summary_bullets": [
+        "Auto-collected candidate. Editorial rewrite required before publishing."
+      ],
+      "why_it_matters": "Potentially relevant update for Microsoft Agentic AI builders.",
+      "audience": "Dev",
+      "effort": "TBD during editorial review",
+      "confidence": "High",
+      "tags": [
+        "M365",
+        "Official"
+      ],
+      "evidence": [
+        "Source title: Increased control over Office Add-in user experiences"
+      ]
+    },
+    {
+      "id": "introducing-the-evals-for-agent-interop-starter-kit",
+      "title": "Introducing the Evals for Agent Interop starter kit",
+      "url": "https://devblogs.microsoft.com/microsoft365dev/introducing-the-evals-for-agent-interop-starter-kit/",
+      "canonical_url": "https://devblogs.microsoft.com/microsoft365dev/introducing-the-evals-for-agent-interop-starter-kit/",
+      "author": "",
+      "publisher": "Microsoft 365 Developer Blog",
+      "published_at": "Mon, 26 Jan 2026 17:37:21 +0000",
+      "fetched_at": "2026-02-28T18:36:59.271963Z",
+      "product_area": "M365",
+      "source_type": "rss",
+      "summary_bullets": [
+        "Auto-collected candidate. Editorial rewrite required before publishing."
+      ],
+      "why_it_matters": "Potentially relevant update for Microsoft Agentic AI builders.",
+      "audience": "Dev",
+      "effort": "TBD during editorial review",
+      "confidence": "High",
+      "tags": [
+        "M365",
+        "Foundry",
+        "Official"
+      ],
+      "evidence": [
+        "Source title: Introducing the Evals for Agent Interop starter kit"
+      ]
+    },
+    {
+      "id": "introducing-the-microsoft-graph-user-configuration-api-preview",
+      "title": "Introducing the Microsoft Graph User Configuration API (preview)",
+      "url": "https://devblogs.microsoft.com/microsoft365dev/introducing-the-microsoft-graph-user-configuration-api-preview/",
+      "canonical_url": "https://devblogs.microsoft.com/microsoft365dev/introducing-the-microsoft-graph-user-configuration-api-preview/",
+      "author": "",
+      "publisher": "Microsoft 365 Developer Blog",
+      "published_at": "Wed, 28 Jan 2026 18:59:42 +0000",
+      "fetched_at": "2026-02-28T18:36:59.271914Z",
+      "product_area": "M365",
+      "source_type": "rss",
+      "summary_bullets": [
+        "Auto-collected candidate. Editorial rewrite required before publishing."
+      ],
+      "why_it_matters": "Potentially relevant update for Microsoft Agentic AI builders.",
+      "audience": "Dev",
+      "effort": "TBD during editorial review",
+      "confidence": "High",
+      "tags": [
+        "M365",
+        "Official"
+      ],
+      "evidence": [
+        "Source title: Introducing the Microsoft Graph User Configuration API (preview)"
+      ]
+    },
+    {
+      "id": "mastering-user-settings-in-sharepoint-framework",
+      "title": "Mastering User Settings in SharePoint Framework",
+      "url": "https://devblogs.microsoft.com/microsoft365dev/mastering-user-settings-in-sharepoint-framework/",
+      "canonical_url": "https://devblogs.microsoft.com/microsoft365dev/mastering-user-settings-in-sharepoint-framework/",
+      "author": "",
+      "publisher": "Microsoft 365 Developer Blog",
+      "published_at": "Sat, 07 Feb 2026 01:17:15 +0000",
+      "fetched_at": "2026-02-28T18:36:59.271847Z",
+      "product_area": "M365",
+      "source_type": "rss",
+      "summary_bullets": [
+        "Auto-collected candidate. Editorial rewrite required before publishing."
+      ],
+      "why_it_matters": "Potentially relevant update for Microsoft Agentic AI builders.",
+      "audience": "Dev",
+      "effort": "TBD during editorial review",
+      "confidence": "High",
+      "tags": [
+        "M365",
+        "Official"
+      ],
+      "evidence": [
+        "Source title: Mastering User Settings in SharePoint Framework"
+      ]
+    },
+    {
+      "id": "sharepoint-framework-spfx-roadmap-update-february-2026",
+      "title": "SharePoint Framework (SPFx) roadmap update \u2013 February 2026",
+      "url": "https://devblogs.microsoft.com/microsoft365dev/sharepoint-framework-spfx-roadmap-update-february-2026/",
+      "canonical_url": "https://devblogs.microsoft.com/microsoft365dev/sharepoint-framework-spfx-roadmap-update-february-2026/",
+      "author": "",
+      "publisher": "Microsoft 365 Developer Blog",
+      "published_at": "Wed, 25 Feb 2026 12:59:07 +0000",
+      "fetched_at": "2026-02-28T18:36:59.271755Z",
+      "product_area": "M365",
+      "source_type": "rss",
+      "summary_bullets": [
+        "Auto-collected candidate. Editorial rewrite required before publishing."
+      ],
+      "why_it_matters": "Potentially relevant update for Microsoft Agentic AI builders.",
+      "audience": "Dev",
+      "effort": "TBD during editorial review",
+      "confidence": "High",
+      "tags": [
+        "M365",
+        "Official"
+      ],
+      "evidence": [
+        "Source title: SharePoint Framework (SPFx) roadmap update \u2013 February 2026"
+      ]
+    },
+    {
+      "id": "sharepoint-framework-spfx-roadmap-update-january-2026",
+      "title": "SharePoint Framework (SPFx) roadmap update \u2013 January 2026",
+      "url": "https://devblogs.microsoft.com/microsoft365dev/sharepoint-framework-spfx-roadmap-update-january-2026/",
+      "canonical_url": "https://devblogs.microsoft.com/microsoft365dev/sharepoint-framework-spfx-roadmap-update-january-2026/",
+      "author": "",
+      "publisher": "Microsoft 365 Developer Blog",
+      "published_at": "Wed, 28 Jan 2026 15:18:00 +0000",
+      "fetched_at": "2026-02-28T18:36:59.271938Z",
+      "product_area": "M365",
+      "source_type": "rss",
+      "summary_bullets": [
+        "Auto-collected candidate. Editorial rewrite required before publishing."
+      ],
+      "why_it_matters": "Potentially relevant update for Microsoft Agentic AI builders.",
+      "audience": "Dev",
+      "effort": "TBD during editorial review",
+      "confidence": "High",
+      "tags": [
+        "M365",
+        "Official"
+      ],
+      "evidence": [
+        "Source title: SharePoint Framework (SPFx) roadmap update \u2013 January 2026"
+      ]
+    },
+    {
+      "id": "a-milestone-achievement-in-our-journey-to-carbon-negative",
+      "title": "A milestone achievement in our journey to carbon negative",
+      "url": "https://blogs.microsoft.com/blog/2026/02/18/a-milestone-achievement-in-our-journey-to-carbon-negative/",
+      "canonical_url": "https://blogs.microsoft.com/blog/2026/02/18/a-milestone-achievement-in-our-journey-to-carbon-negative/",
+      "author": "",
+      "publisher": "Microsoft Blogs (Global)",
+      "published_at": "Wed, 18 Feb 2026 16:20:32 +0000",
+      "fetched_at": "2026-02-28T18:37:27.035699Z",
+      "product_area": "Mixed",
+      "source_type": "rss",
+      "summary_bullets": [
+        "Auto-collected candidate. Editorial rewrite required before publishing."
+      ],
+      "why_it_matters": "Potentially relevant update for Microsoft Agentic AI builders.",
+      "audience": "Dev",
+      "effort": "TBD during editorial review",
+      "confidence": "High",
+      "tags": [
+        "Mixed",
+        "Official"
+      ],
+      "evidence": [
+        "Source title: A milestone achievement in our journey to carbon negative"
+      ]
+    },
+    {
+      "id": "announcing-open-to-work-how-to-get-ahead-in-the-age-of-ai",
+      "title": "Announcing Open to Work: How to Get Ahead in the Age of AI",
+      "url": "https://blogs.microsoft.com/blog/2026/01/13/announcing-open-to-work-how-to-get-ahead-in-the-age-of-ai/",
+      "canonical_url": "https://blogs.microsoft.com/blog/2026/01/13/announcing-open-to-work-how-to-get-ahead-in-the-age-of-ai/",
+      "author": "",
+      "publisher": "Microsoft Blogs (Global)",
+      "published_at": "Tue, 13 Jan 2026 15:12:16 +0000",
+      "fetched_at": "2026-02-28T18:37:27.035804Z",
+      "product_area": "Mixed",
+      "source_type": "rss",
+      "summary_bullets": [
+        "Auto-collected candidate. Editorial rewrite required before publishing."
+      ],
+      "why_it_matters": "Potentially relevant update for Microsoft Agentic AI builders.",
+      "audience": "Dev",
+      "effort": "TBD during editorial review",
+      "confidence": "High",
+      "tags": [
+        "Mixed",
+        "Official"
+      ],
+      "evidence": [
+        "Source title: Announcing Open to Work: How to Get Ahead in the Age of AI"
+      ]
+    },
+    {
+      "id": "asha-sharma-named-evp-and-ceo-microsoft-gaming",
+      "title": "Asha Sharma named EVP and CEO, Microsoft Gaming",
+      "url": "https://blogs.microsoft.com/blog/2026/02/20/asha-sharma-named-evp-and-ceo-microsoft-gaming/",
+      "canonical_url": "https://blogs.microsoft.com/blog/2026/02/20/asha-sharma-named-evp-and-ceo-microsoft-gaming/",
+      "author": "",
+      "publisher": "Microsoft Blogs (Global)",
+      "published_at": "Fri, 20 Feb 2026 20:44:35 +0000",
+      "fetched_at": "2026-02-28T18:37:27.035673Z",
+      "product_area": "Mixed",
+      "source_type": "rss",
+      "summary_bullets": [
+        "Auto-collected candidate. Editorial rewrite required before publishing."
+      ],
+      "why_it_matters": "Potentially relevant update for Microsoft Agentic AI builders.",
+      "audience": "Dev",
+      "effort": "TBD during editorial review",
+      "confidence": "High",
+      "tags": [
+        "Mixed",
+        "Official"
+      ],
+      "evidence": [
+        "Source title: Asha Sharma named EVP and CEO, Microsoft Gaming"
+      ]
+    },
+    {
+      "id": "from-idea-to-deployment-the-complete-lifecycle-of-ai-on-display-at-ignite-2025",
+      "title": "From idea to deployment: The complete lifecycle of AI on display at Ignite 2025",
+      "url": "https://blogs.microsoft.com/blog/2025/11/18/from-idea-to-deployment-the-complete-lifecycle-of-ai-on-display-at-ignite-2025/",
+      "canonical_url": "https://blogs.microsoft.com/blog/2025/11/18/from-idea-to-deployment-the-complete-lifecycle-of-ai-on-display-at-ignite-2025/",
+      "author": "",
+      "publisher": "Microsoft Blogs (Global)",
+      "published_at": "Tue, 18 Nov 2025 16:00:03 +0000",
+      "fetched_at": "2026-02-28T18:37:27.035856Z",
+      "product_area": "Mixed",
+      "source_type": "rss",
+      "summary_bullets": [
+        "Auto-collected candidate. Editorial rewrite required before publishing."
+      ],
+      "why_it_matters": "Potentially relevant update for Microsoft Agentic AI builders.",
+      "audience": "Dev",
+      "effort": "TBD during editorial review",
+      "confidence": "High",
+      "tags": [
+        "Mixed",
+        "Official"
+      ],
+      "evidence": [
+        "Source title: From idea to deployment: The complete lifecycle of AI on display at Ignite 2025"
       ]
     }
   ],
   "clusters": [],
   "excluded": [
     {
-      "source": "microsoft-power-platform-blog",
-      "reason": "fetch_error: HTTP Error 403: Forbidden"
-    },
-    {
-      "source": "microsoft-365-blog",
-      "reason": "fetch_error: HTTP Error 403: Forbidden"
-    },
-    {
       "source": "azure-updates",
       "reason": "fetch_error: not well-formed (invalid token): line 5, column 31"
+    },
+    {
+      "url": "https://blogs.microsoft.com/blog/2026/02/24/microsoft-sovereign-cloud-adds-governance-productivity-and-support-for-large-ai-models-securely-running-even-when-completely-disconnected/",
+      "reason": "duplicate_title"
     },
     {
       "source": "linkedin-discovery-note",

@@ -1,71 +1,71 @@
 # Weekly Editorial Queue — 2026-09
 
-Generated: 2026-02-28T01:16:26.688435Z
+Generated: 2026-02-28T18:37:36.001777Z
 Total included: 24
-Excluded: 4
+Excluded: 3
 
 ## Top candidates
 
-1. **A conversation with Kevin Scott: What’s next in AI**
-   - Publisher: Microsoft AI Blog
+1. **Agentic cloud operations: A new way to run the cloud**
+   - Publisher: Azure Blog
    - Confidence: High
-   - URL: https://blogs.microsoft.com/ai/a-conversation-with-kevin-scott-whats-next-in-ai/
-2. **AI-Mimi is building inclusive TV experiences for Deaf and Hard of Hearing user in Japan**
-   - Publisher: Microsoft AI Blog
+   - URL: https://azure.microsoft.com/en-us/blog/agentic-cloud-operations-a-new-way-to-run-the-cloud/
+2. **Azure reliability, resiliency, and recoverability: Build continuity by design**
+   - Publisher: Azure Blog
    - Confidence: High
-   - URL: https://blogs.microsoft.com/accessibility/ai-mimi-is-building-inclusive-tv-experiences-for-deaf-and-hard-of-hearing-user-in-japan/
-3. **AI-equipped drones study dolphins on the edge of extinction**
-   - Publisher: Microsoft AI Blog
+   - URL: https://azure.microsoft.com/en-us/blog/azure-reliability-resiliency-and-recoverability-build-continuity-by-design/
+3. **Can high-temperature superconductors transform the power infrastructure of datacenters?**
+   - Publisher: Azure Blog
    - Confidence: High
-   - URL: https://news.microsoft.com/apac/features/ai-drones-dolphins-maui63/
-4. **From Hot Wheels to handling content: How brands are using Microsoft AI to be more productive and imaginative**
-   - Publisher: Microsoft AI Blog
+   - URL: https://azure.microsoft.com/en-us/blog/can-high-temperature-superconductors-transform-the-power-infrastructure-of-datacenters/
+4. **Claude Opus 4.6: Anthropic’s powerful model for coding, agents, and enterprise workflows is now available in Microsoft Foundry**
+   - Publisher: Azure Blog
    - Confidence: High
-   - URL: https://blogs.microsoft.com/ai/from-hot-wheels-to-handling-content-how-brands-are-using-microsoft-ai-to-be-more-productive-and-imaginative/
-5. **How data and AI will transform contact centres for financial services**
-   - Publisher: Microsoft AI Blog
+   - URL: https://azure.microsoft.com/en-us/blog/claude-opus-4-6-anthropics-powerful-model-for-coding-agents-and-enterprise-workflows-is-now-available-in-microsoft-foundry-on-azure/
+5. **Claude Sonnet 4.6 in Microsoft Foundry-Frontier Performance for Scale**
+   - Publisher: Azure Blog
    - Confidence: High
-   - URL: https://cloudblogs.microsoft.com/industry-blog/en-gb/financial-services/2022/07/25/how-data-and-ai-will-transform-contact-centres-for-financial-services/
-6. **Microsoft open sources its ‘farm of the future’ toolkit**
-   - Publisher: Microsoft AI Blog
+   - URL: https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/claude-sonnet-4-6-in-microsoft-foundry-frontier-performance-for-scale/4494873
+6. **Enhanced storage resiliency with Azure NetApp Files Elastic zone-redundant service**
+   - Publisher: Azure Blog
    - Confidence: High
-   - URL: https://blogs.microsoft.com/ai/microsoft-open-sources-its-farm-of-the-future-toolkit/
-7. **Microsoft’s framework for building AI systems responsibly**
-   - Publisher: Microsoft AI Blog
+   - URL: https://azure.microsoft.com/en-us/blog/enhanced-storage-resiliency-with-azure-netapp-files-elastic-zone-redundant-service/
+7. **Five Reasons to attend SQLCon**
+   - Publisher: Azure Blog
    - Confidence: High
-   - URL: https://blogs.microsoft.com/on-the-issues/2022/06/21/microsofts-framework-for-building-ai-systems-responsibly/
-8. **Online math tutoring service uses AI to help boost students’ skills and confidence**
-   - Publisher: Microsoft AI Blog
+   - URL: https://blog.fabric.microsoft.com/en-us/blog/32624
+8. **Introducing Budget Bytes: Build powerful AI apps for under $25**
+   - Publisher: Azure Blog
    - Confidence: High
-   - URL: https://blogs.microsoft.com/ai/eedi-online-math-quiz/
-9. **Singapore develops Asia’s first AI-based mobile app for shark and ray fin identification to combat illegal wildlife trade**
-   - Publisher: Microsoft AI Blog
+   - URL: https://devblogs.microsoft.com/azure-sql/introducing-budget-bytes/
+9. **Microsoft Sovereign Cloud adds governance, productivity, and support for large AI models securely running even when completely disconnected**
+   - Publisher: Azure Blog
    - Confidence: High
-   - URL: https://news.microsoft.com/en-sg/2022/06/08/singapore-develops-asias-first-ai-based-mobile-app-for-shark-and-ray-fin-identification-to-combat-illegal-wildlife-trade/
-10. **The opportunity at home – can AI drive innovation in personal assistant devices and sign language?**
-   - Publisher: Microsoft AI Blog
+   - URL: http://aka.ms/MicrosoftSovereignCloudDisconnectedBlog
+10. **The data behind the design: How Pantone built agentic AI with an AI-ready database**
+   - Publisher: Azure Blog
    - Confidence: High
-   - URL: https://blogs.microsoft.com/accessibility/the-opportunity-at-home-can-ai-drive-innovation-in-personal-assistant-devices-and-sign-language/
-11. **Building a Microsoft 365 Identity management lab from scratch**
-   - Publisher: Medium: Microsoft 365 tag
-   - Confidence: Medium
-   - URL: https://medium.com/@RaneishC/building-a-microsoft-365-identity-management-lab-from-scratch-dc9c6f111f76?source=rss------microsoft_365-5
-12. **Microsoft 365 Apps for Business: Complete Guide for 2026**
-   - Publisher: Medium: Microsoft 365 tag
-   - Confidence: Medium
-   - URL: https://medium.com/@marketing1techzoidtechnologies/microsoft-365-apps-for-business-complete-guide-for-2026-2ead69357233?source=rss------microsoft_365-5
-13. **Microsoft 365 Pricing is Changing — E3 vs. E5 in 2026**
-   - Publisher: Medium: Microsoft 365 tag
-   - Confidence: Medium
-   - URL: https://medium.com/@neha2024june/microsoft-365-pricing-is-changing-e3-vs-e5-in-2026-e4be7777df06?source=rss------microsoft_365-5
-14. **Microsoft Introduces User Site Permissions Report in SharePoint Admin Center**
-   - Publisher: Medium: Microsoft 365 tag
-   - Confidence: Medium
-   - URL: https://medium.com/@ryan.adams1277/microsoft-introduces-user-site-permissions-report-in-sharepoint-admin-center-e5034697f7a1?source=rss------microsoft_365-5
-15. **Microsoft Purview Information Protection Kurumsal Sensitivity Label Tasarımı — Bölüm 1**
-   - Publisher: Medium: Microsoft 365 tag
-   - Confidence: Medium
-   - URL: https://medium.com/@yigit_sener/microsoft-purview-information-protection-kurumsal-sensitivity-label-tasar%C4%B1m%C4%B1-b%C3%B6l%C3%BCm-1-0e6cc30aa609?source=rss------microsoft_365-5
+   - URL: https://azure.microsoft.com/en-us/blog/the-data-behind-the-design-how-pantone-built-agentic-ai-with-an-ai-ready-database/
+11. **Copilot Studio Extension for Visual Studio Code Is Now Generally Available**
+   - Publisher: Microsoft 365 Developer Blog
+   - Confidence: High
+   - URL: https://devblogs.microsoft.com/microsoft365dev/copilot-studio-extension-for-visual-studio-code-is-now-generally-available/
+12. **Deprecation notice: Teams Live Events meeting creation via Microsoft Graph**
+   - Publisher: Microsoft 365 Developer Blog
+   - Confidence: High
+   - URL: https://devblogs.microsoft.com/microsoft365dev/deprecation-notice-teams-live-events-meeting-creation-via-microsoft-graph/
+13. **Dev Proxy v2.1 with configuration hot reload and stdio proxying**
+   - Publisher: Microsoft 365 Developer Blog
+   - Confidence: High
+   - URL: https://devblogs.microsoft.com/microsoft365dev/dev-proxy-v2-1-with-configuration-hot-reload-and-stdio-proxying/
+14. **Handling Legacy User Settings in SharePoint Framework**
+   - Publisher: Microsoft 365 Developer Blog
+   - Confidence: High
+   - URL: https://devblogs.microsoft.com/microsoft365dev/handling-legacy-user-settings-in-sharepoint-framework/
+15. **Increased control over Office Add-in user experiences**
+   - Publisher: Microsoft 365 Developer Blog
+   - Confidence: High
+   - URL: https://devblogs.microsoft.com/microsoft365dev/increased-control-over-office-add-in-user-experiences/
 
 ## Questions for Liam
 
