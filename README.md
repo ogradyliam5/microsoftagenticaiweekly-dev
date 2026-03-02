@@ -8,6 +8,7 @@ A GitHub-friendly static newsletter site for Microsoft Agentic AI professionals.
 - First issue page (`posts/issue-001.html`)
 - Newsletter source markdown (`posts/issue-001.md`)
 - Tailwind-built homepage styling (`assets/styles.css`) + legacy stylesheet for existing pages (`assets/legacy.css`)
+- Issue cover assets (`assets/covers/issue-XXX-cover.svg`) using a consistent 16:9 editorial format
 - Project plan and publishing workflow (`docs/`)
 
 ## Run locally
