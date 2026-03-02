@@ -13,6 +13,20 @@ QUEUE_LIMIT = 24
 DEFAULT_MIX_TARGET = {"independent": 0.60, "official": 0.40}
 
 
+CONTENT_TYPE_WEIGHTS = {
+    "update": 1.0,
+    "guide": 0.95,
+    "howto": 0.92,
+    "demo": 0.88,
+    "build_report": 0.85,
+    "release_notes": 0.82,
+    "analysis": 0.72,
+    "news": 0.58,
+    "marketing": 0.35,
+    "other": 0.55,
+}
+
+
 def text(v):
     return (v or "").strip()
 
@@ -60,6 +74,30 @@ def classify(title, source_area):
     return tags or [source_area]
 
 
+def classify_content_type(title):
+    t = title.lower()
+
+    if any(k in t for k in ["release notes", "changelog", "what's new", "whats new", "version", "ga", "general availability", "public preview"]):
+        return "update"
+    if any(k in t for k in ["step-by-step", "walkthrough", "how to", "how-to", "tutorial"]):
+        return "howto"
+    if any(k in t for k in ["guide", "playbook", "best practices", "reference architecture"]):
+        return "guide"
+    if any(k in t for k in ["demo", "sample", "example", "showcase"]):
+        return "demo"
+    if any(k in t for k in ["we built", "case study", "in production", "implementation", "lessons learned"]):
+        return "build_report"
+    if any(k in t for k in ["release wave", "monthly update", "patch notes"]):
+        return "release_notes"
+    if any(k in t for k in ["analysis", "deep dive", "benchmark", "comparison"]):
+        return "analysis"
+    if any(k in t for k in ["announcing", "launch", "news", "recap"]):
+        return "news"
+    if any(k in t for k in ["webinar", "event", "register", "sponsored", "keynote"]):
+        return "marketing"
+    return "other"
+
+
 def parse_date(value):
     if not value:
         return None
@@ -97,11 +135,17 @@ def quality_score(source, title):
     source_priority = min(max(source.get("priority", 5), 1), 10) / 10
     trust = 1.0 if source.get("trust") == "official" else 0.85
     title_penalty = 0.10 if any(k in title_l for k in ["roundup", "link list", "week in review"]) else 0.0
-    return max(0.0, min(1.0, (source_priority * 0.65) + (trust * 0.35) - title_penalty))
+
+    content_type = classify_content_type(title)
+    content_type_weight = CONTENT_TYPE_WEIGHTS.get(content_type, CONTENT_TYPE_WEIGHTS["other"])
+    content_adjustment = (content_type_weight - 0.50) * 0.30
+
+    quality = (source_priority * 0.55) + (trust * 0.30) + (content_type_weight * 0.15) + content_adjustment - title_penalty
+    return max(0.0, min(1.0, quality)), content_type, round(content_type_weight, 4)
 
 
 def total_score(freshness, quality):
-    return round((freshness * 0.55) + (quality * 0.45), 4)
+    return round((freshness * 0.50) + (quality * 0.50), 4)
 
 
 def select_mix_scored(items, limit, mix_target):
@@ -150,7 +194,7 @@ def main():
                 confidence = "High" if s.get("trust") == "official" else "Medium"
                 tags = classify(title, s.get("product_area", "Mixed"))
                 freshness = recency_score(pub, now)
-                quality = quality_score(s, title)
+                quality, content_type, content_type_weight = quality_score(s, title)
                 score = total_score(freshness, quality)
                 source_bucket = "official" if s.get("trust") == "official" else "independent"
 
@@ -173,8 +217,10 @@ def main():
                     "tags": tags + (["Official"] if confidence == "High" else ["Community"]),
                     "evidence": [f"Source title: {title[:90]}"],
                     "source_mix_bucket": source_bucket,
+                    "content_type": content_type,
                     "score_freshness": round(freshness, 4),
                     "score_quality": round(quality, 4),
+                    "score_content_type": content_type_weight,
                     "score_total": score,
                 })
         except Exception as e:
@@ -199,8 +245,9 @@ def main():
         },
         "scoring_notes": {
             "freshness": "Based on published date recency bands (<=3d highest, >30d lowest).",
-            "quality": "Based on source priority + trust, with light title noise penalty.",
-            "total": "score_total = freshness*0.55 + quality*0.45.",
+            "quality": "Based on source priority + trust + title noise penalty.",
+            "content_type": "Weighted toward updates/guides/how-tos/demos/build reports; down-ranks marketing/news-noise.",
+            "total": "score_total = freshness*0.50 + quality*0.50 (quality includes content-type weighting).",
         },
         "questions_for_liam": [
             "Any sources to add/remove this week? (approval required)",
@@ -230,6 +277,7 @@ def main():
         "",
         f"- Freshness: {queue['scoring_notes']['freshness']}",
         f"- Quality: {queue['scoring_notes']['quality']}",
+        f"- Content type: {queue['scoring_notes']['content_type']}",
         f"- Total: {queue['scoring_notes']['total']}",
         "",
         "## Top candidates",
@@ -239,6 +287,7 @@ def main():
         lines += [
             f"{i}. **{it['title']}**",
             f"   - Publisher: {it['publisher']} ({it['source_mix_bucket']})",
+            f"   - Type: {it['content_type']} (weight {it['score_content_type']:.2f})",
             f"   - Scores: total {it['score_total']:.2f} · freshness {it['score_freshness']:.2f} · quality {it['score_quality']:.2f}",
             f"   - Confidence: {it['confidence']}",
             f"   - URL: {it['canonical_url']}",

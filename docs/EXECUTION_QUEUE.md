@@ -95,7 +95,7 @@ Purpose: prevent stop/start drift and force delivery through ordered stages.
 
 ## Stage completion log (next cycle)
 - [x] Stage 9 complete — see `docs/STAGE9_BUTTONDOWN_RELIABILITY_HARDENING.md` (latest develop commit)
-- [ ] Stage 10 pending
+- [x] Stage 10 complete — see `docs/STAGE10_INTERESTING_ONLY_SOURCE_RANKING.md` (latest develop commit)
 - [ ] Stage 11 pending
 - [ ] Stage 12 pending
 - [ ] Stage 13 pending

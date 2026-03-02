@@ -1,37 +1,7 @@
 {
   "issue_id": "2026-09",
-  "generated_at": "2026-03-01T22:18:01.010042+00:00",
+  "generated_at": "2026-03-02T04:17:37.573769+00:00",
   "items": [
-    {
-      "id": "5-steps-to-connect-your-vibe-coded-apps-with-git",
-      "title": "5 Steps to Connect your Vibe Coded Apps with Git",
-      "url": "https://sharepains.com/2026/02/27/connect-your-vibe-coded-apps-with-git/",
-      "canonical_url": "https://sharepains.com/2026/02/27/connect-your-vibe-coded-apps-with-git/",
-      "author": "",
-      "publisher": "SharePains (Pieter Veenstra)",
-      "published_at": "Fri, 27 Feb 2026 10:16:45 +0000",
-      "fetched_at": "2026-03-01T22:18:01.010042+00:00",
-      "product_area": "Power Platform",
-      "source_type": "rss",
-      "summary_bullets": [
-        "Auto-collected candidate. Editorial rewrite required before publishing."
-      ],
-      "why_it_matters": "Potentially relevant update for Microsoft Agentic AI builders.",
-      "audience": "Dev",
-      "effort": "TBD during editorial review",
-      "confidence": "Medium",
-      "tags": [
-        "Power Platform",
-        "Community"
-      ],
-      "evidence": [
-        "Source title: 5 Steps to Connect your Vibe Coded Apps with Git"
-      ],
-      "source_mix_bucket": "independent",
-      "score_freshness": 1.0,
-      "score_quality": 0.8825,
-      "score_total": 0.9471
-    },
     {
       "id": "forged-but-valid-how-to-test-api-authentication-and-rbac-safely",
       "title": "Forged but Valid: How to Test API Authentication and RBAC Safely",
@@ -40,7 +10,7 @@
       "author": "",
       "publisher": "Karl-Johan Spiik (Karlex)",
       "published_at": "Fri, 27 Feb 2026 13:10:54 +0000",
-      "fetched_at": "2026-03-01T22:18:01.010042+00:00",
+      "fetched_at": "2026-03-02T04:17:37.573769+00:00",
       "product_area": "Power Platform",
       "source_type": "rss",
       "summary_bullets": [
@@ -58,219 +28,11 @@
         "Source title: Forged but Valid: How to Test API Authentication and RBAC Safely"
       ],
       "source_mix_bucket": "independent",
+      "content_type": "howto",
       "score_freshness": 1.0,
-      "score_quality": 0.8175,
-      "score_total": 0.9179
-    },
-    {
-      "id": "mastering-power-automate-flows-structure-error-handling-child-flows-and-ai-in-re",
-      "title": "Mastering Power Automate Flows: Structure, Error Handling, Child Flows, and AI in Real Projects",
-      "url": "https://www.karlex.fi/mastering-power-automate-flows-structure-error-handling-child-flows-and-ai-in-real-projects/#utm_source=rss&utm_medium=rss",
-      "canonical_url": "https://www.karlex.fi/mastering-power-automate-flows-structure-error-handling-child-flows-and-ai-in-real-projects/#utm_source=rss&utm_medium=rss",
-      "author": "",
-      "publisher": "Karl-Johan Spiik (Karlex)",
-      "published_at": "Fri, 27 Feb 2026 02:40:00 +0000",
-      "fetched_at": "2026-03-01T22:18:01.010042+00:00",
-      "product_area": "Power Platform",
-      "source_type": "rss",
-      "summary_bullets": [
-        "Auto-collected candidate. Editorial rewrite required before publishing."
-      ],
-      "why_it_matters": "Potentially relevant update for Microsoft Agentic AI builders.",
-      "audience": "Dev",
-      "effort": "TBD during editorial review",
-      "confidence": "Medium",
-      "tags": [
-        "Power Platform",
-        "Community"
-      ],
-      "evidence": [
-        "Source title: Mastering Power Automate Flows: Structure, Error Handling, Child Flows, and AI in Real Pro"
-      ],
-      "source_mix_bucket": "independent",
-      "score_freshness": 1.0,
-      "score_quality": 0.8175,
-      "score_total": 0.9179
-    },
-    {
-      "id": "the-end-of-power-pages-as-we-know-it",
-      "title": "The end of Power Pages? (As we know it?)",
-      "url": "https://readyxrm.blog/2026/02/26/the-end-of-power-pages-as-we-know-it/",
-      "canonical_url": "https://readyxrm.blog/2026/02/26/the-end-of-power-pages-as-we-know-it/",
-      "author": "",
-      "publisher": "ReadyXRM (Nick Doelman)",
-      "published_at": "Thu, 26 Feb 2026 22:58:55 +0000",
-      "fetched_at": "2026-03-01T22:18:01.010042+00:00",
-      "product_area": "Power Platform",
-      "source_type": "rss",
-      "summary_bullets": [
-        "Auto-collected candidate. Editorial rewrite required before publishing."
-      ],
-      "why_it_matters": "Potentially relevant update for Microsoft Agentic AI builders.",
-      "audience": "Dev",
-      "effort": "TBD during editorial review",
-      "confidence": "Medium",
-      "tags": [
-        "Power Platform",
-        "Community"
-      ],
-      "evidence": [
-        "Source title: The end of Power Pages? (As we know it?)"
-      ],
-      "source_mix_bucket": "independent",
-      "score_freshness": 1.0,
-      "score_quality": 0.8175,
-      "score_total": 0.9179
-    },
-    {
-      "id": "windows-365-devices-asus-dell-and-microsoft-expand-the-cloud-pc-ecosystem",
-      "title": "Windows 365 Devices: ASUS, Dell, and Microsoft Expand the Cloud PC Ecosystem",
-      "url": "https://robquickenden.blog/2026/02/new-windows365-devices/",
-      "canonical_url": "https://robquickenden.blog/2026/02/new-windows365-devices/",
-      "author": "",
-      "publisher": "Rob Quickenden",
-      "published_at": "Sat, 28 Feb 2026 09:00:50 +0000",
-      "fetched_at": "2026-03-01T22:18:01.010042+00:00",
-      "product_area": "Mixed",
-      "source_type": "rss",
-      "summary_bullets": [
-        "Auto-collected candidate. Editorial rewrite required before publishing."
-      ],
-      "why_it_matters": "Potentially relevant update for Microsoft Agentic AI builders.",
-      "audience": "Dev",
-      "effort": "TBD during editorial review",
-      "confidence": "Medium",
-      "tags": [
-        "Mixed",
-        "Community"
-      ],
-      "evidence": [
-        "Source title: Windows 365 Devices: ASUS, Dell, and Microsoft Expand the Cloud PC Ecosystem"
-      ],
-      "source_mix_bucket": "independent",
-      "score_freshness": 1.0,
-      "score_quality": 0.8175,
-      "score_total": 0.9179
-    },
-    {
-      "id": "ways-to-build-agents-nube-to-pro",
-      "title": "Ways to Build Agents: Nube to Pro",
-      "url": "https://robquickenden.blog/2026/02/building-ai-agents-nube-to-pro/",
-      "canonical_url": "https://robquickenden.blog/2026/02/building-ai-agents-nube-to-pro/",
-      "author": "",
-      "publisher": "Rob Quickenden",
-      "published_at": "Fri, 27 Feb 2026 17:08:36 +0000",
-      "fetched_at": "2026-03-01T22:18:01.010042+00:00",
-      "product_area": "Mixed",
-      "source_type": "rss",
-      "summary_bullets": [
-        "Auto-collected candidate. Editorial rewrite required before publishing."
-      ],
-      "why_it_matters": "Potentially relevant update for Microsoft Agentic AI builders.",
-      "audience": "Dev",
-      "effort": "TBD during editorial review",
-      "confidence": "Medium",
-      "tags": [
-        "Foundry",
-        "Community"
-      ],
-      "evidence": [
-        "Source title: Ways to Build Agents: Nube to Pro"
-      ],
-      "source_mix_bucket": "independent",
-      "score_freshness": 1.0,
-      "score_quality": 0.8175,
-      "score_total": 0.9179
-    },
-    {
-      "id": "sharepoint-framework-spfx-roadmap-update-february-2026",
-      "title": "SharePoint Framework (SPFx) roadmap update \u2013 February 2026",
-      "url": "https://devblogs.microsoft.com/microsoft365dev/sharepoint-framework-spfx-roadmap-update-february-2026/",
-      "canonical_url": "https://devblogs.microsoft.com/microsoft365dev/sharepoint-framework-spfx-roadmap-update-february-2026/",
-      "author": "",
-      "publisher": "Microsoft 365 Developer Blog",
-      "published_at": "Wed, 25 Feb 2026 12:59:07 +0000",
-      "fetched_at": "2026-03-01T22:18:01.010042+00:00",
-      "product_area": "M365",
-      "source_type": "rss",
-      "summary_bullets": [
-        "Auto-collected candidate. Editorial rewrite required before publishing."
-      ],
-      "why_it_matters": "Potentially relevant update for Microsoft Agentic AI builders.",
-      "audience": "Dev",
-      "effort": "TBD during editorial review",
-      "confidence": "High",
-      "tags": [
-        "M365",
-        "Official"
-      ],
-      "evidence": [
-        "Source title: SharePoint Framework (SPFx) roadmap update \u2013 February 2026"
-      ],
-      "source_mix_bucket": "official",
-      "score_freshness": 0.85,
-      "score_quality": 1.0,
-      "score_total": 0.9175
-    },
-    {
-      "id": "increased-control-over-office-add-in-user-experiences",
-      "title": "Increased control over Office Add-in user experiences",
-      "url": "https://devblogs.microsoft.com/microsoft365dev/increased-control-over-office-add-in-user-experiences/",
-      "canonical_url": "https://devblogs.microsoft.com/microsoft365dev/increased-control-over-office-add-in-user-experiences/",
-      "author": "",
-      "publisher": "Microsoft 365 Developer Blog",
-      "published_at": "Wed, 25 Feb 2026 03:57:56 +0000",
-      "fetched_at": "2026-03-01T22:18:01.010042+00:00",
-      "product_area": "M365",
-      "source_type": "rss",
-      "summary_bullets": [
-        "Auto-collected candidate. Editorial rewrite required before publishing."
-      ],
-      "why_it_matters": "Potentially relevant update for Microsoft Agentic AI builders.",
-      "audience": "Dev",
-      "effort": "TBD during editorial review",
-      "confidence": "High",
-      "tags": [
-        "M365",
-        "Official"
-      ],
-      "evidence": [
-        "Source title: Increased control over Office Add-in user experiences"
-      ],
-      "source_mix_bucket": "official",
-      "score_freshness": 0.85,
-      "score_quality": 1.0,
-      "score_total": 0.9175
-    },
-    {
-      "id": "microsoft-and-openai-joint-statement-on-continuing-partnership",
-      "title": "Microsoft and OpenAI joint statement on continuing partnership",
-      "url": "https://blogs.microsoft.com/blog/2026/02/27/microsoft-and-openai-joint-statement-on-continuing-partnership/",
-      "canonical_url": "https://blogs.microsoft.com/blog/2026/02/27/microsoft-and-openai-joint-statement-on-continuing-partnership/",
-      "author": "",
-      "publisher": "Microsoft Blogs (Global)",
-      "published_at": "Fri, 27 Feb 2026 13:50:44 +0000",
-      "fetched_at": "2026-03-01T22:18:01.010042+00:00",
-      "product_area": "Mixed",
-      "source_type": "rss",
-      "summary_bullets": [
-        "Auto-collected candidate. Editorial rewrite required before publishing."
-      ],
-      "why_it_matters": "Potentially relevant update for Microsoft Agentic AI builders.",
-      "audience": "Dev",
-      "effort": "TBD during editorial review",
-      "confidence": "High",
-      "tags": [
-        "Mixed",
-        "Official"
-      ],
-      "evidence": [
-        "Source title: Microsoft and OpenAI joint statement on continuing partnership"
-      ],
-      "source_mix_bucket": "official",
-      "score_freshness": 1.0,
-      "score_quality": 0.805,
-      "score_total": 0.9123
+      "score_quality": 0.959,
+      "score_content_type": 0.92,
+      "score_total": 0.9795
     },
     {
       "id": "how-to-make-deep-links-with-code-apps-and-call-them-from-model-driven-apps",
@@ -280,7 +42,7 @@
       "author": "",
       "publisher": "Diana Birkelbach (PCF Lady)",
       "published_at": "Sat, 28 Feb 2026 16:32:12 +0000",
-      "fetched_at": "2026-03-01T22:18:01.010042+00:00",
+      "fetched_at": "2026-03-02T04:17:37.573769+00:00",
       "product_area": "Power Platform",
       "source_type": "rss",
       "summary_bullets": [
@@ -299,19 +61,21 @@
         "Source title: How to make Deep Links with Code Apps and call them from Model Driven Apps"
       ],
       "source_mix_bucket": "independent",
+      "content_type": "howto",
       "score_freshness": 1.0,
-      "score_quality": 0.7525,
-      "score_total": 0.8886
+      "score_quality": 0.904,
+      "score_content_type": 0.92,
+      "score_total": 0.952
     },
     {
-      "id": "powerfx-formula-columns-to-overcome-some-power-pages-table-permissions-limitatio",
-      "title": "PowerFx Formula Columns to overcome some Power Pages table permissions limitations for WebAPI access in Power Pages",
-      "url": "https://michelcarlo.com/2026/03/01/powerfx-formula-columns-to-overcome-some-power-pages-table-permissions-limitations-for-webapi-access-in-power-pages/",
-      "canonical_url": "https://michelcarlo.com/2026/03/01/powerfx-formula-columns-to-overcome-some-power-pages-table-permissions-limitations-for-webapi-access-in-power-pages/",
+      "id": "5-steps-to-connect-your-vibe-coded-apps-with-git",
+      "title": "5 Steps to Connect your Vibe Coded Apps with Git",
+      "url": "https://sharepains.com/2026/02/27/connect-your-vibe-coded-apps-with-git/",
+      "canonical_url": "https://sharepains.com/2026/02/27/connect-your-vibe-coded-apps-with-git/",
       "author": "",
-      "publisher": "Michel Mendes",
-      "published_at": "Sun, 01 Mar 2026 12:27:05 +0000",
-      "fetched_at": "2026-03-01T22:18:01.010042+00:00",
+      "publisher": "SharePains (Pieter Veenstra)",
+      "published_at": "Fri, 27 Feb 2026 10:16:45 +0000",
+      "fetched_at": "2026-03-02T04:17:37.573769+00:00",
       "product_area": "Power Platform",
       "source_type": "rss",
       "summary_bullets": [
@@ -326,12 +90,238 @@
         "Community"
       ],
       "evidence": [
-        "Source title: PowerFx Formula Columns to overcome some Power Pages table permissions limitations for Web"
+        "Source title: 5 Steps to Connect your Vibe Coded Apps with Git"
       ],
       "source_mix_bucket": "independent",
+      "content_type": "other",
       "score_freshness": 1.0,
-      "score_quality": 0.7525,
-      "score_total": 0.8886
+      "score_quality": 0.8475,
+      "score_content_type": 0.55,
+      "score_total": 0.9238
+    },
+    {
+      "id": "ai-prompting-guide-get-better-results-with-copilot-and-chatgpt",
+      "title": "AI Prompting Guide: Get Better Results with Copilot and ChatGPT",
+      "url": "https://robquickenden.blog/2026/02/writing-better-ai-prompts/",
+      "canonical_url": "https://robquickenden.blog/2026/02/writing-better-ai-prompts/",
+      "author": "",
+      "publisher": "Rob Quickenden",
+      "published_at": "Mon, 23 Feb 2026 11:20:23 +0000",
+      "fetched_at": "2026-03-02T04:17:37.573769+00:00",
+      "product_area": "Mixed",
+      "source_type": "rss",
+      "summary_bullets": [
+        "Auto-collected candidate. Editorial rewrite required before publishing."
+      ],
+      "why_it_matters": "Potentially relevant update for Microsoft Agentic AI builders.",
+      "audience": "Dev",
+      "effort": "TBD during editorial review",
+      "confidence": "Medium",
+      "tags": [
+        "Mixed",
+        "Community"
+      ],
+      "evidence": [
+        "Source title: AI Prompting Guide: Get Better Results with Copilot and ChatGPT"
+      ],
+      "source_mix_bucket": "independent",
+      "content_type": "guide",
+      "score_freshness": 0.85,
+      "score_quality": 0.9725,
+      "score_content_type": 0.95,
+      "score_total": 0.9113
+    },
+    {
+      "id": "sharepoint-framework-spfx-roadmap-update-february-2026",
+      "title": "SharePoint Framework (SPFx) roadmap update \u2013 February 2026",
+      "url": "https://devblogs.microsoft.com/microsoft365dev/sharepoint-framework-spfx-roadmap-update-february-2026/",
+      "canonical_url": "https://devblogs.microsoft.com/microsoft365dev/sharepoint-framework-spfx-roadmap-update-february-2026/",
+      "author": "",
+      "publisher": "Microsoft 365 Developer Blog",
+      "published_at": "Wed, 25 Feb 2026 12:59:07 +0000",
+      "fetched_at": "2026-03-02T04:17:37.573769+00:00",
+      "product_area": "M365",
+      "source_type": "rss",
+      "summary_bullets": [
+        "Auto-collected candidate. Editorial rewrite required before publishing."
+      ],
+      "why_it_matters": "Potentially relevant update for Microsoft Agentic AI builders.",
+      "audience": "Dev",
+      "effort": "TBD during editorial review",
+      "confidence": "High",
+      "tags": [
+        "M365",
+        "Official"
+      ],
+      "evidence": [
+        "Source title: SharePoint Framework (SPFx) roadmap update \u2013 February 2026"
+      ],
+      "source_mix_bucket": "official",
+      "content_type": "other",
+      "score_freshness": 0.85,
+      "score_quality": 0.9475,
+      "score_content_type": 0.55,
+      "score_total": 0.8988
+    },
+    {
+      "id": "increased-control-over-office-add-in-user-experiences",
+      "title": "Increased control over Office Add-in user experiences",
+      "url": "https://devblogs.microsoft.com/microsoft365dev/increased-control-over-office-add-in-user-experiences/",
+      "canonical_url": "https://devblogs.microsoft.com/microsoft365dev/increased-control-over-office-add-in-user-experiences/",
+      "author": "",
+      "publisher": "Microsoft 365 Developer Blog",
+      "published_at": "Wed, 25 Feb 2026 03:57:56 +0000",
+      "fetched_at": "2026-03-02T04:17:37.573769+00:00",
+      "product_area": "M365",
+      "source_type": "rss",
+      "summary_bullets": [
+        "Auto-collected candidate. Editorial rewrite required before publishing."
+      ],
+      "why_it_matters": "Potentially relevant update for Microsoft Agentic AI builders.",
+      "audience": "Dev",
+      "effort": "TBD during editorial review",
+      "confidence": "High",
+      "tags": [
+        "M365",
+        "Official"
+      ],
+      "evidence": [
+        "Source title: Increased control over Office Add-in user experiences"
+      ],
+      "source_mix_bucket": "official",
+      "content_type": "other",
+      "score_freshness": 0.85,
+      "score_quality": 0.9475,
+      "score_content_type": 0.55,
+      "score_total": 0.8988
+    },
+    {
+      "id": "copilot-studio-generate-powerpoint-file-from-a-template",
+      "title": "Copilot Studio: Generate PowerPoint File From A Template",
+      "url": "https://www.matthewdevaney.com/copilot-studio-generate-powerpoint-file-from-a-template/",
+      "canonical_url": "https://www.matthewdevaney.com/copilot-studio-generate-powerpoint-file-from-a-template/",
+      "author": "",
+      "publisher": "Matthew Devaney",
+      "published_at": "Mon, 02 Mar 2026 00:31:06 +0000",
+      "fetched_at": "2026-03-02T04:17:37.573769+00:00",
+      "product_area": "Power Platform",
+      "source_type": "rss",
+      "summary_bullets": [
+        "Auto-collected candidate. Editorial rewrite required before publishing."
+      ],
+      "why_it_matters": "Potentially relevant update for Microsoft Agentic AI builders.",
+      "audience": "Dev",
+      "effort": "TBD during editorial review",
+      "confidence": "Medium",
+      "tags": [
+        "Power Platform",
+        "Community"
+      ],
+      "evidence": [
+        "Source title: Copilot Studio: Generate PowerPoint File From A Template"
+      ],
+      "source_mix_bucket": "independent",
+      "content_type": "other",
+      "score_freshness": 1.0,
+      "score_quality": 0.7925,
+      "score_content_type": 0.55,
+      "score_total": 0.8962
+    },
+    {
+      "id": "windows-365-devices-asus-dell-and-microsoft-expand-the-cloud-pc-ecosystem",
+      "title": "Windows 365 Devices: ASUS, Dell, and Microsoft Expand the Cloud PC Ecosystem",
+      "url": "https://robquickenden.blog/2026/02/new-windows365-devices/",
+      "canonical_url": "https://robquickenden.blog/2026/02/new-windows365-devices/",
+      "author": "",
+      "publisher": "Rob Quickenden",
+      "published_at": "Sat, 28 Feb 2026 09:00:50 +0000",
+      "fetched_at": "2026-03-02T04:17:37.573769+00:00",
+      "product_area": "Mixed",
+      "source_type": "rss",
+      "summary_bullets": [
+        "Auto-collected candidate. Editorial rewrite required before publishing."
+      ],
+      "why_it_matters": "Potentially relevant update for Microsoft Agentic AI builders.",
+      "audience": "Dev",
+      "effort": "TBD during editorial review",
+      "confidence": "Medium",
+      "tags": [
+        "Mixed",
+        "Community"
+      ],
+      "evidence": [
+        "Source title: Windows 365 Devices: ASUS, Dell, and Microsoft Expand the Cloud PC Ecosystem"
+      ],
+      "source_mix_bucket": "independent",
+      "content_type": "other",
+      "score_freshness": 1.0,
+      "score_quality": 0.7925,
+      "score_content_type": 0.55,
+      "score_total": 0.8962
+    },
+    {
+      "id": "ways-to-build-agents-nube-to-pro",
+      "title": "Ways to Build Agents: Nube to Pro",
+      "url": "https://robquickenden.blog/2026/02/building-ai-agents-nube-to-pro/",
+      "canonical_url": "https://robquickenden.blog/2026/02/building-ai-agents-nube-to-pro/",
+      "author": "",
+      "publisher": "Rob Quickenden",
+      "published_at": "Fri, 27 Feb 2026 17:08:36 +0000",
+      "fetched_at": "2026-03-02T04:17:37.573769+00:00",
+      "product_area": "Mixed",
+      "source_type": "rss",
+      "summary_bullets": [
+        "Auto-collected candidate. Editorial rewrite required before publishing."
+      ],
+      "why_it_matters": "Potentially relevant update for Microsoft Agentic AI builders.",
+      "audience": "Dev",
+      "effort": "TBD during editorial review",
+      "confidence": "Medium",
+      "tags": [
+        "Foundry",
+        "Community"
+      ],
+      "evidence": [
+        "Source title: Ways to Build Agents: Nube to Pro"
+      ],
+      "source_mix_bucket": "independent",
+      "content_type": "other",
+      "score_freshness": 1.0,
+      "score_quality": 0.7925,
+      "score_content_type": 0.55,
+      "score_total": 0.8962
+    },
+    {
+      "id": "microsoft-and-openai-joint-statement-on-continuing-partnership",
+      "title": "Microsoft and OpenAI joint statement on continuing partnership",
+      "url": "https://blogs.microsoft.com/blog/2026/02/27/microsoft-and-openai-joint-statement-on-continuing-partnership/",
+      "canonical_url": "https://blogs.microsoft.com/blog/2026/02/27/microsoft-and-openai-joint-statement-on-continuing-partnership/",
+      "author": "",
+      "publisher": "Microsoft Blogs (Global)",
+      "published_at": "Fri, 27 Feb 2026 13:50:44 +0000",
+      "fetched_at": "2026-03-02T04:17:37.573769+00:00",
+      "product_area": "Mixed",
+      "source_type": "rss",
+      "summary_bullets": [
+        "Auto-collected candidate. Editorial rewrite required before publishing."
+      ],
+      "why_it_matters": "Potentially relevant update for Microsoft Agentic AI builders.",
+      "audience": "Dev",
+      "effort": "TBD during editorial review",
+      "confidence": "High",
+      "tags": [
+        "Mixed",
+        "Official"
+      ],
+      "evidence": [
+        "Source title: Microsoft and OpenAI joint statement on continuing partnership"
+      ],
+      "source_mix_bucket": "official",
+      "content_type": "other",
+      "score_freshness": 1.0,
+      "score_quality": 0.7825,
+      "score_content_type": 0.55,
+      "score_total": 0.8913
     },
     {
       "id": "microsoft-sovereign-cloud-adds-governance-productivity-and-support-for-large-ai-",
@@ -341,7 +331,7 @@
       "author": "",
       "publisher": "Azure Blog",
       "published_at": "Tue, 24 Feb 2026 10:20:00 +0000",
-      "fetched_at": "2026-03-01T22:18:01.010042+00:00",
+      "fetched_at": "2026-03-02T04:17:37.573769+00:00",
       "product_area": "Foundry",
       "source_type": "rss",
       "summary_bullets": [
@@ -359,9 +349,43 @@
         "Source title: Microsoft Sovereign Cloud adds governance, productivity, and support for large AI models s"
       ],
       "source_mix_bucket": "official",
+      "content_type": "other",
       "score_freshness": 0.85,
-      "score_quality": 0.935,
-      "score_total": 0.8882
+      "score_quality": 0.8925,
+      "score_content_type": 0.55,
+      "score_total": 0.8713
+    },
+    {
+      "id": "powerfx-formula-columns-to-overcome-some-power-pages-table-permissions-limitatio",
+      "title": "PowerFx Formula Columns to overcome some Power Pages table permissions limitations for WebAPI access in Power Pages",
+      "url": "https://michelcarlo.com/2026/03/01/powerfx-formula-columns-to-overcome-some-power-pages-table-permissions-limitations-for-webapi-access-in-power-pages/",
+      "canonical_url": "https://michelcarlo.com/2026/03/01/powerfx-formula-columns-to-overcome-some-power-pages-table-permissions-limitations-for-webapi-access-in-power-pages/",
+      "author": "",
+      "publisher": "Michel Mendes",
+      "published_at": "Sun, 01 Mar 2026 12:27:05 +0000",
+      "fetched_at": "2026-03-02T04:17:37.573769+00:00",
+      "product_area": "Power Platform",
+      "source_type": "rss",
+      "summary_bullets": [
+        "Auto-collected candidate. Editorial rewrite required before publishing."
+      ],
+      "why_it_matters": "Potentially relevant update for Microsoft Agentic AI builders.",
+      "audience": "Dev",
+      "effort": "TBD during editorial review",
+      "confidence": "Medium",
+      "tags": [
+        "Power Platform",
+        "Community"
+      ],
+      "evidence": [
+        "Source title: PowerFx Formula Columns to overcome some Power Pages table permissions limitations for Web"
+      ],
+      "source_mix_bucket": "independent",
+      "content_type": "other",
+      "score_freshness": 1.0,
+      "score_quality": 0.7375,
+      "score_content_type": 0.55,
+      "score_total": 0.8688
     },
     {
       "id": "what-does-vibe-coding-mean-for-low-code-platforms",
@@ -371,7 +395,7 @@
       "author": "",
       "publisher": "Forward Forever",
       "published_at": "Tue, 24 Feb 2026 11:55:16 +0000",
-      "fetched_at": "2026-03-01T22:18:01.010042+00:00",
+      "fetched_at": "2026-03-02T04:17:37.573769+00:00",
       "product_area": "Power Platform",
       "source_type": "rss",
       "summary_bullets": [
@@ -389,9 +413,11 @@
         "Source title: What Does Vibe Coding Mean for Low-Code Platforms?"
       ],
       "source_mix_bucket": "independent",
+      "content_type": "other",
       "score_freshness": 0.85,
-      "score_quality": 0.8825,
-      "score_total": 0.8646
+      "score_quality": 0.8475,
+      "score_content_type": 0.55,
+      "score_total": 0.8488
     },
     {
       "id": "show-loading-screen-in-your-custom-page-while-your-collection-is-created",
@@ -401,7 +427,7 @@
       "author": "",
       "publisher": "Megan V. Walker",
       "published_at": "Thu, 26 Feb 2026 08:30:00 +0000",
-      "fetched_at": "2026-03-01T22:18:01.010042+00:00",
+      "fetched_at": "2026-03-02T04:17:37.573769+00:00",
       "product_area": "Power Platform",
       "source_type": "rss",
       "summary_bullets": [
@@ -419,9 +445,11 @@
         "Source title: Show Loading Screen In Your Custom Page While Your Collection Is Created"
       ],
       "source_mix_bucket": "independent",
+      "content_type": "other",
       "score_freshness": 0.85,
-      "score_quality": 0.8825,
-      "score_total": 0.8646
+      "score_quality": 0.8475,
+      "score_content_type": 0.55,
+      "score_total": 0.8488
     },
     {
       "id": "calculate-working-day-connector-in-power-automate",
@@ -431,7 +459,7 @@
       "author": "",
       "publisher": "Megan V. Walker",
       "published_at": "Tue, 24 Feb 2026 08:30:00 +0000",
-      "fetched_at": "2026-03-01T22:18:01.010042+00:00",
+      "fetched_at": "2026-03-02T04:17:37.573769+00:00",
       "product_area": "Power Platform",
       "source_type": "rss",
       "summary_bullets": [
@@ -449,9 +477,11 @@
         "Source title: Calculate Working Day Connector In Power Automate"
       ],
       "source_mix_bucket": "independent",
+      "content_type": "other",
       "score_freshness": 0.85,
-      "score_quality": 0.8825,
-      "score_total": 0.8646
+      "score_quality": 0.8475,
+      "score_content_type": 0.55,
+      "score_total": 0.8488
     },
     {
       "id": "migrate-sharepoint-site-designs-and-scripts-to-a-new-tenant",
@@ -461,7 +491,7 @@
       "author": "",
       "publisher": "SharePains (Pieter Veenstra)",
       "published_at": "Tue, 24 Feb 2026 16:46:23 +0000",
-      "fetched_at": "2026-03-01T22:18:01.010042+00:00",
+      "fetched_at": "2026-03-02T04:17:37.573769+00:00",
       "product_area": "Power Platform",
       "source_type": "rss",
       "summary_bullets": [
@@ -479,9 +509,43 @@
         "Source title: Migrate SharePoint Site Designs and Scripts to a new Tenant"
       ],
       "source_mix_bucket": "independent",
+      "content_type": "other",
       "score_freshness": 0.85,
-      "score_quality": 0.8825,
-      "score_total": 0.8646
+      "score_quality": 0.8475,
+      "score_content_type": 0.55,
+      "score_total": 0.8488
+    },
+    {
+      "id": "mastering-power-automate-flows-structure-error-handling-child-flows-and-ai-in-re",
+      "title": "Mastering Power Automate Flows: Structure, Error Handling, Child Flows, and AI in Real Projects",
+      "url": "https://www.karlex.fi/mastering-power-automate-flows-structure-error-handling-child-flows-and-ai-in-real-projects/#utm_source=rss&utm_medium=rss",
+      "canonical_url": "https://www.karlex.fi/mastering-power-automate-flows-structure-error-handling-child-flows-and-ai-in-real-projects/#utm_source=rss&utm_medium=rss",
+      "author": "",
+      "publisher": "Karl-Johan Spiik (Karlex)",
+      "published_at": "Fri, 27 Feb 2026 02:40:00 +0000",
+      "fetched_at": "2026-03-02T04:17:37.573769+00:00",
+      "product_area": "Power Platform",
+      "source_type": "rss",
+      "summary_bullets": [
+        "Auto-collected candidate. Editorial rewrite required before publishing."
+      ],
+      "why_it_matters": "Potentially relevant update for Microsoft Agentic AI builders.",
+      "audience": "Dev",
+      "effort": "TBD during editorial review",
+      "confidence": "Medium",
+      "tags": [
+        "Power Platform",
+        "Community"
+      ],
+      "evidence": [
+        "Source title: Mastering Power Automate Flows: Structure, Error Handling, Child Flows, and AI in Real Pro"
+      ],
+      "source_mix_bucket": "independent",
+      "content_type": "other",
+      "score_freshness": 0.85,
+      "score_quality": 0.7925,
+      "score_content_type": 0.55,
+      "score_total": 0.8213
     },
     {
       "id": "autonomous-agents-in-action",
@@ -491,7 +555,7 @@
       "author": "",
       "publisher": "Karl-Johan Spiik (Karlex)",
       "published_at": "Wed, 25 Feb 2026 16:33:48 +0000",
-      "fetched_at": "2026-03-01T22:18:01.010042+00:00",
+      "fetched_at": "2026-03-02T04:17:37.573769+00:00",
       "product_area": "Power Platform",
       "source_type": "rss",
       "summary_bullets": [
@@ -510,159 +574,11 @@
         "Source title: Autonomous Agents in Action"
       ],
       "source_mix_bucket": "independent",
+      "content_type": "other",
       "score_freshness": 0.85,
-      "score_quality": 0.8175,
-      "score_total": 0.8354
-    },
-    {
-      "id": "no-dependencies-shown-but-still-can-t-delete-the-component-check-your-cloud-flow",
-      "title": "No Dependencies Shown\u2026 But still can\u2019t delete the component? Check Your Cloud Flows (Dataverse / Dynamics 365)",
-      "url": "https://nishantrana.me/2026/02/25/no-dependencies-shown-but-still-cant-delete-the-component-check-your-cloud-flows-dataverse-dynamics-365/",
-      "canonical_url": "https://nishantrana.me/2026/02/25/no-dependencies-shown-but-still-cant-delete-the-component-check-your-cloud-flows-dataverse-dynamics-365/",
-      "author": "",
-      "publisher": "Nishant Rana",
-      "published_at": "Tue, 24 Feb 2026 18:35:00 +0000",
-      "fetched_at": "2026-03-01T22:18:01.010042+00:00",
-      "product_area": "Power Platform",
-      "source_type": "rss",
-      "summary_bullets": [
-        "Auto-collected candidate. Editorial rewrite required before publishing."
-      ],
-      "why_it_matters": "Potentially relevant update for Microsoft Agentic AI builders.",
-      "audience": "Dev",
-      "effort": "TBD during editorial review",
-      "confidence": "Medium",
-      "tags": [
-        "Power Platform",
-        "Community"
-      ],
-      "evidence": [
-        "Source title: No Dependencies Shown\u2026 But still can\u2019t delete the component? Check Your Cloud Flows (Datav"
-      ],
-      "source_mix_bucket": "independent",
-      "score_freshness": 0.85,
-      "score_quality": 0.8175,
-      "score_total": 0.8354
-    },
-    {
-      "id": "migrate-your-semantic-kernel-and-autogen-projects-to-microsoft-agent-framework-r",
-      "title": "Migrate your Semantic Kernel and AutoGen projects to Microsoft Agent Framework Release Candidate",
-      "url": "https://devblogs.microsoft.com/semantic-kernel/migrate-your-semantic-kernel-and-autogen-projects-to-microsoft-agent-framework-release-candidate/",
-      "canonical_url": "https://devblogs.microsoft.com/semantic-kernel/migrate-your-semantic-kernel-and-autogen-projects-to-microsoft-agent-framework-release-candidate/",
-      "author": "",
-      "publisher": "Semantic Kernel Dev Blog",
-      "published_at": "Fri, 20 Feb 2026 05:52:57 +0000",
-      "fetched_at": "2026-03-01T22:18:01.010042+00:00",
-      "product_area": "Foundry",
-      "source_type": "rss",
-      "summary_bullets": [
-        "Auto-collected candidate. Editorial rewrite required before publishing."
-      ],
-      "why_it_matters": "Potentially relevant update for Microsoft Agentic AI builders.",
-      "audience": "Dev",
-      "effort": "TBD during editorial review",
-      "confidence": "High",
-      "tags": [
-        "Foundry",
-        "Official"
-      ],
-      "evidence": [
-        "Source title: Migrate your Semantic Kernel and AutoGen projects to Microsoft Agent Framework Release Can"
-      ],
-      "source_mix_bucket": "official",
-      "score_freshness": 0.6,
-      "score_quality": 1.0,
-      "score_total": 0.78
-    },
-    {
-      "id": "introducing-budget-bytes-build-powerful-ai-apps-for-under-25",
-      "title": "Introducing Budget Bytes: Build powerful AI apps for under $25",
-      "url": "https://devblogs.microsoft.com/azure-sql/introducing-budget-bytes/",
-      "canonical_url": "https://devblogs.microsoft.com/azure-sql/introducing-budget-bytes/",
-      "author": "",
-      "publisher": "Azure Blog",
-      "published_at": "Thu, 19 Feb 2026 17:02:52 +0000",
-      "fetched_at": "2026-03-01T22:18:01.010042+00:00",
-      "product_area": "Foundry",
-      "source_type": "rss",
-      "summary_bullets": [
-        "Auto-collected candidate. Editorial rewrite required before publishing."
-      ],
-      "why_it_matters": "Potentially relevant update for Microsoft Agentic AI builders.",
-      "audience": "Dev",
-      "effort": "TBD during editorial review",
-      "confidence": "High",
-      "tags": [
-        "Foundry",
-        "Official"
-      ],
-      "evidence": [
-        "Source title: Introducing Budget Bytes: Build powerful AI apps for under $25"
-      ],
-      "source_mix_bucket": "official",
-      "score_freshness": 0.6,
-      "score_quality": 0.935,
-      "score_total": 0.7508
-    },
-    {
-      "id": "claude-sonnet-4-6-in-microsoft-foundry-frontier-performance-for-scale",
-      "title": "Claude Sonnet 4.6 in Microsoft Foundry-Frontier Performance for Scale",
-      "url": "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/claude-sonnet-4-6-in-microsoft-foundry-frontier-performance-for-scale/4494873",
-      "canonical_url": "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/claude-sonnet-4-6-in-microsoft-foundry-frontier-performance-for-scale/4494873",
-      "author": "",
-      "publisher": "Azure Blog",
-      "published_at": "Tue, 17 Feb 2026 20:11:10 +0000",
-      "fetched_at": "2026-03-01T22:18:01.010042+00:00",
-      "product_area": "Foundry",
-      "source_type": "rss",
-      "summary_bullets": [
-        "Auto-collected candidate. Editorial rewrite required before publishing."
-      ],
-      "why_it_matters": "Potentially relevant update for Microsoft Agentic AI builders.",
-      "audience": "Dev",
-      "effort": "TBD during editorial review",
-      "confidence": "High",
-      "tags": [
-        "Foundry",
-        "Official"
-      ],
-      "evidence": [
-        "Source title: Claude Sonnet 4.6 in Microsoft Foundry-Frontier Performance for Scale"
-      ],
-      "source_mix_bucket": "official",
-      "score_freshness": 0.6,
-      "score_quality": 0.935,
-      "score_total": 0.7508
-    },
-    {
-      "id": "azure-reliability-resiliency-and-recoverability-build-continuity-by-design",
-      "title": "Azure reliability, resiliency, and recoverability: Build continuity by design",
-      "url": "https://azure.microsoft.com/en-us/blog/azure-reliability-resiliency-and-recoverability-build-continuity-by-design/",
-      "canonical_url": "https://azure.microsoft.com/en-us/blog/azure-reliability-resiliency-and-recoverability-build-continuity-by-design/",
-      "author": "",
-      "publisher": "Azure Blog",
-      "published_at": "Tue, 17 Feb 2026 16:00:00 +0000",
-      "fetched_at": "2026-03-01T22:18:01.010042+00:00",
-      "product_area": "Foundry",
-      "source_type": "rss",
-      "summary_bullets": [
-        "Auto-collected candidate. Editorial rewrite required before publishing."
-      ],
-      "why_it_matters": "Potentially relevant update for Microsoft Agentic AI builders.",
-      "audience": "Dev",
-      "effort": "TBD during editorial review",
-      "confidence": "High",
-      "tags": [
-        "Foundry",
-        "Official"
-      ],
-      "evidence": [
-        "Source title: Azure reliability, resiliency, and recoverability: Build continuity by design"
-      ],
-      "source_mix_bucket": "official",
-      "score_freshness": 0.6,
-      "score_quality": 0.935,
-      "score_total": 0.7508
+      "score_quality": 0.7925,
+      "score_content_type": 0.55,
+      "score_total": 0.8213
     },
     {
       "id": "asha-sharma-named-evp-and-ceo-microsoft-gaming",
@@ -672,7 +588,7 @@
       "author": "",
       "publisher": "Microsoft Blogs (Global)",
       "published_at": "Fri, 20 Feb 2026 20:44:35 +0000",
-      "fetched_at": "2026-03-01T22:18:01.010042+00:00",
+      "fetched_at": "2026-03-02T04:17:37.573769+00:00",
       "product_area": "Mixed",
       "source_type": "rss",
       "summary_bullets": [
@@ -690,9 +606,11 @@
         "Source title: Asha Sharma named EVP and CEO, Microsoft Gaming"
       ],
       "source_mix_bucket": "official",
+      "content_type": "update",
       "score_freshness": 0.6,
-      "score_quality": 0.805,
-      "score_total": 0.6923
+      "score_quality": 0.985,
+      "score_content_type": 1.0,
+      "score_total": 0.7925
     },
     {
       "id": "a-milestone-achievement-in-our-journey-to-carbon-negative",
@@ -702,7 +620,7 @@
       "author": "",
       "publisher": "Microsoft Blogs (Global)",
       "published_at": "Wed, 18 Feb 2026 16:20:32 +0000",
-      "fetched_at": "2026-03-01T22:18:01.010042+00:00",
+      "fetched_at": "2026-03-02T04:17:37.573769+00:00",
       "product_area": "Mixed",
       "source_type": "rss",
       "summary_bullets": [
@@ -720,9 +638,139 @@
         "Source title: A milestone achievement in our journey to carbon negative"
       ],
       "source_mix_bucket": "official",
+      "content_type": "update",
       "score_freshness": 0.6,
-      "score_quality": 0.805,
-      "score_total": 0.6923
+      "score_quality": 0.985,
+      "score_content_type": 1.0,
+      "score_total": 0.7925
+    },
+    {
+      "id": "migrate-your-semantic-kernel-and-autogen-projects-to-microsoft-agent-framework-r",
+      "title": "Migrate your Semantic Kernel and AutoGen projects to Microsoft Agent Framework Release Candidate",
+      "url": "https://devblogs.microsoft.com/semantic-kernel/migrate-your-semantic-kernel-and-autogen-projects-to-microsoft-agent-framework-release-candidate/",
+      "canonical_url": "https://devblogs.microsoft.com/semantic-kernel/migrate-your-semantic-kernel-and-autogen-projects-to-microsoft-agent-framework-release-candidate/",
+      "author": "",
+      "publisher": "Semantic Kernel Dev Blog",
+      "published_at": "Fri, 20 Feb 2026 05:52:57 +0000",
+      "fetched_at": "2026-03-02T04:17:37.573769+00:00",
+      "product_area": "Foundry",
+      "source_type": "rss",
+      "summary_bullets": [
+        "Auto-collected candidate. Editorial rewrite required before publishing."
+      ],
+      "why_it_matters": "Potentially relevant update for Microsoft Agentic AI builders.",
+      "audience": "Dev",
+      "effort": "TBD during editorial review",
+      "confidence": "High",
+      "tags": [
+        "Foundry",
+        "Official"
+      ],
+      "evidence": [
+        "Source title: Migrate your Semantic Kernel and AutoGen projects to Microsoft Agent Framework Release Can"
+      ],
+      "source_mix_bucket": "official",
+      "content_type": "other",
+      "score_freshness": 0.6,
+      "score_quality": 0.9475,
+      "score_content_type": 0.55,
+      "score_total": 0.7738
+    },
+    {
+      "id": "introducing-budget-bytes-build-powerful-ai-apps-for-under-25",
+      "title": "Introducing Budget Bytes: Build powerful AI apps for under $25",
+      "url": "https://devblogs.microsoft.com/azure-sql/introducing-budget-bytes/",
+      "canonical_url": "https://devblogs.microsoft.com/azure-sql/introducing-budget-bytes/",
+      "author": "",
+      "publisher": "Azure Blog",
+      "published_at": "Thu, 19 Feb 2026 17:02:52 +0000",
+      "fetched_at": "2026-03-02T04:17:37.573769+00:00",
+      "product_area": "Foundry",
+      "source_type": "rss",
+      "summary_bullets": [
+        "Auto-collected candidate. Editorial rewrite required before publishing."
+      ],
+      "why_it_matters": "Potentially relevant update for Microsoft Agentic AI builders.",
+      "audience": "Dev",
+      "effort": "TBD during editorial review",
+      "confidence": "High",
+      "tags": [
+        "Foundry",
+        "Official"
+      ],
+      "evidence": [
+        "Source title: Introducing Budget Bytes: Build powerful AI apps for under $25"
+      ],
+      "source_mix_bucket": "official",
+      "content_type": "other",
+      "score_freshness": 0.6,
+      "score_quality": 0.8925,
+      "score_content_type": 0.55,
+      "score_total": 0.7463
+    },
+    {
+      "id": "claude-sonnet-4-6-in-microsoft-foundry-frontier-performance-for-scale",
+      "title": "Claude Sonnet 4.6 in Microsoft Foundry-Frontier Performance for Scale",
+      "url": "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/claude-sonnet-4-6-in-microsoft-foundry-frontier-performance-for-scale/4494873",
+      "canonical_url": "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/claude-sonnet-4-6-in-microsoft-foundry-frontier-performance-for-scale/4494873",
+      "author": "",
+      "publisher": "Azure Blog",
+      "published_at": "Tue, 17 Feb 2026 20:11:10 +0000",
+      "fetched_at": "2026-03-02T04:17:37.573769+00:00",
+      "product_area": "Foundry",
+      "source_type": "rss",
+      "summary_bullets": [
+        "Auto-collected candidate. Editorial rewrite required before publishing."
+      ],
+      "why_it_matters": "Potentially relevant update for Microsoft Agentic AI builders.",
+      "audience": "Dev",
+      "effort": "TBD during editorial review",
+      "confidence": "High",
+      "tags": [
+        "Foundry",
+        "Official"
+      ],
+      "evidence": [
+        "Source title: Claude Sonnet 4.6 in Microsoft Foundry-Frontier Performance for Scale"
+      ],
+      "source_mix_bucket": "official",
+      "content_type": "other",
+      "score_freshness": 0.6,
+      "score_quality": 0.8925,
+      "score_content_type": 0.55,
+      "score_total": 0.7463
+    },
+    {
+      "id": "azure-reliability-resiliency-and-recoverability-build-continuity-by-design",
+      "title": "Azure reliability, resiliency, and recoverability: Build continuity by design",
+      "url": "https://azure.microsoft.com/en-us/blog/azure-reliability-resiliency-and-recoverability-build-continuity-by-design/",
+      "canonical_url": "https://azure.microsoft.com/en-us/blog/azure-reliability-resiliency-and-recoverability-build-continuity-by-design/",
+      "author": "",
+      "publisher": "Azure Blog",
+      "published_at": "Tue, 17 Feb 2026 16:00:00 +0000",
+      "fetched_at": "2026-03-02T04:17:37.573769+00:00",
+      "product_area": "Foundry",
+      "source_type": "rss",
+      "summary_bullets": [
+        "Auto-collected candidate. Editorial rewrite required before publishing."
+      ],
+      "why_it_matters": "Potentially relevant update for Microsoft Agentic AI builders.",
+      "audience": "Dev",
+      "effort": "TBD during editorial review",
+      "confidence": "High",
+      "tags": [
+        "Foundry",
+        "Official"
+      ],
+      "evidence": [
+        "Source title: Azure reliability, resiliency, and recoverability: Build continuity by design"
+      ],
+      "source_mix_bucket": "official",
+      "content_type": "other",
+      "score_freshness": 0.6,
+      "score_quality": 0.8925,
+      "score_content_type": 0.55,
+      "score_total": 0.7463
     }
   ],
   "clusters": [],
@@ -752,8 +800,9 @@
   },
   "scoring_notes": {
     "freshness": "Based on published date recency bands (<=3d highest, >30d lowest).",
-    "quality": "Based on source priority + trust, with light title noise penalty.",
-    "total": "score_total = freshness*0.55 + quality*0.45."
+    "quality": "Based on source priority + trust + title noise penalty.",
+    "content_type": "Weighted toward updates/guides/how-tos/demos/build reports; down-ranks marketing/news-noise.",
+    "total": "score_total = freshness*0.50 + quality*0.50 (quality includes content-type weighting)."
   },
   "questions_for_liam": [
     "Any sources to add/remove this week? (approval required)",
