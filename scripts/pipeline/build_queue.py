@@ -112,6 +112,12 @@ def parse_date(value):
         return None
 
 
+def weekly_window(now):
+    week_start = (now - dt.timedelta(days=now.weekday())).replace(hour=0, minute=0, second=0, microsecond=0)
+    previous_week_start = week_start - dt.timedelta(days=7)
+    return previous_week_start, week_start
+
+
 def recency_score(published_at, now):
     parsed = parse_date(published_at)
     if not parsed:
@@ -175,6 +181,7 @@ def main():
     items, excluded = [], []
     seen = set()
     now = dt.datetime.now(dt.timezone.utc)
+    window_start, window_end = weekly_window(now)
 
     for s in sources:
         if s["type"] not in {"rss", "github"}:
@@ -190,6 +197,21 @@ def main():
                     excluded.append({"url": link, "reason": "duplicate_title"})
                     continue
                 seen.add(key)
+
+                parsed_pub = parse_date(pub)
+                if not parsed_pub:
+                    excluded.append({"url": link, "reason": "missing_or_invalid_published_at"})
+                    continue
+                if parsed_pub.tzinfo is None:
+                    parsed_pub = parsed_pub.replace(tzinfo=dt.timezone.utc)
+                parsed_pub_utc = parsed_pub.astimezone(dt.timezone.utc)
+                if not (window_start <= parsed_pub_utc < window_end):
+                    excluded.append({
+                        "url": link,
+                        "reason": "outside_previous_week_window",
+                        "published_at": parsed_pub_utc.isoformat(),
+                    })
+                    continue
 
                 confidence = "High" if s.get("trust") == "official" else "Medium"
                 tags = classify(title, s.get("product_area", "Mixed"))
@@ -233,6 +255,8 @@ def main():
     queue = {
         "issue_id": args.issue_id,
         "generated_at": now.isoformat(),
+        "window_start_utc": window_start.isoformat(),
+        "window_end_utc": window_end.isoformat(),
         "items": top,
         "clusters": [],
         "excluded": excluded,
@@ -267,6 +291,7 @@ def main():
         f"Generated: {queue['generated_at']}",
         f"Total included: {len(top)}",
         f"Excluded: {len(excluded)}",
+        f"Date window (UTC): {queue['window_start_utc']} to {queue['window_end_utc']} (end exclusive)",
         "",
         "## Source mix tuning",
         "",

@@ -1,0 +1,1916 @@
+{
+  "issue_id": "2026-10",
+  "generated_at": "2026-03-02T12:29:54.988458+00:00",
+  "window_start_utc": "2026-02-23T00:00:00+00:00",
+  "window_end_utc": "2026-03-02T00:00:00+00:00",
+  "items": [
+    {
+      "id": "forged-but-valid-how-to-test-api-authentication-and-rbac-safely",
+      "title": "Forged but Valid: How to Test API Authentication and RBAC Safely",
+      "url": "https://www.karlex.fi/forged-but-valid-how-to-test-api-authentication-and-rbac-safely/#utm_source=rss&utm_medium=rss",
+      "canonical_url": "https://www.karlex.fi/forged-but-valid-how-to-test-api-authentication-and-rbac-safely/#utm_source=rss&utm_medium=rss",
+      "author": "",
+      "publisher": "Karl-Johan Spiik (Karlex)",
+      "published_at": "Fri, 27 Feb 2026 13:10:54 +0000",
+      "fetched_at": "2026-03-02T12:29:54.988458+00:00",
+      "product_area": "Power Platform",
+      "source_type": "rss",
+      "summary_bullets": [
+        "Auto-collected candidate. Editorial rewrite required before publishing."
+      ],
+      "why_it_matters": "Potentially relevant update for Microsoft Agentic AI builders.",
+      "audience": "Dev",
+      "effort": "TBD during editorial review",
+      "confidence": "Medium",
+      "tags": [
+        "Power Platform",
+        "Community"
+      ],
+      "evidence": [
+        "Source title: Forged but Valid: How to Test API Authentication and RBAC Safely"
+      ],
+      "source_mix_bucket": "independent",
+      "content_type": "howto",
+      "score_freshness": 1.0,
+      "score_quality": 0.959,
+      "score_content_type": 0.92,
+      "score_total": 0.9795
+    },
+    {
+      "id": "how-to-make-deep-links-with-code-apps-and-call-them-from-model-driven-apps",
+      "title": "How to make Deep Links with Code Apps and call them from Model Driven Apps",
+      "url": "https://dianabirkelbach.wordpress.com/2026/02/28/how-to-make-deep-links-with-code-apps-and-call-them-from-model-driven-apps/",
+      "canonical_url": "https://dianabirkelbach.wordpress.com/2026/02/28/how-to-make-deep-links-with-code-apps-and-call-them-from-model-driven-apps/",
+      "author": "",
+      "publisher": "Diana Birkelbach (PCF Lady)",
+      "published_at": "Sat, 28 Feb 2026 16:32:12 +0000",
+      "fetched_at": "2026-03-02T12:29:54.988458+00:00",
+      "product_area": "Power Platform",
+      "source_type": "rss",
+      "summary_bullets": [
+        "Auto-collected candidate. Editorial rewrite required before publishing."
+      ],
+      "why_it_matters": "Potentially relevant update for Microsoft Agentic AI builders.",
+      "audience": "Dev",
+      "effort": "TBD during editorial review",
+      "confidence": "Medium",
+      "tags": [
+        "Power Platform",
+        "Foundry",
+        "Community"
+      ],
+      "evidence": [
+        "Source title: How to make Deep Links with Code Apps and call them from Model Driven Apps"
+      ],
+      "source_mix_bucket": "independent",
+      "content_type": "howto",
+      "score_freshness": 1.0,
+      "score_quality": 0.904,
+      "score_content_type": 0.92,
+      "score_total": 0.952
+    },
+    {
+      "id": "sharepoint-framework-spfx-roadmap-update-february-2026",
+      "title": "SharePoint Framework (SPFx) roadmap update \u2013 February 2026",
+      "url": "https://devblogs.microsoft.com/microsoft365dev/sharepoint-framework-spfx-roadmap-update-february-2026/",
+      "canonical_url": "https://devblogs.microsoft.com/microsoft365dev/sharepoint-framework-spfx-roadmap-update-february-2026/",
+      "author": "",
+      "publisher": "Microsoft 365 Developer Blog",
+      "published_at": "Wed, 25 Feb 2026 12:59:07 +0000",
+      "fetched_at": "2026-03-02T12:29:54.988458+00:00",
+      "product_area": "M365",
+      "source_type": "rss",
+      "summary_bullets": [
+        "Auto-collected candidate. Editorial rewrite required before publishing."
+      ],
+      "why_it_matters": "Potentially relevant update for Microsoft Agentic AI builders.",
+      "audience": "Dev",
+      "effort": "TBD during editorial review",
+      "confidence": "High",
+      "tags": [
+        "M365",
+        "Official"
+      ],
+      "evidence": [
+        "Source title: SharePoint Framework (SPFx) roadmap update \u2013 February 2026"
+      ],
+      "source_mix_bucket": "official",
+      "content_type": "other",
+      "score_freshness": 0.85,
+      "score_quality": 0.9475,
+      "score_content_type": 0.55,
+      "score_total": 0.8988
+    },
+    {
+      "id": "increased-control-over-office-add-in-user-experiences",
+      "title": "Increased control over Office Add-in user experiences",
+      "url": "https://devblogs.microsoft.com/microsoft365dev/increased-control-over-office-add-in-user-experiences/",
+      "canonical_url": "https://devblogs.microsoft.com/microsoft365dev/increased-control-over-office-add-in-user-experiences/",
+      "author": "",
+      "publisher": "Microsoft 365 Developer Blog",
+      "published_at": "Wed, 25 Feb 2026 03:57:56 +0000",
+      "fetched_at": "2026-03-02T12:29:54.988458+00:00",
+      "product_area": "M365",
+      "source_type": "rss",
+      "summary_bullets": [
+        "Auto-collected candidate. Editorial rewrite required before publishing."
+      ],
+      "why_it_matters": "Potentially relevant update for Microsoft Agentic AI builders.",
+      "audience": "Dev",
+      "effort": "TBD during editorial review",
+      "confidence": "High",
+      "tags": [
+        "M365",
+        "Official"
+      ],
+      "evidence": [
+        "Source title: Increased control over Office Add-in user experiences"
+      ],
+      "source_mix_bucket": "official",
+      "content_type": "other",
+      "score_freshness": 0.85,
+      "score_quality": 0.9475,
+      "score_content_type": 0.55,
+      "score_total": 0.8988
+    },
+    {
+      "id": "windows-365-devices-asus-dell-and-microsoft-expand-the-cloud-pc-ecosystem",
+      "title": "Windows 365 Devices: ASUS, Dell, and Microsoft Expand the Cloud PC Ecosystem",
+      "url": "https://robquickenden.blog/2026/02/new-windows365-devices/",
+      "canonical_url": "https://robquickenden.blog/2026/02/new-windows365-devices/",
+      "author": "",
+      "publisher": "Rob Quickenden",
+      "published_at": "Sat, 28 Feb 2026 09:00:50 +0000",
+      "fetched_at": "2026-03-02T12:29:54.988458+00:00",
+      "product_area": "Mixed",
+      "source_type": "rss",
+      "summary_bullets": [
+        "Auto-collected candidate. Editorial rewrite required before publishing."
+      ],
+      "why_it_matters": "Potentially relevant update for Microsoft Agentic AI builders.",
+      "audience": "Dev",
+      "effort": "TBD during editorial review",
+      "confidence": "Medium",
+      "tags": [
+        "Mixed",
+        "Community"
+      ],
+      "evidence": [
+        "Source title: Windows 365 Devices: ASUS, Dell, and Microsoft Expand the Cloud PC Ecosystem"
+      ],
+      "source_mix_bucket": "independent",
+      "content_type": "other",
+      "score_freshness": 1.0,
+      "score_quality": 0.7925,
+      "score_content_type": 0.55,
+      "score_total": 0.8962
+    },
+    {
+      "id": "ways-to-build-agents-nube-to-pro",
+      "title": "Ways to Build Agents: Nube to Pro",
+      "url": "https://robquickenden.blog/2026/02/building-ai-agents-nube-to-pro/",
+      "canonical_url": "https://robquickenden.blog/2026/02/building-ai-agents-nube-to-pro/",
+      "author": "",
+      "publisher": "Rob Quickenden",
+      "published_at": "Fri, 27 Feb 2026 17:08:36 +0000",
+      "fetched_at": "2026-03-02T12:29:54.988458+00:00",
+      "product_area": "Mixed",
+      "source_type": "rss",
+      "summary_bullets": [
+        "Auto-collected candidate. Editorial rewrite required before publishing."
+      ],
+      "why_it_matters": "Potentially relevant update for Microsoft Agentic AI builders.",
+      "audience": "Dev",
+      "effort": "TBD during editorial review",
+      "confidence": "Medium",
+      "tags": [
+        "Foundry",
+        "Community"
+      ],
+      "evidence": [
+        "Source title: Ways to Build Agents: Nube to Pro"
+      ],
+      "source_mix_bucket": "independent",
+      "content_type": "other",
+      "score_freshness": 1.0,
+      "score_quality": 0.7925,
+      "score_content_type": 0.55,
+      "score_total": 0.8962
+    },
+    {
+      "id": "microsoft-and-openai-joint-statement-on-continuing-partnership",
+      "title": "Microsoft and OpenAI joint statement on continuing partnership",
+      "url": "https://blogs.microsoft.com/blog/2026/02/27/microsoft-and-openai-joint-statement-on-continuing-partnership/",
+      "canonical_url": "https://blogs.microsoft.com/blog/2026/02/27/microsoft-and-openai-joint-statement-on-continuing-partnership/",
+      "author": "",
+      "publisher": "Microsoft Blogs (Global)",
+      "published_at": "Fri, 27 Feb 2026 13:50:44 +0000",
+      "fetched_at": "2026-03-02T12:29:54.988458+00:00",
+      "product_area": "Mixed",
+      "source_type": "rss",
+      "summary_bullets": [
+        "Auto-collected candidate. Editorial rewrite required before publishing."
+      ],
+      "why_it_matters": "Potentially relevant update for Microsoft Agentic AI builders.",
+      "audience": "Dev",
+      "effort": "TBD during editorial review",
+      "confidence": "High",
+      "tags": [
+        "Mixed",
+        "Official"
+      ],
+      "evidence": [
+        "Source title: Microsoft and OpenAI joint statement on continuing partnership"
+      ],
+      "source_mix_bucket": "official",
+      "content_type": "other",
+      "score_freshness": 1.0,
+      "score_quality": 0.7825,
+      "score_content_type": 0.55,
+      "score_total": 0.8913
+    },
+    {
+      "id": "microsoft-sovereign-cloud-adds-governance-productivity-and-support-for-large-ai-",
+      "title": "Microsoft Sovereign Cloud adds governance, productivity, and support for large AI models securely running even when completely disconnected",
+      "url": "http://aka.ms/MicrosoftSovereignCloudDisconnectedBlog",
+      "canonical_url": "http://aka.ms/MicrosoftSovereignCloudDisconnectedBlog",
+      "author": "",
+      "publisher": "Azure Blog",
+      "published_at": "Tue, 24 Feb 2026 10:20:00 +0000",
+      "fetched_at": "2026-03-02T12:29:54.988458+00:00",
+      "product_area": "Foundry",
+      "source_type": "rss",
+      "summary_bullets": [
+        "Auto-collected candidate. Editorial rewrite required before publishing."
+      ],
+      "why_it_matters": "Potentially relevant update for Microsoft Agentic AI builders.",
+      "audience": "Dev",
+      "effort": "TBD during editorial review",
+      "confidence": "High",
+      "tags": [
+        "Foundry",
+        "Official"
+      ],
+      "evidence": [
+        "Source title: Microsoft Sovereign Cloud adds governance, productivity, and support for large AI models s"
+      ],
+      "source_mix_bucket": "official",
+      "content_type": "other",
+      "score_freshness": 0.85,
+      "score_quality": 0.8925,
+      "score_content_type": 0.55,
+      "score_total": 0.8713
+    },
+    {
+      "id": "powerfx-formula-columns-to-overcome-some-power-pages-table-permissions-limitatio",
+      "title": "PowerFx Formula Columns to overcome some Power Pages table permissions limitations for WebAPI access in Power Pages",
+      "url": "https://michelcarlo.com/2026/03/01/powerfx-formula-columns-to-overcome-some-power-pages-table-permissions-limitations-for-webapi-access-in-power-pages/",
+      "canonical_url": "https://michelcarlo.com/2026/03/01/powerfx-formula-columns-to-overcome-some-power-pages-table-permissions-limitations-for-webapi-access-in-power-pages/",
+      "author": "",
+      "publisher": "Michel Mendes",
+      "published_at": "Sun, 01 Mar 2026 12:27:05 +0000",
+      "fetched_at": "2026-03-02T12:29:54.988458+00:00",
+      "product_area": "Power Platform",
+      "source_type": "rss",
+      "summary_bullets": [
+        "Auto-collected candidate. Editorial rewrite required before publishing."
+      ],
+      "why_it_matters": "Potentially relevant update for Microsoft Agentic AI builders.",
+      "audience": "Dev",
+      "effort": "TBD during editorial review",
+      "confidence": "Medium",
+      "tags": [
+        "Power Platform",
+        "Community"
+      ],
+      "evidence": [
+        "Source title: PowerFx Formula Columns to overcome some Power Pages table permissions limitations for Web"
+      ],
+      "source_mix_bucket": "independent",
+      "content_type": "other",
+      "score_freshness": 1.0,
+      "score_quality": 0.7375,
+      "score_content_type": 0.55,
+      "score_total": 0.8688
+    },
+    {
+      "id": "what-does-vibe-coding-mean-for-low-code-platforms",
+      "title": "What Does Vibe Coding Mean for Low-Code Platforms?",
+      "url": "https://forwardforever.com/what-does-vibe-coding-mean-for-low-code-platforms/",
+      "canonical_url": "https://forwardforever.com/what-does-vibe-coding-mean-for-low-code-platforms/",
+      "author": "",
+      "publisher": "Forward Forever",
+      "published_at": "Tue, 24 Feb 2026 11:55:16 +0000",
+      "fetched_at": "2026-03-02T12:29:54.988458+00:00",
+      "product_area": "Power Platform",
+      "source_type": "rss",
+      "summary_bullets": [
+        "Auto-collected candidate. Editorial rewrite required before publishing."
+      ],
+      "why_it_matters": "Potentially relevant update for Microsoft Agentic AI builders.",
+      "audience": "Dev",
+      "effort": "TBD during editorial review",
+      "confidence": "Medium",
+      "tags": [
+        "Power Platform",
+        "Community"
+      ],
+      "evidence": [
+        "Source title: What Does Vibe Coding Mean for Low-Code Platforms?"
+      ],
+      "source_mix_bucket": "independent",
+      "content_type": "other",
+      "score_freshness": 0.85,
+      "score_quality": 0.8475,
+      "score_content_type": 0.55,
+      "score_total": 0.8488
+    },
+    {
+      "id": "show-loading-screen-in-your-custom-page-while-your-collection-is-created",
+      "title": "Show Loading Screen In Your Custom Page While Your Collection Is Created",
+      "url": "https://meganvwalker.com/show-loading-screen-in-your-custom-page/",
+      "canonical_url": "https://meganvwalker.com/show-loading-screen-in-your-custom-page/",
+      "author": "",
+      "publisher": "Megan V. Walker",
+      "published_at": "Thu, 26 Feb 2026 08:30:00 +0000",
+      "fetched_at": "2026-03-02T12:29:54.988458+00:00",
+      "product_area": "Power Platform",
+      "source_type": "rss",
+      "summary_bullets": [
+        "Auto-collected candidate. Editorial rewrite required before publishing."
+      ],
+      "why_it_matters": "Potentially relevant update for Microsoft Agentic AI builders.",
+      "audience": "Dev",
+      "effort": "TBD during editorial review",
+      "confidence": "Medium",
+      "tags": [
+        "Power Platform",
+        "Community"
+      ],
+      "evidence": [
+        "Source title: Show Loading Screen In Your Custom Page While Your Collection Is Created"
+      ],
+      "source_mix_bucket": "independent",
+      "content_type": "other",
+      "score_freshness": 0.85,
+      "score_quality": 0.8475,
+      "score_content_type": 0.55,
+      "score_total": 0.8488
+    },
+    {
+      "id": "calculate-working-day-connector-in-power-automate",
+      "title": "Calculate Working Day Connector In Power Automate",
+      "url": "https://meganvwalker.com/calculate-working-day-connector-in-power-automate/",
+      "canonical_url": "https://meganvwalker.com/calculate-working-day-connector-in-power-automate/",
+      "author": "",
+      "publisher": "Megan V. Walker",
+      "published_at": "Tue, 24 Feb 2026 08:30:00 +0000",
+      "fetched_at": "2026-03-02T12:29:54.988458+00:00",
+      "product_area": "Power Platform",
+      "source_type": "rss",
+      "summary_bullets": [
+        "Auto-collected candidate. Editorial rewrite required before publishing."
+      ],
+      "why_it_matters": "Potentially relevant update for Microsoft Agentic AI builders.",
+      "audience": "Dev",
+      "effort": "TBD during editorial review",
+      "confidence": "Medium",
+      "tags": [
+        "Power Platform",
+        "Community"
+      ],
+      "evidence": [
+        "Source title: Calculate Working Day Connector In Power Automate"
+      ],
+      "source_mix_bucket": "independent",
+      "content_type": "other",
+      "score_freshness": 0.85,
+      "score_quality": 0.8475,
+      "score_content_type": 0.55,
+      "score_total": 0.8488
+    },
+    {
+      "id": "5-steps-to-connect-your-vibe-coded-apps-with-git",
+      "title": "5 Steps to Connect your Vibe Coded Apps with Git",
+      "url": "https://sharepains.com/2026/02/27/connect-your-vibe-coded-apps-with-git/",
+      "canonical_url": "https://sharepains.com/2026/02/27/connect-your-vibe-coded-apps-with-git/",
+      "author": "",
+      "publisher": "SharePains (Pieter Veenstra)",
+      "published_at": "Fri, 27 Feb 2026 10:16:45 +0000",
+      "fetched_at": "2026-03-02T12:29:54.988458+00:00",
+      "product_area": "Power Platform",
+      "source_type": "rss",
+      "summary_bullets": [
+        "Auto-collected candidate. Editorial rewrite required before publishing."
+      ],
+      "why_it_matters": "Potentially relevant update for Microsoft Agentic AI builders.",
+      "audience": "Dev",
+      "effort": "TBD during editorial review",
+      "confidence": "Medium",
+      "tags": [
+        "Power Platform",
+        "Community"
+      ],
+      "evidence": [
+        "Source title: 5 Steps to Connect your Vibe Coded Apps with Git"
+      ],
+      "source_mix_bucket": "independent",
+      "content_type": "other",
+      "score_freshness": 0.85,
+      "score_quality": 0.8475,
+      "score_content_type": 0.55,
+      "score_total": 0.8488
+    },
+    {
+      "id": "migrate-sharepoint-site-designs-and-scripts-to-a-new-tenant",
+      "title": "Migrate SharePoint Site Designs and Scripts to a new Tenant",
+      "url": "https://sharepains.com/2026/02/24/migrate-sharepoint-site-designs-and-scripts-to-a-new-tenant/",
+      "canonical_url": "https://sharepains.com/2026/02/24/migrate-sharepoint-site-designs-and-scripts-to-a-new-tenant/",
+      "author": "",
+      "publisher": "SharePains (Pieter Veenstra)",
+      "published_at": "Tue, 24 Feb 2026 16:46:23 +0000",
+      "fetched_at": "2026-03-02T12:29:54.988458+00:00",
+      "product_area": "Power Platform",
+      "source_type": "rss",
+      "summary_bullets": [
+        "Auto-collected candidate. Editorial rewrite required before publishing."
+      ],
+      "why_it_matters": "Potentially relevant update for Microsoft Agentic AI builders.",
+      "audience": "Dev",
+      "effort": "TBD during editorial review",
+      "confidence": "Medium",
+      "tags": [
+        "Power Platform",
+        "Community"
+      ],
+      "evidence": [
+        "Source title: Migrate SharePoint Site Designs and Scripts to a new Tenant"
+      ],
+      "source_mix_bucket": "independent",
+      "content_type": "other",
+      "score_freshness": 0.85,
+      "score_quality": 0.8475,
+      "score_content_type": 0.55,
+      "score_total": 0.8488
+    },
+    {
+      "id": "mastering-power-automate-flows-structure-error-handling-child-flows-and-ai-in-re",
+      "title": "Mastering Power Automate Flows: Structure, Error Handling, Child Flows, and AI in Real Projects",
+      "url": "https://www.karlex.fi/mastering-power-automate-flows-structure-error-handling-child-flows-and-ai-in-real-projects/#utm_source=rss&utm_medium=rss",
+      "canonical_url": "https://www.karlex.fi/mastering-power-automate-flows-structure-error-handling-child-flows-and-ai-in-real-projects/#utm_source=rss&utm_medium=rss",
+      "author": "",
+      "publisher": "Karl-Johan Spiik (Karlex)",
+      "published_at": "Fri, 27 Feb 2026 02:40:00 +0000",
+      "fetched_at": "2026-03-02T12:29:54.988458+00:00",
+      "product_area": "Power Platform",
+      "source_type": "rss",
+      "summary_bullets": [
+        "Auto-collected candidate. Editorial rewrite required before publishing."
+      ],
+      "why_it_matters": "Potentially relevant update for Microsoft Agentic AI builders.",
+      "audience": "Dev",
+      "effort": "TBD during editorial review",
+      "confidence": "Medium",
+      "tags": [
+        "Power Platform",
+        "Community"
+      ],
+      "evidence": [
+        "Source title: Mastering Power Automate Flows: Structure, Error Handling, Child Flows, and AI in Real Pro"
+      ],
+      "source_mix_bucket": "independent",
+      "content_type": "other",
+      "score_freshness": 0.85,
+      "score_quality": 0.7925,
+      "score_content_type": 0.55,
+      "score_total": 0.8213
+    },
+    {
+      "id": "autonomous-agents-in-action",
+      "title": "Autonomous Agents in Action",
+      "url": "https://www.karlex.fi/autonomous-agents-in-action/#utm_source=rss&utm_medium=rss",
+      "canonical_url": "https://www.karlex.fi/autonomous-agents-in-action/#utm_source=rss&utm_medium=rss",
+      "author": "",
+      "publisher": "Karl-Johan Spiik (Karlex)",
+      "published_at": "Wed, 25 Feb 2026 16:33:48 +0000",
+      "fetched_at": "2026-03-02T12:29:54.988458+00:00",
+      "product_area": "Power Platform",
+      "source_type": "rss",
+      "summary_bullets": [
+        "Auto-collected candidate. Editorial rewrite required before publishing."
+      ],
+      "why_it_matters": "Potentially relevant update for Microsoft Agentic AI builders.",
+      "audience": "Dev",
+      "effort": "TBD during editorial review",
+      "confidence": "Medium",
+      "tags": [
+        "Power Platform",
+        "Foundry",
+        "Community"
+      ],
+      "evidence": [
+        "Source title: Autonomous Agents in Action"
+      ],
+      "source_mix_bucket": "independent",
+      "content_type": "other",
+      "score_freshness": 0.85,
+      "score_quality": 0.7925,
+      "score_content_type": 0.55,
+      "score_total": 0.8213
+    },
+    {
+      "id": "no-dependencies-shown-but-still-can-t-delete-the-component-check-your-cloud-flow",
+      "title": "No Dependencies Shown\u2026 But still can\u2019t delete the component? Check Your Cloud Flows (Dataverse / Dynamics 365)",
+      "url": "https://nishantrana.me/2026/02/25/no-dependencies-shown-but-still-cant-delete-the-component-check-your-cloud-flows-dataverse-dynamics-365/",
+      "canonical_url": "https://nishantrana.me/2026/02/25/no-dependencies-shown-but-still-cant-delete-the-component-check-your-cloud-flows-dataverse-dynamics-365/",
+      "author": "",
+      "publisher": "Nishant Rana",
+      "published_at": "Tue, 24 Feb 2026 18:35:00 +0000",
+      "fetched_at": "2026-03-02T12:29:54.988458+00:00",
+      "product_area": "Power Platform",
+      "source_type": "rss",
+      "summary_bullets": [
+        "Auto-collected candidate. Editorial rewrite required before publishing."
+      ],
+      "why_it_matters": "Potentially relevant update for Microsoft Agentic AI builders.",
+      "audience": "Dev",
+      "effort": "TBD during editorial review",
+      "confidence": "Medium",
+      "tags": [
+        "Power Platform",
+        "Community"
+      ],
+      "evidence": [
+        "Source title: No Dependencies Shown\u2026 But still can\u2019t delete the component? Check Your Cloud Flows (Datav"
+      ],
+      "source_mix_bucket": "independent",
+      "content_type": "other",
+      "score_freshness": 0.85,
+      "score_quality": 0.7925,
+      "score_content_type": 0.55,
+      "score_total": 0.8213
+    },
+    {
+      "id": "solution-failed-to-import-missing-lookup-view-dependency-in-dataverse-dynamics-3",
+      "title": "Solution Failed to Import \u2013 Missing Lookup View Dependency in Dataverse / Dynamics 365",
+      "url": "https://nishantrana.me/2026/02/24/solution-failed-to-import-missing-lookup-view-dependency-in-dataverse-dynamics-365/",
+      "canonical_url": "https://nishantrana.me/2026/02/24/solution-failed-to-import-missing-lookup-view-dependency-in-dataverse-dynamics-365/",
+      "author": "",
+      "publisher": "Nishant Rana",
+      "published_at": "Mon, 23 Feb 2026 18:35:00 +0000",
+      "fetched_at": "2026-03-02T12:29:54.988458+00:00",
+      "product_area": "Power Platform",
+      "source_type": "rss",
+      "summary_bullets": [
+        "Auto-collected candidate. Editorial rewrite required before publishing."
+      ],
+      "why_it_matters": "Potentially relevant update for Microsoft Agentic AI builders.",
+      "audience": "Dev",
+      "effort": "TBD during editorial review",
+      "confidence": "Medium",
+      "tags": [
+        "Power Platform",
+        "Community"
+      ],
+      "evidence": [
+        "Source title: Solution Failed to Import \u2013 Missing Lookup View Dependency in Dataverse / Dynamics 365"
+      ],
+      "source_mix_bucket": "independent",
+      "content_type": "other",
+      "score_freshness": 0.85,
+      "score_quality": 0.7925,
+      "score_content_type": 0.55,
+      "score_total": 0.8213
+    },
+    {
+      "id": "the-end-of-power-pages-as-we-know-it",
+      "title": "The end of Power Pages? (As we know it?)",
+      "url": "https://readyxrm.blog/2026/02/26/the-end-of-power-pages-as-we-know-it/",
+      "canonical_url": "https://readyxrm.blog/2026/02/26/the-end-of-power-pages-as-we-know-it/",
+      "author": "",
+      "publisher": "ReadyXRM (Nick Doelman)",
+      "published_at": "Thu, 26 Feb 2026 22:58:55 +0000",
+      "fetched_at": "2026-03-02T12:29:54.988458+00:00",
+      "product_area": "Power Platform",
+      "source_type": "rss",
+      "summary_bullets": [
+        "Auto-collected candidate. Editorial rewrite required before publishing."
+      ],
+      "why_it_matters": "Potentially relevant update for Microsoft Agentic AI builders.",
+      "audience": "Dev",
+      "effort": "TBD during editorial review",
+      "confidence": "Medium",
+      "tags": [
+        "Power Platform",
+        "Community"
+      ],
+      "evidence": [
+        "Source title: The end of Power Pages? (As we know it?)"
+      ],
+      "source_mix_bucket": "independent",
+      "content_type": "other",
+      "score_freshness": 0.85,
+      "score_quality": 0.7925,
+      "score_content_type": 0.55,
+      "score_total": 0.8213
+    },
+    {
+      "id": "what-are-microsoft-365-s-new-ai-watermarks",
+      "title": "What are Microsoft 365\u2019s New AI Watermarks?",
+      "url": "https://robquickenden.blog/2026/02/copilot-watermarks/",
+      "canonical_url": "https://robquickenden.blog/2026/02/copilot-watermarks/",
+      "author": "",
+      "publisher": "Rob Quickenden",
+      "published_at": "Thu, 26 Feb 2026 15:59:04 +0000",
+      "fetched_at": "2026-03-02T12:29:54.988458+00:00",
+      "product_area": "Mixed",
+      "source_type": "rss",
+      "summary_bullets": [
+        "Auto-collected candidate. Editorial rewrite required before publishing."
+      ],
+      "why_it_matters": "Potentially relevant update for Microsoft Agentic AI builders.",
+      "audience": "Dev",
+      "effort": "TBD during editorial review",
+      "confidence": "Medium",
+      "tags": [
+        "M365",
+        "Community"
+      ],
+      "evidence": [
+        "Source title: What are Microsoft 365\u2019s New AI Watermarks?"
+      ],
+      "source_mix_bucket": "independent",
+      "content_type": "other",
+      "score_freshness": 0.85,
+      "score_quality": 0.7925,
+      "score_content_type": 0.55,
+      "score_total": 0.8213
+    },
+    {
+      "id": "are-you-leaking-company-data-to-non-sanctioned-ai-apps",
+      "title": "Are you leaking company data to non-sanctioned AI Apps?",
+      "url": "https://robquickenden.blog/2026/02/are-you-leaking-company-data/",
+      "canonical_url": "https://robquickenden.blog/2026/02/are-you-leaking-company-data/",
+      "author": "",
+      "publisher": "Rob Quickenden",
+      "published_at": "Wed, 25 Feb 2026 15:59:13 +0000",
+      "fetched_at": "2026-03-02T12:29:54.988458+00:00",
+      "product_area": "Mixed",
+      "source_type": "rss",
+      "summary_bullets": [
+        "Auto-collected candidate. Editorial rewrite required before publishing."
+      ],
+      "why_it_matters": "Potentially relevant update for Microsoft Agentic AI builders.",
+      "audience": "Dev",
+      "effort": "TBD during editorial review",
+      "confidence": "Medium",
+      "tags": [
+        "Mixed",
+        "Community"
+      ],
+      "evidence": [
+        "Source title: Are you leaking company data to non-sanctioned AI Apps?"
+      ],
+      "source_mix_bucket": "independent",
+      "content_type": "other",
+      "score_freshness": 0.85,
+      "score_quality": 0.7925,
+      "score_content_type": 0.55,
+      "score_total": 0.8213
+    },
+    {
+      "id": "microsoft-ai-tour-london",
+      "title": "Microsoft AI Tour London",
+      "url": "https://robquickenden.blog/2026/02/microsoft-ai-tour-london/",
+      "canonical_url": "https://robquickenden.blog/2026/02/microsoft-ai-tour-london/",
+      "author": "",
+      "publisher": "Rob Quickenden",
+      "published_at": "Tue, 24 Feb 2026 06:54:07 +0000",
+      "fetched_at": "2026-03-02T12:29:54.988458+00:00",
+      "product_area": "Mixed",
+      "source_type": "rss",
+      "summary_bullets": [
+        "Auto-collected candidate. Editorial rewrite required before publishing."
+      ],
+      "why_it_matters": "Potentially relevant update for Microsoft Agentic AI builders.",
+      "audience": "Dev",
+      "effort": "TBD during editorial review",
+      "confidence": "Medium",
+      "tags": [
+        "Mixed",
+        "Community"
+      ],
+      "evidence": [
+        "Source title: Microsoft AI Tour London"
+      ],
+      "source_mix_bucket": "independent",
+      "content_type": "other",
+      "score_freshness": 0.85,
+      "score_quality": 0.7925,
+      "score_content_type": 0.55,
+      "score_total": 0.8213
+    },
+    {
+      "id": "ai-prompting-guide-get-better-results-with-copilot-and-chatgpt",
+      "title": "AI Prompting Guide: Get Better Results with Copilot and ChatGPT",
+      "url": "https://robquickenden.blog/2026/02/writing-better-ai-prompts/",
+      "canonical_url": "https://robquickenden.blog/2026/02/writing-better-ai-prompts/",
+      "author": "",
+      "publisher": "Rob Quickenden",
+      "published_at": "Mon, 23 Feb 2026 11:20:23 +0000",
+      "fetched_at": "2026-03-02T12:29:54.988458+00:00",
+      "product_area": "Mixed",
+      "source_type": "rss",
+      "summary_bullets": [
+        "Auto-collected candidate. Editorial rewrite required before publishing."
+      ],
+      "why_it_matters": "Potentially relevant update for Microsoft Agentic AI builders.",
+      "audience": "Dev",
+      "effort": "TBD during editorial review",
+      "confidence": "Medium",
+      "tags": [
+        "Mixed",
+        "Community"
+      ],
+      "evidence": [
+        "Source title: AI Prompting Guide: Get Better Results with Copilot and ChatGPT"
+      ],
+      "source_mix_bucket": "independent",
+      "content_type": "guide",
+      "score_freshness": 0.6,
+      "score_quality": 0.9725,
+      "score_content_type": 0.95,
+      "score_total": 0.7863
+    }
+  ],
+  "clusters": [],
+  "excluded": [
+    {
+      "url": "https://devblogs.microsoft.com/microsoft365dev/handling-legacy-user-settings-in-sharepoint-framework/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-02-12T18:25:13+00:00"
+    },
+    {
+      "url": "https://devblogs.microsoft.com/microsoft365dev/mastering-user-settings-in-sharepoint-framework/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-02-07T01:17:15+00:00"
+    },
+    {
+      "url": "https://devblogs.microsoft.com/microsoft365dev/deprecation-notice-teams-live-events-meeting-creation-via-microsoft-graph/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-02-03T16:55:49+00:00"
+    },
+    {
+      "url": "https://devblogs.microsoft.com/microsoft365dev/dev-proxy-v2-1-with-configuration-hot-reload-and-stdio-proxying/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-01-29T12:16:19+00:00"
+    },
+    {
+      "url": "https://devblogs.microsoft.com/microsoft365dev/introducing-the-microsoft-graph-user-configuration-api-preview/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-01-28T18:59:42+00:00"
+    },
+    {
+      "url": "https://devblogs.microsoft.com/microsoft365dev/sharepoint-framework-spfx-roadmap-update-january-2026/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-01-28T15:18:00+00:00"
+    },
+    {
+      "url": "https://devblogs.microsoft.com/microsoft365dev/introducing-the-evals-for-agent-interop-starter-kit/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-01-26T17:37:21+00:00"
+    },
+    {
+      "url": "https://devblogs.microsoft.com/microsoft365dev/copilot-studio-extension-for-visual-studio-code-is-now-generally-available/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-01-14T19:04:46+00:00"
+    },
+    {
+      "url": "https://devblogs.microsoft.com/powerplatform/announcing-agent-academy-operative/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-01-14T18:45:09+00:00"
+    },
+    {
+      "url": "https://devblogs.microsoft.com/powerplatform/announcing-copilot-studio-agent-academy/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-08-20T13:00:39+00:00"
+    },
+    {
+      "url": "https://devblogs.microsoft.com/powerplatform/plan-validation-cat-kit/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-07-30T10:20:36+00:00"
+    },
+    {
+      "url": "https://devblogs.microsoft.com/powerplatform/power-platform-api-and-sdks-from-ux-first-to-api-first/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-07-15T17:38:05+00:00"
+    },
+    {
+      "url": "https://devblogs.microsoft.com/powerplatform/microsoft-copilot-studio-mcp/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-04-28T13:13:41+00:00"
+    },
+    {
+      "url": "https://devblogs.microsoft.com/powerplatform/announcing-the-work-with-power-fx-functions-learning-path/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-04-20T13:55:00+00:00"
+    },
+    {
+      "url": "https://devblogs.microsoft.com/powerplatform/announcing-the-winners-of-the-2025-powerful-devs-hack-together/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-03-25T15:50:54+00:00"
+    },
+    {
+      "url": "https://devblogs.microsoft.com/powerplatform/publishing-managing-and-securing-building-with-microsoft-copilot-studio/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-03-05T16:42:13+00:00"
+    },
+    {
+      "url": "https://devblogs.microsoft.com/powerplatform/integrate-copilot-studio-agents-with-microsoft-entra-external-id-to-give-your-customers-access/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-02-28T17:44:41+00:00"
+    },
+    {
+      "url": "https://devblogs.microsoft.com/powerplatform/powerful-devs-hack-together-2025-wrap-up/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-02-27T19:40:00+00:00"
+    },
+    {
+      "url": "https://devblogs.microsoft.com/semantic-kernel/migrate-your-semantic-kernel-and-autogen-projects-to-microsoft-agent-framework-release-candidate/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-02-20T05:52:57+00:00"
+    },
+    {
+      "url": "https://devblogs.microsoft.com/semantic-kernel/from-local-models-to-agent-workflows-building-a-deep-research-solution-with-microsoft-agent-framework-on-microsoft-foundry-local/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-02-10T11:12:33+00:00"
+    },
+    {
+      "url": "https://devblogs.microsoft.com/semantic-kernel/build-ai-agents-with-claude-agent-sdk-and-microsoft-agent-framework/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-01-30T19:21:49+00:00"
+    },
+    {
+      "url": "https://devblogs.microsoft.com/semantic-kernel/build-ai-agents-with-github-copilot-sdk-and-microsoft-agent-framework/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-01-27T21:37:26+00:00"
+    },
+    {
+      "url": "https://devblogs.microsoft.com/semantic-kernel/the-golden-triangle-of-agentic-development-with-microsoft-agent-framework-ag-ui-devui-opentelemetry-deep-dive/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-12-01T17:08:48+00:00"
+    },
+    {
+      "url": "https://devblogs.microsoft.com/semantic-kernel/unlocking-enterprise-ai-complexity-multi-agent-orchestration-with-the-microsoft-agent-framework/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-10-23T08:09:07+00:00"
+    },
+    {
+      "url": "https://devblogs.microsoft.com/semantic-kernel/semantic-kernel-and-microsoft-agent-framework/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-10-08T06:51:06+00:00"
+    },
+    {
+      "url": "https://devblogs.microsoft.com/semantic-kernel/encoding-changes-for-template-arguments-in-semantic-kernel/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-08-27T05:17:18+00:00"
+    },
+    {
+      "url": "https://devblogs.microsoft.com/semantic-kernel/azure-authentication-changes-in-semantic-kernel-python/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-08-27T05:16:27+00:00"
+    },
+    {
+      "url": "https://devblogs.microsoft.com/semantic-kernel/guest-blog-building-multi-agent-solutions-with-semantic-kernel-and-a2a-protocol/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-07-21T08:10:23+00:00"
+    },
+    {
+      "url": "https://devblogs.microsoft.com/azure-sql/introducing-budget-bytes/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-02-19T17:02:52+00:00"
+    },
+    {
+      "url": "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/claude-sonnet-4-6-in-microsoft-foundry-frontier-performance-for-scale/4494873",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-02-17T20:11:10+00:00"
+    },
+    {
+      "url": "https://azure.microsoft.com/en-us/blog/azure-reliability-resiliency-and-recoverability-build-continuity-by-design/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-02-17T16:00:00+00:00"
+    },
+    {
+      "url": "https://azure.microsoft.com/en-us/blog/the-data-behind-the-design-how-pantone-built-agentic-ai-with-an-ai-ready-database/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-02-12T16:00:00+00:00"
+    },
+    {
+      "url": "https://azure.microsoft.com/en-us/blog/agentic-cloud-operations-a-new-way-to-run-the-cloud/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-02-11T22:00:00+00:00"
+    },
+    {
+      "url": "https://azure.microsoft.com/en-us/blog/can-high-temperature-superconductors-transform-the-power-infrastructure-of-datacenters/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-02-10T16:00:00+00:00"
+    },
+    {
+      "url": "https://blog.fabric.microsoft.com/en-us/blog/32624",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-02-09T15:12:12+00:00"
+    },
+    {
+      "url": "https://azure.microsoft.com/en-us/blog/claude-opus-4-6-anthropics-powerful-model-for-coding-agents-and-enterprise-workflows-is-now-available-in-microsoft-foundry-on-azure/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-02-05T17:46:10+00:00"
+    },
+    {
+      "url": "https://azure.microsoft.com/en-us/blog/enhanced-storage-resiliency-with-azure-netapp-files-elastic-zone-redundant-service/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-02-04T16:00:00+00:00"
+    },
+    {
+      "url": "https://forwardforever.com/kuinka-rakentaa-turvallinen-vaatimustenmukainen-microsoft-fabric-kokonaisuus/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-02-18T07:49:21+00:00"
+    },
+    {
+      "url": "https://forwardforever.com/errors-after-deploying-copilot-studio-agents-missing-or-out-of-date-components/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-02-17T13:27:32+00:00"
+    },
+    {
+      "url": "https://forwardforever.com/whats-new-in-copilot-studio-and-ai-agents-in-english/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-02-17T07:54:22+00:00"
+    },
+    {
+      "url": "https://forwardforever.com/vibe-coding-in-practice/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-02-12T07:25:16+00:00"
+    },
+    {
+      "url": "https://forwardforever.com/building-your-own-mcp-server-with-net-and-connecting-it-to-copilot-studio/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-02-11T08:38:50+00:00"
+    },
+    {
+      "url": "https://forwardforever.com/the-future-of-low-code-platforms-citizen-development/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-02-11T07:30:59+00:00"
+    },
+    {
+      "url": "https://forwardforever.com/microsoft-365-hpr-21-5-2026/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-02-10T11:27:37+00:00"
+    },
+    {
+      "url": "https://forwardforever.com/financial-reporting-power-platform-fabric/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-02-06T07:52:18+00:00"
+    },
+    {
+      "url": "https://forwardforever.com/summary-of-power-platform-vibe-coding-tools/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-02-04T07:11:51+00:00"
+    },
+    {
+      "url": "https://forwardforever.com/2025-in-review-growing-up/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-01-30T07:15:58+00:00"
+    },
+    {
+      "url": "https://forwardforever.com/guest-post-by-kone-making-ideas-move-building-a-clear-path-from-ideas-to-impact-at-kone/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-01-21T05:53:01+00:00"
+    },
+    {
+      "url": "https://meganvwalker.com/set-a-business-process-flow-stage-custom-page/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-02-19T08:30:00+00:00"
+    },
+    {
+      "url": "https://meganvwalker.com/setting-up-recaptcha-v2-for-realtime-forms/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-02-17T08:30:00+00:00"
+    },
+    {
+      "url": "https://meganvwalker.com/assign-records-to-a-user-or-a-team-custom-page/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-02-12T08:30:00+00:00"
+    },
+    {
+      "url": "https://meganvwalker.com/examples-of-power-fx-formula-field-examples/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-02-10T08:30:00+00:00"
+    },
+    {
+      "url": "https://meganvwalker.com/modern-delete-confirmation-popup-in-custom-page/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-02-05T08:20:00+00:00"
+    },
+    {
+      "url": "https://meganvwalker.com/evaluating-specific-form-fields-customer-insights/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-02-03T08:20:00+00:00"
+    },
+    {
+      "url": "https://meganvwalker.com/create-and-view-related-records-from-custom-page/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-01-29T08:30:00+00:00"
+    },
+    {
+      "url": "https://meganvwalker.com/create-hierarchy-overview-of-compliance-setup-in-customer-insights-journeys/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-01-27T08:20:00+00:00"
+    },
+    {
+      "url": "https://sharepains.com/2026/02/20/connection-references-power-automate/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-02-20T15:44:59+00:00"
+    },
+    {
+      "url": "https://sharepains.com/2026/02/20/copilot-rename-controls-power-apps/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-02-20T11:38:31+00:00"
+    },
+    {
+      "url": "https://sharepains.com/2026/02/19/show-your-environment-name-in-power-apps/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-02-19T13:48:35+00:00"
+    },
+    {
+      "source": "azure-updates",
+      "reason": "fetch_error: not well-formed (invalid token): line 5, column 31"
+    },
+    {
+      "url": "https://www.eliostruyf.com/killing-indie-development-with-ai/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-02-15T17:53:29+00:00"
+    },
+    {
+      "url": "https://www.eliostruyf.com/stop-typing-start-talking/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-02-13T10:12:50+00:00"
+    },
+    {
+      "url": "https://www.eliostruyf.com/blogging-thriving-ai-era/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-02-05T14:01:59+00:00"
+    },
+    {
+      "url": "https://www.eliostruyf.com/ghostwriter-code-ai-interviewer-editor/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-01-30T10:08:05+00:00"
+    },
+    {
+      "url": "https://www.eliostruyf.com/exploring-github-copilot-sdk-building-ghostwriter-app/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-01-26T10:10:06+00:00"
+    },
+    {
+      "url": "https://www.eliostruyf.com/vcode-workspaces-ai-assistant-context/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-01-15T10:25:20+00:00"
+    },
+    {
+      "url": "https://www.eliostruyf.com/code-review-testing-matter-ai/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-01-08T11:41:14+00:00"
+    },
+    {
+      "url": "https://www.eliostruyf.com/reflecting-2025-finding-joy-creating-value/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-12-22T16:06:57+00:00"
+    },
+    {
+      "url": "https://www.eliostruyf.com/interviewed-ai-write-blog-posts/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-12-13T13:04:28+00:00"
+    },
+    {
+      "url": "https://www.eliostruyf.com/demo-time-sustainable-future/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-12-09T16:27:51+00:00"
+    },
+    {
+      "url": "https://www.eliostruyf.com/evolving-relationship-ai-development/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-12-01T08:30:21+00:00"
+    },
+    {
+      "url": "https://www.eliostruyf.com/custom-security-agent-github-copilot-actions/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-11-28T11:36:35+00:00"
+    },
+    {
+      "url": "https://futurework.blog/2026/02/10/claude-opus-4-6-now-available-in-microsoft-foundry/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-02-10T08:46:46+00:00"
+    },
+    {
+      "url": "https://futurework.blog/2026/02/06/upcoming-few-copilot-teams-changes-im-tracking-right-now/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-02-06T13:00:00+00:00"
+    },
+    {
+      "url": "https://futurework.blog/2025/12/15/gpt-5-2-in-microsoft-365-copilot-and-in-microsoft-foundry/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-12-15T17:42:27+00:00"
+    },
+    {
+      "url": "https://futurework.blog/2025/12/02/ignite-spotlight-copilot-pages-agent-mode-notebooks/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-12-02T14:27:44+00:00"
+    },
+    {
+      "url": "https://futurework.blog/2025/11/21/multi-agent-workflows-in-microsoft-copilot-studio/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-11-21T17:51:57+00:00"
+    },
+    {
+      "url": "https://futurework.blog/2025/11/18/microsoft-ignite-2025-recap/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-11-18T17:30:01+00:00"
+    },
+    {
+      "url": "https://futurework.blog/2025/11/04/researcher-agent-with-computer-use-in-microsoft-365-copilot/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-11-04T15:43:16+00:00"
+    },
+    {
+      "url": "https://futurework.blog/2025/10/29/when-copilot-sees-your-screen-copilot-vision/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-10-29T06:58:26+00:00"
+    },
+    {
+      "url": "https://futurework.blog/2025/06/25/ray-ban-meta-wayfarer-smart-glasses-experiences/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-06-25T11:45:21+00:00"
+    },
+    {
+      "url": "https://futurework.blog/2025/06/17/logi-mx-creative-console/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-06-17T07:01:05+00:00"
+    },
+    {
+      "url": "https://futurework.blog/2025/05/19/build-2025-recap/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-05-19T19:32:46+00:00"
+    },
+    {
+      "url": "https://futurework.blog/2025/05/14/ai-first-future-with-microsoft-365-copilot/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-05-14T10:21:41+00:00"
+    },
+    {
+      "url": "https://www.karlex.fi/do-you-need-a-custom-agent-to-detect-anomalies/#utm_source=rss&utm_medium=rss",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-02-03T08:54:51+00:00"
+    },
+    {
+      "url": "https://www.karlex.fi/play-it-wright-automating-end-to-end-tests-in-the-power-platform/#utm_source=rss&utm_medium=rss",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-01-29T03:53:00+00:00"
+    },
+    {
+      "url": "https://www.karlex.fi/oops-i-vibe-coded-again/#utm_source=rss&utm_medium=rss",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-01-28T02:17:00+00:00"
+    },
+    {
+      "url": "https://www.karlex.fi/from-likes-to-insights-measuring-real-user-experience-in-conversational-ai/#utm_source=rss&utm_medium=rss",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-01-27T03:53:00+00:00"
+    },
+    {
+      "url": "https://www.karlex.fi/power-platform-governance-security-architecture/#utm_source=rss&utm_medium=rss",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-01-26T11:33:36+00:00"
+    },
+    {
+      "url": "https://www.karlex.fi/you-are-ready-for-ai-but-are-your-users/#utm_source=rss&utm_medium=rss",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-01-26T08:00:47+00:00"
+    },
+    {
+      "url": "https://www.karlex.fi/fixing-prompt-injection-vulnerability/#utm_source=rss&utm_medium=rss",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-01-18T15:55:37+00:00"
+    },
+    {
+      "url": "https://www.matthewdevaney.com/copilot-studio-generate-powerpoint-file-from-a-template/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-03-02T00:31:06+00:00"
+    },
+    {
+      "url": "https://www.matthewdevaney.com/video-copilot-studio-generate-powerpoint-file-using-a-prompt/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-02-22T17:05:41+00:00"
+    },
+    {
+      "url": "https://www.matthewdevaney.com/create-an-mcp-server-and-deploy-to-copilot-studio/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-02-15T20:46:22+00:00"
+    },
+    {
+      "url": "https://www.matthewdevaney.com/video-create-an-mcp-server-and-deploy-to-copilot-studio/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-02-08T15:20:15+00:00"
+    },
+    {
+      "url": "https://www.matthewdevaney.com/copilot-studio-search-multiline-text-file-dataverse-fields/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-02-02T01:18:04+00:00"
+    },
+    {
+      "url": "https://www.matthewdevaney.com/connect-to-dataverse-knowledge-in-copilot-studio/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-01-25T20:00:08+00:00"
+    },
+    {
+      "url": "https://www.matthewdevaney.com/video-copilot-studio-dataverse-knowledge-complete-setup-guide/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-01-18T15:44:09+00:00"
+    },
+    {
+      "url": "https://www.matthewdevaney.com/copilot-studio-generate-a-word-document/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-01-12T00:37:49+00:00"
+    },
+    {
+      "url": "https://www.matthewdevaney.com/video-copilot-studio-generate-word-document-grounded-in-knowledge/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-01-04T14:23:32+00:00"
+    },
+    {
+      "url": "https://www.matthewdevaney.com/top-10-copilot-studio-articles-of-2025/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-12-28T23:50:48+00:00"
+    },
+    {
+      "url": "https://nishantrana.me/2026/02/10/renaming-sitemap-display-name-in-dataverse-dynamics-365/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-02-09T18:40:00+00:00"
+    },
+    {
+      "url": "https://nishantrana.me/2026/01/22/fixed-audit-history-page-not-loading-dataverse-dynamics-365/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-01-21T18:35:00+00:00"
+    },
+    {
+      "url": "https://nishantrana.me/2026/01/21/why-we-switched-our-plugin-from-preoperation-to-prevalidation-dataverse-dynamics-365/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-01-20T18:35:00+00:00"
+    },
+    {
+      "url": "https://nishantrana.me/2026/01/20/using-the-restore-message-to-recover-deleted-records-in-dataverse/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-01-19T18:35:00+00:00"
+    },
+    {
+      "url": "https://nishantrana.me/2026/01/14/advancing-and-finishing-a-bpf-using-retrieveprocessinstancesrequest-and-retrieveactivepathrequest-dataverse-dynamics-365/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-01-13T18:35:00+00:00"
+    },
+    {
+      "url": "https://nishantrana.me/2026/01/13/finishing-deactivating-and-reopening-a-business-process-flow-using-a-console-app-c-dataverse-dynamics-365/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-01-12T18:35:00+00:00"
+    },
+    {
+      "url": "https://nishantrana.me/2026/01/07/moving-a-business-process-flow-to-the-next-stage-using-a-console-application/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-01-06T18:35:00+00:00"
+    },
+    {
+      "url": "https://nishantrana.me/2026/01/06/using-a-plugin-to-generate-auto-number-values-for-legacy-and-reopened-records-in-dynamics-365-dataverse/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-01-05T18:35:00+00:00"
+    },
+    {
+      "url": "https://nishantrana.me/2026/01/01/solving-cs0006-metadata-file-not-found-error-in-visual-studio/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-12-31T18:35:00+00:00"
+    },
+    {
+      "url": "https://nishantrana.me/2025/12/30/tool-showcase-powermakerai-talk-to-your-crm-like-a-teammate-meet-powermakerais-context-aware-chatbot/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-12-30T04:40:00+00:00"
+    },
+    {
+      "url": "https://readyxrm.blog/2026/02/18/power-pages-cache-conquered/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-02-18T12:18:02+00:00"
+    },
+    {
+      "url": "https://readyxrm.blog/2026/01/02/power-pages-bring-your-own-code/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-01-02T19:43:40+00:00"
+    },
+    {
+      "url": "https://readyxrm.blog/2025/09/04/power-pages-single-page-apps-create-a-hello-world-website/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-09-05T02:20:39+00:00"
+    },
+    {
+      "url": "https://readyxrm.blog/2025/08/28/five-forgotten-features-of-dataverse/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-08-28T14:44:22+00:00"
+    },
+    {
+      "url": "https://readyxrm.blog/2025/08/21/power-pages-tired-of-filling-forms-use-an-agent/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-08-21T04:49:28+00:00"
+    },
+    {
+      "url": "https://readyxrm.blog/2025/08/13/power-pages-stop-using-the-default-maintenance-mode-page/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-08-13T23:59:45+00:00"
+    },
+    {
+      "url": "https://readyxrm.blog/2025/08/06/i-recreated-dynamics-crm-with-the-power-platform-plan-designer/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-08-06T12:24:46+00:00"
+    },
+    {
+      "url": "https://readyxrm.blog/2025/05/01/ai-builder-update-dataverse-currency-exchange-rates/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-05-01T21:08:09+00:00"
+    },
+    {
+      "url": "https://readyxrm.blog/2025/04/20/power-pages-actions-in-visual-studio-code/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-04-20T22:49:00+00:00"
+    },
+    {
+      "url": "https://reshmeeauckloo.com/posts/powershell-sharepoint-files-indexable-searchable/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-02-19T01:52:50+00:00"
+    },
+    {
+      "url": "https://reshmeeauckloo.com/posts/powershell-set-fileversion-expiration-date/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-01-16T01:52:50+00:00"
+    },
+    {
+      "url": "https://reshmeeauckloo.com/posts/agentstoolkit-invoking-powerautomate/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-01-07T10:00:00+00:00"
+    },
+    {
+      "url": "https://reshmeeauckloo.com/posts/powerautomate-invoke-from-anotherapp/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-01-06T10:00:00+00:00"
+    },
+    {
+      "url": "https://reshmeeauckloo.com/posts/copilot-sharepoint-mcp-tools/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-12-22T10:30:00+00:00"
+    },
+    {
+      "url": "https://reshmeeauckloo.com/posts/copilot-dynamic-adaptivecard-prompt/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-12-21T10:30:00+00:00"
+    },
+    {
+      "url": "https://reshmeeauckloo.com/posts/sharepoint-move-dialog-spinning-listviewthreshold/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-12-21T10:30:00+00:00"
+    },
+    {
+      "url": "https://reshmeeauckloo.com/posts/copilot-authentication-autonomous-agents/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-12-21T10:30:00+00:00"
+    },
+    {
+      "url": "https://reshmeeauckloo.com/posts/powershell-sharepoint-debugging-crawllog/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-12-14T10:30:00+00:00"
+    },
+    {
+      "url": "https://reshmeeauckloo.com/posts/powerapps-entraid-manage-pnppowershell/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-12-13T10:30:00+00:00"
+    },
+    {
+      "url": "https://reshmeeauckloo.com/posts/sharepoint-contentype-publishing/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-11-14T09:00:00+00:00"
+    },
+    {
+      "url": "https://reshmeeauckloo.com/posts/copilot-powerplatformapi/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-11-02T09:00:00+00:00"
+    },
+    {
+      "url": "https://robquickenden.blog/2026/02/microsoft-expands-copilot-connectors/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-02-18T08:00:00+00:00"
+    },
+    {
+      "url": "https://robquickenden.blog/2026/02/ai-networkreset/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-02-16T09:30:53+00:00"
+    },
+    {
+      "url": "https://robquickenden.blog/2026/02/whatarecopilotconnectors/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-02-16T08:00:10+00:00"
+    },
+    {
+      "url": "https://robquickenden.blog/2026/02/techpricing-forcecisco-contactchange/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-02-15T12:40:16+00:00"
+    },
+    {
+      "url": "https://baeke.info/2025/12/07/building-an-ai-agent-server-with-ag-ui-and-microsoft-agent-framework/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-12-07T14:20:49+00:00"
+    },
+    {
+      "url": "https://baeke.info/2025/10/19/creating-presentations-with-microsoft-agent-framework-and-gamma-api/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-10-19T13:22:41+00:00"
+    },
+    {
+      "url": "https://baeke.info/2025/08/15/durable-execution-for-an-ai-based-newsletter-generator/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-08-15T18:53:03+00:00"
+    },
+    {
+      "url": "https://baeke.info/2025/07/29/end-to-end-authorization-with-entra-id-and-mcp/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-07-29T15:14:48+00:00"
+    },
+    {
+      "url": "https://baeke.info/2025/07/18/deploying-a-multi-agent-solution-with-mcp-and-a2a-to-azure-container-apps/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-07-18T09:51:39+00:00"
+    },
+    {
+      "url": "https://baeke.info/2025/07/16/deploying-ai-foundry-agents-and-azure-container-apps-to-support-an-agent2agent-solution/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-07-16T14:18:42+00:00"
+    },
+    {
+      "url": "https://baeke.info/2025/07/15/using-tasks-with-streaming-in-google-agent2agent-a2a/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-07-15T09:56:54+00:00"
+    },
+    {
+      "url": "https://baeke.info/2025/07/14/googles-a2a-taking-a-closer-look/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-07-14T09:31:57+00:00"
+    },
+    {
+      "url": "https://baeke.info/2025/07/11/building-multi-agent-solutions-what-are-your-options/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-07-11T17:35:07+00:00"
+    },
+    {
+      "url": "https://baeke.info/2025/06/24/building-configurable-ai-agents-with-the-openai-agents-sdk/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-06-23T22:32:48+00:00"
+    },
+    {
+      "url": "https://baeke.info/2025/01/27/creating-an-agent-with-hugging-face-smolagents-and-azure-openai/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-01-27T18:20:47+00:00"
+    },
+    {
+      "url": "https://baeke.info/2025/01/19/using-bing-search-to-ground-llm-responses/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-01-19T22:20:20+00:00"
+    },
+    {
+      "url": "https://blogs.microsoft.com/blog/2026/02/24/microsoft-sovereign-cloud-adds-governance-productivity-and-support-for-large-ai-models-securely-running-even-when-completely-disconnected/",
+      "reason": "duplicate_title"
+    },
+    {
+      "url": "https://blogs.microsoft.com/blog/2026/02/20/asha-sharma-named-evp-and-ceo-microsoft-gaming/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-02-20T20:44:35+00:00"
+    },
+    {
+      "url": "https://blogs.microsoft.com/blog/2026/02/18/a-milestone-achievement-in-our-journey-to-carbon-negative/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-02-18T16:20:32+00:00"
+    },
+    {
+      "url": "https://blogs.microsoft.com/blog/2026/02/04/updates-in-two-of-our-core-priorities/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-02-04T17:00:32+00:00"
+    },
+    {
+      "url": "https://blogs.microsoft.com/blog/2026/01/27/how-microsoft-is-empowering-frontier-transformation-with-intelligence-trust/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-01-27T23:47:57+00:00"
+    },
+    {
+      "url": "https://blogs.microsoft.com/blog/2026/01/26/maia-200-the-ai-accelerator-built-for-inference/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-01-26T16:00:30+00:00"
+    },
+    {
+      "url": "https://blogs.microsoft.com/blog/2026/01/13/announcing-open-to-work-how-to-get-ahead-in-the-age-of-ai/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-01-13T15:12:16+00:00"
+    },
+    {
+      "url": "https://blogs.microsoft.com/blog/2026/01/05/microsoft-announces-acquisition-of-osmos-to-accelerate-autonomous-data-engineering-in-fabric/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-01-05T17:00:01+00:00"
+    },
+    {
+      "url": "https://blogs.microsoft.com/blog/2025/11/18/from-idea-to-deployment-the-complete-lifecycle-of-ai-on-display-at-ignite-2025/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-11-18T16:00:03+00:00"
+    },
+    {
+      "url": "https://dianabirkelbach.wordpress.com/2026/02/15/navigating-to-and-from-generative-pages/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-02-15T20:35:24+00:00"
+    },
+    {
+      "url": "https://dianabirkelbach.wordpress.com/2025/08/31/my-timetracking-page-using-generative-pages-and-fluent-ui-9/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-08-31T16:51:45+00:00"
+    },
+    {
+      "url": "https://dianabirkelbach.wordpress.com/2025/07/28/first-look-at-generative-pages-in-power-apps/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-07-28T16:46:03+00:00"
+    },
+    {
+      "url": "https://dianabirkelbach.wordpress.com/2025/07/02/pcf-%f0%9f%a9%b7-copilot-studio-first-look-at-agent-apis/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-07-02T06:48:11+00:00"
+    },
+    {
+      "url": "https://dianabirkelbach.wordpress.com/2025/05/07/the-magic-of-pfx-default-value-for-pcf-with-example-on-how-to-provide-colors/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-05-07T15:53:47+00:00"
+    },
+    {
+      "url": "https://dianabirkelbach.wordpress.com/2025/04/21/how-to-detect-that-a-pcf-is-running-inside-a-canvas-app-custom-page/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-04-21T11:10:17+00:00"
+    },
+    {
+      "url": "https://dianabirkelbach.wordpress.com/2025/03/31/debug-pcfs-using-a-browser-autoresponder-extension-mda-canvas-apps/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-03-31T15:51:49+00:00"
+    },
+    {
+      "url": "https://dianabirkelbach.wordpress.com/2025/03/20/two-way-communication-with-the-form-component-control/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-03-20T19:43:47+00:00"
+    },
+    {
+      "url": "https://dianabirkelbach.wordpress.com/2025/02/25/style-your-fluent-ui-9-pcfs-for-power-apps/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-02-25T17:21:24+00:00"
+    },
+    {
+      "url": "https://jonasr.app/my-advice-for-growing-developers/?utm_source=rss&utm_medium=rss&utm_campaign=my-advice-for-growing-developers",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-02-15T15:24:36+00:00"
+    },
+    {
+      "url": "https://jonasr.app/free-ai-by-jonas/?utm_source=rss&utm_medium=rss&utm_campaign=free-ai-by-jonas",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-09-26T16:46:09+00:00"
+    },
+    {
+      "url": "https://jonasr.app/ai-code-helpers/?utm_source=rss&utm_medium=rss&utm_campaign=ai-code-helpers",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-07-22T16:37:29+00:00"
+    },
+    {
+      "url": "https://jonasr.app/setting-seed/?utm_source=rss&utm_medium=rss&utm_campaign=setting-seed",
+      "reason": "outside_previous_week_window",
+      "published_at": "2024-12-05T13:33:40+00:00"
+    },
+    {
+      "url": "https://jonasr.app/three-new-features-for-udg/?utm_source=rss&utm_medium=rss&utm_campaign=three-new-features-for-udg",
+      "reason": "outside_previous_week_window",
+      "published_at": "2024-11-24T19:59:53+00:00"
+    },
+    {
+      "url": "https://jonasr.app/logging/?utm_source=rss&utm_medium=rss&utm_campaign=logging",
+      "reason": "outside_previous_week_window",
+      "published_at": "2024-09-19T15:51:26+00:00"
+    },
+    {
+      "url": "https://jonasr.app/helping/?utm_source=rss&utm_medium=rss&utm_campaign=helping",
+      "reason": "outside_previous_week_window",
+      "published_at": "2024-06-30T12:17:48+00:00"
+    },
+    {
+      "url": "https://jonasr.app/dangerous-tools/?utm_source=rss&utm_medium=rss&utm_campaign=dangerous-tools",
+      "reason": "outside_previous_week_window",
+      "published_at": "2024-06-09T16:59:46+00:00"
+    },
+    {
+      "url": "https://jonasr.app/tool-improved/?utm_source=rss&utm_medium=rss&utm_campaign=tool-improved",
+      "reason": "outside_previous_week_window",
+      "published_at": "2024-05-16T19:11:21+00:00"
+    },
+    {
+      "url": "https://jonasr.app/fetchxml-improve-for-us-to-achieve-more/?utm_source=rss&utm_medium=rss&utm_campaign=fetchxml-improve-for-us-to-achieve-more",
+      "reason": "outside_previous_week_window",
+      "published_at": "2024-03-20T21:00:16+00:00"
+    },
+    {
+      "url": "https://michelcarlo.com/2026/02/20/power-pages-web-application-firewall-help-to-prevent-script-injection-via-web-api/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-02-20T19:28:00+00:00"
+    },
+    {
+      "url": "https://michelcarlo.com/2025/11/08/power-pages-liquid-code-forloop-index-vs-forloop-index0/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-11-08T09:27:00+00:00"
+    },
+    {
+      "url": "https://michelcarlo.com/2025/11/01/how-to-find-sunday-and-saturday-of-the-current-week-using-liquid-in-power-pages/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-11-01T10:27:00+00:00"
+    },
+    {
+      "url": "https://michelcarlo.com/2025/09/20/blocking-a-country-in-power-pages-with-the-web-application-firewall/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-09-20T08:53:00+00:00"
+    },
+    {
+      "url": "https://michelcarlo.com/2025/08/23/power-pages-list-filters-link-entities-limitations-and-a-power-fx-column-workaround/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-08-23T09:45:00+00:00"
+    },
+    {
+      "url": "https://michelcarlo.com/2025/08/16/power-pages-using-dataverse-classic-real-time-workflows-for-server-side-validation-of-web-api-calls/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-08-16T09:47:42+00:00"
+    },
+    {
+      "url": "https://michelcarlo.com/2025/08/04/power-pages-using-dataverse-business-rules-for-server-side-validation-of-web-api-calls/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-08-04T09:05:23+00:00"
+    },
+    {
+      "url": "https://michelcarlo.com/2025/07/21/using-dataverse-low-code-plugins-to-validate-data-added-via-power-pages/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-07-21T07:58:00+00:00"
+    },
+    {
+      "url": "https://michelcarlo.com/2025/07/14/power-pages-adding-server-side-extra-validation-using-c-plugins/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-07-14T11:53:12+00:00"
+    },
+    {
+      "url": "https://michelcarlo.com/2025/06/16/power-platform-conference-2025-100-discount-code/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-06-16T17:09:40+00:00"
+    },
+    {
+      "url": "https://michelcarlo.com/2025/06/01/should-i-use-power-pages-or-build-a-custom-web-application-in-net-using-the-dataverse-sdk/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-06-01T09:13:00+00:00"
+    },
+    {
+      "url": "https://d365demystified.com/2026/01/31/price-override-in-project-operations-part-2-understanding-change-amount-effect/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-01-31T16:00:56+00:00"
+    },
+    {
+      "url": "https://d365demystified.com/2026/01/31/price-override-in-project-operations-part-1-inconsistent-price-update/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-01-31T15:50:53+00:00"
+    },
+    {
+      "url": "https://d365demystified.com/2025/12/31/permissions-in-project-in-project-operations/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-12-31T15:59:10+00:00"
+    },
+    {
+      "url": "https://d365demystified.com/2025/12/31/new-copy-project-experience-in-project-operations/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-12-31T15:33:30+00:00"
+    },
+    {
+      "url": "https://d365demystified.com/2025/11/30/tools-to-perform-actions-in-custom-copilots-copilot-studio/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-11-30T13:29:48+00:00"
+    },
+    {
+      "url": "https://d365demystified.com/2025/11/26/setting-up-codex-with-power-platform-mcp-server/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-11-26T11:07:30+00:00"
+    },
+    {
+      "url": "https://d365demystified.com/2025/10/31/finding-indexed-columns-in-dataverse-search/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-10-31T15:03:32+00:00"
+    },
+    {
+      "url": "https://d365demystified.com/2025/08/31/time-and-expense-agent-production-ready-preview-part-1/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-08-31T18:14:43+00:00"
+    },
+    {
+      "url": "https://d365demystified.com/2025/08/31/time-entry-calendar-in-project-operations/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-08-31T09:30:01+00:00"
+    },
+    {
+      "url": "https://d365demystified.com/2025/06/30/showing-sharepoint-documents-grid-on-a-form-tab-in-dynamics-365-crm/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-06-30T18:24:48+00:00"
+    },
+    {
+      "url": "https://rajeevpentyala.com/2026/02/22/github-spec-kit-with-claude-code-build-a-react-app-using-spec-driven-ai/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-02-21T21:21:02+00:00"
+    },
+    {
+      "url": "https://rajeevpentyala.com/2026/02/19/fix-running-scripts-is-disabled-error-while-running-npm/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-02-18T23:09:41+00:00"
+    },
+    {
+      "url": "https://rajeevpentyala.com/2026/02/11/claude-code-organize-your-project-using-claude-md/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-02-11T15:12:47+00:00"
+    },
+    {
+      "url": "https://rajeevpentyala.com/2026/02/11/getting-started-with-claude-code-build-a-simple-to-do-app/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-02-11T01:34:02+00:00"
+    },
+    {
+      "url": "https://rajeevpentyala.com/2026/02/05/claude-code-vs-code-extension-enable-bypass-permissions-mode/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-02-04T22:51:25+00:00"
+    },
+    {
+      "url": "https://rajeevpentyala.com/2026/02/03/copilot-studio-component-collections-in-action/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-02-03T16:26:58+00:00"
+    },
+    {
+      "url": "https://rajeevpentyala.com/2026/02/02/copilot-studio-build-an-agent-using-microsoft-planner/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-02-02T14:01:26+00:00"
+    },
+    {
+      "url": "https://rajeevpentyala.com/2026/01/28/agent-platform-advisor-choosing-the-right-microsoft-copilot-made-easy/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-01-28T14:57:18+00:00"
+    },
+    {
+      "url": "https://rajeevpentyala.com/2026/01/24/github-clone-vs-fork-vs-use-this-template/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-01-23T22:07:05+00:00"
+    },
+    {
+      "url": "https://rajeevpentyala.com/2026/01/23/copilot-studio-child-vs-connected-agents/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-01-22T22:19:52+00:00"
+    },
+    {
+      "url": "https://temmyraharjo.wordpress.com/2026/02/22/dataverse-how-to-set-a-complex-query-for-system-view/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-02-21T16:37:19+00:00"
+    },
+    {
+      "url": "https://temmyraharjo.wordpress.com/2026/02/14/azure-functions-to-scrape-yahoo-data-and-store-it-in-sharepoint/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-02-14T10:17:58+00:00"
+    },
+    {
+      "url": "https://temmyraharjo.wordpress.com/2026/02/01/dataverse-get-best-threads-and-rows-count/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-02-01T07:41:34+00:00"
+    },
+    {
+      "url": "https://temmyraharjo.wordpress.com/2026/01/16/what-i-learned-about-ssis/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-01-16T12:00:00+00:00"
+    },
+    {
+      "url": "https://temmyraharjo.wordpress.com/2025/11/30/benchmark-tds-endpoint-vs-queryexpression-vs-fetchexpression/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-11-29T17:58:55+00:00"
+    },
+    {
+      "url": "https://temmyraharjo.wordpress.com/2025/11/16/enable-navigation-for-customer-insights-journeys-form/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-11-15T16:47:18+00:00"
+    },
+    {
+      "url": "https://temmyraharjo.wordpress.com/2025/11/02/how-to-prevent-uploading-a-malicious-file-to-dataverse/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-11-01T19:06:02+00:00"
+    },
+    {
+      "url": "https://temmyraharjo.wordpress.com/2025/10/26/modernizing-audit-summary-history-using-generative-pages-preview/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-10-25T17:57:46+00:00"
+    },
+    {
+      "url": "https://temmyraharjo.wordpress.com/2025/10/12/geolocation-in-power-apps-translating-addresses-and-validating-check-ins/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-10-11T18:13:50+00:00"
+    },
+    {
+      "url": "https://temmyraharjo.wordpress.com/2025/09/21/basic-docusign-for-power-automate/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-09-20T18:37:04+00:00"
+    },
+    {
+      "url": "https://poweraddict.net/outlook-new-does-not-start-faulting-module-name-ucrtbase-dll/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-12-06T12:08:59+00:00"
+    },
+    {
+      "url": "https://poweraddict.net/how-to-create-security-group-with-multiple-owners-in-powershell/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2025-11-11T09:43:16+00:00"
+    },
+    {
+      "url": "https://poweraddict.net/msgraph-api-x-ray-tool/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2024-06-20T07:06:08+00:00"
+    },
+    {
+      "url": "https://poweraddict.net/make-read-host-input-mandatory/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2023-11-24T10:57:46+00:00"
+    },
+    {
+      "url": "https://poweraddict.net/excluding-inactive-mailboxes-from-org-wide-retention-holds/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2023-03-22T07:27:18+00:00"
+    },
+    {
+      "url": "https://poweraddict.net/restore-user-mailboxes-mailbox-recovery-in-exchange-online/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2023-03-07T08:41:25+00:00"
+    },
+    {
+      "url": "https://poweraddict.net/a-user-friendly-powershell-module-for-openais-gpt-3-and-dall-e-api/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2023-03-06T09:36:59+00:00"
+    },
+    {
+      "url": "https://poweraddict.net/how-to-get-read-password-in-azure-automation-accounts/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2023-02-17T09:10:14+00:00"
+    },
+    {
+      "url": "https://poweraddict.net/how-to-search-for-external-email-addresses-in-ediscovery-search/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2022-11-28T15:24:54+00:00"
+    },
+    {
+      "url": "https://poweraddict.net/how-to-disconnect-from-msolservice-in-powershell/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2022-04-01T06:44:58+00:00"
+    },
+    {
+      "url": "https://poweraddict.net/ms-500-microsoft-365-security-administration-%e2%94%82-expert-talk/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2022-02-09T09:02:29+00:00"
+    },
+    {
+      "url": "https://poweraddict.net/how-to-find-out-verify-onprem-ad-ou-location-in-azure-ad-for-synced-user/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2022-02-02T10:50:13+00:00"
+    },
+    {
+      "source": "linkedin-discovery-note",
+      "reason": "manual/non-fetch source"
+    }
+  ],
+  "mix_target": {
+    "independent": 0.6,
+    "official": 0.4
+  },
+  "mix_actual": {
+    "official": 0.174,
+    "independent": 0.826,
+    "official_count": 4,
+    "independent_count": 19
+  },
+  "scoring_notes": {
+    "freshness": "Based on published date recency bands (<=3d highest, >30d lowest).",
+    "quality": "Based on source priority + trust + title noise penalty.",
+    "content_type": "Weighted toward updates/guides/how-tos/demos/build reports; down-ranks marketing/news-noise.",
+    "total": "score_total = freshness*0.50 + quality*0.50 (quality includes content-type weighting)."
+  },
+  "questions_for_liam": [
+    "Any sources to add/remove this week? (approval required)",
+    "Any item titles that should be down-ranked as noise?"
+  ]
+}

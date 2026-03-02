@@ -20,6 +20,7 @@ def run():
     subprocess.check_call(["python3", str(ROOT / "scripts/pipeline/build_queue.py"), "--issue-id", issue_id])
     subprocess.check_call(["python3", str(ROOT / "scripts/pipeline/validate_queue.py"), "--issue-id", issue_id])
     subprocess.check_call(["python3", str(ROOT / "scripts/pipeline/generate_issue.py"), "--issue-id", issue_id])
+    subprocess.check_call(["python3", str(ROOT / "scripts/pipeline/render_issue_html.py"), "--issue-id", issue_id])
 
     draft_path = ROOT / "drafts" / f"email-{issue_id}.md"
     if draft_path.exists():
@@ -37,6 +38,7 @@ def run():
             f"artifacts/editorial_queue-{issue_id}.json",
             f"artifacts/editorial_queue-{issue_id}.md",
             f"posts/issue-{issue_id}.md",
+            f"posts/issue-{issue_id}.html",
             f"drafts/email-{issue_id}.md"
         ]
     }

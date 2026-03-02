@@ -3,41 +3,47 @@ import argparse
 import datetime as dt
 import json
 import pathlib
+import re
 
 ROOT = pathlib.Path(__file__).resolve().parents[2]
 
 
-def lead_phrase(item):
+def speaker(item):
     if "Official" in item.get("tags", []):
-        return "Microsoft updated"
-    publisher = item.get("publisher") or "A practitioner"
-    return f"{publisher} published"
+        return "Microsoft"
+    return item.get("publisher") or "Community"
 
 
-def action_signal(item):
-    title = (item.get("title") or "").lower()
-    effort = (item.get("effort") or "").lower()
-    confidence = (item.get("confidence") or "").lower()
+def concise_summary(item):
+    title = (item.get("title") or "").strip()
+    custom = (item.get("why_it_matters") or "").strip()
+    title_l = title.lower()
 
-    if any(k in title for k in ["deprecation", "retire", "end of support", "breaking"]):
-        return "Adopt"
-    if any(k in title for k in ["generally available", "ga", "now available", "released"]):
-        return "Pilot"
-    if "high" in confidence and "tbd" not in effort:
-        return "Pilot"
-    return "Watch"
+    heuristics = [
+        (["copilot studio", "mcp"], "Shows a concrete Copilot Studio build pattern you can reuse quickly."),
+        (["dataverse", "search"], "Improves retrieval quality for Dataverse-grounded copilots."),
+        (["roadmap", "spfx"], "Signals near-term platform changes likely to affect planning and maintenance."),
+        (["power pages", "webapi"], "Highlights a practical workaround for Power Pages permission constraints."),
+        (["agent framework", "semantic kernel", "autogen"], "Useful migration guidance for teams moving to Microsoft Agent Framework."),
+        (["rbac", "authentication"], "Practical security testing guidance for auth and role-boundary validation."),
+    ]
+
+    for keys, text in heuristics:
+        if all(k in title_l for k in keys):
+            return text
+
+    if custom and "potentially relevant update" not in custom.lower():
+        return custom
+
+    trimmed = re.sub(r"\s+", " ", title).strip(" .")
+    return f"{trimmed} — useful if this area is in your current delivery scope."
 
 
 def narrative_line(item):
-    lead = lead_phrase(item)
-    why = item.get("why_it_matters", "Potential impact; verify details before acting.")
-    signal = action_signal(item)
-    audience = item.get("audience", "Mixed")
+    who = speaker(item)
+    why = concise_summary(item)
     url = item.get("canonical_url", item.get("url", "#"))
-    return (
-        f"- {lead}: {why} Action: **{signal}** ({audience}). "
-        f"[Read source]({url})"
-    )
+    return f"- **{who}:** {why} [Read source]({url})"
 
 
 def section(items, label, limit=5):
@@ -64,14 +70,17 @@ def main():
     official = [i for i in items if "Official" in i.get("tags", [])]
     community = [i for i in items if "Community" in i.get("tags", [])]
 
+    window_start = q.get("window_start_utc", "unknown")
+    window_end = q.get("window_end_utc", "unknown")
+
     post = [
         f"# Microsoft Agentic AI Weekly — Issue {args.issue_id}",
         "",
-        f"_Generated draft on {dt.datetime.utcnow().date().isoformat()} (requires human editorial approval before publishing)._",
+        f"_Generated on {dt.datetime.utcnow().date().isoformat()} · Coverage window (UTC): {window_start} to {window_end} (end exclusive). Requires human editorial approval before publishing._",
         "",
         "## What changed this week",
         "",
-        "Short list, fast read: focus on what changes your build plan this week.",
+        "Fast scan of updates published in last week’s window that can affect active Microsoft agent delivery work.",
         "",
         "## Top 5 you shouldn’t miss",
         "",
@@ -92,7 +101,7 @@ def main():
     post += [
         "## Builder takeaway",
         "",
-        "Triage quickly: run with **Adopt**, trial **Pilot**, and park **Watch** items in backlog.",
+        "Pick one item to apply this sprint, and ignore anything not tied to your current roadmap.",
         "",
         "## Corrections",
         "",
@@ -104,6 +113,7 @@ def main():
         f"# Microsoft Agentic AI Weekly — Issue {args.issue_id}",
         "",
         "Draft only. Do not send without Liam approval.",
+        f"Coverage window (UTC): {window_start} to {window_end} (end exclusive).",
         "",
         "## Top 5 you shouldn’t miss",
         "",
