@@ -1,6 +1,6 @@
 {
   "issue_id": "2026-10",
-  "generated_at": "2026-03-02T13:19:57.054278+00:00",
+  "generated_at": "2026-03-02T14:47:56.898286+00:00",
   "window_start_utc": "2026-02-23T00:00:00+00:00",
   "window_end_utc": "2026-03-02T00:00:00+00:00",
   "items": [
@@ -12,7 +12,7 @@
       "author": "",
       "publisher": "Megan V. Walker",
       "published_at": "Tue, 24 Feb 2026 08:30:00 +0000",
-      "fetched_at": "2026-03-02T13:19:57.054278+00:00",
+      "fetched_at": "2026-03-02T14:47:56.898286+00:00",
       "product_area": "Power Platform",
       "source_type": "rss",
       "summary_bullets": [
@@ -45,7 +45,7 @@
       "author": "",
       "publisher": "Azure Blog",
       "published_at": "Tue, 24 Feb 2026 10:20:00 +0000",
-      "fetched_at": "2026-03-02T13:19:57.054278+00:00",
+      "fetched_at": "2026-03-02T14:47:56.898286+00:00",
       "product_area": "Foundry",
       "source_type": "rss",
       "summary_bullets": [
@@ -78,7 +78,7 @@
       "author": "",
       "publisher": "Rob Quickenden",
       "published_at": "Fri, 27 Feb 2026 17:08:36 +0000",
-      "fetched_at": "2026-03-02T13:19:57.054278+00:00",
+      "fetched_at": "2026-03-02T14:47:56.898286+00:00",
       "product_area": "Mixed",
       "source_type": "rss",
       "summary_bullets": [
@@ -111,7 +111,7 @@
       "author": "",
       "publisher": "Karl-Johan Spiik (Karlex)",
       "published_at": "Fri, 27 Feb 2026 02:40:00 +0000",
-      "fetched_at": "2026-03-02T13:19:57.054278+00:00",
+      "fetched_at": "2026-03-02T14:47:56.898286+00:00",
       "product_area": "Power Platform",
       "source_type": "rss",
       "summary_bullets": [
@@ -144,7 +144,7 @@
       "author": "",
       "publisher": "Karl-Johan Spiik (Karlex)",
       "published_at": "Wed, 25 Feb 2026 16:33:48 +0000",
-      "fetched_at": "2026-03-02T13:19:57.054278+00:00",
+      "fetched_at": "2026-03-02T14:47:56.898286+00:00",
       "product_area": "Power Platform",
       "source_type": "rss",
       "summary_bullets": [
@@ -178,7 +178,7 @@
       "author": "",
       "publisher": "Nishant Rana",
       "published_at": "Tue, 24 Feb 2026 18:35:00 +0000",
-      "fetched_at": "2026-03-02T13:19:57.054278+00:00",
+      "fetched_at": "2026-03-02T14:47:56.898286+00:00",
       "product_area": "Power Platform",
       "source_type": "rss",
       "summary_bullets": [
@@ -211,7 +211,7 @@
       "author": "",
       "publisher": "Nishant Rana",
       "published_at": "Mon, 23 Feb 2026 18:35:00 +0000",
-      "fetched_at": "2026-03-02T13:19:57.054278+00:00",
+      "fetched_at": "2026-03-02T14:47:56.898286+00:00",
       "product_area": "Power Platform",
       "source_type": "rss",
       "summary_bullets": [
@@ -244,7 +244,7 @@
       "author": "",
       "publisher": "Rob Quickenden",
       "published_at": "Mon, 23 Feb 2026 11:20:23 +0000",
-      "fetched_at": "2026-03-02T13:19:57.054278+00:00",
+      "fetched_at": "2026-03-02T14:47:56.898286+00:00",
       "product_area": "Mixed",
       "source_type": "rss",
       "summary_bullets": [

@@ -44,6 +44,16 @@
 python3 scripts/pipeline/run_weekly.py
 ```
 
+Optional flags:
+
+```bash
+# Backfill or regenerate a specific issue id
+python3 scripts/pipeline/run_weekly.py --issue-id 2026-10
+
+# Generate queue/site/email artifacts without calling Buttondown API
+python3 scripts/pipeline/run_weekly.py --skip-buttondown
+```
+
 ## Sample dry run (Issue 000)
 
 ```bash

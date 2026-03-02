@@ -17,7 +17,7 @@ import xml.etree.ElementTree as ET
 
 ROOT_HTML = ["index.html", "archive.html", "about.html", "sources.html", "corrections.html"]
 HREF_SRC_RE = re.compile(r'(?:href|src)="([^"]+)"')
-ISSUE_LINK_RE = re.compile(r'href="(posts/issue-\d+\.html)"')
+ISSUE_LINK_RE = re.compile(r'href="(posts/issue-[0-9]+(?:-[0-9]+)?\.html)"')
 
 
 def html_files(root: Path) -> list[Path]:

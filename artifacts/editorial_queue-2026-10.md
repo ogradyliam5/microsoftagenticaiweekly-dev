@@ -1,6 +1,6 @@
 # Weekly Editorial Queue — 2026-10
 
-Generated: 2026-03-02T13:19:57.054278+00:00
+Generated: 2026-03-02T14:47:56.898286+00:00
 Total included: 8
 Excluded: 245
 Date window (UTC): 2026-02-23T00:00:00+00:00 to 2026-03-02T00:00:00+00:00 (end exclusive)

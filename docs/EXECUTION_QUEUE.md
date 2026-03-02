@@ -112,6 +112,12 @@ Purpose: prevent stop/start drift and force delivery through ordered stages.
 - Ensure failures block regressions before `develop -> main` promotion.
 - Document the CI guardrail and local parity command.
 
+### Stage 16 — Pipeline Execution Modes (Backfill + Safe Local Run)
+- Add explicit run mode flags to weekly pipeline for deterministic backfills.
+- Allow local artifact generation without requiring Buttondown API calls.
+- Record Buttondown execution status in run summary output.
+
 ## Stage completion log (current cycle)
 - [x] Stage 14 complete — see `docs/STAGE14_AUTOMATED_RELEASE_AUDIT_SCRIPT.md` (latest develop commit)
 - [x] Stage 15 complete — see `docs/STAGE15_CI_RELEASE_AUDIT_GUARDRAIL.md` (latest develop commit)
+- [x] Stage 16 complete — see `docs/STAGE16_PIPELINE_EXECUTION_MODES.md` (latest develop commit)
