@@ -28,15 +28,15 @@ def action_signal(item):
     return "Watch"
 
 
-def one_liner(item):
+def narrative_line(item):
     lead = lead_phrase(item)
     why = item.get("why_it_matters", "Potential impact; verify details before acting.")
-    audience = item.get("audience", "Mixed")
     signal = action_signal(item)
+    audience = item.get("audience", "Mixed")
     url = item.get("canonical_url", item.get("url", "#"))
     return (
-        f"- {lead}: {why} "
-        f"**Signal:** {signal} · **For:** {audience} · [Read source]({url})"
+        f"- {lead}: {why} Action: **{signal}** ({audience}). "
+        f"[Read source]({url})"
     )
 
 
@@ -45,7 +45,7 @@ def section(items, label, limit=5):
     if not items:
         return out + ["No qualifying items this run.", ""]
     for it in items[:limit]:
-        out += [f"### {it['title']}", one_liner(it), ""]
+        out += [f"### {it['title']}", narrative_line(it), ""]
     return out
 
 
@@ -71,7 +71,7 @@ def main():
         "",
         "## What changed this week",
         "",
-        "Quick scan first; dive into links only where your roadmap is exposed.",
+        "Short list, fast read: focus on what changes your build plan this week.",
         "",
         "## Top 5 you shouldn’t miss",
         "",
@@ -81,7 +81,7 @@ def main():
         post += ["No qualifying items this run.", ""]
     else:
         for idx, it in enumerate(items[:5], start=1):
-            post += [f"{idx}. **{it['title']}**", one_liner(it), ""]
+            post += [f"{idx}. **{it['title']}**", narrative_line(it), ""]
 
     post += section(official, "Official updates")
     post += section(pp, "Power Platform")
@@ -92,7 +92,7 @@ def main():
     post += [
         "## Builder takeaway",
         "",
-        "If time is tight, work down Top 5 and only escalate items marked **Pilot** or **Adopt**.",
+        "Triage quickly: run with **Adopt**, trial **Pilot**, and park **Watch** items in backlog.",
         "",
         "## Corrections",
         "",
@@ -114,7 +114,7 @@ def main():
     else:
         for it in items[:5]:
             email.append(f"- **{it['title']}**")
-            email.append(f"  {one_liner(it).lstrip('- ')}")
+            email.append(f"  {narrative_line(it).lstrip('- ')}")
 
     posts = ROOT / "posts"
     drafts = ROOT / "drafts"

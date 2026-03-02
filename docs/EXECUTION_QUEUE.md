@@ -97,5 +97,5 @@ Purpose: prevent stop/start drift and force delivery through ordered stages.
 - [x] Stage 9 complete — see `docs/STAGE9_BUTTONDOWN_RELIABILITY_HARDENING.md` (latest develop commit)
 - [x] Stage 10 complete — see `docs/STAGE10_INTERESTING_ONLY_SOURCE_RANKING.md` (latest develop commit)
 - [x] Stage 11 complete — see `docs/STAGE11_HOMEPAGE_VOICE_V3.md` (latest develop commit)
-- [ ] Stage 12 pending
+- [x] Stage 12 complete — see `docs/STAGE12_WEEKLY_RENDERER_V2_EVERYWHERE.md` (latest develop commit)
 - [ ] Stage 13 pending
