@@ -68,3 +68,34 @@ Purpose: prevent stop/start drift and force delivery through ordered stages.
 - [x] Stage 6 complete — `94b2b63`
 - [x] Stage 7 complete — source mix tuning + freshness/quality scoring notes added (see latest develop commit)
 - [x] Stage 8 complete — see `docs/STAGE8_FINAL_POLISH_PRODUCTION_PLAN.md`
+
+## Stage Plan (next cycle)
+
+### Stage 9 — Buttondown Reliability Hardening
+- Diagnose and fix HTTP 422 in `scripts/pipeline/buttondown_draft.py`.
+- Ensure idempotent create/update behavior for weekly draft IDs.
+- Add clear error handling + actionable logs without blocking site artifact generation.
+
+### Stage 10 — Interesting-Only Source Ranking
+- Tune scoring to prioritize updates, guides, how-tos, demos, and real build reports.
+- Down-rank generic marketing/news-noise items.
+- Add explicit content-type weighting in queue output.
+
+### Stage 11 — Homepage Voice v3
+- Rewrite homepage in human, engaging style per Liam’s preferences.
+- Keep concise trust cues; reduce framework-heavy language.
+
+### Stage 12 — Weekly Renderer v2 Everywhere
+- Apply narrative item format to all active issue templates and latest drafts.
+- Keep scannable, short summaries with source links.
+
+### Stage 13 — Production Promotion Readiness
+- Final QA pass + release checklist + rollback notes.
+- Prepare `develop -> main` promotion handoff.
+
+## Stage completion log (next cycle)
+- [ ] Stage 9 pending
+- [ ] Stage 10 pending
+- [ ] Stage 11 pending
+- [ ] Stage 12 pending
+- [ ] Stage 13 pending
