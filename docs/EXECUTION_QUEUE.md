@@ -141,7 +141,7 @@ Purpose: prevent stop/start drift and force delivery through ordered stages.
 
 ## Stage completion log (next cycle)
 - [x] Stage 24 complete — see `docs/STAGE24_HOMEPAGE_VISUAL_POLISH_ISSUE_CARD_UX.md` (latest develop commit)
-- [ ] Stage 25 pending
+- [x] Stage 25 complete — see `docs/STAGE25_EDITION_DATA_CONSISTENCY_PASS.md` (latest develop commit)
 
 ## Stage Plan (next cycle)
 
