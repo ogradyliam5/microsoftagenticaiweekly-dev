@@ -92,5 +92,6 @@ python3 scripts/pipeline/make_sample_issue000.py
 Workflow: `.github/workflows/weekly-editorial.yml`
 
 - Scheduled weekly every Monday morning (08:00 Europe/London) + manual dispatch.
+- Schedule runs are gated to Monday 08:00 Europe/London; manual `workflow_dispatch` bypasses the time gate.
 - Uses repo secret: `BUTTONDOWN_API_KEY`.
 - Opens PR for approval before any publish/send steps.

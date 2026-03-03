@@ -235,3 +235,13 @@ Purpose: prevent stop/start drift and force delivery through ordered stages.
 
 ## Stage completion log (next cycle)
 - [x] Stage 30 complete — fail-fast artifact enforcement added to weekly pipeline; see `docs/STAGE30_WEEKLY_ARTIFACT_ENFORCEMENT_FAIL_FAST.md` (latest develop commit)
+
+## Stage Plan (current cycle)
+
+### Stage 31 — Weekly Workflow Manual-Dispatch Reliability
+- Ensure `.github/workflows/weekly-editorial.yml` runs pipeline on `workflow_dispatch` regardless of Monday 08:00 London gate.
+- Keep schedule gating intact for cron-triggered runs.
+- Document parity behavior in `docs/WEEKLY_PIPELINE.md`.
+
+## Stage completion log (current cycle)
+- [x] Stage 31 complete — manual dispatch now bypasses schedule gate while cron remains Monday-08:00 guarded (latest develop commit)

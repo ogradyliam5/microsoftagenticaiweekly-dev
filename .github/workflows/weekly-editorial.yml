@@ -18,10 +18,16 @@ jobs:
   generate:
     runs-on: ubuntu-latest
     steps:
-      - name: Guard Monday 08:00 Europe/London
+      - name: Guard Monday 08:00 Europe/London (schedule only)
         id: london_gate
         shell: bash
         run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "run_pipeline=true" >> "$GITHUB_OUTPUT"
+            echo "Manual dispatch detected: bypassing Monday 08:00 gate"
+            exit 0
+          fi
+
           LONDON_HOUR="$(TZ=Europe/London date +%H)"
           LONDON_DOW="$(TZ=Europe/London date +%u)"
           if [ "$LONDON_DOW" = "1" ] && [ "$LONDON_HOUR" = "08" ]; then
@@ -29,7 +35,7 @@ jobs:
             echo "Proceeding at Monday 08:00 Europe/London"
           else
             echo "run_pipeline=false" >> "$GITHUB_OUTPUT"
-            echo "Skipping: current Europe/London time is not Monday 08:00"
+            echo "Skipping scheduled run: current Europe/London time is not Monday 08:00"
           fi
 
       - uses: actions/checkout@v4
