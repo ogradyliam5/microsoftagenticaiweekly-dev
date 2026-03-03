@@ -277,3 +277,13 @@ Purpose: prevent stop/start drift and force delivery through ordered stages.
 - [x] Stage 33 complete — ISO week issue-id validation guardrail added for CLI + workflow dispatch; see `docs/STAGE33_ISSUE_ID_INPUT_VALIDATION_GUARDRAIL.md` (latest develop commit)
 - [x] Stage 34 complete — workflow dispatch now validates real ISO-week bounds; see `docs/STAGE34_WORKFLOW_ISO_WEEK_VALIDATION_PARITY.md` (latest develop commit)
 - [x] Stage 35 complete — shared issue-id validator used by CLI + workflow dispatch; see `docs/STAGE35_SHARED_ISSUE_ID_VALIDATION_PARITY.md` (latest develop commit)
+
+## Stage Plan (next cycle)
+
+### Stage 36 — Issue-ID Validation Regression Coverage
+- Add a deterministic regression test script for shared `issue_id_guard` logic.
+- Execute guardrail regression checks in weekly workflow before pipeline arg build.
+- Document local parity command and verification evidence.
+
+## Stage completion log (next cycle)
+- [x] Stage 36 complete — issue-id guard regression checks added to CI + local parity docs; see `docs/STAGE36_ISSUE_ID_VALIDATION_REGRESSION_COVERAGE.md` (latest develop commit)

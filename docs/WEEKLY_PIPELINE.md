@@ -103,5 +103,12 @@ Workflow: `.github/workflows/weekly-editorial.yml`
   - `skip_source_audit` -> `--skip-source-audit`
   - `no_enforce_artifacts` -> `--no-enforce-artifacts`
 - Manual dispatch validates `issue_id` via shared `scripts/pipeline/issue_id_guard.py` logic, enforcing real ISO-week bounds for the target year before pipeline execution.
+- Workflow run also executes `scripts/pipeline/test_issue_id_guard.py` before argument build, so issue-id guardrail regressions fail fast in CI.
 - Uses repo secret: `BUTTONDOWN_API_KEY`.
 - Opens PR for approval before any publish/send steps.
+
+Local parity command for guardrail regression checks:
+
+```bash
+python3 scripts/pipeline/test_issue_id_guard.py
+```

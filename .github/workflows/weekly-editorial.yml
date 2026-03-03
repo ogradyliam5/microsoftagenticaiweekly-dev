@@ -66,6 +66,11 @@ jobs:
         with:
           python-version: "3.11"
 
+      - name: Run issue-id validator regression checks
+        if: steps.london_gate.outputs.run_pipeline == 'true'
+        run: |
+          python3 scripts/pipeline/test_issue_id_guard.py
+
       - name: Build pipeline args (manual dispatch inputs)
         if: steps.london_gate.outputs.run_pipeline == 'true'
         id: pipeline_args
