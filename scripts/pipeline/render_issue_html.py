@@ -98,8 +98,29 @@ def main():
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script>
+    (function () {
+      var key = 'maiw-theme';
+      var theme = 'dark';
+      try {
+        var stored = localStorage.getItem(key);
+        if (stored === 'light' || stored === 'dark') {
+          theme = stored;
+        } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          theme = 'dark';
+        } else {
+          theme = 'light';
+        }
+      } catch (e) {}
+      var root = document.documentElement;
+      root.setAttribute('data-theme', theme);
+      root.classList.remove('theme-dark', 'theme-light');
+      root.classList.add(theme === 'dark' ? 'theme-dark' : 'theme-light');
+      root.style.colorScheme = theme;
+    })();
+  </script>
   <title>Issue {args.issue_id} — Microsoft Agentic AI Weekly</title>
-  <link rel="stylesheet" href="../assets/legacy.css" />
+  <link rel="stylesheet" href="../assets/legacy.css?v=20260304" />
 </head>
 <body>
   <header class="site-header">
@@ -127,7 +148,7 @@ def main():
       </article>
     </div>
   </main>
-  <script src="../assets/theme.js"></script>
+  <script src="../assets/theme.js?v=20260304"></script>
 </body>
 </html>
 '''

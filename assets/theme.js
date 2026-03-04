@@ -1,30 +1,51 @@
 (function () {
-  const KEY = 'maiw-theme';
-  const root = document.documentElement;
+  var KEY = 'maiw-theme';
+  var root = document.documentElement;
+
+  function safeGetStoredTheme() {
+    try {
+      var stored = localStorage.getItem(KEY);
+      return stored === 'light' || stored === 'dark' ? stored : null;
+    } catch (e) {
+      return null;
+    }
+  }
 
   function preferredTheme() {
-    const stored = localStorage.getItem(KEY);
-    if (stored === 'light' || stored === 'dark') return stored;
+    var stored = safeGetStoredTheme();
+    if (stored) return stored;
     return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
   }
 
   function applyTheme(theme) {
-    root.setAttribute('data-theme', theme);
-    document.querySelectorAll('[data-theme-toggle]').forEach((btn) => {
-      const next = theme === 'dark' ? 'light' : 'dark';
-      btn.setAttribute('aria-label', `Switch to ${next} mode`);
-      btn.textContent = theme === 'dark' ? '☀️ Light' : '🌙 Dark';
+    var resolved = theme === 'light' ? 'light' : 'dark';
+    root.setAttribute('data-theme', resolved);
+    root.classList.remove('theme-dark', 'theme-light');
+    root.classList.add(resolved === 'dark' ? 'theme-dark' : 'theme-light');
+    root.style.colorScheme = resolved;
+
+    document.querySelectorAll('[data-theme-toggle]').forEach(function (btn) {
+      var next = resolved === 'dark' ? 'light' : 'dark';
+      btn.setAttribute('aria-label', 'Switch to ' + next + ' mode');
+      btn.textContent = resolved === 'dark' ? '☀️ Light' : '🌙 Dark';
     });
+  }
+
+  function persistTheme(theme) {
+    try {
+      localStorage.setItem(KEY, theme);
+    } catch (e) {}
   }
 
   function init() {
     applyTheme(preferredTheme());
-    document.addEventListener('click', (event) => {
-      const target = event.target.closest('[data-theme-toggle]');
+
+    document.addEventListener('click', function (event) {
+      var target = event.target.closest('[data-theme-toggle]');
       if (!target) return;
-      const current = root.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
-      const next = current === 'dark' ? 'light' : 'dark';
-      localStorage.setItem(KEY, next);
+      var current = root.getAttribute('data-theme') === 'light' ? 'light' : 'dark';
+      var next = current === 'dark' ? 'light' : 'dark';
+      persistTheme(next);
       applyTheme(next);
     });
   }

@@ -3,10 +3,31 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script>
+    (function () {
+      var key = 'maiw-theme';
+      var theme = 'dark';
+      try {
+        var stored = localStorage.getItem(key);
+        if (stored === 'light' || stored === 'dark') {
+          theme = stored;
+        } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          theme = 'dark';
+        } else {
+          theme = 'light';
+        }
+      } catch (e) {}
+      var root = document.documentElement;
+      root.setAttribute('data-theme', theme);
+      root.classList.remove('theme-dark', 'theme-light');
+      root.classList.add(theme === 'dark' ? 'theme-dark' : 'theme-light');
+      root.style.colorScheme = theme;
+    })();
+  </script>
   <title>Microsoft Agentic AI Weekly</title>
   <meta name="description" content="A high-signal weekly briefing for teams building with Microsoft Agentic AI." />
   <link rel="alternate" type="application/rss+xml" title="Microsoft Agentic AI Weekly RSS" href="feed.xml" />
-  <link rel="stylesheet" href="assets/styles.css" />
+  <link rel="stylesheet" href="assets/styles.css?v=20260304" />
 </head>
 <body class="min-h-screen bg-slate-950 text-slate-100">
   <header class="sticky top-0 z-20 border-b border-slate-800/90 bg-slate-950/90 backdrop-blur">
@@ -112,6 +133,6 @@
       <a class="hover:text-slate-300" href="feed.xml">RSS</a>
     </div>
   </footer>
-  <script src="assets/theme.js"></script>
+  <script src="assets/theme.js?v=20260304"></script>
 </body>
 </html>

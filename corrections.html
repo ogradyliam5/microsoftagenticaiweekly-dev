@@ -3,9 +3,30 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script>
+    (function () {
+      var key = 'maiw-theme';
+      var theme = 'dark';
+      try {
+        var stored = localStorage.getItem(key);
+        if (stored === 'light' || stored === 'dark') {
+          theme = stored;
+        } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          theme = 'dark';
+        } else {
+          theme = 'light';
+        }
+      } catch (e) {}
+      var root = document.documentElement;
+      root.setAttribute('data-theme', theme);
+      root.classList.remove('theme-dark', 'theme-light');
+      root.classList.add(theme === 'dark' ? 'theme-dark' : 'theme-light');
+      root.style.colorScheme = theme;
+    })();
+  </script>
   <title>Corrections — Microsoft Agentic AI Weekly</title>
   <meta name="description" content="Correction policy and changelog for Microsoft Agentic AI Weekly." />
-  <link rel="stylesheet" href="assets/legacy.css" />
+  <link rel="stylesheet" href="assets/legacy.css?v=20260304" />
 </head>
 <body>
   <header class="site-header">
@@ -46,6 +67,6 @@
   <footer class="footer">
     <div class="container">© 2026 Microsoft Agentic AI Weekly</div>
   </footer>
-  <script src="assets/theme.js"></script>
+  <script src="assets/theme.js?v=20260304"></script>
 </body>
 </html>

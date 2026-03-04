@@ -3,9 +3,30 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script>
+    (function () {
+      var key = 'maiw-theme';
+      var theme = 'dark';
+      try {
+        var stored = localStorage.getItem(key);
+        if (stored === 'light' || stored === 'dark') {
+          theme = stored;
+        } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          theme = 'dark';
+        } else {
+          theme = 'light';
+        }
+      } catch (e) {}
+      var root = document.documentElement;
+      root.setAttribute('data-theme', theme);
+      root.classList.remove('theme-dark', 'theme-light');
+      root.classList.add(theme === 'dark' ? 'theme-dark' : 'theme-light');
+      root.style.colorScheme = theme;
+    })();
+  </script>
   <title>Issue #003 — From prototypes to managed agents</title>
   <meta name="description" content="Issue #003: ALM templates, deployment rings, and runtime safety checks for Microsoft agent teams." />
-  <link rel="stylesheet" href="../assets/legacy.css" />
+  <link rel="stylesheet" href="../assets/legacy.css?v=20260304" />
 </head>
 <body>
   <header class="site-header"><div class="container"><a class="brand" href="../index.html">Microsoft Agentic AI Weekly</a><nav class="nav">
@@ -24,6 +45,6 @@
     <h2 id="risk-notes">Governance and risk notes</h2><div class="signal-card"><ul><li>Separate feature flags from policy controls so emergency risk response does not require full redeploy.</li><li>Log all prompt/policy revisions with timestamps for post-incident audits.</li></ul></div>
   </article><aside class="sidebar panel"><h3>Practical sections</h3><p><a href="#summary">Summary</a><br><a href="#signals">Signals</a><br><a href="#build-next">Build next</a><br><a href="#risk-notes">Risk notes</a></p><hr class="sep"><p class="small">Status: published after human approval.</p></aside></div></main>
   <footer class="footer"><div class="container">© 2026 Microsoft Agentic AI Weekly</div></footer>
-  <script src="../assets/theme.js"></script>
+  <script src="../assets/theme.js?v=20260304"></script>
 </body>
 </html>

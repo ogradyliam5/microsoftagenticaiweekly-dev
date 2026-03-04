@@ -3,9 +3,30 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script>
+    (function () {
+      var key = 'maiw-theme';
+      var theme = 'dark';
+      try {
+        var stored = localStorage.getItem(key);
+        if (stored === 'light' || stored === 'dark') {
+          theme = stored;
+        } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          theme = 'dark';
+        } else {
+          theme = 'light';
+        }
+      } catch (e) {}
+      var root = document.documentElement;
+      root.setAttribute('data-theme', theme);
+      root.classList.remove('theme-dark', 'theme-light');
+      root.classList.add(theme === 'dark' ? 'theme-dark' : 'theme-light');
+      root.style.colorScheme = theme;
+    })();
+  </script>
   <title>Issue #004 — Retrieval quality becomes a board-level risk</title>
   <meta name="description" content="Issue #004: data lineage, confidence scoring, and answer accountability in enterprise agent programs." />
-  <link rel="stylesheet" href="../assets/legacy.css" />
+  <link rel="stylesheet" href="../assets/legacy.css?v=20260304" />
 </head>
 <body>
   <header class="site-header"><div class="container"><a class="brand" href="../index.html">Microsoft Agentic AI Weekly</a><nav class="nav">
@@ -24,6 +45,6 @@
     <h2>Caveats</h2><div class="signal-card"><ul><li>Confidence scores can create false certainty unless paired with quality sampling.</li><li>Governance overhead should scale with risk tier, not blanket on all use cases.</li></ul></div>
   </article><aside class="sidebar panel"><h3>Operator note</h3><p class="small">Retrieval quality is now an executive trust problem, not just an engineering concern.</p><hr class="sep"><p class="small">Approval-first process preserved.</p></aside></div></main>
   <footer class="footer"><div class="container">© 2026 Microsoft Agentic AI Weekly</div></footer>
-  <script src="../assets/theme.js"></script>
+  <script src="../assets/theme.js?v=20260304"></script>
 </body>
 </html>
