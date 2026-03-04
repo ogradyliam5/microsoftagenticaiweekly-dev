@@ -42,7 +42,11 @@
 6. `scripts/pipeline/run_weekly.py` summary integrity checks
    - Verifies expected weekly output artifacts exist before writing `artifacts/last_run.json`
    - Fails the run when required artifacts are missing (fail-fast by default)
+   - Captures step-level execution diagnostics when core pipeline steps fail
    - Records:
+     - `pipeline_status` (`ok` or `failed`)
+     - `failed_step` object (`name`, `command`, `exit_code`) when applicable
+     - `step_results` array for successful/failed/skipped steps
      - `artifact_check` (`ok` or `missing_artifacts`)
      - `missing_artifacts` array
      - `artifact_checks` map (path -> true/false)

@@ -297,3 +297,13 @@ Purpose: prevent stop/start drift and force delivery through ordered stages.
 
 ## Stage completion log (current cycle)
 - [x] Stage 37 complete — weekly workflow now uploads artifacts on failure paths; see `docs/STAGE37_WORKFLOW_FAILURE_ARTIFACT_RETENTION_PARITY.md` (latest develop commit)
+
+## Stage Plan (next cycle)
+
+### Stage 38 — Weekly Pipeline Failure Diagnostics Parity
+- Ensure `run_weekly.py` records step-level failure diagnostics in `artifacts/last_run.json` when core pipeline commands fail.
+- Preserve artifact integrity checks in the same summary so CI/local troubleshooting stays deterministic.
+- Document local parity verification and expected failure evidence paths.
+
+## Stage completion log (next cycle)
+- [x] Stage 38 complete — run summary now includes pipeline status + failed-step diagnostics; see `docs/STAGE38_WEEKLY_PIPELINE_FAILURE_DIAGNOSTICS_PARITY.md` (latest develop commit)
