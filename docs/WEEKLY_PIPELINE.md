@@ -59,7 +59,7 @@
      - `output_artifacts` map (named output label -> canonical path)
      - `output_artifact_checks` map (named output label -> `{path, exists}`)
      - `enforce_artifacts` (whether fail-fast mode was enabled)
-     - `run_history` object (snapshot paths + retention metadata for timestamped history copies, including retained run count, JSON/markdown retained counts, and orphan snapshot counts)
+     - `run_history` object (snapshot paths + run-history index paths + retention metadata for timestamped history copies, including retained run count, JSON/markdown retained counts, and orphan snapshot counts)
 
 7. `scripts/pipeline/buttondown_draft.py`
    - Creates a Buttondown **draft** (never sends)

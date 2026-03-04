@@ -1,6 +1,6 @@
 # Weekly Pipeline Run Report — 2026-10
 
-Generated: 2026-03-04T16:18:47.818995Z
+Generated: 2026-03-04T17:48:47.584504Z
 
 ## Run status
 - Buttondown: skipped
@@ -22,9 +22,9 @@ Generated: 2026-03-04T16:18:47.818995Z
 - guide: 1
 
 ## Top scored items
-1. Autonomous Agents in Action (0.7999)
-   - https://www.karlex.fi/autonomous-agents-in-action/#utm_source=rss&utm_medium=rss
-2. AI Prompting Guide: Get Better Results with Copilot and ChatGPT (0.7904)
+1. AI Prompting Guide: Get Better Results with Copilot and ChatGPT (0.7904)
    - https://robquickenden.blog/2026/02/writing-better-ai-prompts/
-3. Ways to Build Agents: Nube to Pro (0.7549)
+2. Ways to Build Agents: Nube to Pro (0.7549)
    - https://robquickenden.blog/2026/02/building-ai-agents-nube-to-pro/
+3. Autonomous Agents in Action (0.7124)
+   - https://www.karlex.fi/autonomous-agents-in-action/#utm_source=rss&utm_medium=rss

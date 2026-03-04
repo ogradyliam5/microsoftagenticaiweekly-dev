@@ -1,6 +1,6 @@
 # Weekly Editorial Queue — 2026-10
 
-Generated: 2026-03-04T16:18:03.556061+00:00
+Generated: 2026-03-04T17:48:07.811810+00:00
 Total included: 3
 Excluded: 250
 Date window (UTC): 2026-02-23T00:00:00+00:00 to 2026-03-02T00:00:00+00:00 (end exclusive)
@@ -20,24 +20,24 @@ Date window (UTC): 2026-02-23T00:00:00+00:00 to 2026-03-02T00:00:00+00:00 (end e
 
 ## Top candidates
 
-1. **Autonomous Agents in Action**
-   - Publisher: Karl-Johan Spiik (Karlex) (independent)
-   - Type: other (weight 0.55)
-   - Scores: total 0.80 · freshness 0.85 · quality 0.79 · relevance 0.75
-   - Confidence: Medium
-   - URL: https://www.karlex.fi/autonomous-agents-in-action/#utm_source=rss&utm_medium=rss
-2. **AI Prompting Guide: Get Better Results with Copilot and ChatGPT**
+1. **AI Prompting Guide: Get Better Results with Copilot and ChatGPT**
    - Publisher: Rob Quickenden (independent)
    - Type: guide (weight 0.95)
    - Scores: total 0.79 · freshness 0.60 · quality 0.97 · relevance 0.80
    - Confidence: Medium
    - URL: https://robquickenden.blog/2026/02/writing-better-ai-prompts/
-3. **Ways to Build Agents: Nube to Pro**
+2. **Ways to Build Agents: Nube to Pro**
    - Publisher: Rob Quickenden (independent)
    - Type: other (weight 0.55)
    - Scores: total 0.75 · freshness 0.85 · quality 0.79 · relevance 0.60
    - Confidence: Medium
    - URL: https://robquickenden.blog/2026/02/building-ai-agents-nube-to-pro/
+3. **Autonomous Agents in Action**
+   - Publisher: Karl-Johan Spiik (Karlex) (independent)
+   - Type: other (weight 0.55)
+   - Scores: total 0.71 · freshness 0.60 · quality 0.79 · relevance 0.75
+   - Confidence: Medium
+   - URL: https://www.karlex.fi/autonomous-agents-in-action/#utm_source=rss&utm_medium=rss
 
 ## Questions for Liam
 

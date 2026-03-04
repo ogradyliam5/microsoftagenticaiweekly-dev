@@ -170,24 +170,12 @@
     },
     "run_history_index_json": {
       "path": "artifacts/run_history/index.json",
-      "exists": true
+      "exists": false
     },
     "run_history_index_markdown": {
       "path": "artifacts/run_history/index.md",
-      "exists": true
+      "exists": false
     }
   },
-  "enforce_artifacts": true,
-  "run_history": {
-    "json": "artifacts/run_history/last_run-2026-10-20260304T174902Z.json",
-    "markdown": "artifacts/run_history/last_run-2026-10-20260304T174902Z.md",
-    "index_json": "artifacts/run_history/index.json",
-    "index_markdown": "artifacts/run_history/index.md",
-    "retention_limit": 30,
-    "retained_run_count": 4,
-    "retained_json_count": 4,
-    "retained_markdown_count": 4,
-    "orphan_json_count": 0,
-    "orphan_markdown_count": 0
-  }
+  "enforce_artifacts": true
 }

@@ -15,6 +15,8 @@ ART.mkdir(exist_ok=True)
 RUN_HISTORY_DIR = ART / "run_history"
 RUN_HISTORY_DIR.mkdir(exist_ok=True)
 RUN_HISTORY_LIMIT = 30
+RUN_HISTORY_INDEX_JSON = RUN_HISTORY_DIR / "index.json"
+RUN_HISTORY_INDEX_MARKDOWN = RUN_HISTORY_DIR / "index.md"
 
 
 def issue_id_today():
@@ -48,6 +50,8 @@ def _build_output_artifacts(issue_id):
         "buttondown_drafts": "artifacts/buttondown_drafts.json",
         "run_summary_json": "artifacts/last_run.json",
         "run_summary_markdown": "artifacts/last_run.md",
+        "run_history_index_json": "artifacts/run_history/index.json",
+        "run_history_index_markdown": "artifacts/run_history/index.md",
     }
 
 
@@ -77,7 +81,7 @@ def _collect_history_runs():
     runs = {}
     for path in files:
         stem = _history_stem(path)
-        entry = runs.setdefault(stem, {"json": None, "md": None, "mtime": 0.0})
+        entry = runs.setdefault(stem, {"stem": stem, "json": None, "md": None, "mtime": 0.0})
         if path.suffix == ".json":
             entry["json"] = path
         elif path.suffix == ".md":
@@ -85,6 +89,48 @@ def _collect_history_runs():
         entry["mtime"] = max(entry["mtime"], path.stat().st_mtime)
 
     return sorted(runs.values(), key=lambda item: item["mtime"], reverse=True)
+
+
+def _write_run_history_index(retained_runs):
+    index_payload = {
+        "generated_at": dt.datetime.utcnow().isoformat() + "Z",
+        "retention_limit": RUN_HISTORY_LIMIT,
+        "retained_run_count": len(retained_runs),
+        "runs": [
+            {
+                "stem": run["stem"],
+                "json": str(run["json"].relative_to(ROOT)) if run["json"] else None,
+                "markdown": str(run["md"].relative_to(ROOT)) if run["md"] else None,
+                "mtime": run["mtime"],
+            }
+            for run in retained_runs
+        ],
+    }
+
+    RUN_HISTORY_INDEX_JSON.write_text(json.dumps(index_payload, indent=2), encoding="utf-8")
+
+    lines = [
+        "# Run History Index",
+        "",
+        f"- Generated at: `{index_payload['generated_at']}`",
+        f"- Retention limit: `{RUN_HISTORY_LIMIT}`",
+        f"- Retained runs: `{len(retained_runs)}`",
+        "",
+        "## Snapshots",
+        "",
+    ]
+
+    if not retained_runs:
+        lines.append("- None")
+    else:
+        for run in retained_runs:
+            json_path = str(run["json"].relative_to(ROOT)) if run["json"] else "n/a"
+            markdown_path = str(run["md"].relative_to(ROOT)) if run["md"] else "n/a"
+            lines.append(f"- `{run['stem']}`")
+            lines.append(f"  - json: `{json_path}`")
+            lines.append(f"  - markdown: `{markdown_path}`")
+
+    RUN_HISTORY_INDEX_MARKDOWN.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
 def _write_run_history_snapshot(issue_id, run_finished_at):
@@ -115,9 +161,13 @@ def _write_run_history_snapshot(issue_id, run_finished_at):
     retained_json_count = sum(1 for run in retained_runs if run["json"])
     retained_markdown_count = sum(1 for run in retained_runs if run["md"])
 
+    _write_run_history_index(retained_runs)
+
     return {
         "json": str(history_json.relative_to(ROOT)),
         "markdown": str(history_md.relative_to(ROOT)),
+        "index_json": str(RUN_HISTORY_INDEX_JSON.relative_to(ROOT)),
+        "index_markdown": str(RUN_HISTORY_INDEX_MARKDOWN.relative_to(ROOT)),
         "retention_limit": RUN_HISTORY_LIMIT,
         "retained_run_count": len(retained_runs),
         "retained_json_count": retained_json_count,
@@ -283,6 +333,13 @@ def run(issue_id=None, skip_buttondown=False, skip_source_audit=False, enforce_a
         run_history = _write_run_history_snapshot(issue_id, run_finished_at)
 
     summary["run_history"] = run_history
+    summary["output_artifact_checks"] = {
+        label: {
+            "path": path,
+            "exists": _artifact_exists(path),
+        }
+        for label, path in output_artifacts.items()
+    }
     write_latest_summary_files(summary)
 
     print(json.dumps(summary, indent=2))

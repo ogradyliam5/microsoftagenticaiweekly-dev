@@ -82,6 +82,8 @@ def validate(summary):
         for key in (
             "json",
             "markdown",
+            "index_json",
+            "index_markdown",
             "retention_limit",
             "retained_run_count",
             "retained_json_count",

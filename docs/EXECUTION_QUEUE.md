@@ -375,3 +375,13 @@ Purpose: prevent stop/start drift and force delivery through ordered stages.
 
 ## Stage completion log (next cycle)
 - [x] Stage 47 complete — run-history retention now trims by run snapshot pair with parity diagnostics; see `docs/STAGE47_RUN_HISTORY_PAIR_RETENTION_PARITY.md` (latest develop commit)
+
+## Stage Plan (current cycle)
+
+### Stage 48 — Run-History Index Parity
+- Generate canonical run-history index artifacts (`index.json` + `index.md`) during weekly runs.
+- Surface index paths in `artifacts/last_run.json` and markdown run summary output.
+- Extend summary contract/docs so CI + local verification enforce index parity.
+
+## Stage completion log (current cycle)
+- [x] Stage 48 complete — run-history index artifacts + summary/validator parity shipped; see `docs/STAGE48_RUN_HISTORY_INDEX_PARITY.md` (latest develop commit)

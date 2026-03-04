@@ -78,6 +78,8 @@ def render(summary: dict) -> str:
         lines.append(f"- JSON snapshot: {_as_code(run_history.get('json'))}")
         lines.append(f"- Markdown snapshot: {_as_code(run_history.get('markdown'))}")
         lines.append(f"- Retention limit: {_as_code(run_history.get('retention_limit'))}")
+        lines.append(f"- Index JSON: {_as_code(run_history.get('index_json'))}")
+        lines.append(f"- Index markdown: {_as_code(run_history.get('index_markdown'))}")
         lines.append(f"- Retained run snapshot count: {_as_code(run_history.get('retained_run_count'))}")
         lines.append(f"- Retained JSON snapshot count: {_as_code(run_history.get('retained_json_count'))}")
         lines.append(f"- Retained markdown snapshot count: {_as_code(run_history.get('retained_markdown_count'))}")

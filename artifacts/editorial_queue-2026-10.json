@@ -1,43 +1,9 @@
 {
   "issue_id": "2026-10",
-  "generated_at": "2026-03-04T16:18:03.556061+00:00",
+  "generated_at": "2026-03-04T17:48:07.811810+00:00",
   "window_start_utc": "2026-02-23T00:00:00+00:00",
   "window_end_utc": "2026-03-02T00:00:00+00:00",
   "items": [
-    {
-      "id": "autonomous-agents-in-action",
-      "title": "Autonomous Agents in Action",
-      "url": "https://www.karlex.fi/autonomous-agents-in-action/#utm_source=rss&utm_medium=rss",
-      "canonical_url": "https://www.karlex.fi/autonomous-agents-in-action/#utm_source=rss&utm_medium=rss",
-      "author": "",
-      "publisher": "Karl-Johan Spiik (Karlex)",
-      "published_at": "Wed, 25 Feb 2026 16:33:48 +0000",
-      "fetched_at": "2026-03-04T16:18:03.556061+00:00",
-      "product_area": "Power Platform",
-      "source_type": "rss",
-      "summary_bullets": [
-        "Auto-collected candidate. Editorial rewrite required before publishing."
-      ],
-      "why_it_matters": "Potentially relevant update for Microsoft Agentic AI builders.",
-      "audience": "Dev",
-      "effort": "TBD during editorial review",
-      "confidence": "Medium",
-      "tags": [
-        "Power Platform",
-        "Foundry",
-        "Community"
-      ],
-      "evidence": [
-        "Source title: Autonomous Agents in Action"
-      ],
-      "source_mix_bucket": "independent",
-      "content_type": "other",
-      "score_freshness": 0.85,
-      "score_quality": 0.7925,
-      "score_content_type": 0.55,
-      "score_relevance": 0.75,
-      "score_total": 0.7999
-    },
     {
       "id": "ai-prompting-guide-get-better-results-with-copilot-and-chatgpt",
       "title": "AI Prompting Guide: Get Better Results with Copilot and ChatGPT",
@@ -46,7 +12,7 @@
       "author": "",
       "publisher": "Rob Quickenden",
       "published_at": "Mon, 23 Feb 2026 11:20:23 +0000",
-      "fetched_at": "2026-03-04T16:18:03.556061+00:00",
+      "fetched_at": "2026-03-04T17:48:07.811810+00:00",
       "product_area": "Mixed",
       "source_type": "rss",
       "summary_bullets": [
@@ -79,7 +45,7 @@
       "author": "",
       "publisher": "Rob Quickenden",
       "published_at": "Fri, 27 Feb 2026 17:08:36 +0000",
-      "fetched_at": "2026-03-04T16:18:03.556061+00:00",
+      "fetched_at": "2026-03-04T17:48:07.811810+00:00",
       "product_area": "Mixed",
       "source_type": "rss",
       "summary_bullets": [
@@ -103,6 +69,40 @@
       "score_content_type": 0.55,
       "score_relevance": 0.6,
       "score_total": 0.7549
+    },
+    {
+      "id": "autonomous-agents-in-action",
+      "title": "Autonomous Agents in Action",
+      "url": "https://www.karlex.fi/autonomous-agents-in-action/#utm_source=rss&utm_medium=rss",
+      "canonical_url": "https://www.karlex.fi/autonomous-agents-in-action/#utm_source=rss&utm_medium=rss",
+      "author": "",
+      "publisher": "Karl-Johan Spiik (Karlex)",
+      "published_at": "Wed, 25 Feb 2026 16:33:48 +0000",
+      "fetched_at": "2026-03-04T17:48:07.811810+00:00",
+      "product_area": "Power Platform",
+      "source_type": "rss",
+      "summary_bullets": [
+        "Auto-collected candidate. Editorial rewrite required before publishing."
+      ],
+      "why_it_matters": "Potentially relevant update for Microsoft Agentic AI builders.",
+      "audience": "Dev",
+      "effort": "TBD during editorial review",
+      "confidence": "Medium",
+      "tags": [
+        "Power Platform",
+        "Foundry",
+        "Community"
+      ],
+      "evidence": [
+        "Source title: Autonomous Agents in Action"
+      ],
+      "source_mix_bucket": "independent",
+      "content_type": "other",
+      "score_freshness": 0.6,
+      "score_quality": 0.7925,
+      "score_content_type": 0.55,
+      "score_relevance": 0.75,
+      "score_total": 0.7124
     }
   ],
   "clusters": [],
