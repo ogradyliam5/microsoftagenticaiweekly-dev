@@ -1,6 +1,6 @@
 {
   "issue_id": "2026-10",
-  "generated_at": "2026-03-04T05:48:08.766315+00:00",
+  "generated_at": "2026-03-04T10:19:04.761370+00:00",
   "window_start_utc": "2026-02-23T00:00:00+00:00",
   "window_end_utc": "2026-03-02T00:00:00+00:00",
   "items": [
@@ -12,7 +12,7 @@
       "author": "",
       "publisher": "Karl-Johan Spiik (Karlex)",
       "published_at": "Wed, 25 Feb 2026 16:33:48 +0000",
-      "fetched_at": "2026-03-04T05:48:08.766315+00:00",
+      "fetched_at": "2026-03-04T10:19:04.761370+00:00",
       "product_area": "Power Platform",
       "source_type": "rss",
       "summary_bullets": [
@@ -46,7 +46,7 @@
       "author": "",
       "publisher": "Rob Quickenden",
       "published_at": "Mon, 23 Feb 2026 11:20:23 +0000",
-      "fetched_at": "2026-03-04T05:48:08.766315+00:00",
+      "fetched_at": "2026-03-04T10:19:04.761370+00:00",
       "product_area": "Mixed",
       "source_type": "rss",
       "summary_bullets": [
@@ -79,7 +79,7 @@
       "author": "",
       "publisher": "Rob Quickenden",
       "published_at": "Fri, 27 Feb 2026 17:08:36 +0000",
-      "fetched_at": "2026-03-04T05:48:08.766315+00:00",
+      "fetched_at": "2026-03-04T10:19:04.761370+00:00",
       "product_area": "Mixed",
       "source_type": "rss",
       "summary_bullets": [
@@ -832,6 +832,11 @@
       "published_at": "2025-11-02T09:00:00+00:00"
     },
     {
+      "url": "https://robquickenden.blog/2026/03/copilot-getsgpt5-3/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-03-04T09:49:54+00:00"
+    },
+    {
       "url": "https://robquickenden.blog/2026/03/why-context-wins-enterpriseai/",
       "reason": "outside_previous_week_window",
       "published_at": "2026-03-02T20:18:25+00:00"
@@ -865,11 +870,6 @@
       "url": "https://robquickenden.blog/2026/02/ai-networkreset/",
       "reason": "outside_previous_week_window",
       "published_at": "2026-02-16T09:30:53+00:00"
-    },
-    {
-      "url": "https://robquickenden.blog/2026/02/whatarecopilotconnectors/",
-      "reason": "outside_previous_week_window",
-      "published_at": "2026-02-16T08:00:10+00:00"
     },
     {
       "url": "https://baeke.info/2025/12/07/building-an-ai-agent-server-with-ag-ui-and-microsoft-agent-framework/",
@@ -1291,6 +1291,11 @@
       "published_at": "2025-09-20T18:37:04+00:00"
     },
     {
+      "url": "https://poweraddict.net/how-to-load-regular-and-sale-price-for-simple-and-variable-products-in-woocommerce-with-bricksbuilder/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-03-04T10:00:51+00:00"
+    },
+    {
       "url": "https://poweraddict.net/outlook-new-does-not-start-faulting-module-name-ucrtbase-dll/",
       "reason": "outside_previous_week_window",
       "published_at": "2025-12-06T12:08:59+00:00"
@@ -1344,11 +1349,6 @@
       "url": "https://poweraddict.net/ms-500-microsoft-365-security-administration-%e2%94%82-expert-talk/",
       "reason": "outside_previous_week_window",
       "published_at": "2022-02-09T09:02:29+00:00"
-    },
-    {
-      "url": "https://poweraddict.net/how-to-find-out-verify-onprem-ad-ou-location-in-azure-ad-for-synced-user/",
-      "reason": "outside_previous_week_window",
-      "published_at": "2022-02-02T10:50:13+00:00"
     },
     {
       "source": "linkedin-discovery-note",

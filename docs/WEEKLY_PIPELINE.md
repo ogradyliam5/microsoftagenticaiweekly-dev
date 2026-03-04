@@ -52,7 +52,9 @@
      - `run_started_at`, `run_finished_at`, `run_duration_seconds`
      - `artifact_check` (`ok` or `missing_artifacts`)
      - `missing_artifacts` array
-     - `artifact_checks` map (path -> true/false)
+     - `artifact_checks` map (required path -> true/false)
+     - `output_artifacts` map (named output label -> canonical path)
+     - `output_artifact_checks` map (named output label -> `{path, exists}`)
      - `enforce_artifacts` (whether fail-fast mode was enabled)
 
 7. `scripts/pipeline/buttondown_draft.py`

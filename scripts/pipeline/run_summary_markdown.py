@@ -45,6 +45,17 @@ def render(summary: dict) -> str:
                 f"finished={_as_code(step.get('finished_at'))}"
             )
 
+    output_artifact_checks = summary.get("output_artifact_checks") or {}
+    lines.extend(["", "## Output artifacts", ""])
+    if output_artifact_checks:
+        for label, detail in output_artifact_checks.items():
+            path = detail.get("path")
+            exists = detail.get("exists")
+            status = "present" if exists else "missing"
+            lines.append(f"- {label}: `{status}` — `{path}`")
+    else:
+        lines.append("- None recorded")
+
     missing = summary.get("missing_artifacts") or []
     lines.extend(["", "## Missing artifacts", ""])
     if missing:

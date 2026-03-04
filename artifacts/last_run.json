@@ -1,9 +1,9 @@
 {
   "issue_id": "2026-10",
-  "generated_at": "2026-03-04T05:48:49.426920Z",
-  "run_started_at": "2026-03-04T05:48:08.545571Z",
-  "run_finished_at": "2026-03-04T05:48:49.426920Z",
-  "run_duration_seconds": 40.881,
+  "generated_at": "2026-03-04T10:20:03.837956Z",
+  "run_started_at": "2026-03-04T10:19:04.625318Z",
+  "run_finished_at": "2026-03-04T10:20:03.837956Z",
+  "run_duration_seconds": 59.213,
   "pipeline_status": "ok",
   "failed_step": null,
   "step_results": [
@@ -16,9 +16,9 @@
         "--issue-id",
         "2026-10"
       ],
-      "started_at": "2026-03-04T05:48:08.545754Z",
-      "finished_at": "2026-03-04T05:48:49.067152Z",
-      "duration_seconds": 40.521
+      "started_at": "2026-03-04T10:19:04.625465Z",
+      "finished_at": "2026-03-04T10:19:42.979434Z",
+      "duration_seconds": 38.354
     },
     {
       "name": "validate_queue",
@@ -29,9 +29,9 @@
         "--issue-id",
         "2026-10"
       ],
-      "started_at": "2026-03-04T05:48:49.067227Z",
-      "finished_at": "2026-03-04T05:48:49.152851Z",
-      "duration_seconds": 0.086
+      "started_at": "2026-03-04T10:19:42.979513Z",
+      "finished_at": "2026-03-04T10:19:43.063047Z",
+      "duration_seconds": 0.084
     },
     {
       "name": "generate_issue",
@@ -42,9 +42,9 @@
         "--issue-id",
         "2026-10"
       ],
-      "started_at": "2026-03-04T05:48:49.152891Z",
-      "finished_at": "2026-03-04T05:48:49.241102Z",
-      "duration_seconds": 0.088
+      "started_at": "2026-03-04T10:19:43.063089Z",
+      "finished_at": "2026-03-04T10:19:43.155221Z",
+      "duration_seconds": 0.092
     },
     {
       "name": "render_issue_html",
@@ -55,9 +55,9 @@
         "--issue-id",
         "2026-10"
       ],
-      "started_at": "2026-03-04T05:48:49.241140Z",
-      "finished_at": "2026-03-04T05:48:49.338248Z",
-      "duration_seconds": 0.097
+      "started_at": "2026-03-04T10:19:43.155261Z",
+      "finished_at": "2026-03-04T10:19:43.251321Z",
+      "duration_seconds": 0.096
     },
     {
       "name": "run_report",
@@ -68,13 +68,24 @@
         "--issue-id",
         "2026-10"
       ],
-      "started_at": "2026-03-04T05:48:49.338287Z",
-      "finished_at": "2026-03-04T05:48:49.426634Z",
-      "duration_seconds": 0.088
+      "started_at": "2026-03-04T10:19:43.251433Z",
+      "finished_at": "2026-03-04T10:19:43.341145Z",
+      "duration_seconds": 0.09
+    },
+    {
+      "name": "source_candidate_audit",
+      "status": "ok",
+      "command": [
+        "python3",
+        "/home/liam_vm/.openclaw/workspace/microsoftagenticaiweekly/scripts/pipeline/source_candidate_audit.py"
+      ],
+      "started_at": "2026-03-04T10:19:43.341250Z",
+      "finished_at": "2026-03-04T10:20:03.837384Z",
+      "duration_seconds": 20.496
     }
   ],
   "buttondown": "skipped",
-  "source_candidate_audit": "skipped",
+  "source_candidate_audit": "ok",
   "artifact_check": "ok",
   "missing_artifacts": [],
   "artifacts": [
@@ -83,7 +94,9 @@
     "artifacts/run_report-2026-10.md",
     "posts/issue-2026-10.md",
     "posts/issue-2026-10.html",
-    "drafts/email-2026-10.md"
+    "drafts/email-2026-10.md",
+    "artifacts/source_candidate_audit.json",
+    "artifacts/source_candidate_audit.md"
   ],
   "artifact_checks": {
     "artifacts/editorial_queue-2026-10.json": true,
@@ -91,7 +104,68 @@
     "artifacts/run_report-2026-10.md": true,
     "posts/issue-2026-10.md": true,
     "posts/issue-2026-10.html": true,
-    "drafts/email-2026-10.md": true
+    "drafts/email-2026-10.md": true,
+    "artifacts/source_candidate_audit.json": true,
+    "artifacts/source_candidate_audit.md": true
+  },
+  "output_artifacts": {
+    "queue_json": "artifacts/editorial_queue-2026-10.json",
+    "queue_markdown": "artifacts/editorial_queue-2026-10.md",
+    "run_report": "artifacts/run_report-2026-10.md",
+    "issue_markdown": "posts/issue-2026-10.md",
+    "issue_html": "posts/issue-2026-10.html",
+    "email_draft": "drafts/email-2026-10.md",
+    "source_audit_json": "artifacts/source_candidate_audit.json",
+    "source_audit_markdown": "artifacts/source_candidate_audit.md",
+    "buttondown_drafts": "artifacts/buttondown_drafts.json",
+    "run_summary_json": "artifacts/last_run.json",
+    "run_summary_markdown": "artifacts/last_run.md"
+  },
+  "output_artifact_checks": {
+    "queue_json": {
+      "path": "artifacts/editorial_queue-2026-10.json",
+      "exists": true
+    },
+    "queue_markdown": {
+      "path": "artifacts/editorial_queue-2026-10.md",
+      "exists": true
+    },
+    "run_report": {
+      "path": "artifacts/run_report-2026-10.md",
+      "exists": true
+    },
+    "issue_markdown": {
+      "path": "posts/issue-2026-10.md",
+      "exists": true
+    },
+    "issue_html": {
+      "path": "posts/issue-2026-10.html",
+      "exists": true
+    },
+    "email_draft": {
+      "path": "drafts/email-2026-10.md",
+      "exists": true
+    },
+    "source_audit_json": {
+      "path": "artifacts/source_candidate_audit.json",
+      "exists": true
+    },
+    "source_audit_markdown": {
+      "path": "artifacts/source_candidate_audit.md",
+      "exists": true
+    },
+    "buttondown_drafts": {
+      "path": "artifacts/buttondown_drafts.json",
+      "exists": true
+    },
+    "run_summary_json": {
+      "path": "artifacts/last_run.json",
+      "exists": true
+    },
+    "run_summary_markdown": {
+      "path": "artifacts/last_run.md",
+      "exists": true
+    }
   },
   "enforce_artifacts": true
 }

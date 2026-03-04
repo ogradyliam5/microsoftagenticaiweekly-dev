@@ -31,6 +31,22 @@ def _validate_issue_id(issue_id):
         raise SystemExit(str(exc)) from exc
 
 
+def _build_output_artifacts(issue_id):
+    return {
+        "queue_json": f"artifacts/editorial_queue-{issue_id}.json",
+        "queue_markdown": f"artifacts/editorial_queue-{issue_id}.md",
+        "run_report": f"artifacts/run_report-{issue_id}.md",
+        "issue_markdown": f"posts/issue-{issue_id}.md",
+        "issue_html": f"posts/issue-{issue_id}.html",
+        "email_draft": f"drafts/email-{issue_id}.md",
+        "source_audit_json": "artifacts/source_candidate_audit.json",
+        "source_audit_markdown": "artifacts/source_candidate_audit.md",
+        "buttondown_drafts": "artifacts/buttondown_drafts.json",
+        "run_summary_json": "artifacts/last_run.json",
+        "run_summary_markdown": "artifacts/last_run.md",
+    }
+
+
 def _run_step(label, command):
     started_at = dt.datetime.utcnow()
     started_monotonic = time.monotonic()
@@ -58,19 +74,21 @@ def run(issue_id=None, skip_buttondown=False, skip_source_audit=False, enforce_a
 
     _validate_issue_id(issue_id)
 
+    output_artifacts = _build_output_artifacts(issue_id)
+
     required_artifacts = [
-        f"artifacts/editorial_queue-{issue_id}.json",
-        f"artifacts/editorial_queue-{issue_id}.md",
-        f"artifacts/run_report-{issue_id}.md",
-        f"posts/issue-{issue_id}.md",
-        f"posts/issue-{issue_id}.html",
-        f"drafts/email-{issue_id}.md",
+        output_artifacts["queue_json"],
+        output_artifacts["queue_markdown"],
+        output_artifacts["run_report"],
+        output_artifacts["issue_markdown"],
+        output_artifacts["issue_html"],
+        output_artifacts["email_draft"],
     ]
 
     if not skip_source_audit:
         required_artifacts.extend([
-            "artifacts/source_candidate_audit.json",
-            "artifacts/source_candidate_audit.md",
+            output_artifacts["source_audit_json"],
+            output_artifacts["source_audit_markdown"],
         ])
 
     source_audit_status = "skipped"
@@ -148,6 +166,13 @@ def run(issue_id=None, skip_buttondown=False, skip_source_audit=False, enforce_a
         })
 
     artifact_checks = {path: _artifact_exists(path) for path in required_artifacts}
+    output_artifact_checks = {
+        label: {
+            "path": path,
+            "exists": _artifact_exists(path),
+        }
+        for label, path in output_artifacts.items()
+    }
     missing_artifacts = [path for path, exists in artifact_checks.items() if not exists]
 
     run_finished_at = dt.datetime.utcnow()
@@ -167,6 +192,8 @@ def run(issue_id=None, skip_buttondown=False, skip_source_audit=False, enforce_a
         "missing_artifacts": missing_artifacts,
         "artifacts": required_artifacts,
         "artifact_checks": artifact_checks,
+        "output_artifacts": output_artifacts,
+        "output_artifact_checks": output_artifact_checks,
         "enforce_artifacts": enforce_artifacts,
     }
     (ART / "last_run.json").write_text(json.dumps(summary, indent=2), encoding="utf-8")

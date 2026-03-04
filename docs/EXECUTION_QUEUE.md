@@ -334,3 +334,13 @@ Purpose: prevent stop/start drift and force delivery through ordered stages.
 
 ## Stage completion log (next cycle)
 - [x] Stage 42 complete — candidate freshness refresh + reject reason normalization with refreshed audit artifacts (latest develop commit)
+
+## Stage Plan (current cycle)
+
+### Stage 43 — Run Output Artifact Traceability Parity
+- Add named output artifact mapping to weekly run summary JSON so operators can inspect canonical paths quickly.
+- Include per-artifact existence status in markdown run summary for CI/local triage parity.
+- Document verification evidence and parity command in a dedicated stage note.
+
+## Stage completion log (current cycle)
+- [x] Stage 43 complete — output artifact traceability added to run summaries; see `docs/STAGE43_RUN_OUTPUT_ARTIFACT_TRACEABILITY_PARITY.md` (latest develop commit)
