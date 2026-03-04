@@ -405,3 +405,13 @@ Purpose: prevent stop/start drift and force delivery through ordered stages.
 
 ## Stage completion log (current cycle)
 - [x] Stage 50 complete — run-history index ordering + on-disk snapshot parity checks added; see `docs/STAGE50_RUN_HISTORY_INDEX_ORDERING_GUARDRAIL.md` (latest develop commit)
+
+## Stage Plan (next cycle)
+
+### Stage 51 — Run-History Latest Snapshot Alignment Guardrail
+- Extend run-summary contract validation to require that run-history index latest entry matches `run_history.json` and `run_history.markdown` from the current run.
+- Keep fail-fast behavior when index ordering or pointer metadata drifts.
+- Document local parity command + verification evidence in a dedicated stage note.
+
+## Stage completion log (next cycle)
+- [x] Stage 51 complete — latest run-history snapshot alignment guardrail added to validator; see `docs/STAGE51_RUN_HISTORY_LATEST_SNAPSHOT_ALIGNMENT_GUARDRAIL.md` (latest develop commit)

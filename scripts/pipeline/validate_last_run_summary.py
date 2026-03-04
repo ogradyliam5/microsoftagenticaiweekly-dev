@@ -111,6 +111,17 @@ def _validate_run_history_index(summary, run_history):
     _assert(snapshot_json_rel in json_paths, "run_history.json snapshot not found in run-history index")
     _assert(snapshot_markdown_rel in markdown_paths, "run_history.markdown snapshot not found in run-history index")
 
+    if runs:
+        latest_entry = runs[0]
+        _assert(
+            latest_entry.get("json") == snapshot_json_rel,
+            "run_history.index latest JSON snapshot must match run_history.json",
+        )
+        _assert(
+            latest_entry.get("markdown") == snapshot_markdown_rel,
+            "run_history.index latest markdown snapshot must match run_history.markdown",
+        )
+
     _assert(retained_json_count == len(json_paths), "run_history.retained_json_count mismatch with run-history index")
     _assert(retained_markdown_count == len(markdown_paths), "run_history.retained_markdown_count mismatch with run-history index")
 

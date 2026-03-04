@@ -117,7 +117,7 @@ Workflow: `.github/workflows/weekly-editorial.yml`
   - `no_enforce_artifacts` -> `--no-enforce-artifacts`
 - Manual dispatch validates `issue_id` via shared `scripts/pipeline/issue_id_guard.py` logic, enforcing real ISO-week bounds for the target year before pipeline execution.
 - Workflow run also executes `scripts/pipeline/test_issue_id_guard.py` before argument build, so issue-id guardrail regressions fail fast in CI.
-- Workflow validates `artifacts/last_run.json` contract with `scripts/pipeline/validate_last_run_summary.py` before publishing CI summary output, including run-history index parity (`index.json`/`index.md` presence, retained-count consistency, descending mtime ordering, and snapshot file existence checks).
+- Workflow validates `artifacts/last_run.json` contract with `scripts/pipeline/validate_last_run_summary.py` before publishing CI summary output, including run-history index parity (`index.json`/`index.md` presence, retained-count consistency, descending mtime ordering, snapshot file existence checks, and latest-index entry alignment with `run_history.json` / `run_history.markdown`).
 - Uses repo secret: `BUTTONDOWN_API_KEY`.
 - Uploads generated artifacts even when pipeline execution fails (for failure forensics in Actions UI).
 - Publishes `artifacts/last_run.md` into the Actions job summary (falls back to JSON if markdown is unavailable).
