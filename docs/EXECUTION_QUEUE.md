@@ -315,5 +315,11 @@ Purpose: prevent stop/start drift and force delivery through ordered stages.
 - Add per-step timing metadata (`started_at`, `finished_at`, `duration_seconds`) for core and optional pipeline steps.
 - Document runtime telemetry fields in `docs/WEEKLY_PIPELINE.md` for CI/local troubleshooting parity.
 
+### Stage 40 — Run Summary Readability + CI Surface Parity
+- Generate `artifacts/last_run.md` from `artifacts/last_run.json` on every weekly run.
+- Publish run summary markdown to GitHub Actions job summary for faster operator triage.
+- Document summary artifact + CI behavior in runbook and PR quick links.
+
 ## Stage completion log (current cycle)
 - [x] Stage 39 complete — runtime telemetry added to weekly run summary; see `docs/STAGE39_WEEKLY_PIPELINE_RUNTIME_TELEMETRY_PARITY.md` (latest develop commit)
+- [x] Stage 40 complete — markdown run summary artifact + Actions job summary publishing added; see `docs/STAGE40_RUN_SUMMARY_READABILITY_CI_SURFACE_PARITY.md` (latest develop commit)

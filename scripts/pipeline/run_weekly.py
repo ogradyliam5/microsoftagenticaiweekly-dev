@@ -170,6 +170,17 @@ def run(issue_id=None, skip_buttondown=False, skip_source_audit=False, enforce_a
         "enforce_artifacts": enforce_artifacts,
     }
     (ART / "last_run.json").write_text(json.dumps(summary, indent=2), encoding="utf-8")
+    markdown_rc = subprocess.call([
+        "python3",
+        str(ROOT / "scripts/pipeline/run_summary_markdown.py"),
+        "--input",
+        str(ART / "last_run.json"),
+        "--output",
+        str(ART / "last_run.md"),
+    ])
+    if markdown_rc != 0:
+        print("warning: failed to render artifacts/last_run.md from last_run.json")
+
     print(json.dumps(summary, indent=2))
 
     if pipeline_status != "ok":

@@ -124,6 +124,21 @@ PY
         run: |
           python3 scripts/pipeline/run_weekly.py ${{ steps.pipeline_args.outputs.pipeline_args }}
 
+      - name: Publish run summary to Actions job output
+        if: always() && steps.london_gate.outputs.run_pipeline == 'true'
+        shell: bash
+        run: |
+          if [ -f artifacts/last_run.md ]; then
+            cat artifacts/last_run.md >> "$GITHUB_STEP_SUMMARY"
+          elif [ -f artifacts/last_run.json ]; then
+            echo "## Weekly pipeline run summary" >> "$GITHUB_STEP_SUMMARY"
+            echo '```json' >> "$GITHUB_STEP_SUMMARY"
+            cat artifacts/last_run.json >> "$GITHUB_STEP_SUMMARY"
+            echo '```' >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "No run summary artifacts were generated." >> "$GITHUB_STEP_SUMMARY"
+          fi
+
       - name: Upload artifacts
         if: always() && steps.london_gate.outputs.run_pipeline == 'true'
         uses: actions/upload-artifact@v4
@@ -151,7 +166,8 @@ PY
 
             ## Quick links
             - Checklist template: [.github/pull_request_template.md](.github/pull_request_template.md)
-            - Pipeline run summary: [artifacts/last_run.json](artifacts/last_run.json)
+            - Pipeline run summary (json): [artifacts/last_run.json](artifacts/last_run.json)
+            - Pipeline run summary (markdown): [artifacts/last_run.md](artifacts/last_run.md)
             - Draft mapping: [artifacts/buttondown_drafts.json](artifacts/buttondown_drafts.json)
 
             ## Editorial checklist

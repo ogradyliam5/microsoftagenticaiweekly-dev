@@ -41,6 +41,7 @@
 
 6. `scripts/pipeline/run_weekly.py` summary integrity checks
    - Verifies expected weekly output artifacts exist before writing `artifacts/last_run.json`
+   - Renders a human-readable run summary to `artifacts/last_run.md`
    - Fails the run when required artifacts are missing (fail-fast by default)
    - Captures step-level execution diagnostics when core pipeline steps fail
    - Adds timing telemetry for run-level and per-step runtime evidence
@@ -112,6 +113,7 @@ Workflow: `.github/workflows/weekly-editorial.yml`
 - Workflow run also executes `scripts/pipeline/test_issue_id_guard.py` before argument build, so issue-id guardrail regressions fail fast in CI.
 - Uses repo secret: `BUTTONDOWN_API_KEY`.
 - Uploads generated artifacts even when pipeline execution fails (for failure forensics in Actions UI).
+- Publishes `artifacts/last_run.md` into the Actions job summary (falls back to JSON if markdown is unavailable).
 - Opens PR for approval before any publish/send steps.
 
 Local parity command for guardrail regression checks:

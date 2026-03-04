@@ -1,6 +1,6 @@
 {
   "issue_id": "2026-10",
-  "generated_at": "2026-03-04T04:18:01.382153+00:00",
+  "generated_at": "2026-03-04T05:48:08.766315+00:00",
   "window_start_utc": "2026-02-23T00:00:00+00:00",
   "window_end_utc": "2026-03-02T00:00:00+00:00",
   "items": [
@@ -12,7 +12,7 @@
       "author": "",
       "publisher": "Karl-Johan Spiik (Karlex)",
       "published_at": "Wed, 25 Feb 2026 16:33:48 +0000",
-      "fetched_at": "2026-03-04T04:18:01.382153+00:00",
+      "fetched_at": "2026-03-04T05:48:08.766315+00:00",
       "product_area": "Power Platform",
       "source_type": "rss",
       "summary_bullets": [
@@ -46,7 +46,7 @@
       "author": "",
       "publisher": "Rob Quickenden",
       "published_at": "Mon, 23 Feb 2026 11:20:23 +0000",
-      "fetched_at": "2026-03-04T04:18:01.382153+00:00",
+      "fetched_at": "2026-03-04T05:48:08.766315+00:00",
       "product_area": "Mixed",
       "source_type": "rss",
       "summary_bullets": [
@@ -79,7 +79,7 @@
       "author": "",
       "publisher": "Rob Quickenden",
       "published_at": "Fri, 27 Feb 2026 17:08:36 +0000",
-      "fetched_at": "2026-03-04T04:18:01.382153+00:00",
+      "fetched_at": "2026-03-04T05:48:08.766315+00:00",
       "product_area": "Mixed",
       "source_type": "rss",
       "summary_bullets": [
