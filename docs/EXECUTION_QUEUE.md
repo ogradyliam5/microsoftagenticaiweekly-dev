@@ -415,3 +415,13 @@ Purpose: prevent stop/start drift and force delivery through ordered stages.
 
 ## Stage completion log (next cycle)
 - [x] Stage 51 complete — latest run-history snapshot alignment guardrail added to validator; see `docs/STAGE51_RUN_HISTORY_LATEST_SNAPSHOT_ALIGNMENT_GUARDRAIL.md` (latest develop commit)
+
+## Stage Plan (current cycle)
+
+### Stage 52 — Run-History Index Timestamp + Path Consistency Guardrail
+- Extend run-summary validator to enforce strict UTC timestamp parsing across summary + run-history index fields.
+- Require `mtime_iso` and numeric `mtime` consistency in run-history index entries.
+- Fail fast when run-history snapshot path prefixes or json/markdown stem pairing drift.
+
+## Stage completion log (current cycle)
+- [x] Stage 52 complete — run-history index timestamp/path consistency guardrail shipped; see `docs/STAGE52_RUN_HISTORY_INDEX_TIMESTAMP_PATH_CONSISTENCY_GUARDRAIL.md` (latest develop commit)

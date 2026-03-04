@@ -2,6 +2,7 @@
 """Validate artifacts/last_run.json contract and artifact-check parity."""
 
 import argparse
+import datetime as dt
 import json
 import pathlib
 import sys
@@ -44,6 +45,15 @@ def _load_json(path: pathlib.Path):
         raise ValidationError(f"Failed to parse JSON at {path}: {exc}") from exc
 
 
+def _parse_utc_timestamp(value, field_name):
+    _assert(isinstance(value, str) and value, f"{field_name} must be a non-empty string")
+    _assert(value.endswith("Z"), f"{field_name} must end with 'Z'")
+    try:
+        return dt.datetime.fromisoformat(value[:-1])
+    except ValueError as exc:
+        raise ValidationError(f"{field_name} must be valid ISO-8601 UTC timestamp: {value}") from exc
+
+
 def _validate_run_history_index(summary, run_history):
     index_json_rel = run_history.get("index_json")
     index_markdown_rel = run_history.get("index_markdown")
@@ -66,6 +76,8 @@ def _validate_run_history_index(summary, run_history):
     for key in ("generated_at", "retention_limit", "retained_run_count", "runs"):
         _assert(key in index_payload, f"run-history index missing key: {key}")
 
+    _parse_utc_timestamp(index_payload["generated_at"], "run-history index generated_at")
+
     runs = index_payload["runs"]
     _assert(isinstance(runs, list), "run-history index runs must be an array")
     _assert(index_payload["retained_run_count"] == len(runs), "run-history index retained_run_count must equal len(runs)")
@@ -82,7 +94,13 @@ def _validate_run_history_index(summary, run_history):
         mtime = run.get("mtime")
         _assert(isinstance(mtime, (int, float)), f"run-history index runs[{idx}].mtime must be numeric")
         mtime_iso = run.get("mtime_iso")
-        _assert(isinstance(mtime_iso, str) and mtime_iso, f"run-history index runs[{idx}].mtime_iso must be a non-empty string")
+        mtime_dt = _parse_utc_timestamp(mtime_iso, f"run-history index runs[{idx}].mtime_iso")
+
+        expected_mtime_dt = dt.datetime.utcfromtimestamp(mtime)
+        _assert(
+            abs((expected_mtime_dt - mtime_dt).total_seconds()) <= 1.0,
+            f"run-history index runs[{idx}].mtime_iso must match mtime within 1 second",
+        )
 
         if previous_mtime is not None:
             _assert(previous_mtime >= mtime, "run-history index runs must be sorted by mtime descending")
@@ -91,9 +109,16 @@ def _validate_run_history_index(summary, run_history):
         json_rel = run.get("json")
         markdown_rel = run.get("markdown")
         if json_rel is not None:
+            _assert(json_rel.startswith("artifacts/run_history/last_run-"), f"run-history index JSON snapshot path has unexpected prefix: {json_rel}")
             _assert((ROOT / json_rel).exists(), f"run-history index JSON snapshot missing on disk: {json_rel}")
         if markdown_rel is not None:
+            _assert(markdown_rel.startswith("artifacts/run_history/last_run-"), f"run-history index markdown snapshot path has unexpected prefix: {markdown_rel}")
             _assert((ROOT / markdown_rel).exists(), f"run-history index markdown snapshot missing on disk: {markdown_rel}")
+
+        if json_rel and markdown_rel:
+            json_stem = pathlib.Path(json_rel).stem
+            markdown_stem = pathlib.Path(markdown_rel).stem
+            _assert(json_stem == markdown_stem == stem, f"run-history index runs[{idx}] json/markdown stems must match stem")
 
     retained_limit = run_history.get("retention_limit")
     retained_run_count = run_history.get("retained_run_count")
@@ -134,6 +159,16 @@ def _validate_run_history_index(summary, run_history):
 def validate(summary):
     for key in REQUIRED_TOP_LEVEL_KEYS:
         _assert(key in summary, f"Missing top-level key: {key}")
+
+    generated_at = _parse_utc_timestamp(summary["generated_at"], "generated_at")
+    run_started_at = _parse_utc_timestamp(summary["run_started_at"], "run_started_at")
+    run_finished_at = _parse_utc_timestamp(summary["run_finished_at"], "run_finished_at")
+    _assert(run_finished_at >= run_started_at, "run_finished_at must be >= run_started_at")
+    _assert(generated_at >= run_started_at, "generated_at must be >= run_started_at")
+
+    run_duration_seconds = summary["run_duration_seconds"]
+    _assert(isinstance(run_duration_seconds, (int, float)), "run_duration_seconds must be numeric")
+    _assert(run_duration_seconds >= 0, "run_duration_seconds must be >= 0")
 
     _assert(summary["pipeline_status"] in {"ok", "failed"}, "pipeline_status must be 'ok' or 'failed'")
 
