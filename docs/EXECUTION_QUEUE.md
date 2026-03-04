@@ -395,3 +395,13 @@ Purpose: prevent stop/start drift and force delivery through ordered stages.
 
 ## Stage completion log (next cycle)
 - [x] Stage 49 complete — run-history index contract guardrail added to summary validator; see `docs/STAGE49_RUN_HISTORY_INDEX_CONTRACT_GUARDRAIL.md` (latest develop commit)
+
+## Stage Plan (current cycle)
+
+### Stage 50 — Run-History Index Ordering Guardrail
+- Enforce deterministic descending chronology checks for run-history index entries.
+- Validate indexed snapshot paths exist on disk (JSON/markdown) so index drift fails fast.
+- Add human-readable snapshot mtime fields and document parity behavior.
+
+## Stage completion log (current cycle)
+- [x] Stage 50 complete — run-history index ordering + on-disk snapshot parity checks added; see `docs/STAGE50_RUN_HISTORY_INDEX_ORDERING_GUARDRAIL.md` (latest develop commit)

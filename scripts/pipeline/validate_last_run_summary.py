@@ -70,6 +70,31 @@ def _validate_run_history_index(summary, run_history):
     _assert(isinstance(runs, list), "run-history index runs must be an array")
     _assert(index_payload["retained_run_count"] == len(runs), "run-history index retained_run_count must equal len(runs)")
 
+    previous_mtime = None
+    seen_stems = set()
+    for idx, run in enumerate(runs):
+        _assert(isinstance(run, dict), f"run-history index runs[{idx}] must be an object")
+        stem = run.get("stem")
+        _assert(isinstance(stem, str) and stem, f"run-history index runs[{idx}].stem must be a non-empty string")
+        _assert(stem not in seen_stems, f"run-history index contains duplicate stem: {stem}")
+        seen_stems.add(stem)
+
+        mtime = run.get("mtime")
+        _assert(isinstance(mtime, (int, float)), f"run-history index runs[{idx}].mtime must be numeric")
+        mtime_iso = run.get("mtime_iso")
+        _assert(isinstance(mtime_iso, str) and mtime_iso, f"run-history index runs[{idx}].mtime_iso must be a non-empty string")
+
+        if previous_mtime is not None:
+            _assert(previous_mtime >= mtime, "run-history index runs must be sorted by mtime descending")
+        previous_mtime = mtime
+
+        json_rel = run.get("json")
+        markdown_rel = run.get("markdown")
+        if json_rel is not None:
+            _assert((ROOT / json_rel).exists(), f"run-history index JSON snapshot missing on disk: {json_rel}")
+        if markdown_rel is not None:
+            _assert((ROOT / markdown_rel).exists(), f"run-history index markdown snapshot missing on disk: {markdown_rel}")
+
     retained_limit = run_history.get("retention_limit")
     retained_run_count = run_history.get("retained_run_count")
     retained_json_count = run_history.get("retained_json_count")

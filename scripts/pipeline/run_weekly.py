@@ -102,6 +102,7 @@ def _write_run_history_index(retained_runs):
                 "json": str(run["json"].relative_to(ROOT)) if run["json"] else None,
                 "markdown": str(run["md"].relative_to(ROOT)) if run["md"] else None,
                 "mtime": run["mtime"],
+                "mtime_iso": dt.datetime.utcfromtimestamp(run["mtime"]).isoformat() + "Z",
             }
             for run in retained_runs
         ],
@@ -129,6 +130,7 @@ def _write_run_history_index(retained_runs):
             lines.append(f"- `{run['stem']}`")
             lines.append(f"  - json: `{json_path}`")
             lines.append(f"  - markdown: `{markdown_path}`")
+            lines.append(f"  - mtime: `{dt.datetime.utcfromtimestamp(run['mtime']).isoformat()}Z`")
 
     RUN_HISTORY_INDEX_MARKDOWN.write_text("\n".join(lines) + "\n", encoding="utf-8")
 

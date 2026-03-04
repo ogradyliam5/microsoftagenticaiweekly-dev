@@ -1,31 +1,42 @@
 {
-  "generated_at": "2026-03-04T17:49:02.643114Z",
+  "generated_at": "2026-03-04T20:48:45.273651Z",
   "retention_limit": 30,
-  "retained_run_count": 4,
+  "retained_run_count": 5,
   "runs": [
+    {
+      "stem": "last_run-2026-10-20260304T204845Z",
+      "json": "artifacts/run_history/last_run-2026-10-20260304T204845Z.json",
+      "markdown": "artifacts/run_history/last_run-2026-10-20260304T204845Z.md",
+      "mtime": 1772657325.2530766,
+      "mtime_iso": "2026-03-04T20:48:45.253077Z"
+    },
     {
       "stem": "last_run-2026-10-20260304T174902Z",
       "json": "artifacts/run_history/last_run-2026-10-20260304T174902Z.json",
       "markdown": "artifacts/run_history/last_run-2026-10-20260304T174902Z.md",
-      "mtime": 1772646542.6256306
+      "mtime": 1772646542.6256306,
+      "mtime_iso": "2026-03-04T17:49:02.625631Z"
     },
     {
       "stem": "last_run-2026-10-20260304T161858Z",
       "json": "artifacts/run_history/last_run-2026-10-20260304T161858Z.json",
       "markdown": "artifacts/run_history/last_run-2026-10-20260304T161858Z.md",
-      "mtime": 1772641138.5496318
+      "mtime": 1772641138.5496318,
+      "mtime_iso": "2026-03-04T16:18:58.549632Z"
     },
     {
       "stem": "last_run-2026-10-20260304T144919Z",
       "json": "artifacts/run_history/last_run-2026-10-20260304T144919Z.json",
       "markdown": "artifacts/run_history/last_run-2026-10-20260304T144919Z.md",
-      "mtime": 1772635759.5980666
+      "mtime": 1772635759.5980666,
+      "mtime_iso": "2026-03-04T14:49:19.598067Z"
     },
     {
       "stem": "last_run-2026-10-20260304T131941Z",
       "json": "artifacts/run_history/last_run-2026-10-20260304T131941Z.json",
       "markdown": "artifacts/run_history/last_run-2026-10-20260304T131941Z.md",
-      "mtime": 1772630381.5946143
+      "mtime": 1772630381.5946143,
+      "mtime_iso": "2026-03-04T13:19:41.594614Z"
     }
   ]
 }
