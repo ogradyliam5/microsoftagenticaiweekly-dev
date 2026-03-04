@@ -307,3 +307,13 @@ Purpose: prevent stop/start drift and force delivery through ordered stages.
 
 ## Stage completion log (next cycle)
 - [x] Stage 38 complete — run summary now includes pipeline status + failed-step diagnostics; see `docs/STAGE38_WEEKLY_PIPELINE_FAILURE_DIAGNOSTICS_PARITY.md` (latest develop commit)
+
+## Stage Plan (current cycle)
+
+### Stage 39 — Weekly Pipeline Runtime Telemetry Parity
+- Add run-level timing telemetry (`run_started_at`, `run_finished_at`, `run_duration_seconds`) in `artifacts/last_run.json`.
+- Add per-step timing metadata (`started_at`, `finished_at`, `duration_seconds`) for core and optional pipeline steps.
+- Document runtime telemetry fields in `docs/WEEKLY_PIPELINE.md` for CI/local troubleshooting parity.
+
+## Stage completion log (current cycle)
+- [x] Stage 39 complete — runtime telemetry added to weekly run summary; see `docs/STAGE39_WEEKLY_PIPELINE_RUNTIME_TELEMETRY_PARITY.md` (latest develop commit)

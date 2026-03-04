@@ -1,6 +1,78 @@
 {
   "issue_id": "2026-10",
-  "generated_at": "2026-03-03T13:19:01.153551Z",
+  "generated_at": "2026-03-04T04:18:43.906099Z",
+  "run_started_at": "2026-03-04T04:18:01.137579Z",
+  "run_finished_at": "2026-03-04T04:18:43.906099Z",
+  "run_duration_seconds": 42.768,
+  "pipeline_status": "ok",
+  "failed_step": null,
+  "step_results": [
+    {
+      "name": "build_queue",
+      "status": "ok",
+      "command": [
+        "python3",
+        "/home/liam_vm/.openclaw/workspace/microsoftagenticaiweekly/scripts/pipeline/build_queue.py",
+        "--issue-id",
+        "2026-10"
+      ],
+      "started_at": "2026-03-04T04:18:01.137739Z",
+      "finished_at": "2026-03-04T04:18:43.536589Z",
+      "duration_seconds": 42.399
+    },
+    {
+      "name": "validate_queue",
+      "status": "ok",
+      "command": [
+        "python3",
+        "/home/liam_vm/.openclaw/workspace/microsoftagenticaiweekly/scripts/pipeline/validate_queue.py",
+        "--issue-id",
+        "2026-10"
+      ],
+      "started_at": "2026-03-04T04:18:43.536654Z",
+      "finished_at": "2026-03-04T04:18:43.621176Z",
+      "duration_seconds": 0.085
+    },
+    {
+      "name": "generate_issue",
+      "status": "ok",
+      "command": [
+        "python3",
+        "/home/liam_vm/.openclaw/workspace/microsoftagenticaiweekly/scripts/pipeline/generate_issue.py",
+        "--issue-id",
+        "2026-10"
+      ],
+      "started_at": "2026-03-04T04:18:43.621215Z",
+      "finished_at": "2026-03-04T04:18:43.714891Z",
+      "duration_seconds": 0.094
+    },
+    {
+      "name": "render_issue_html",
+      "status": "ok",
+      "command": [
+        "python3",
+        "/home/liam_vm/.openclaw/workspace/microsoftagenticaiweekly/scripts/pipeline/render_issue_html.py",
+        "--issue-id",
+        "2026-10"
+      ],
+      "started_at": "2026-03-04T04:18:43.714953Z",
+      "finished_at": "2026-03-04T04:18:43.813829Z",
+      "duration_seconds": 0.099
+    },
+    {
+      "name": "run_report",
+      "status": "ok",
+      "command": [
+        "python3",
+        "/home/liam_vm/.openclaw/workspace/microsoftagenticaiweekly/scripts/pipeline/run_report.py",
+        "--issue-id",
+        "2026-10"
+      ],
+      "started_at": "2026-03-04T04:18:43.813871Z",
+      "finished_at": "2026-03-04T04:18:43.905814Z",
+      "duration_seconds": 0.092
+    }
+  ],
   "buttondown": "skipped",
   "source_candidate_audit": "skipped",
   "artifact_check": "ok",

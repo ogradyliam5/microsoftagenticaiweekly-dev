@@ -1,6 +1,6 @@
 {
   "issue_id": "2026-10",
-  "generated_at": "2026-03-03T11:47:51.835224+00:00",
+  "generated_at": "2026-03-04T04:18:01.382153+00:00",
   "window_start_utc": "2026-02-23T00:00:00+00:00",
   "window_end_utc": "2026-03-02T00:00:00+00:00",
   "items": [
@@ -12,7 +12,7 @@
       "author": "",
       "publisher": "Karl-Johan Spiik (Karlex)",
       "published_at": "Wed, 25 Feb 2026 16:33:48 +0000",
-      "fetched_at": "2026-03-03T11:47:51.835224+00:00",
+      "fetched_at": "2026-03-04T04:18:01.382153+00:00",
       "product_area": "Power Platform",
       "source_type": "rss",
       "summary_bullets": [
@@ -46,7 +46,7 @@
       "author": "",
       "publisher": "Rob Quickenden",
       "published_at": "Mon, 23 Feb 2026 11:20:23 +0000",
-      "fetched_at": "2026-03-03T11:47:51.835224+00:00",
+      "fetched_at": "2026-03-04T04:18:01.382153+00:00",
       "product_area": "Mixed",
       "source_type": "rss",
       "summary_bullets": [
@@ -79,7 +79,7 @@
       "author": "",
       "publisher": "Rob Quickenden",
       "published_at": "Fri, 27 Feb 2026 17:08:36 +0000",
-      "fetched_at": "2026-03-03T11:47:51.835224+00:00",
+      "fetched_at": "2026-03-04T04:18:01.382153+00:00",
       "product_area": "Mixed",
       "source_type": "rss",
       "summary_bullets": [
@@ -258,16 +258,6 @@
       "published_at": "2025-08-27T05:16:27+00:00"
     },
     {
-      "url": "http://aka.ms/MicrosoftSovereignCloudDisconnectedBlog",
-      "reason": "low_relevance",
-      "relevance": 0.35
-    },
-    {
-      "url": "https://devblogs.microsoft.com/azure-sql/introducing-budget-bytes/",
-      "reason": "outside_previous_week_window",
-      "published_at": "2026-02-19T17:02:52+00:00"
-    },
-    {
       "url": "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/claude-sonnet-4-6-in-microsoft-foundry-frontier-performance-for-scale/4494873",
       "reason": "outside_previous_week_window",
       "published_at": "2026-02-17T20:11:10+00:00"
@@ -306,6 +296,16 @@
       "url": "https://azure.microsoft.com/en-us/blog/enhanced-storage-resiliency-with-azure-netapp-files-elastic-zone-redundant-service/",
       "reason": "outside_previous_week_window",
       "published_at": "2026-02-04T16:00:00+00:00"
+    },
+    {
+      "url": "https://azure.microsoft.com/en-us/blog/postgresql-on-azure-supercharged-for-ai/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-02-02T15:00:00+00:00"
+    },
+    {
+      "url": "https://blogs.microsoft.com/blog/2026/01/26/maia-200-the-ai-accelerator-built-for-inference/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-01-26T16:12:24+00:00"
     },
     {
       "url": "https://forwardforever.com/what-does-vibe-coding-mean-for-low-code-platforms/",
@@ -368,6 +368,11 @@
       "published_at": "2026-01-21T05:53:01+00:00"
     },
     {
+      "url": "https://meganvwalker.com/create-content-cards-in-customer-insights/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-03-03T16:11:58+00:00"
+    },
+    {
       "url": "https://meganvwalker.com/show-loading-screen-in-your-custom-page/",
       "reason": "low_relevance",
       "relevance": 0.0
@@ -413,9 +418,9 @@
       "published_at": "2026-01-29T08:30:00+00:00"
     },
     {
-      "url": "https://meganvwalker.com/create-hierarchy-overview-of-compliance-setup-in-customer-insights-journeys/",
+      "url": "https://sharepains.com/2026/03/03/copy-and-paste-power-automate-classic-vs-new-ui/",
       "reason": "outside_previous_week_window",
-      "published_at": "2026-01-27T08:20:00+00:00"
+      "published_at": "2026-03-03T12:12:38+00:00"
     },
     {
       "url": "https://sharepains.com/2026/02/27/connect-your-vibe-coded-apps-with-git/",
@@ -436,11 +441,6 @@
       "url": "https://sharepains.com/2026/02/20/copilot-rename-controls-power-apps/",
       "reason": "outside_previous_week_window",
       "published_at": "2026-02-20T11:38:31+00:00"
-    },
-    {
-      "url": "https://sharepains.com/2026/02/19/show-your-environment-name-in-power-apps/",
-      "reason": "outside_previous_week_window",
-      "published_at": "2026-02-19T13:48:35+00:00"
     },
     {
       "source": "azure-updates",
@@ -567,6 +567,11 @@
       "published_at": "2025-05-14T10:21:41+00:00"
     },
     {
+      "url": "https://www.karlex.fi/license-to-assist-bringing-ai-agents-to-entra-id/#utm_source=rss&utm_medium=rss",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-03-04T02:16:00+00:00"
+    },
+    {
       "url": "https://www.karlex.fi/blueprint-for-a-modern-defense-stack/#utm_source=rss&utm_medium=rss",
       "reason": "outside_previous_week_window",
       "published_at": "2026-03-03T02:25:00+00:00"
@@ -605,11 +610,6 @@
       "url": "https://www.karlex.fi/power-platform-governance-security-architecture/#utm_source=rss&utm_medium=rss",
       "reason": "outside_previous_week_window",
       "published_at": "2026-01-26T11:33:36+00:00"
-    },
-    {
-      "url": "https://www.karlex.fi/you-are-ready-for-ai-but-are-your-users/#utm_source=rss&utm_medium=rss",
-      "reason": "outside_previous_week_window",
-      "published_at": "2026-01-26T08:00:47+00:00"
     },
     {
       "url": "https://www.matthewdevaney.com/copilot-studio-generate-powerpoint-file-from-a-template/",
@@ -938,7 +938,8 @@
     },
     {
       "url": "https://blogs.microsoft.com/blog/2026/02/24/microsoft-sovereign-cloud-adds-governance-productivity-and-support-for-large-ai-models-securely-running-even-when-completely-disconnected/",
-      "reason": "duplicate_title"
+      "reason": "low_relevance",
+      "relevance": 0.2
     },
     {
       "url": "https://blogs.microsoft.com/blog/2026/02/20/asha-sharma-named-evp-and-ceo-microsoft-gaming/",
@@ -962,8 +963,7 @@
     },
     {
       "url": "https://blogs.microsoft.com/blog/2026/01/26/maia-200-the-ai-accelerator-built-for-inference/",
-      "reason": "outside_previous_week_window",
-      "published_at": "2026-01-26T16:00:30+00:00"
+      "reason": "duplicate_title"
     },
     {
       "url": "https://blogs.microsoft.com/blog/2026/01/13/announcing-open-to-work-how-to-get-ahead-in-the-age-of-ai/",

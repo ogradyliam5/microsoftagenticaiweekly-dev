@@ -4,6 +4,7 @@ import datetime as dt
 import json
 import pathlib
 import subprocess
+import time
 
 from issue_id_guard import validate_issue_id
 
@@ -31,12 +32,25 @@ def _validate_issue_id(issue_id):
 
 
 def _run_step(label, command):
+    started_at = dt.datetime.utcnow()
+    started_monotonic = time.monotonic()
     subprocess.check_call(command)
-    return {"name": label, "status": "ok", "command": command}
+    finished_at = dt.datetime.utcnow()
+    return {
+        "name": label,
+        "status": "ok",
+        "command": command,
+        "started_at": started_at.isoformat() + "Z",
+        "finished_at": finished_at.isoformat() + "Z",
+        "duration_seconds": round(time.monotonic() - started_monotonic, 3),
+    }
 
 
 def run(issue_id=None, skip_buttondown=False, skip_source_audit=False, enforce_artifacts=True):
     issue_id = issue_id or issue_id_today()
+
+    run_started_at = dt.datetime.utcnow()
+    run_started_monotonic = time.monotonic()
 
     pipeline_status = "ok"
     failed_step = None
@@ -76,12 +90,18 @@ def run(issue_id=None, skip_buttondown=False, skip_source_audit=False, enforce_a
 
         if not skip_source_audit:
             command = ["python3", str(ROOT / "scripts/pipeline/source_candidate_audit.py")]
+            started_at = dt.datetime.utcnow()
+            started_monotonic = time.monotonic()
             rc = subprocess.call(command)
+            finished_at = dt.datetime.utcnow()
             source_audit_status = "ok" if rc == 0 else f"failed_exit_{rc}"
             step_results.append({
                 "name": "source_candidate_audit",
                 "status": source_audit_status,
                 "command": command,
+                "started_at": started_at.isoformat() + "Z",
+                "finished_at": finished_at.isoformat() + "Z",
+                "duration_seconds": round(time.monotonic() - started_monotonic, 3),
             })
 
         draft_path = ROOT / "drafts" / f"email-{issue_id}.md"
@@ -96,12 +116,18 @@ def run(issue_id=None, skip_buttondown=False, skip_source_audit=False, enforce_a
                 "--body-file",
                 str(draft_path),
             ]
+            started_at = dt.datetime.utcnow()
+            started_monotonic = time.monotonic()
             rc = subprocess.call(command)
+            finished_at = dt.datetime.utcnow()
             buttondown_status = "ok" if rc == 0 else f"failed_exit_{rc}"
             step_results.append({
                 "name": "buttondown_draft",
                 "status": buttondown_status,
                 "command": command,
+                "started_at": started_at.isoformat() + "Z",
+                "finished_at": finished_at.isoformat() + "Z",
+                "duration_seconds": round(time.monotonic() - started_monotonic, 3),
             })
 
     except subprocess.CalledProcessError as exc:
@@ -111,18 +137,27 @@ def run(issue_id=None, skip_buttondown=False, skip_source_audit=False, enforce_a
             "command": exc.cmd,
             "exit_code": exc.returncode,
         }
+        failed_at = dt.datetime.utcnow()
         step_results.append({
             "name": failed_step["name"],
             "status": f"failed_exit_{exc.returncode}",
             "command": exc.cmd,
+            "started_at": None,
+            "finished_at": failed_at.isoformat() + "Z",
+            "duration_seconds": None,
         })
 
     artifact_checks = {path: _artifact_exists(path) for path in required_artifacts}
     missing_artifacts = [path for path, exists in artifact_checks.items() if not exists]
 
+    run_finished_at = dt.datetime.utcnow()
+
     summary = {
         "issue_id": issue_id,
-        "generated_at": dt.datetime.utcnow().isoformat() + "Z",
+        "generated_at": run_finished_at.isoformat() + "Z",
+        "run_started_at": run_started_at.isoformat() + "Z",
+        "run_finished_at": run_finished_at.isoformat() + "Z",
+        "run_duration_seconds": round(time.monotonic() - run_started_monotonic, 3),
         "pipeline_status": pipeline_status,
         "failed_step": failed_step,
         "step_results": step_results,

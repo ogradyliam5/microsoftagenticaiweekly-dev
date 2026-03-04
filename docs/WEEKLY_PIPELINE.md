@@ -43,10 +43,12 @@
    - Verifies expected weekly output artifacts exist before writing `artifacts/last_run.json`
    - Fails the run when required artifacts are missing (fail-fast by default)
    - Captures step-level execution diagnostics when core pipeline steps fail
+   - Adds timing telemetry for run-level and per-step runtime evidence
    - Records:
      - `pipeline_status` (`ok` or `failed`)
      - `failed_step` object (`name`, `command`, `exit_code`) when applicable
-     - `step_results` array for successful/failed/skipped steps
+     - `step_results` array for successful/failed/skipped steps, including `started_at`, `finished_at`, `duration_seconds`
+     - `run_started_at`, `run_finished_at`, `run_duration_seconds`
      - `artifact_check` (`ok` or `missing_artifacts`)
      - `missing_artifacts` array
      - `artifact_checks` map (path -> true/false)
