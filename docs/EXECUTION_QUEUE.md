@@ -445,3 +445,13 @@ Purpose: prevent stop/start drift and force delivery through ordered stages.
 
 ## Stage completion log (current cycle)
 - [x] Stage 54 complete — step-result timing contract validation added; see `docs/STAGE54_STEP_RESULT_TIMING_CONTRACT_GUARDRAIL.md` (latest develop commit)
+
+## Stage Plan (next cycle)
+
+### Stage 55 — Duration Numerical Parity Guardrail
+- Extend `validate_last_run_summary.py` to enforce run-level duration parity vs timestamp delta.
+- Enforce per-step duration parity vs `finished_at - started_at` with tolerance for monotonic-vs-wall-clock drift.
+- Document parity behavior and verification evidence in weekly runbook + dedicated stage note.
+
+## Stage completion log (next cycle)
+- [x] Stage 55 complete — duration numerical parity guardrail added to summary validator; see `docs/STAGE55_DURATION_NUMERICAL_PARITY_GUARDRAIL.md` (latest develop commit)

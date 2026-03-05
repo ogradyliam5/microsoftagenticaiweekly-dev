@@ -29,6 +29,8 @@ REQUIRED_TOP_LEVEL_KEYS = [
     "run_history",
 ]
 
+DURATION_TOLERANCE_SECONDS = 5.0
+
 
 class ValidationError(ValueError):
     pass
@@ -90,12 +92,21 @@ def _validate_step_results(step_results):
         is_failed = isinstance(status, str) and status.startswith("failed_exit_")
         if is_failed:
             _assert(started_at_raw is None or isinstance(started_at_raw, str), f"step_results[{idx}].started_at must be null/string for failed steps")
+            started_at = None
             if isinstance(started_at_raw, str):
-                _parse_utc_timestamp(started_at_raw, f"step_results[{idx}].started_at")
-            _parse_utc_timestamp(finished_at_raw, f"step_results[{idx}].finished_at")
+                started_at = _parse_utc_timestamp(started_at_raw, f"step_results[{idx}].started_at")
+            finished_at = _parse_utc_timestamp(finished_at_raw, f"step_results[{idx}].finished_at")
+            if started_at is not None:
+                _assert(finished_at >= started_at, f"step_results[{idx}] finished_at must be >= started_at")
             _assert(duration is None or isinstance(duration, (int, float)), f"step_results[{idx}].duration_seconds must be null/numeric for failed steps")
             if isinstance(duration, (int, float)):
                 _assert(duration >= 0, f"step_results[{idx}].duration_seconds must be >= 0")
+                if started_at is not None:
+                    expected_duration = (finished_at - started_at).total_seconds()
+                    _assert(
+                        abs(duration - expected_duration) <= DURATION_TOLERANCE_SECONDS,
+                        f"step_results[{idx}].duration_seconds must be within {DURATION_TOLERANCE_SECONDS}s of finished_at-started_at",
+                    )
             continue
 
         started_at = _parse_utc_timestamp(started_at_raw, f"step_results[{idx}].started_at")
@@ -103,6 +114,11 @@ def _validate_step_results(step_results):
         _assert(finished_at >= started_at, f"step_results[{idx}] finished_at must be >= started_at")
         _assert(isinstance(duration, (int, float)), f"step_results[{idx}].duration_seconds must be numeric")
         _assert(duration >= 0, f"step_results[{idx}].duration_seconds must be >= 0")
+        expected_duration = (finished_at - started_at).total_seconds()
+        _assert(
+            abs(duration - expected_duration) <= DURATION_TOLERANCE_SECONDS,
+            f"step_results[{idx}].duration_seconds must be within {DURATION_TOLERANCE_SECONDS}s of finished_at-started_at",
+        )
 
 
 def _validate_run_history_index(summary, run_history):
@@ -235,6 +251,11 @@ def validate(summary):
     run_duration_seconds = summary["run_duration_seconds"]
     _assert(isinstance(run_duration_seconds, (int, float)), "run_duration_seconds must be numeric")
     _assert(run_duration_seconds >= 0, "run_duration_seconds must be >= 0")
+    expected_run_duration = (run_finished_at - run_started_at).total_seconds()
+    _assert(
+        abs(run_duration_seconds - expected_run_duration) <= DURATION_TOLERANCE_SECONDS,
+        f"run_duration_seconds must be within {DURATION_TOLERANCE_SECONDS}s of run_finished_at-run_started_at",
+    )
 
     _assert(summary["pipeline_status"] in {"ok", "failed"}, "pipeline_status must be 'ok' or 'failed'")
 
