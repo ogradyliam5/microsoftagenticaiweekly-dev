@@ -74,6 +74,15 @@ def format_human_date(iso_value):
         return dt.datetime.utcnow().strftime("%A, %d %B %Y")
 
 
+def issue_label(issue_id):
+    try:
+        y, w = issue_id.split('-', 1)
+        week_start = dt.date.fromisocalendar(int(y), int(w), 1)
+        return f"Week of {week_start.strftime('%-d %b %Y')}"
+    except Exception:
+        return f"Edition {issue_id}"
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--issue-id", required=True)
@@ -100,8 +109,10 @@ def main():
     window_end = q.get("window_end_utc", "unknown")
     publication_date = format_human_date(q.get("generated_at", ""))
 
+    label = issue_label(args.issue_id)
+
     post = [
-        f"# Microsoft Agentic AI Weekly — Issue {args.issue_id}",
+        f"# Microsoft Agentic AI Weekly — {label}",
         "",
         f"_Published: {publication_date} · Coverage window (UTC): {window_start} to {window_end} (end exclusive). Requires human editorial approval before publishing._",
         "",
@@ -121,7 +132,7 @@ def main():
     ]
 
     email = [
-        f"# Microsoft Agentic AI Weekly — Issue {args.issue_id}",
+        f"# Microsoft Agentic AI Weekly — {label}",
         "",
         "Draft only. Do not send without Liam approval.",
         f"Published: {publication_date}",

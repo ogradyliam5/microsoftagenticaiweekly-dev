@@ -1,6 +1,6 @@
 {
   "issue_id": "2026-10",
-  "generated_at": "2026-03-04T23:47:39.590308+00:00",
+  "generated_at": "2026-03-05T11:33:06.674467+00:00",
   "window_start_utc": "2026-02-23T00:00:00+00:00",
   "window_end_utc": "2026-03-02T00:00:00+00:00",
   "items": [
@@ -12,7 +12,7 @@
       "author": "",
       "publisher": "Rob Quickenden",
       "published_at": "Mon, 23 Feb 2026 11:20:23 +0000",
-      "fetched_at": "2026-03-04T23:47:39.590308+00:00",
+      "fetched_at": "2026-03-05T11:33:06.674467+00:00",
       "product_area": "Mixed",
       "source_type": "rss",
       "summary_bullets": [
@@ -45,7 +45,7 @@
       "author": "",
       "publisher": "Rob Quickenden",
       "published_at": "Fri, 27 Feb 2026 17:08:36 +0000",
-      "fetched_at": "2026-03-04T23:47:39.590308+00:00",
+      "fetched_at": "2026-03-05T11:33:06.674467+00:00",
       "product_area": "Mixed",
       "source_type": "rss",
       "summary_bullets": [
@@ -78,7 +78,7 @@
       "author": "",
       "publisher": "Karl-Johan Spiik (Karlex)",
       "published_at": "Wed, 25 Feb 2026 16:33:48 +0000",
-      "fetched_at": "2026-03-04T23:47:39.590308+00:00",
+      "fetched_at": "2026-03-05T11:33:06.674467+00:00",
       "product_area": "Power Platform",
       "source_type": "rss",
       "summary_bullets": [
@@ -258,6 +258,26 @@
       "published_at": "2025-08-27T05:16:27+00:00"
     },
     {
+      "url": "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/unlocking-document-understanding-with-mistral-document-ai-in-microsoft-foundry/4495664",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-03-03T16:24:29+00:00"
+    },
+    {
+      "url": "https://azure.microsoft.com/en-us/blog/instant-access-incremental-snapshots-restore-without-waiting/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-03-02T17:00:00+00:00"
+    },
+    {
+      "url": "http://aka.ms/MicrosoftSovereignCloudDisconnectedBlog",
+      "reason": "low_relevance",
+      "relevance": 0.35
+    },
+    {
+      "url": "https://devblogs.microsoft.com/azure-sql/introducing-budget-bytes/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-02-19T17:02:52+00:00"
+    },
+    {
       "url": "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/claude-sonnet-4-6-in-microsoft-foundry-frontier-performance-for-scale/4494873",
       "reason": "outside_previous_week_window",
       "published_at": "2026-02-17T20:11:10+00:00"
@@ -286,26 +306,6 @@
       "url": "https://blog.fabric.microsoft.com/en-us/blog/32624",
       "reason": "outside_previous_week_window",
       "published_at": "2026-02-09T15:12:12+00:00"
-    },
-    {
-      "url": "https://azure.microsoft.com/en-us/blog/claude-opus-4-6-anthropics-powerful-model-for-coding-agents-and-enterprise-workflows-is-now-available-in-microsoft-foundry-on-azure/",
-      "reason": "outside_previous_week_window",
-      "published_at": "2026-02-05T17:46:10+00:00"
-    },
-    {
-      "url": "https://azure.microsoft.com/en-us/blog/enhanced-storage-resiliency-with-azure-netapp-files-elastic-zone-redundant-service/",
-      "reason": "outside_previous_week_window",
-      "published_at": "2026-02-04T16:00:00+00:00"
-    },
-    {
-      "url": "https://azure.microsoft.com/en-us/blog/postgresql-on-azure-supercharged-for-ai/",
-      "reason": "outside_previous_week_window",
-      "published_at": "2026-02-02T15:00:00+00:00"
-    },
-    {
-      "url": "https://blogs.microsoft.com/blog/2026/01/26/maia-200-the-ai-accelerator-built-for-inference/",
-      "reason": "outside_previous_week_window",
-      "published_at": "2026-01-26T16:12:24+00:00"
     },
     {
       "url": "https://forwardforever.com/what-does-vibe-coding-mean-for-low-code-platforms/",
@@ -368,8 +368,54 @@
       "published_at": "2026-01-21T05:53:01+00:00"
     },
     {
-      "source": "megan-v-walker",
-      "reason": "fetch_error: HTTP Error 502: Bad Gateway"
+      "url": "https://meganvwalker.com/adding-multiple-screens-to-a-custom-page/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-03-05T08:30:00+00:00"
+    },
+    {
+      "url": "https://meganvwalker.com/create-content-cards-in-customer-insights/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-03-03T16:11:58+00:00"
+    },
+    {
+      "url": "https://meganvwalker.com/show-loading-screen-in-your-custom-page/",
+      "reason": "low_relevance",
+      "relevance": 0.0
+    },
+    {
+      "url": "https://meganvwalker.com/calculate-working-day-connector-in-power-automate/",
+      "reason": "low_relevance",
+      "relevance": 0.0
+    },
+    {
+      "url": "https://meganvwalker.com/set-a-business-process-flow-stage-custom-page/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-02-19T08:30:00+00:00"
+    },
+    {
+      "url": "https://meganvwalker.com/setting-up-recaptcha-v2-for-realtime-forms/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-02-17T08:30:00+00:00"
+    },
+    {
+      "url": "https://meganvwalker.com/assign-records-to-a-user-or-a-team-custom-page/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-02-12T08:30:00+00:00"
+    },
+    {
+      "url": "https://meganvwalker.com/examples-of-power-fx-formula-field-examples/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-02-10T08:30:00+00:00"
+    },
+    {
+      "url": "https://meganvwalker.com/modern-delete-confirmation-popup-in-custom-page/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-02-05T08:20:00+00:00"
+    },
+    {
+      "url": "https://meganvwalker.com/evaluating-specific-form-fields-customer-insights/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-02-03T08:20:00+00:00"
     },
     {
       "url": "https://sharepains.com/2026/03/03/copy-and-paste-power-automate-classic-vs-new-ui/",
@@ -521,6 +567,11 @@
       "published_at": "2025-05-14T10:21:41+00:00"
     },
     {
+      "url": "https://www.karlex.fi/speeding-up-multi-agent-orchestration-with-the-copilot-studio-vs-code-extension/#utm_source=rss&utm_medium=rss",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-03-05T02:05:00+00:00"
+    },
+    {
       "url": "https://www.karlex.fi/license-to-assist-bringing-ai-agents-to-entra-id/#utm_source=rss&utm_medium=rss",
       "reason": "outside_previous_week_window",
       "published_at": "2026-03-04T02:16:00+00:00"
@@ -559,11 +610,6 @@
       "url": "https://www.karlex.fi/from-likes-to-insights-measuring-real-user-experience-in-conversational-ai/#utm_source=rss&utm_medium=rss",
       "reason": "outside_previous_week_window",
       "published_at": "2026-01-27T03:53:00+00:00"
-    },
-    {
-      "url": "https://www.karlex.fi/power-platform-governance-security-architecture/#utm_source=rss&utm_medium=rss",
-      "reason": "outside_previous_week_window",
-      "published_at": "2026-01-26T11:33:36+00:00"
     },
     {
       "url": "https://www.matthewdevaney.com/copilot-studio-generate-powerpoint-file-from-a-template/",
@@ -786,6 +832,11 @@
       "published_at": "2025-11-02T09:00:00+00:00"
     },
     {
+      "url": "https://robquickenden.blog/2026/03/apple-gives-surface-wakeup-call/",
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-03-05T09:02:43+00:00"
+    },
+    {
       "url": "https://robquickenden.blog/2026/03/copilot-getsgpt5-3/",
       "reason": "outside_previous_week_window",
       "published_at": "2026-03-04T09:49:54+00:00"
@@ -819,11 +870,6 @@
       "url": "https://robquickenden.blog/2026/02/microsoft-expands-copilot-connectors/",
       "reason": "outside_previous_week_window",
       "published_at": "2026-02-18T08:00:00+00:00"
-    },
-    {
-      "url": "https://robquickenden.blog/2026/02/ai-networkreset/",
-      "reason": "outside_previous_week_window",
-      "published_at": "2026-02-16T09:30:53+00:00"
     },
     {
       "url": "https://baeke.info/2025/12/07/building-an-ai-agent-server-with-ag-ui-and-microsoft-agent-framework/",
@@ -892,8 +938,7 @@
     },
     {
       "url": "https://blogs.microsoft.com/blog/2026/02/24/microsoft-sovereign-cloud-adds-governance-productivity-and-support-for-large-ai-models-securely-running-even-when-completely-disconnected/",
-      "reason": "low_relevance",
-      "relevance": 0.2
+      "reason": "duplicate_title"
     },
     {
       "url": "https://blogs.microsoft.com/blog/2026/02/20/asha-sharma-named-evp-and-ceo-microsoft-gaming/",
@@ -917,7 +962,8 @@
     },
     {
       "url": "https://blogs.microsoft.com/blog/2026/01/26/maia-200-the-ai-accelerator-built-for-inference/",
-      "reason": "duplicate_title"
+      "reason": "outside_previous_week_window",
+      "published_at": "2026-01-26T16:00:30+00:00"
     },
     {
       "url": "https://blogs.microsoft.com/blog/2026/01/13/announcing-open-to-work-how-to-get-ahead-in-the-age-of-ai/",

@@ -66,6 +66,17 @@ def format_human_date(iso_value):
         return dt.datetime.utcnow().strftime("%A, %d %B %Y")
 
 
+def issue_label(issue_id, generated_at):
+    try:
+        year, week = issue_id.split("-", 1)
+        year_i = int(year)
+        week_i = int(week)
+        week_start = dt.date.fromisocalendar(year_i, week_i, 1)
+        return f"Week of {week_start.strftime('%-d %b %Y')}"
+    except Exception:
+        return f"Edition {issue_id}"
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--issue-id", required=True)
@@ -90,6 +101,7 @@ def main():
     window_start = html.escape(q.get("window_start_utc", "unknown"))
     window_end = html.escape(q.get("window_end_utc", "unknown"))
     publication_date = html.escape(format_human_date(q.get("generated_at", "")))
+    label = html.escape(issue_label(args.issue_id, q.get("generated_at", "")))
 
     section_html = "\n\n        ".join(section(name, sections[name]) for name in SECTION_ORDER)
 
@@ -98,8 +110,29 @@ def main():
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Issue {args.issue_id} — Microsoft Agentic AI Weekly</title>
-  <link rel="stylesheet" href="../assets/legacy.css?v=20260304" />
+  <script>
+    (function () {{
+      var key = 'maiw-theme';
+      var theme = 'dark';
+      try {{
+        var stored = localStorage.getItem(key);
+        if (stored === 'light' || stored === 'dark') {{
+          theme = stored;
+        }} else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {{
+          theme = 'dark';
+        }} else {{
+          theme = 'light';
+        }}
+      }} catch (e) {{}}
+      var root = document.documentElement;
+      root.setAttribute('data-theme', theme);
+      root.classList.remove('theme-dark', 'theme-light');
+      root.classList.add(theme === 'dark' ? 'theme-dark' : 'theme-light');
+      root.style.colorScheme = theme;
+    }})();
+  </script>
+  <title>{label} — Microsoft Agentic AI Weekly</title>
+  <link rel="stylesheet" href="../assets/legacy.css?v=20260305" />
 </head>
 <body>
   <header class="site-header">
@@ -109,14 +142,14 @@ def main():
         <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle color mode">🌙 Dark</button>
         <a href="../index.html">Home</a>
         <a href="../archive.html">Archive</a>
-        <a href="../sources.html">Sources</a>
+        <a href="../about.html">Methodology</a>
       </nav>
     </div>
   </header>
   <main>
     <div class="container content-shell">
       <article class="panel">
-        <p class="kicker">Issue {args.issue_id}</p>
+        <p class="kicker">{label}</p>
         <h1>Microsoft Agentic AI Weekly</h1>
         <p class="meta">Published: {publication_date}</p>
         <p class="meta">Coverage window (UTC): {window_start} to {window_end} (end exclusive).</p>

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-05T10:18:02Z",
+  "generated_at": "2026-03-05T11:33:50Z",
   "sources_path": "data/sources.json",
   "candidate_add": [
     {
@@ -113,6 +113,104 @@
       "machine_ingestable": true,
       "ingestability_reason": "machine_ingestable",
       "error": null
+    },
+    {
+      "id": "microsoft-ai-medium",
+      "name": "Microsoft AI on Medium",
+      "url": "https://medium.com/feed/microsoftai",
+      "ok": false,
+      "status_code": 404,
+      "content_type": null,
+      "final_url": "https://medium.com/feed/microsoftai",
+      "root_tag": null,
+      "item_count": 0,
+      "machine_ingestable": false,
+      "ingestability_reason": "fetch_failed",
+      "error": "HTTP 404: Not Found"
+    },
+    {
+      "id": "towards-data-science-llm",
+      "name": "Towards Data Science (LLM/agents scan)",
+      "url": "https://medium.com/feed/towards-data-science",
+      "ok": true,
+      "status_code": 200,
+      "content_type": "text/xml; charset=UTF-8",
+      "final_url": "https://medium.com/feed/towards-data-science",
+      "root_tag": "rss",
+      "item_count": 10,
+      "machine_ingestable": true,
+      "ingestability_reason": "machine_ingestable",
+      "error": null
+    },
+    {
+      "id": "itnext-medium",
+      "name": "ITNEXT on Medium",
+      "url": "https://medium.com/feed/itnext",
+      "ok": true,
+      "status_code": 200,
+      "content_type": "text/xml; charset=UTF-8",
+      "final_url": "https://medium.com/feed/itnext",
+      "root_tag": "rss",
+      "item_count": 10,
+      "machine_ingestable": true,
+      "ingestability_reason": "machine_ingestable",
+      "error": null
+    },
+    {
+      "id": "nick-doelman-medium",
+      "name": "Nick Doelman (Medium author feed)",
+      "url": "https://medium.com/feed/@readyxrm",
+      "ok": false,
+      "status_code": 404,
+      "content_type": null,
+      "final_url": "https://medium.com/feed/@readyxrm",
+      "root_tag": null,
+      "item_count": 0,
+      "machine_ingestable": false,
+      "ingestability_reason": "fetch_failed",
+      "error": "HTTP 404: Not Found"
+    },
+    {
+      "id": "james-yao-medium",
+      "name": "James Yao (Medium author feed)",
+      "url": "https://medium.com/feed/@james.yao",
+      "ok": false,
+      "status_code": 404,
+      "content_type": null,
+      "final_url": "https://medium.com/feed/@james.yao",
+      "root_tag": null,
+      "item_count": 0,
+      "machine_ingestable": false,
+      "ingestability_reason": "fetch_failed",
+      "error": "HTTP 404: Not Found"
+    },
+    {
+      "id": "azure-sdk-blog",
+      "name": "Azure SDK Blog",
+      "url": "https://devblogs.microsoft.com/azure-sdk/feed/",
+      "ok": true,
+      "status_code": 200,
+      "content_type": "application/rss+xml; charset=UTF-8",
+      "final_url": "https://devblogs.microsoft.com/azure-sdk/feed/",
+      "root_tag": "rss",
+      "item_count": 25,
+      "machine_ingestable": true,
+      "ingestability_reason": "machine_ingestable",
+      "error": null
+    },
+    {
+      "id": "m365-platform-community",
+      "name": "Microsoft 365 Platform Community",
+      "url": "https://techcommunity.microsoft.com/gxcuf89792/rss/board?board.id=Microsoft365Platform",
+      "ok": false,
+      "status_code": 404,
+      "content_type": null,
+      "final_url": "https://techcommunity.microsoft.com/gxcuf89792/rss/board?board.id=Microsoft365Platform",
+      "root_tag": null,
+      "item_count": 0,
+      "machine_ingestable": false,
+      "ingestability_reason": "fetch_failed",
+      "error": "HTTP 404: Not Found"
     }
   ],
   "candidate_reject": [
@@ -230,8 +328,8 @@
     }
   ],
   "summary": {
-    "candidate_add_ok": 8,
-    "candidate_add_failed": 0,
+    "candidate_add_ok": 11,
+    "candidate_add_failed": 4,
     "candidate_add_non_ingestable": 0,
     "candidate_add_non_ingestable_no_items": 0,
     "candidate_add_non_ingestable_unsupported_root": 0,

@@ -40,6 +40,19 @@
   function init() {
     applyTheme(preferredTheme());
 
+    if (window.matchMedia) {
+      var media = window.matchMedia('(prefers-color-scheme: dark)');
+      var onPrefChange = function (event) {
+        if (safeGetStoredTheme()) return;
+        applyTheme(event.matches ? 'dark' : 'light');
+      };
+      if (typeof media.addEventListener === 'function') {
+        media.addEventListener('change', onPrefChange);
+      } else if (typeof media.addListener === 'function') {
+        media.addListener(onPrefChange);
+      }
+    }
+
     document.addEventListener('click', function (event) {
       var target = event.target.closest('[data-theme-toggle]');
       if (!target) return;

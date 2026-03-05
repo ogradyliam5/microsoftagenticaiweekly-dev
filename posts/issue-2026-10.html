@@ -3,8 +3,29 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Issue 2026-10 — Microsoft Agentic AI Weekly</title>
-  <link rel="stylesheet" href="../assets/legacy.css?v=20260304" />
+  <script>
+    (function () {
+      var key = 'maiw-theme';
+      var theme = 'dark';
+      try {
+        var stored = localStorage.getItem(key);
+        if (stored === 'light' || stored === 'dark') {
+          theme = stored;
+        } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          theme = 'dark';
+        } else {
+          theme = 'light';
+        }
+      } catch (e) {}
+      var root = document.documentElement;
+      root.setAttribute('data-theme', theme);
+      root.classList.remove('theme-dark', 'theme-light');
+      root.classList.add(theme === 'dark' ? 'theme-dark' : 'theme-light');
+      root.style.colorScheme = theme;
+    })();
+  </script>
+  <title>Week of 2 Mar 2026 — Microsoft Agentic AI Weekly</title>
+  <link rel="stylesheet" href="../assets/legacy.css?v=20260305" />
 </head>
 <body>
   <header class="site-header">
@@ -14,16 +35,16 @@
         <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle color mode">🌙 Dark</button>
         <a href="../index.html">Home</a>
         <a href="../archive.html">Archive</a>
-        <a href="../sources.html">Sources</a>
+        <a href="../about.html">Methodology</a>
       </nav>
     </div>
   </header>
   <main>
     <div class="container content-shell">
       <article class="panel">
-        <p class="kicker">Issue 2026-10</p>
+        <p class="kicker">Week of 2 Mar 2026</p>
         <h1>Microsoft Agentic AI Weekly</h1>
-        <p class="meta">Published: Wednesday, 04 March 2026</p>
+        <p class="meta">Published: Thursday, 05 March 2026</p>
         <p class="meta">Coverage window (UTC): 2026-02-23T00:00:00+00:00 to 2026-03-02T00:00:00+00:00 (end exclusive).</p>
 
         <h2>Power Platform</h2>
