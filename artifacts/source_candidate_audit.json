@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-05T11:47:37Z",
+  "generated_at": "2026-03-05T13:17:21Z",
   "sources_path": "data/sources.json",
   "candidate_add": [
     {
@@ -350,6 +350,20 @@
       "unsupported_root_tag": 0,
       "fetch_failed": 3,
       "unknown": 0
+    },
+    "candidate_add_reason_percentages": {
+      "machine_ingestable": 73.3,
+      "no_items": 0.0,
+      "unsupported_root_tag": 0.0,
+      "fetch_failed": 26.7,
+      "unknown": 0.0
+    },
+    "candidate_reject_reason_percentages": {
+      "machine_ingestable": 62.5,
+      "no_items": 0.0,
+      "unsupported_root_tag": 0.0,
+      "fetch_failed": 37.5,
+      "unknown": 0.0
     }
   }
 }

@@ -505,3 +505,13 @@ Purpose: prevent stop/start drift and force delivery through ordered stages.
 
 ## Stage completion log (current cycle)
 - [x] Stage 60 complete — candidate-add/reject reason-count parity added to source candidate audit outputs; see `docs/STAGE60_CANDIDATE_AUDIT_REASON_COUNT_PARITY.md` (latest develop commit)
+
+## Stage Plan (next cycle)
+
+### Stage 61 — Candidate Audit Reason-Percentage Parity
+- Add cohort-level ingestability reason-percentage maps for candidate-add and candidate-reject feeds.
+- Surface reason percentages in markdown audit output alongside reason counts.
+- Regenerate audit artifacts and document parity evidence in a dedicated stage note.
+
+## Stage completion log (next cycle)
+- [x] Stage 61 complete — candidate-add/reject reason-percentage parity added to source candidate audit outputs; see `docs/STAGE61_CANDIDATE_AUDIT_REASON_PERCENTAGE_PARITY.md` (latest develop commit)

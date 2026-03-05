@@ -37,6 +37,7 @@
    - Classifies feed machine-ingestability (`root_tag` + entry count), so candidate/reject triage highlights parseable-but-non-ingestable endpoints.
    - Records per-feed `ingestability_reason` (`machine_ingestable`, `no_items`, `unsupported_root_tag`, `fetch_failed`) and summary counters for faster reject/candidate cleanup decisions.
   - Includes reason-count breakdown maps for both candidate-add and candidate-reject cohorts (`candidate_add_reason_counts`, `candidate_reject_reason_counts`) so triage can quickly separate machine-ingestable opportunities from endpoint failures.
+  - Adds reason-percentage maps (`candidate_add_reason_percentages`, `candidate_reject_reason_percentages`) for at-a-glance cohort weighting during approval review.
    - Outputs:
      - `artifacts/source_candidate_audit.json`
      - `artifacts/source_candidate_audit.md`

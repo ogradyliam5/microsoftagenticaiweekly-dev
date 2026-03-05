@@ -17,6 +17,12 @@ TIMEOUT_SECONDS = 15
 INGESTABILITY_REASONS = ["machine_ingestable", "no_items", "unsupported_root_tag", "fetch_failed", "unknown"]
 
 
+def _reason_percentages(counter: dict[str, int], total: int) -> dict[str, float]:
+    if total <= 0:
+        return {reason: 0.0 for reason in INGESTABILITY_REASONS}
+    return {reason: round((counter.get(reason, 0) / total) * 100, 1) for reason in INGESTABILITY_REASONS}
+
+
 def now_iso() -> str:
     return datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
 
@@ -170,6 +176,15 @@ def audit_sources(sources_path: Path) -> dict:
         else:
             results["summary"]["candidate_reject_still_blocked"] += 1
 
+    results["summary"]["candidate_add_reason_percentages"] = _reason_percentages(
+        results["summary"]["candidate_add_reason_counts"],
+        len(results["candidate_add"]),
+    )
+    results["summary"]["candidate_reject_reason_percentages"] = _reason_percentages(
+        results["summary"]["candidate_reject_reason_counts"],
+        len(results["candidate_reject"]),
+    )
+
     return results
 
 
@@ -196,10 +211,12 @@ def write_markdown_report(report: dict, path: Path) -> None:
     lines.append("## Ingestability reason breakdown")
     lines.append("- Candidate add")
     for reason, count in s["candidate_add_reason_counts"].items():
-        lines.append(f"  - {reason}: {count}")
+        percent = s.get("candidate_add_reason_percentages", {}).get(reason, 0.0)
+        lines.append(f"  - {reason}: {count} ({percent:.1f}%)")
     lines.append("- Candidate reject")
     for reason, count in s["candidate_reject_reason_counts"].items():
-        lines.append(f"  - {reason}: {count}")
+        percent = s.get("candidate_reject_reason_percentages", {}).get(reason, 0.0)
+        lines.append(f"  - {reason}: {count} ({percent:.1f}%)")
     lines.append("")
 
     lines.append("## Candidate Add Feed Checks")
