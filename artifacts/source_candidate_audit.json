@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-05T20:47:48Z",
+  "generated_at": "2026-03-05T22:17:34Z",
   "sources_path": "data/sources.json",
   "candidate_add": [
     {
@@ -421,6 +421,115 @@
     "promotion_opportunity_breakdown": {
       "candidate_add": 11,
       "candidate_reject": 5
+    },
+    "promotion_opportunity_rows": [
+      {
+        "id": "azure-sdk-blog",
+        "source_cohort": "candidate_add",
+        "item_count": 25,
+        "priority_rank": 1
+      },
+      {
+        "id": "benitezhere",
+        "source_cohort": "candidate_add",
+        "item_count": 25,
+        "priority_rank": 2
+      },
+      {
+        "id": "lowcodelewis",
+        "source_cohort": "candidate_add",
+        "item_count": 15,
+        "priority_rank": 3
+      },
+      {
+        "id": "allandecastro",
+        "source_cohort": "candidate_add",
+        "item_count": 10,
+        "priority_rank": 4
+      },
+      {
+        "id": "benedikt-bergmann",
+        "source_cohort": "candidate_add",
+        "item_count": 10,
+        "priority_rank": 5
+      },
+      {
+        "id": "itaintboring",
+        "source_cohort": "candidate_add",
+        "item_count": 10,
+        "priority_rank": 6
+      },
+      {
+        "id": "itnext-medium",
+        "source_cohort": "candidate_add",
+        "item_count": 10,
+        "priority_rank": 7
+      },
+      {
+        "id": "joegill",
+        "source_cohort": "candidate_add",
+        "item_count": 10,
+        "priority_rank": 8
+      },
+      {
+        "id": "platformsofpower",
+        "source_cohort": "candidate_add",
+        "item_count": 10,
+        "priority_rank": 9
+      },
+      {
+        "id": "pwmather",
+        "source_cohort": "candidate_add",
+        "item_count": 10,
+        "priority_rank": 10
+      },
+      {
+        "id": "towards-data-science-llm",
+        "source_cohort": "candidate_add",
+        "item_count": 10,
+        "priority_rank": 11
+      },
+      {
+        "id": "d365goddess",
+        "source_cohort": "candidate_reject",
+        "item_count": 10,
+        "priority_rank": 12
+      },
+      {
+        "id": "medium-tag-microsoft365",
+        "source_cohort": "candidate_reject",
+        "item_count": 10,
+        "priority_rank": 13
+      },
+      {
+        "id": "medium-tag-powerplatform",
+        "source_cohort": "candidate_reject",
+        "item_count": 10,
+        "priority_rank": 14
+      },
+      {
+        "id": "mmsharepoint",
+        "source_cohort": "candidate_reject",
+        "item_count": 10,
+        "priority_rank": 15
+      },
+      {
+        "id": "powertricks",
+        "source_cohort": "candidate_reject",
+        "item_count": 10,
+        "priority_rank": 16
+      }
+    ],
+    "promotion_opportunity_top_ids": [
+      "azure-sdk-blog",
+      "benitezhere",
+      "lowcodelewis",
+      "allandecastro",
+      "benedikt-bergmann"
+    ],
+    "promotion_opportunity_cohort_percentages": {
+      "candidate_add": 68.8,
+      "candidate_reject": 31.2
     },
     "candidate_add_reason_percentages": {
       "machine_ingestable": 73.3,

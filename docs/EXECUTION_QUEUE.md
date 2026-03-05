@@ -565,3 +565,14 @@ Purpose: prevent stop/start drift and force delivery through ordered stages.
 
 ## Stage completion log (current cycle)
 - [x] Stage 66 complete — promotion-opportunity queue + cohort breakdown added to source-audit outputs; see `docs/STAGE66_CANDIDATE_PROMOTION_OPPORTUNITY_QUEUE_PARITY.md` (latest develop commit)
+
+
+## Stage Plan (next cycle)
+
+### Stage 67 — Candidate Promotion Queue Metadata Parity
+- Extend source candidate audit summary with ranked promotion queue row metadata (rank/cohort/item_count).
+- Add cohort percentage breakdown and top-ID shortcut list for fast approval triage.
+- Regenerate source-audit artifacts and document parity behavior in runbook + dedicated stage note.
+
+## Stage completion log (next cycle)
+- [x] Stage 67 complete — promotion queue metadata/percentages/top-id parity added to source-audit outputs; see `docs/STAGE67_CANDIDATE_PROMOTION_QUEUE_METADATA_PARITY.md` (latest develop commit)

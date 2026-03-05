@@ -209,6 +209,12 @@ def audit_sources(sources_path: Path) -> dict:
                 "candidate_add": 0,
                 "candidate_reject": 0,
             },
+            "promotion_opportunity_rows": [],
+            "promotion_opportunity_top_ids": [],
+            "promotion_opportunity_cohort_percentages": {
+                "candidate_add": 0.0,
+                "candidate_reject": 0.0,
+            },
         },
     }
     promotion_candidates: list[dict] = []
@@ -314,11 +320,37 @@ def audit_sources(sources_path: Path) -> dict:
         results["summary"].get("candidate_reject_non_ingestable_ids_by_reason", {})
     )
 
-    results["summary"]["promotion_opportunity_ids"] = _promotion_queue(promotion_candidates)
-    for row in promotion_candidates:
+    ranked_promotion_candidates = sorted(
+        promotion_candidates,
+        key=lambda row: (
+            PROMOTION_QUEUE_PRIORITY.index(row["source_cohort"]) if row["source_cohort"] in PROMOTION_QUEUE_PRIORITY else len(PROMOTION_QUEUE_PRIORITY),
+            -row.get("item_count", 0),
+            row["id"],
+        ),
+    )
+
+    results["summary"]["promotion_opportunity_ids"] = [row["id"] for row in ranked_promotion_candidates]
+    for row in ranked_promotion_candidates:
         cohort = row.get("source_cohort")
         if cohort in results["summary"]["promotion_opportunity_breakdown"]:
             results["summary"]["promotion_opportunity_breakdown"][cohort] += 1
+
+    total_promotion = len(ranked_promotion_candidates)
+    if total_promotion > 0:
+        for cohort in ["candidate_add", "candidate_reject"]:
+            count = results["summary"]["promotion_opportunity_breakdown"].get(cohort, 0)
+            results["summary"]["promotion_opportunity_cohort_percentages"][cohort] = round((count / total_promotion) * 100, 1)
+
+    results["summary"]["promotion_opportunity_rows"] = [
+        {
+            "id": row["id"],
+            "source_cohort": row["source_cohort"],
+            "item_count": row.get("item_count", 0),
+            "priority_rank": index + 1,
+        }
+        for index, row in enumerate(ranked_promotion_candidates)
+    ]
+    results["summary"]["promotion_opportunity_top_ids"] = [row["id"] for row in ranked_promotion_candidates[:5]]
 
     return results
 
@@ -369,9 +401,20 @@ def write_markdown_report(report: dict, path: Path) -> None:
         + (", ".join(s.get("promotion_opportunity_ids", [])) or "none")
     )
     breakdown = s.get("promotion_opportunity_breakdown", {})
+    percentages = s.get("promotion_opportunity_cohort_percentages", {})
     lines.append(
-        f"  - candidate_add: {breakdown.get('candidate_add', 0)} | candidate_reject: {breakdown.get('candidate_reject', 0)}"
+        f"  - candidate_add: {breakdown.get('candidate_add', 0)} ({percentages.get('candidate_add', 0.0):.1f}%) | candidate_reject: {breakdown.get('candidate_reject', 0)} ({percentages.get('candidate_reject', 0.0):.1f}%)"
     )
+    lines.append(
+        f"- Promotion opportunity top ids ({len(s.get('promotion_opportunity_top_ids', []))}): "
+        + (", ".join(s.get("promotion_opportunity_top_ids", [])) or "none")
+    )
+    if s.get("promotion_opportunity_rows"):
+        lines.append("  - Promotion queue detail (rank/cohort/items):")
+        for row in s.get("promotion_opportunity_rows", []):
+            lines.append(
+                f"    - #{row.get('priority_rank', '?')}: {row.get('id')} ({row.get('source_cohort')}, items={row.get('item_count', 0)})"
+            )
     lines.append(
         f"- Candidate add failed ids ({len(s.get('candidate_add_failed_ids', []))}): "
         + (", ".join(s.get("candidate_add_failed_ids", [])) or "none")

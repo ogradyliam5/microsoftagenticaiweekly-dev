@@ -1,6 +1,6 @@
 # Source Candidate Audit Report
 
-Generated: 2026-03-05T20:47:48Z
+Generated: 2026-03-05T22:17:34Z
 
 ## Summary
 - Candidate add feeds healthy: 11
@@ -38,7 +38,25 @@ Generated: 2026-03-05T20:47:48Z
 ## Actionable triage queues
 - Candidate add promotion-ready ids (11): allandecastro, azure-sdk-blog, benedikt-bergmann, benitezhere, itaintboring, itnext-medium, joegill, lowcodelewis, platformsofpower, pwmather, towards-data-science-llm
 - Promotion opportunity queue ids (16): azure-sdk-blog, benitezhere, lowcodelewis, allandecastro, benedikt-bergmann, itaintboring, itnext-medium, joegill, platformsofpower, pwmather, towards-data-science-llm, d365goddess, medium-tag-microsoft365, medium-tag-powerplatform, mmsharepoint, powertricks
-  - candidate_add: 11 | candidate_reject: 5
+  - candidate_add: 11 (68.8%) | candidate_reject: 5 (31.2%)
+- Promotion opportunity top ids (5): azure-sdk-blog, benitezhere, lowcodelewis, allandecastro, benedikt-bergmann
+  - Promotion queue detail (rank/cohort/items):
+    - #1: azure-sdk-blog (candidate_add, items=25)
+    - #2: benitezhere (candidate_add, items=25)
+    - #3: lowcodelewis (candidate_add, items=15)
+    - #4: allandecastro (candidate_add, items=10)
+    - #5: benedikt-bergmann (candidate_add, items=10)
+    - #6: itaintboring (candidate_add, items=10)
+    - #7: itnext-medium (candidate_add, items=10)
+    - #8: joegill (candidate_add, items=10)
+    - #9: platformsofpower (candidate_add, items=10)
+    - #10: pwmather (candidate_add, items=10)
+    - #11: towards-data-science-llm (candidate_add, items=10)
+    - #12: d365goddess (candidate_reject, items=10)
+    - #13: medium-tag-microsoft365 (candidate_reject, items=10)
+    - #14: medium-tag-powerplatform (candidate_reject, items=10)
+    - #15: mmsharepoint (candidate_reject, items=10)
+    - #16: powertricks (candidate_reject, items=10)
 - Candidate add failed ids (4): james-yao-medium, m365-platform-community, microsoft-ai-medium, nick-doelman-medium
 - Candidate add non-ingestable ids (0): none
 - Candidate add non-ingestable priority ids (0): none
