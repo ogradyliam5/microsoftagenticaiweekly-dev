@@ -525,3 +525,13 @@ Purpose: prevent stop/start drift and force delivery through ordered stages.
 
 ## Stage completion log (current cycle)
 - [x] Stage 62 complete — dominant ingestability reason + cohort percentage-delta signal added to source candidate audit outputs; see `docs/STAGE62_CANDIDATE_AUDIT_DOMINANT_REASON_DELTA_SIGNAL.md` (latest develop commit)
+
+## Stage Plan (next cycle)
+
+### Stage 63 — Candidate Audit Action Queue Parity
+- Add explicit actionable ID queues in source-audit summary for candidate-add promotion, candidate-add follow-up failures, and candidate-reject revival checks.
+- Surface those actionable queues in markdown output so approval triage no longer requires scanning full tables.
+- Regenerate audit artifacts and document parity behavior in runbook + dedicated stage note.
+
+## Stage completion log (next cycle)
+- [x] Stage 63 complete — actionable candidate/reject ID triage queues added to source-audit outputs; see `docs/STAGE63_CANDIDATE_AUDIT_ACTION_QUEUE_PARITY.md` (latest develop commit)

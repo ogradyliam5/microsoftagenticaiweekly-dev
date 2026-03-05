@@ -160,6 +160,12 @@ def audit_sources(sources_path: Path) -> dict:
             "candidate_reject_now_non_ingestable": 0,
             "candidate_add_reason_counts": _empty_reason_counter(),
             "candidate_reject_reason_counts": _empty_reason_counter(),
+            "candidate_add_promotion_candidate_ids": [],
+            "candidate_add_non_ingestable_ids": [],
+            "candidate_add_failed_ids": [],
+            "candidate_reject_revival_candidate_ids": [],
+            "candidate_reject_non_ingestable_ids": [],
+            "candidate_reject_still_blocked_ids": [],
         },
     }
 
@@ -170,8 +176,11 @@ def audit_sources(sources_path: Path) -> dict:
         _bump_reason(results["summary"]["candidate_add_reason_counts"], status.get("ingestability_reason"))
         if status["ok"]:
             results["summary"]["candidate_add_ok"] += 1
-            if not status["machine_ingestable"]:
+            if status["machine_ingestable"]:
+                results["summary"]["candidate_add_promotion_candidate_ids"].append(item["id"])
+            else:
                 results["summary"]["candidate_add_non_ingestable"] += 1
+                results["summary"]["candidate_add_non_ingestable_ids"].append(item["id"])
                 reason = status.get("ingestability_reason")
                 if reason == "no_items":
                     results["summary"]["candidate_add_non_ingestable_no_items"] += 1
@@ -179,6 +188,7 @@ def audit_sources(sources_path: Path) -> dict:
                     results["summary"]["candidate_add_non_ingestable_unsupported_root"] += 1
         else:
             results["summary"]["candidate_add_failed"] += 1
+            results["summary"]["candidate_add_failed_ids"].append(item["id"])
 
     for item in candidates.get("reject", []):
         status = fetch_feed_status(item["url"])
@@ -189,10 +199,13 @@ def audit_sources(sources_path: Path) -> dict:
             results["summary"]["candidate_reject_now_ok"] += 1
             if status["machine_ingestable"]:
                 results["summary"]["candidate_reject_now_ingestable"] += 1
+                results["summary"]["candidate_reject_revival_candidate_ids"].append(item["id"])
             else:
                 results["summary"]["candidate_reject_now_non_ingestable"] += 1
+                results["summary"]["candidate_reject_non_ingestable_ids"].append(item["id"])
         else:
             results["summary"]["candidate_reject_still_blocked"] += 1
+            results["summary"]["candidate_reject_still_blocked_ids"].append(item["id"])
 
     results["summary"]["candidate_add_reason_percentages"] = _reason_percentages(
         results["summary"]["candidate_add_reason_counts"],
@@ -252,6 +265,33 @@ def write_markdown_report(report: dict, path: Path) -> None:
     lines.append("- Candidate add minus reject percentage delta")
     for reason, delta in s.get("candidate_add_vs_reject_reason_percentage_delta", {}).items():
         lines.append(f"  - {reason}: {delta:+.1f} pp")
+    lines.append("")
+
+    lines.append("## Actionable triage queues")
+    lines.append(
+        f"- Candidate add promotion-ready ids ({len(s.get('candidate_add_promotion_candidate_ids', []))}): "
+        + (", ".join(s.get("candidate_add_promotion_candidate_ids", [])) or "none")
+    )
+    lines.append(
+        f"- Candidate add failed ids ({len(s.get('candidate_add_failed_ids', []))}): "
+        + (", ".join(s.get("candidate_add_failed_ids", [])) or "none")
+    )
+    lines.append(
+        f"- Candidate add non-ingestable ids ({len(s.get('candidate_add_non_ingestable_ids', []))}): "
+        + (", ".join(s.get("candidate_add_non_ingestable_ids", [])) or "none")
+    )
+    lines.append(
+        f"- Candidate reject revival-candidate ids ({len(s.get('candidate_reject_revival_candidate_ids', []))}): "
+        + (", ".join(s.get("candidate_reject_revival_candidate_ids", [])) or "none")
+    )
+    lines.append(
+        f"- Candidate reject still-blocked ids ({len(s.get('candidate_reject_still_blocked_ids', []))}): "
+        + (", ".join(s.get("candidate_reject_still_blocked_ids", [])) or "none")
+    )
+    lines.append(
+        f"- Candidate reject healthy-but-non-ingestable ids ({len(s.get('candidate_reject_non_ingestable_ids', []))}): "
+        + (", ".join(s.get("candidate_reject_non_ingestable_ids", [])) or "none")
+    )
     lines.append("")
 
     lines.append("## Candidate Add Feed Checks")
