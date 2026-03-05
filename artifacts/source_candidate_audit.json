@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-05T19:18:02Z",
+  "generated_at": "2026-03-05T20:47:48Z",
   "sources_path": "data/sources.json",
   "candidate_add": [
     {
@@ -400,6 +400,28 @@
       "the-custom-engine-github",
       "tom-riha"
     ],
+    "promotion_opportunity_ids": [
+      "azure-sdk-blog",
+      "benitezhere",
+      "lowcodelewis",
+      "allandecastro",
+      "benedikt-bergmann",
+      "itaintboring",
+      "itnext-medium",
+      "joegill",
+      "platformsofpower",
+      "pwmather",
+      "towards-data-science-llm",
+      "d365goddess",
+      "medium-tag-microsoft365",
+      "medium-tag-powerplatform",
+      "mmsharepoint",
+      "powertricks"
+    ],
+    "promotion_opportunity_breakdown": {
+      "candidate_add": 11,
+      "candidate_reject": 5
+    },
     "candidate_add_reason_percentages": {
       "machine_ingestable": 73.3,
       "no_items": 0.0,

@@ -555,3 +555,13 @@ Purpose: prevent stop/start drift and force delivery through ordered stages.
 
 ## Stage completion log (next cycle)
 - [x] Stage 65 complete — non-ingestable priority queues added to source-audit JSON/markdown outputs; see `docs/STAGE65_CANDIDATE_AUDIT_NON_INGESTABLE_PRIORITY_QUEUE_PARITY.md` (latest develop commit)
+
+## Stage Plan (current cycle)
+
+### Stage 66 — Candidate Promotion Opportunity Queue Parity
+- Add a deterministic promotion-opportunity queue across candidate-add and candidate-reject ingestable feeds.
+- Rank queue IDs for operator triage by cohort priority (`candidate_add` before `candidate_reject`) and feed item volume.
+- Surface queue + cohort breakdown in source-audit markdown output; regenerate artifacts and document parity behavior.
+
+## Stage completion log (current cycle)
+- [x] Stage 66 complete — promotion-opportunity queue + cohort breakdown added to source-audit outputs; see `docs/STAGE66_CANDIDATE_PROMOTION_OPPORTUNITY_QUEUE_PARITY.md` (latest develop commit)

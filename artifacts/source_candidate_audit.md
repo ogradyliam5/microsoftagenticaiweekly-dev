@@ -1,6 +1,6 @@
 # Source Candidate Audit Report
 
-Generated: 2026-03-05T19:18:02Z
+Generated: 2026-03-05T20:47:48Z
 
 ## Summary
 - Candidate add feeds healthy: 11
@@ -37,6 +37,8 @@ Generated: 2026-03-05T19:18:02Z
 
 ## Actionable triage queues
 - Candidate add promotion-ready ids (11): allandecastro, azure-sdk-blog, benedikt-bergmann, benitezhere, itaintboring, itnext-medium, joegill, lowcodelewis, platformsofpower, pwmather, towards-data-science-llm
+- Promotion opportunity queue ids (16): azure-sdk-blog, benitezhere, lowcodelewis, allandecastro, benedikt-bergmann, itaintboring, itnext-medium, joegill, platformsofpower, pwmather, towards-data-science-llm, d365goddess, medium-tag-microsoft365, medium-tag-powerplatform, mmsharepoint, powertricks
+  - candidate_add: 11 | candidate_reject: 5
 - Candidate add failed ids (4): james-yao-medium, m365-platform-community, microsoft-ai-medium, nick-doelman-medium
 - Candidate add non-ingestable ids (0): none
 - Candidate add non-ingestable priority ids (0): none

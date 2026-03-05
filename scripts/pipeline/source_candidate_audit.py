@@ -16,6 +16,7 @@ USER_AGENT = "microsoftagenticaiweekly-source-audit/1.0"
 TIMEOUT_SECONDS = 15
 INGESTABILITY_REASONS = ["machine_ingestable", "no_items", "unsupported_root_tag", "fetch_failed", "unknown"]
 NON_INGESTABLE_REASON_PRIORITY = ["fetch_failed", "no_items", "unsupported_root_tag", "unknown"]
+PROMOTION_QUEUE_PRIORITY = ["candidate_add", "candidate_reject"]
 
 
 def _reason_percentages(counter: dict[str, int], total: int) -> dict[str, float]:
@@ -97,6 +98,18 @@ def _priority_ids_by_reason(reason_map: dict[str, list[str]]) -> list[str]:
     for reason in NON_INGESTABLE_REASON_PRIORITY:
         priority_ids.extend(_sorted_unique(reason_map.get(reason, [])))
     return priority_ids
+
+
+def _promotion_queue(candidates: list[dict]) -> list[str]:
+    sorted_rows = sorted(
+        candidates,
+        key=lambda row: (
+            PROMOTION_QUEUE_PRIORITY.index(row["source_cohort"]) if row["source_cohort"] in PROMOTION_QUEUE_PRIORITY else len(PROMOTION_QUEUE_PRIORITY),
+            -row.get("item_count", 0),
+            row["id"],
+        ),
+    )
+    return [row["id"] for row in sorted_rows]
 
 
 def fetch_feed_status(url: str) -> dict:
@@ -191,8 +204,14 @@ def audit_sources(sources_path: Path) -> dict:
             "candidate_reject_non_ingestable_ids": [],
             "candidate_reject_non_ingestable_priority_ids": [],
             "candidate_reject_still_blocked_ids": [],
+            "promotion_opportunity_ids": [],
+            "promotion_opportunity_breakdown": {
+                "candidate_add": 0,
+                "candidate_reject": 0,
+            },
         },
     }
+    promotion_candidates: list[dict] = []
 
     for item in candidates.get("add", []):
         status = fetch_feed_status(item["url"])
@@ -205,6 +224,13 @@ def audit_sources(sources_path: Path) -> dict:
             results["summary"]["candidate_add_ok"] += 1
             if status["machine_ingestable"]:
                 results["summary"]["candidate_add_promotion_candidate_ids"].append(item["id"])
+                promotion_candidates.append(
+                    {
+                        "id": item["id"],
+                        "source_cohort": "candidate_add",
+                        "item_count": status.get("item_count", 0),
+                    }
+                )
             else:
                 results["summary"]["candidate_add_non_ingestable"] += 1
                 results["summary"]["candidate_add_non_ingestable_ids"].append(item["id"])
@@ -229,6 +255,13 @@ def audit_sources(sources_path: Path) -> dict:
             if status["machine_ingestable"]:
                 results["summary"]["candidate_reject_now_ingestable"] += 1
                 results["summary"]["candidate_reject_revival_candidate_ids"].append(item["id"])
+                promotion_candidates.append(
+                    {
+                        "id": item["id"],
+                        "source_cohort": "candidate_reject",
+                        "item_count": status.get("item_count", 0),
+                    }
+                )
             else:
                 results["summary"]["candidate_reject_now_non_ingestable"] += 1
                 results["summary"]["candidate_reject_non_ingestable_ids"].append(item["id"])
@@ -281,6 +314,12 @@ def audit_sources(sources_path: Path) -> dict:
         results["summary"].get("candidate_reject_non_ingestable_ids_by_reason", {})
     )
 
+    results["summary"]["promotion_opportunity_ids"] = _promotion_queue(promotion_candidates)
+    for row in promotion_candidates:
+        cohort = row.get("source_cohort")
+        if cohort in results["summary"]["promotion_opportunity_breakdown"]:
+            results["summary"]["promotion_opportunity_breakdown"][cohort] += 1
+
     return results
 
 
@@ -324,6 +363,14 @@ def write_markdown_report(report: dict, path: Path) -> None:
     lines.append(
         f"- Candidate add promotion-ready ids ({len(s.get('candidate_add_promotion_candidate_ids', []))}): "
         + (", ".join(s.get("candidate_add_promotion_candidate_ids", [])) or "none")
+    )
+    lines.append(
+        f"- Promotion opportunity queue ids ({len(s.get('promotion_opportunity_ids', []))}): "
+        + (", ".join(s.get("promotion_opportunity_ids", [])) or "none")
+    )
+    breakdown = s.get("promotion_opportunity_breakdown", {})
+    lines.append(
+        f"  - candidate_add: {breakdown.get('candidate_add', 0)} | candidate_reject: {breakdown.get('candidate_reject', 0)}"
     )
     lines.append(
         f"- Candidate add failed ids ({len(s.get('candidate_add_failed_ids', []))}): "
