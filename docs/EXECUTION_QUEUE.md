@@ -515,3 +515,13 @@ Purpose: prevent stop/start drift and force delivery through ordered stages.
 
 ## Stage completion log (next cycle)
 - [x] Stage 61 complete — candidate-add/reject reason-percentage parity added to source candidate audit outputs; see `docs/STAGE61_CANDIDATE_AUDIT_REASON_PERCENTAGE_PARITY.md` (latest develop commit)
+
+## Stage Plan (current cycle)
+
+### Stage 62 — Candidate Audit Dominant-Reason Delta Signal
+- Add dominant ingestability-reason fields for candidate-add and candidate-reject cohorts.
+- Add candidate-add vs candidate-reject reason-percentage delta map in audit JSON + markdown output.
+- Regenerate audit artifacts and document parity evidence in runbook + dedicated stage note.
+
+## Stage completion log (current cycle)
+- [x] Stage 62 complete — dominant ingestability reason + cohort percentage-delta signal added to source candidate audit outputs; see `docs/STAGE62_CANDIDATE_AUDIT_DOMINANT_REASON_DELTA_SIGNAL.md` (latest develop commit)

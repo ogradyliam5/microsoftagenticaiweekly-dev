@@ -23,6 +23,24 @@ def _reason_percentages(counter: dict[str, int], total: int) -> dict[str, float]
     return {reason: round((counter.get(reason, 0) / total) * 100, 1) for reason in INGESTABILITY_REASONS}
 
 
+def _top_reason(reason_counts: dict[str, int], reason_percentages: dict[str, float]) -> str:
+    best_reason = INGESTABILITY_REASONS[0]
+    best_score = (-1.0, -1)
+    for reason in INGESTABILITY_REASONS:
+        score = (reason_percentages.get(reason, 0.0), reason_counts.get(reason, 0))
+        if score > best_score:
+            best_reason = reason
+            best_score = score
+    return best_reason
+
+
+def _reason_percentage_delta(candidate_add: dict[str, float], candidate_reject: dict[str, float]) -> dict[str, float]:
+    return {
+        reason: round(candidate_add.get(reason, 0.0) - candidate_reject.get(reason, 0.0), 1)
+        for reason in INGESTABILITY_REASONS
+    }
+
+
 def now_iso() -> str:
     return datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
 
@@ -184,6 +202,18 @@ def audit_sources(sources_path: Path) -> dict:
         results["summary"]["candidate_reject_reason_counts"],
         len(results["candidate_reject"]),
     )
+    results["summary"]["candidate_add_top_ingestability_reason"] = _top_reason(
+        results["summary"]["candidate_add_reason_counts"],
+        results["summary"]["candidate_add_reason_percentages"],
+    )
+    results["summary"]["candidate_reject_top_ingestability_reason"] = _top_reason(
+        results["summary"]["candidate_reject_reason_counts"],
+        results["summary"]["candidate_reject_reason_percentages"],
+    )
+    results["summary"]["candidate_add_vs_reject_reason_percentage_delta"] = _reason_percentage_delta(
+        results["summary"]["candidate_add_reason_percentages"],
+        results["summary"]["candidate_reject_reason_percentages"],
+    )
 
     return results
 
@@ -209,6 +239,8 @@ def write_markdown_report(report: dict, path: Path) -> None:
     lines.append("")
 
     lines.append("## Ingestability reason breakdown")
+    lines.append(f"- Candidate add dominant reason: {s.get('candidate_add_top_ingestability_reason', 'n/a')}")
+    lines.append(f"- Candidate reject dominant reason: {s.get('candidate_reject_top_ingestability_reason', 'n/a')}")
     lines.append("- Candidate add")
     for reason, count in s["candidate_add_reason_counts"].items():
         percent = s.get("candidate_add_reason_percentages", {}).get(reason, 0.0)
@@ -217,6 +249,9 @@ def write_markdown_report(report: dict, path: Path) -> None:
     for reason, count in s["candidate_reject_reason_counts"].items():
         percent = s.get("candidate_reject_reason_percentages", {}).get(reason, 0.0)
         lines.append(f"  - {reason}: {count} ({percent:.1f}%)")
+    lines.append("- Candidate add minus reject percentage delta")
+    for reason, delta in s.get("candidate_add_vs_reject_reason_percentage_delta", {}).items():
+        lines.append(f"  - {reason}: {delta:+.1f} pp")
     lines.append("")
 
     lines.append("## Candidate Add Feed Checks")

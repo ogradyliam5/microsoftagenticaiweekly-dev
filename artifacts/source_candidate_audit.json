@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-05T13:17:21Z",
+  "generated_at": "2026-03-05T14:48:01Z",
   "sources_path": "data/sources.json",
   "candidate_add": [
     {
@@ -363,6 +363,15 @@
       "no_items": 0.0,
       "unsupported_root_tag": 0.0,
       "fetch_failed": 37.5,
+      "unknown": 0.0
+    },
+    "candidate_add_top_ingestability_reason": "machine_ingestable",
+    "candidate_reject_top_ingestability_reason": "machine_ingestable",
+    "candidate_add_vs_reject_reason_percentage_delta": {
+      "machine_ingestable": 10.8,
+      "no_items": 0.0,
+      "unsupported_root_tag": 0.0,
+      "fetch_failed": -10.8,
       "unknown": 0.0
     }
   }
