@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-06T07:19:22Z",
+  "generated_at": "2026-03-06T08:48:14Z",
   "sources_path": "data/sources.json",
   "candidate_add": [
     {
@@ -921,6 +921,23 @@
       "manual_review_hold": 0,
       "other_policy": 1
     },
+    "promotion_opportunity_candidate_reject_policy_blocked_percentages_by_type": {
+      "publication_noise": 14.3,
+      "topic_noise": 71.4,
+      "community_forum": 0.0,
+      "stale_or_low_signal": 0.0,
+      "manual_review_hold": 0.0,
+      "other_policy": 14.3
+    },
+    "promotion_opportunity_candidate_reject_policy_blocked_top_type": "topic_noise",
+    "promotion_opportunity_candidate_reject_policy_blocked_top_type_share_percent": 71.4,
+    "promotion_opportunity_candidate_reject_policy_blocked_top_type_ids": [
+      "d365goddess",
+      "medium-tag-microsoft365",
+      "medium-tag-powerplatform",
+      "powertricks",
+      "towards-data-science-llm"
+    ],
     "promotion_opportunity_top_domain_policy_blocked_ids": [
       "itnext-medium",
       "medium-tag-microsoft365",
