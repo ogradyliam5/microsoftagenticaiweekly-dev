@@ -223,8 +223,12 @@ def audit_sources(sources_path: Path) -> dict:
                 "candidate_reject": 0.0,
             },
             "promotion_opportunity_domain_counts": {},
+            "promotion_opportunity_domain_percentages": {},
             "promotion_opportunity_top_domains": [],
             "promotion_opportunity_top_domain_ids": [],
+            "promotion_opportunity_top_domain_share_percent": 0.0,
+            "promotion_opportunity_top_domain_id_count": 0,
+            "promotion_opportunity_domain_concentration_level": "none",
         },
     }
     promotion_candidates: list[dict] = []
@@ -383,13 +387,37 @@ def audit_sources(sources_path: Path) -> dict:
         domain_ids.setdefault(domain, []).append(row["id"])
     sorted_domains = sorted(domain_counts.items(), key=lambda pair: (-pair[1], pair[0]))
     results["summary"]["promotion_opportunity_domain_counts"] = {domain: count for domain, count in sorted_domains}
+    if total_promotion > 0:
+        results["summary"]["promotion_opportunity_domain_percentages"] = {
+            domain: round((count / total_promotion) * 100, 1) for domain, count in sorted_domains
+        }
+    else:
+        results["summary"]["promotion_opportunity_domain_percentages"] = {}
     results["summary"]["promotion_opportunity_top_domains"] = [
-        {"domain": domain, "count": count, "ids": _sorted_unique(domain_ids.get(domain, []))}
+        {
+            "domain": domain,
+            "count": count,
+            "percent": results["summary"]["promotion_opportunity_domain_percentages"].get(domain, 0.0),
+            "ids": _sorted_unique(domain_ids.get(domain, [])),
+        }
         for domain, count in sorted_domains[:5]
     ]
     results["summary"]["promotion_opportunity_top_domain_ids"] = [
         row["domain"] for row in results["summary"]["promotion_opportunity_top_domains"]
     ]
+
+    if results["summary"]["promotion_opportunity_top_domains"]:
+        top_domain_row = results["summary"]["promotion_opportunity_top_domains"][0]
+        top_share = top_domain_row.get("percent", 0.0)
+        results["summary"]["promotion_opportunity_top_domain_share_percent"] = top_share
+        results["summary"]["promotion_opportunity_top_domain_id_count"] = top_domain_row.get("count", 0)
+        if top_share >= 60.0:
+            concentration_level = "high"
+        elif top_share >= 35.0:
+            concentration_level = "medium"
+        else:
+            concentration_level = "low"
+        results["summary"]["promotion_opportunity_domain_concentration_level"] = concentration_level
 
     return results
 
@@ -452,11 +480,14 @@ def write_markdown_report(report: dict, path: Path) -> None:
         f"- Promotion opportunity top domains ({len(s.get('promotion_opportunity_top_domain_ids', []))}): "
         + (", ".join(s.get("promotion_opportunity_top_domain_ids", [])) or "none")
     )
+    lines.append(
+        f"  - Top-domain concentration: {s.get('promotion_opportunity_domain_concentration_level', 'none')} ({s.get('promotion_opportunity_top_domain_share_percent', 0.0):.1f}% / {s.get('promotion_opportunity_top_domain_id_count', 0)} ids)"
+    )
     if s.get("promotion_opportunity_top_domains"):
         lines.append("  - Promotion top-domain detail (domain/count/ids):")
         for domain_row in s.get("promotion_opportunity_top_domains", []):
             lines.append(
-                f"    - {domain_row.get('domain')}: {domain_row.get('count', 0)} ({', '.join(domain_row.get('ids', [])) or 'none'})"
+                f"    - {domain_row.get('domain')}: {domain_row.get('count', 0)} ({domain_row.get('percent', 0.0):.1f}%) ({', '.join(domain_row.get('ids', [])) or 'none'})"
             )
     if s.get("promotion_opportunity_rows"):
         lines.append("  - Promotion queue detail (rank/cohort/items):")

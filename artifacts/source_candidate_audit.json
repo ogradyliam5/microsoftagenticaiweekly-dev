@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-06T01:18:58Z",
+  "generated_at": "2026-03-06T02:47:19Z",
   "sources_path": "data/sources.json",
   "candidate_add": [
     {
@@ -662,10 +662,26 @@
       "powertricks.io": 1,
       "pwmather.wordpress.com": 1
     },
+    "promotion_opportunity_domain_percentages": {
+      "medium.com": 25.0,
+      "benediktbergmann.eu": 6.2,
+      "benitezhere.blogspot.com": 6.2,
+      "blog.allandecastro.com": 6.2,
+      "d365goddess.com": 6.2,
+      "devblogs.microsoft.com": 6.2,
+      "itaintboring.com": 6.2,
+      "joegill.com": 6.2,
+      "lowcodelewis.com": 6.2,
+      "mmsharepoint.wordpress.com": 6.2,
+      "platformsofpower.net": 6.2,
+      "powertricks.io": 6.2,
+      "pwmather.wordpress.com": 6.2
+    },
     "promotion_opportunity_top_domains": [
       {
         "domain": "medium.com",
         "count": 4,
+        "percent": 25.0,
         "ids": [
           "itnext-medium",
           "medium-tag-microsoft365",
@@ -676,6 +692,7 @@
       {
         "domain": "benediktbergmann.eu",
         "count": 1,
+        "percent": 6.2,
         "ids": [
           "benedikt-bergmann"
         ]
@@ -683,6 +700,7 @@
       {
         "domain": "benitezhere.blogspot.com",
         "count": 1,
+        "percent": 6.2,
         "ids": [
           "benitezhere"
         ]
@@ -690,6 +708,7 @@
       {
         "domain": "blog.allandecastro.com",
         "count": 1,
+        "percent": 6.2,
         "ids": [
           "allandecastro"
         ]
@@ -697,6 +716,7 @@
       {
         "domain": "d365goddess.com",
         "count": 1,
+        "percent": 6.2,
         "ids": [
           "d365goddess"
         ]
@@ -709,6 +729,9 @@
       "blog.allandecastro.com",
       "d365goddess.com"
     ],
+    "promotion_opportunity_top_domain_share_percent": 25.0,
+    "promotion_opportunity_top_domain_id_count": 4,
+    "promotion_opportunity_domain_concentration_level": "low",
     "candidate_add_reason_percentages": {
       "machine_ingestable": 73.3,
       "no_items": 0.0,

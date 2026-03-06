@@ -596,3 +596,13 @@ Purpose: prevent stop/start drift and force delivery through ordered stages.
 
 ## Stage completion log (next cycle)
 - [x] Stage 69 complete — promotion queue domain concentration signals added to source-audit outputs; see `docs/STAGE69_CANDIDATE_PROMOTION_DOMAIN_SIGNAL_PARITY.md` (latest develop commit)
+
+## Stage Plan (current cycle)
+
+### Stage 70 — Candidate Promotion Domain Concentration Severity Parity
+- Add domain-percentage metadata to promotion opportunity queue summaries.
+- Emit top-domain concentration severity signal (`low`/`medium`/`high`) plus top-domain share in JSON + markdown outputs.
+- Regenerate source-audit artifacts and document parity behavior in runbook + dedicated stage note.
+
+## Stage completion log (current cycle)
+- [x] Stage 70 complete — promotion domain percentage + concentration severity parity added to source-audit outputs; see `docs/STAGE70_CANDIDATE_PROMOTION_DOMAIN_CONCENTRATION_SEVERITY_PARITY.md` (latest develop commit)

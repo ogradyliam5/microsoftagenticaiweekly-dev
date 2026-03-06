@@ -43,7 +43,7 @@
   - Adds reason-bucketed non-ingestable queues (`candidate_add_non_ingestable_ids_by_reason`, `candidate_reject_non_ingestable_ids_by_reason`) and sorts all queue IDs deterministically for stable operator diffs.
   - Adds non-ingestable priority queues (`candidate_add_non_ingestable_priority_ids`, `candidate_reject_non_ingestable_priority_ids`) ordered by operator urgency: `fetch_failed`, `no_items`, `unsupported_root_tag`, `unknown`.
   - Adds a deterministic promotion opportunity queue (`promotion_opportunity_ids`) ranked by source cohort (`candidate_add` before `candidate_reject`) and item volume, plus cohort counts/percentages and ranked metadata (`promotion_opportunity_breakdown`, `promotion_opportunity_cohort_percentages`, `promotion_opportunity_rows`, `promotion_opportunity_top_ids`, `promotion_opportunity_top_rows`).
-  - Adds promotion queue domain concentration signals for fast source-diversity triage (`promotion_opportunity_domain_counts`, `promotion_opportunity_top_domains`, `promotion_opportunity_top_domain_ids`).
+  - Adds promotion queue domain concentration signals for fast source-diversity triage (`promotion_opportunity_domain_counts`, `promotion_opportunity_domain_percentages`, `promotion_opportunity_top_domains`, `promotion_opportunity_top_domain_ids`, `promotion_opportunity_top_domain_share_percent`, `promotion_opportunity_top_domain_id_count`, `promotion_opportunity_domain_concentration_level`).
    - Outputs:
      - `artifacts/source_candidate_audit.json`
      - `artifacts/source_candidate_audit.md`
