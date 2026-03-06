@@ -1,8 +1,8 @@
 # Source Shortlist (Stage 1 Stabilization)
 
-_Last updated: 2026-03-05 06:30 UTC_
+_Last updated: 2026-03-06 06:30 UTC_
 
-No core `sources[]` promotions in this run (approval-first policy preserved). This pass added two new practitioner candidates and removed one non-ingestable/manual-watch item from candidate intake.
+No core `sources[]` promotions in this run (approval-first policy preserved). This pass focused on individual-practitioner discovery quality: two new practitioner candidates added; four broad/non-individual candidate feeds removed from intake.
 
 ## Promoted to core sources (approved set)
 
@@ -22,31 +22,51 @@ No core `sources[]` promotions in this run (approval-first policy preserved). Th
 
 ## Discovery candidates pending approval
 
-- `itaintboring` — It Ain't Boring (Alex Shlega) (`https://www.itaintboring.com/feed/`)
-  - Why: independent practitioner with recent Copilot Studio troubleshooting/agent behavior posts plus practical Dataverse depth.
-- `benitezhere` — Benitez Here (Gonzalo Ruiz) (`https://benitezhere.blogspot.com/feeds/posts/default?alt=rss`)
-  - Why: long-running individual practitioner source with Dataverse + Power Automate implementation guidance relevant to M365 extensibility and governance/ops.
-- `lowcodelewis` — Low Code Lewis (`https://lowcodelewis.com/feed/`)
-- `platformsofpower` — Platforms of Power (Craig White) (`https://platformsofpower.net/feed/`)
-- `joegill` — Joe Gill (`https://joegill.com/feed/`)
-- `benedikt-bergmann` — Benedikt Bergmann (`https://benediktbergmann.eu/feed/`)
-- `pwmather` — Paul Mather (`https://pwmather.wordpress.com/feed/`)
+### New in this run
+
+- `journeyofthegeek` — Journey Of The Geek (Eric Woodruff) (`https://journeyofthegeek.com/feed/`)
+  - Why: independent architect perspective with recent Azure AI Foundry + Defender for AI deep-dives and strong governance/operations relevance.
+- `nikki-chapple` — Nikki Chapple (`https://nikkichapple.com/feed/`)
+  - Why: active individual-practitioner M365 source with Copilot readiness/compliance and tenant ops coverage useful for weekly governance filtering.
+
+### Existing candidates retained
+
 - `allandecastro` — Allan De Castro (`https://www.blog.allandecastro.com/feed/`)
+- `benedikt-bergmann` — Benedikt Bergmann (`https://benediktbergmann.eu/feed/`)
+- `benitezhere` — Benitez Here (Gonzalo Ruiz) (`https://benitezhere.blogspot.com/feeds/posts/default?alt=rss`)
+- `itaintboring` — It Ain't Boring (Alex Shlega) (`https://www.itaintboring.com/feed/`)
+- `joegill` — Joe Gill (`https://joegill.com/feed/`)
+- `lowcodelewis` — Low Code Lewis (`https://lowcodelewis.com/feed/`)
+- `nick-doelman-medium` — Nick Doelman (Medium author feed) (`https://medium.com/feed/@readyxrm`)
+- `james-yao-medium` — James Yao (Medium author feed) (`https://medium.com/feed/@james.yao`)
+- `platformsofpower` — Platforms of Power (Craig White) (`https://platformsofpower.net/feed/`)
+- `pwmather` — Paul Mather (`https://pwmather.wordpress.com/feed/`)
+
+## Removed from candidate intake (this run)
+
+- `microsoft-ai-medium`
+  - Rationale: official publication duplicates existing Microsoft official coverage and is not individual-practitioner-led.
+- `towards-data-science-llm`
+  - Rationale: high-volume publication feed with weak individual-practitioner signal and high topical noise.
+- `itnext-medium`
+  - Rationale: publication feed (not individual) with broad topic drift and low Microsoft-specific precision.
+- `m365-platform-community`
+  - Rationale: forum board feed is discussion-heavy and not a practitioner blog source.
 
 ## Rejected / excluded (keep out of automated ingestion)
 
-- `the-custom-engine-github` — removed from candidates: non-blog/non-feed manual watch link
+- `d365goddess` — feed reachable; still excluded pending manual quality/topicality review
 - `holgerimbery` — 404 feed endpoint
-- `tom-riha` — 403 feed endpoint (blocked for automated retrieval)
-- `mmsharepoint` — stale cadence for current weekly format
-- `medium-tag-powerplatform` — high-noise tag aggregator
 - `medium-tag-microsoft365` — high-noise tag aggregator
-- `powertricks` — endpoint healthy but excluded pending manual quality/topicality review
-- `d365goddess` — endpoint healthy but excluded pending manual quality/topicality review
+- `medium-tag-powerplatform` — high-noise tag aggregator
+- `mmsharepoint` — stale cadence for current weekly format
+- `powertricks` — endpoint healthy; excluded pending manual quality/topicality review
+- `the-custom-engine-github` — non-blog/non-feed manual-watch item
+- `tom-riha` — 403 feed endpoint (blocked to automated retrieval)
 
 ## Validation notes
 
 - Dedupe check completed against existing `sources[]` ids + URLs before updating candidates.
 - No core `sources[]` changes made (approval-first policy preserved).
-- Candidate additions are discovery-only and await Liam approval before promotion.
-- New additions were validated as reachable RSS feeds and screened for topical fit against Copilot Studio / Dataverse / governance-adjacent content.
+- New additions validated as reachable RSS feeds and screened for agentic-AI-weekly fit (Copilot/Foundry/governance-ops weighting).
+- Candidate pruning favored individual practitioner signal over publication/forum-scale noise.

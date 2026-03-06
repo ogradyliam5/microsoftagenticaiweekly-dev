@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-03-05T11:40:00Z",
+  "updated_at": "2026-03-06T06:30:00Z",
   "policy": {
     "approval_required_for_source_changes": true,
     "notes": "Only add/remove tracked sources with Liam approval. Prefer RSS/official feeds and creator-friendly attribution."
@@ -256,7 +256,7 @@
     }
   ],
   "candidates": {
-    "updated_at": "2026-03-05T11:40:00Z",
+    "updated_at": "2026-03-06T06:30:00Z",
     "policy": "Discovery only. Do not merge into sources[] without Liam approval.",
     "add": [
       {
@@ -269,6 +269,17 @@
         "status": "candidate",
         "reason": "Hands-on Copilot Studio extension posts for Dynamics 365 plus Dataverse implementation content; practitioner-led and implementation-first.",
         "last_checked": "2026-03-04"
+      },
+      {
+        "id": "azure-sdk-blog",
+        "name": "Azure SDK Blog",
+        "type": "rss",
+        "url": "https://devblogs.microsoft.com/azure-sdk/feed/",
+        "product_area": "Foundry",
+        "trust": "official",
+        "status": "candidate",
+        "reason": "SDK/runtime updates often include AI integration and operational patterns relevant to builders.",
+        "last_checked": "2026-03-05"
       },
       {
         "id": "benedikt-bergmann",
@@ -304,6 +315,17 @@
         "last_checked": "2026-03-05"
       },
       {
+        "id": "james-yao-medium",
+        "name": "James Yao (Medium author feed)",
+        "type": "rss",
+        "url": "https://medium.com/feed/@james.yao",
+        "product_area": "Foundry",
+        "trust": "community",
+        "status": "candidate",
+        "reason": "Individual practitioner feed for Azure AI / agent implementation narratives (validation required).",
+        "last_checked": "2026-03-05"
+      },
+      {
         "id": "joegill",
         "name": "Joe Gill",
         "type": "rss",
@@ -315,6 +337,17 @@
         "last_checked": "2026-03-03"
       },
       {
+        "id": "journeyofthegeek",
+        "name": "Journey Of The Geek (Eric Woodruff)",
+        "type": "rss",
+        "url": "https://journeyofthegeek.com/feed/",
+        "product_area": "Foundry",
+        "trust": "community",
+        "status": "candidate",
+        "reason": "Independent architect blog with current Azure AI Foundry/Defender for AI deep-dives focused on security and operational implementation detail.",
+        "last_checked": "2026-03-06"
+      },
+      {
         "id": "lowcodelewis",
         "name": "Low Code Lewis",
         "type": "rss",
@@ -324,6 +357,28 @@
         "status": "candidate",
         "reason": "Strong Copilot Studio + Dataverse practitioner content with recent agent-focused posts; feed parseable and active.",
         "last_checked": "2026-03-03"
+      },
+      {
+        "id": "nick-doelman-medium",
+        "name": "Nick Doelman (Medium author feed)",
+        "type": "rss",
+        "url": "https://medium.com/feed/@readyxrm",
+        "product_area": "Power Platform",
+        "trust": "community",
+        "status": "candidate",
+        "reason": "Author-level feed aligned to Dataverse/Copilot operational content where cross-posted.",
+        "last_checked": "2026-03-05"
+      },
+      {
+        "id": "nikki-chapple",
+        "name": "Nikki Chapple",
+        "type": "rss",
+        "url": "https://nikkichapple.com/feed/",
+        "product_area": "M365",
+        "trust": "community",
+        "status": "candidate",
+        "reason": "Individual practitioner source with active Microsoft 365 Copilot readiness/governance content and strong tenant operations perspective.",
+        "last_checked": "2026-03-06"
       },
       {
         "id": "platformsofpower",
@@ -346,83 +401,6 @@
         "status": "candidate",
         "reason": "Active Copilot Studio practitioner series (2026) with end-user and builder walkthroughs; high practical signal for weekly curation.",
         "last_checked": "2026-03-04"
-      },
-      {
-        "id": "microsoft-ai-medium",
-        "name": "Microsoft AI on Medium",
-        "type": "rss",
-        "url": "https://medium.com/feed/microsoftai",
-        "product_area": "Foundry",
-        "trust": "official",
-        "status": "candidate",
-        "reason": "Official Medium publication feed with product-level AI updates and engineering explainers.",
-        "last_checked": "2026-03-05"
-      },
-      {
-        "id": "towards-data-science-llm",
-        "name": "Towards Data Science (LLM/agents scan)",
-        "type": "rss",
-        "url": "https://medium.com/feed/towards-data-science",
-        "product_area": "Mixed",
-        "trust": "community",
-        "status": "candidate",
-        "reason": "High-volume publication; usable as discovery-only with strict relevance filtering for agentic/Microsoft keywords.",
-        "last_checked": "2026-03-05"
-      },
-      {
-        "id": "itnext-medium",
-        "name": "ITNEXT on Medium",
-        "type": "rss",
-        "url": "https://medium.com/feed/itnext",
-        "product_area": "Mixed",
-        "trust": "community",
-        "status": "candidate",
-        "reason": "Engineering-heavy publication with frequent agent/tooling posts suitable for candidate funnel.",
-        "last_checked": "2026-03-05"
-      },
-      {
-        "id": "nick-doelman-medium",
-        "name": "Nick Doelman (Medium author feed)",
-        "type": "rss",
-        "url": "https://medium.com/feed/@readyxrm",
-        "product_area": "Power Platform",
-        "trust": "community",
-        "status": "candidate",
-        "reason": "Author-level feed aligned to Dataverse/Copilot operational content where cross-posted.",
-        "last_checked": "2026-03-05"
-      },
-      {
-        "id": "james-yao-medium",
-        "name": "James Yao (Medium author feed)",
-        "type": "rss",
-        "url": "https://medium.com/feed/@james.yao",
-        "product_area": "Foundry",
-        "trust": "community",
-        "status": "candidate",
-        "reason": "Individual practitioner feed for Azure AI / agent implementation narratives (validation required).",
-        "last_checked": "2026-03-05"
-      },
-      {
-        "id": "azure-sdk-blog",
-        "name": "Azure SDK Blog",
-        "type": "rss",
-        "url": "https://devblogs.microsoft.com/azure-sdk/feed/",
-        "product_area": "Foundry",
-        "trust": "official",
-        "status": "candidate",
-        "reason": "SDK/runtime updates often include AI integration and operational patterns relevant to builders.",
-        "last_checked": "2026-03-05"
-      },
-      {
-        "id": "m365-platform-community",
-        "name": "Microsoft 365 Platform Community",
-        "type": "rss",
-        "url": "https://techcommunity.microsoft.com/gxcuf89792/rss/board?board.id=Microsoft365Platform",
-        "product_area": "M365",
-        "trust": "community",
-        "status": "candidate",
-        "reason": "Machine-ingestable forum feed; candidate-only until noise ratio is measured.",
-        "last_checked": "2026-03-05"
       }
     ],
     "reject": [
@@ -441,6 +419,20 @@
         "last_checked": "2026-02-28"
       },
       {
+        "id": "itnext-medium",
+        "url": "https://medium.com/feed/itnext",
+        "status": "rejected",
+        "reason": "Removed from candidate intake: publication feed (not individual practitioner) with broad topic drift and low Microsoft-specific precision.",
+        "last_checked": "2026-03-06"
+      },
+      {
+        "id": "m365-platform-community",
+        "url": "https://techcommunity.microsoft.com/gxcuf89792/rss/board?board.id=Microsoft365Platform",
+        "status": "rejected",
+        "reason": "Removed from candidate intake: forum/community board feed is discussion-heavy and not an individual practitioner blog source.",
+        "last_checked": "2026-03-06"
+      },
+      {
         "id": "medium-tag-microsoft365",
         "url": "https://medium.com/feed/tag/microsoft-365",
         "status": "rejected",
@@ -453,6 +445,13 @@
         "status": "rejected",
         "reason": "High-noise aggregator tag feed; weak fit for individual-practitioner-first sourcing policy.",
         "last_checked": "2026-02-28"
+      },
+      {
+        "id": "microsoft-ai-medium",
+        "url": "https://medium.com/feed/microsoftai",
+        "status": "rejected",
+        "reason": "Removed from candidate intake: official publication duplicates coverage from existing Microsoft dev blogs and is not individual-practitioner-led.",
+        "last_checked": "2026-03-06"
       },
       {
         "id": "mmsharepoint",
@@ -481,6 +480,13 @@
         "status": "rejected",
         "reason": "Feed endpoint returns 403 (blocked to automated retrieval) despite valid practitioner content; keep manual-watch.",
         "last_checked": "2026-03-03"
+      },
+      {
+        "id": "towards-data-science-llm",
+        "url": "https://medium.com/feed/towards-data-science",
+        "status": "rejected",
+        "reason": "Removed from candidate intake: publication-level high-volume Medium feed with weak individual-practitioner signal; increases noise versus newsletter sourcing policy.",
+        "last_checked": "2026-03-06"
       }
     ]
   },

@@ -18,6 +18,31 @@ TIMEOUT_SECONDS = 15
 INGESTABILITY_REASONS = ["machine_ingestable", "no_items", "unsupported_root_tag", "fetch_failed", "unknown"]
 NON_INGESTABLE_REASON_PRIORITY = ["fetch_failed", "no_items", "unsupported_root_tag", "unknown"]
 PROMOTION_QUEUE_PRIORITY = ["candidate_add", "candidate_reject"]
+POLICY_BLOCK_TYPE_PRIORITY = [
+    "publication_noise",
+    "topic_noise",
+    "community_forum",
+    "stale_or_low_signal",
+    "manual_review_hold",
+    "other_policy",
+]
+
+
+def _policy_block_type(reason: str | None) -> str:
+    text = (reason or "").strip().lower()
+    if not text:
+        return "other_policy"
+    if "tag aggregator" in text or "publication feed" in text:
+        return "publication_noise"
+    if "topical" in text or "precision" in text or "topic" in text or "noise" in text:
+        return "topic_noise"
+    if "forum" in text or "board" in text or "discussion-heavy" in text:
+        return "community_forum"
+    if "stale cadence" in text or "low-signal" in text:
+        return "stale_or_low_signal"
+    if "manual quality" in text or "manual-watch" in text or "manual watch" in text:
+        return "manual_review_hold"
+    return "other_policy"
 
 
 def _reason_percentages(counter: dict[str, int], total: int) -> dict[str, float]:
@@ -236,6 +261,18 @@ def audit_sources(sources_path: Path) -> dict:
             "promotion_opportunity_top_domain_candidate_add_ids": [],
             "promotion_opportunity_top_domain_cohort_mix_level": "none",
             "promotion_opportunity_domain_concentration_level": "none",
+            "promotion_opportunity_candidate_reject_policy_blocked_ids": [],
+            "promotion_opportunity_candidate_reject_policy_blocked_count": 0,
+            "promotion_opportunity_candidate_reject_policy_blocked_share_percent": 0.0,
+            "promotion_opportunity_candidate_reject_policy_blocked_ids_by_type": {
+                block_type: [] for block_type in POLICY_BLOCK_TYPE_PRIORITY
+            },
+            "promotion_opportunity_candidate_reject_policy_blocked_counts_by_type": {
+                block_type: 0 for block_type in POLICY_BLOCK_TYPE_PRIORITY
+            },
+            "promotion_opportunity_top_domain_policy_blocked_ids": [],
+            "promotion_opportunity_top_domain_policy_blocked_count": 0,
+            "promotion_opportunity_top_domain_policy_blocked_share_percent": 0.0,
         },
     }
     promotion_candidates: list[dict] = []
@@ -295,6 +332,8 @@ def audit_sources(sources_path: Path) -> dict:
                         "item_count": status.get("item_count", 0),
                         "ingestability_reason": status.get("ingestability_reason", "machine_ingestable"),
                         "domain": _extract_domain(item["url"]),
+                        "policy_reject_reason": item.get("reason", ""),
+                        "policy_block_type": _policy_block_type(item.get("reason", "")),
                     }
                 )
             else:
@@ -379,12 +418,41 @@ def audit_sources(sources_path: Path) -> dict:
             "item_count": row.get("item_count", 0),
             "domain": row.get("domain", _extract_domain(row.get("url", "")) or "unknown"),
             "ingestability_reason": row.get("ingestability_reason", "machine_ingestable"),
+            "policy_reject_reason": row.get("policy_reject_reason", ""),
+            "policy_block_type": row.get("policy_block_type", ""),
             "priority_rank": index + 1,
         }
         for index, row in enumerate(ranked_promotion_candidates)
     ]
     results["summary"]["promotion_opportunity_top_ids"] = [row["id"] for row in ranked_promotion_candidates[:5]]
     results["summary"]["promotion_opportunity_top_rows"] = results["summary"]["promotion_opportunity_rows"][:5]
+
+    policy_blocked_rows = [
+        row
+        for row in results["summary"]["promotion_opportunity_rows"]
+        if row.get("source_cohort") == "candidate_reject" and row.get("policy_reject_reason")
+    ]
+    results["summary"]["promotion_opportunity_candidate_reject_policy_blocked_ids"] = _sorted_unique(
+        [row["id"] for row in policy_blocked_rows]
+    )
+    results["summary"]["promotion_opportunity_candidate_reject_policy_blocked_count"] = len(policy_blocked_rows)
+    reject_total = results["summary"]["promotion_opportunity_breakdown"].get("candidate_reject", 0)
+    if reject_total > 0:
+        results["summary"]["promotion_opportunity_candidate_reject_policy_blocked_share_percent"] = round(
+            (len(policy_blocked_rows) / reject_total) * 100, 1
+        )
+    blocked_ids_by_type = {block_type: [] for block_type in POLICY_BLOCK_TYPE_PRIORITY}
+    for row in policy_blocked_rows:
+        block_type = row.get("policy_block_type") or "other_policy"
+        if block_type not in blocked_ids_by_type:
+            blocked_ids_by_type[block_type] = []
+        blocked_ids_by_type[block_type].append(row["id"])
+    for block_type in blocked_ids_by_type:
+        blocked_ids_by_type[block_type] = _sorted_unique(blocked_ids_by_type[block_type])
+    results["summary"]["promotion_opportunity_candidate_reject_policy_blocked_ids_by_type"] = blocked_ids_by_type
+    results["summary"]["promotion_opportunity_candidate_reject_policy_blocked_counts_by_type"] = {
+        block_type: len(ids) for block_type, ids in blocked_ids_by_type.items()
+    }
 
     domain_counts: dict[str, int] = {}
     domain_ids: dict[str, list[str]] = {}
@@ -450,6 +518,25 @@ def audit_sources(sources_path: Path) -> dict:
         results["summary"]["promotion_opportunity_top_domain_cohort_mix_level"] = top_domain_row.get(
             "cohort_mix_level", "none"
         )
+        top_domain_ids = set(top_domain_row.get("ids", []))
+        top_domain_policy_blocked_ids = [
+            row["id"] for row in policy_blocked_rows if row["id"] in top_domain_ids
+        ]
+        results["summary"]["promotion_opportunity_top_domain_policy_blocked_ids"] = _sorted_unique(
+            top_domain_policy_blocked_ids
+        )
+        results["summary"]["promotion_opportunity_top_domain_policy_blocked_count"] = len(
+            results["summary"]["promotion_opportunity_top_domain_policy_blocked_ids"]
+        )
+        if top_domain_row.get("count", 0) > 0:
+            results["summary"]["promotion_opportunity_top_domain_policy_blocked_share_percent"] = round(
+                (
+                    results["summary"]["promotion_opportunity_top_domain_policy_blocked_count"]
+                    / top_domain_row.get("count", 0)
+                )
+                * 100,
+                1,
+            )
         if top_share >= 60.0:
             concentration_level = "high"
         elif top_share >= 35.0:
@@ -539,6 +626,18 @@ def write_markdown_report(report: dict, path: Path) -> None:
         "    - candidate_reject ids: "
         + (", ".join(s.get("promotion_opportunity_top_domain_candidate_reject_ids", [])) or "none")
     )
+    lines.append(
+        f"  - Candidate-reject policy-blocked promotion ids ({s.get('promotion_opportunity_candidate_reject_policy_blocked_count', 0)} / {breakdown.get('candidate_reject', 0)} = {s.get('promotion_opportunity_candidate_reject_policy_blocked_share_percent', 0.0):.1f}%): "
+        + (", ".join(s.get("promotion_opportunity_candidate_reject_policy_blocked_ids", [])) or "none")
+    )
+    lines.append(
+        f"  - Top-domain policy-blocked ids ({s.get('promotion_opportunity_top_domain_policy_blocked_count', 0)} / {s.get('promotion_opportunity_top_domain_id_count', 0)} = {s.get('promotion_opportunity_top_domain_policy_blocked_share_percent', 0.0):.1f}%): "
+        + (", ".join(s.get("promotion_opportunity_top_domain_policy_blocked_ids", [])) or "none")
+    )
+    lines.append("  - Candidate-reject policy blocked breakdown:")
+    for block_type, count in s.get("promotion_opportunity_candidate_reject_policy_blocked_counts_by_type", {}).items():
+        ids = s.get("promotion_opportunity_candidate_reject_policy_blocked_ids_by_type", {}).get(block_type, [])
+        lines.append(f"    - {block_type}: {count} ({', '.join(ids) if ids else 'none'})")
     if s.get("promotion_opportunity_top_domains"):
         lines.append("  - Promotion top-domain detail (domain/count/ids):")
         for domain_row in s.get("promotion_opportunity_top_domains", []):
@@ -548,8 +647,14 @@ def write_markdown_report(report: dict, path: Path) -> None:
     if s.get("promotion_opportunity_rows"):
         lines.append("  - Promotion queue detail (rank/cohort/items):")
         for row in s.get("promotion_opportunity_rows", []):
+            policy_suffix = ""
+            if row.get("source_cohort") == "candidate_reject" and row.get("policy_reject_reason"):
+                policy_suffix = (
+                    f", policy_block_type={row.get('policy_block_type', 'other_policy')}, "
+                    f"policy_reason={row.get('policy_reject_reason')}"
+                )
             lines.append(
-                f"    - #{row.get('priority_rank', '?')}: {row.get('id')} ({row.get('name', row.get('id'))}) [{row.get('source_cohort')}, items={row.get('item_count', 0)}, domain={row.get('domain', 'unknown')}, reason={row.get('ingestability_reason', 'n/a')}]"
+                f"    - #{row.get('priority_rank', '?')}: {row.get('id')} ({row.get('name', row.get('id'))}) [{row.get('source_cohort')}, items={row.get('item_count', 0)}, domain={row.get('domain', 'unknown')}, reason={row.get('ingestability_reason', 'n/a')}{policy_suffix}]"
             )
             if row.get("url"):
                 lines.append(f"      - {row.get('url')}")

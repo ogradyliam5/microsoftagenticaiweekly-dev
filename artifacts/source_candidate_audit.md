@@ -1,58 +1,67 @@
 # Source Candidate Audit Report
 
-Generated: 2026-03-06T05:48:38Z
+Generated: 2026-03-06T07:19:22Z
 
 ## Summary
 - Candidate add feeds healthy: 11
-- Candidate add feeds failing: 4
+- Candidate add feeds failing: 2
 - Candidate add feeds non-ingestable: 0
   - due to no items: 0
   - due to unsupported root tag: 0
-- Rejected feeds still blocked: 3
-- Rejected feeds now healthy (review needed): 5
-- Rejected feeds now machine-ingestable (promotion candidates): 5
+- Rejected feeds still blocked: 5
+- Rejected feeds now healthy (review needed): 7
+- Rejected feeds now machine-ingestable (promotion candidates): 7
 - Rejected feeds now healthy but non-ingestable: 0
 
 ## Ingestability reason breakdown
 - Candidate add dominant reason: machine_ingestable
 - Candidate reject dominant reason: machine_ingestable
 - Candidate add
-  - machine_ingestable: 11 (73.3%)
+  - machine_ingestable: 11 (84.6%)
   - no_items: 0 (0.0%)
   - unsupported_root_tag: 0 (0.0%)
-  - fetch_failed: 4 (26.7%)
+  - fetch_failed: 2 (15.4%)
   - unknown: 0 (0.0%)
 - Candidate reject
-  - machine_ingestable: 5 (62.5%)
+  - machine_ingestable: 7 (58.3%)
   - no_items: 0 (0.0%)
   - unsupported_root_tag: 0 (0.0%)
-  - fetch_failed: 3 (37.5%)
+  - fetch_failed: 5 (41.7%)
   - unknown: 0 (0.0%)
 - Candidate add minus reject percentage delta
-  - machine_ingestable: +10.8 pp
+  - machine_ingestable: +26.3 pp
   - no_items: +0.0 pp
   - unsupported_root_tag: +0.0 pp
-  - fetch_failed: -10.8 pp
+  - fetch_failed: -26.3 pp
   - unknown: +0.0 pp
 
 ## Actionable triage queues
-- Candidate add promotion-ready ids (11): allandecastro, azure-sdk-blog, benedikt-bergmann, benitezhere, itaintboring, itnext-medium, joegill, lowcodelewis, platformsofpower, pwmather, towards-data-science-llm
-- Promotion opportunity queue ids (16): azure-sdk-blog, benitezhere, lowcodelewis, allandecastro, benedikt-bergmann, itaintboring, itnext-medium, joegill, platformsofpower, pwmather, towards-data-science-llm, d365goddess, medium-tag-microsoft365, medium-tag-powerplatform, mmsharepoint, powertricks
-  - candidate_add: 11 (68.8%) | candidate_reject: 5 (31.2%)
+- Candidate add promotion-ready ids (11): allandecastro, azure-sdk-blog, benedikt-bergmann, benitezhere, itaintboring, joegill, journeyofthegeek, lowcodelewis, nikki-chapple, platformsofpower, pwmather
+- Promotion opportunity queue ids (18): azure-sdk-blog, benitezhere, lowcodelewis, allandecastro, benedikt-bergmann, itaintboring, joegill, journeyofthegeek, nikki-chapple, platformsofpower, pwmather, d365goddess, itnext-medium, medium-tag-microsoft365, medium-tag-powerplatform, mmsharepoint, powertricks, towards-data-science-llm
+  - candidate_add: 11 (61.1%) | candidate_reject: 7 (38.9%)
 - Promotion opportunity top ids (5): azure-sdk-blog, benitezhere, lowcodelewis, allandecastro, benedikt-bergmann
 - Promotion opportunity top domains (5): medium.com, benediktbergmann.eu, benitezhere.blogspot.com, blog.allandecastro.com, d365goddess.com
-  - Top-domain concentration: low (25.0% / 4 ids)
-  - Top-domain cohort mix: balanced
-  - Top-domain candidate_add share: 50.0% (2 ids)
-  - Top-domain candidate_reject share: 50.0% (2 ids)
-    - candidate_add ids: itnext-medium, towards-data-science-llm
-    - candidate_reject ids: medium-tag-microsoft365, medium-tag-powerplatform
+  - Top-domain concentration: low (22.2% / 4 ids)
+  - Top-domain cohort mix: candidate_reject_heavy
+  - Top-domain candidate_add share: 0.0% (0 ids)
+  - Top-domain candidate_reject share: 100.0% (4 ids)
+    - candidate_add ids: none
+    - candidate_reject ids: itnext-medium, medium-tag-microsoft365, medium-tag-powerplatform, towards-data-science-llm
+  - Candidate-reject policy-blocked promotion ids (7 / 7 = 100.0%): d365goddess, itnext-medium, medium-tag-microsoft365, medium-tag-powerplatform, mmsharepoint, powertricks, towards-data-science-llm
+  - Top-domain policy-blocked ids (4 / 4 = 100.0%): itnext-medium, medium-tag-microsoft365, medium-tag-powerplatform, towards-data-science-llm
+  - Candidate-reject policy blocked breakdown:
+    - publication_noise: 1 (itnext-medium)
+    - topic_noise: 5 (d365goddess, medium-tag-microsoft365, medium-tag-powerplatform, powertricks, towards-data-science-llm)
+    - community_forum: 0 (none)
+    - stale_or_low_signal: 0 (none)
+    - manual_review_hold: 0 (none)
+    - other_policy: 1 (mmsharepoint)
   - Promotion top-domain detail (domain/count/ids):
-    - medium.com: 4 (25.0%) add_share=50.0% reject_share=50.0% mix=balanced (itnext-medium, medium-tag-microsoft365, medium-tag-powerplatform, towards-data-science-llm)
-    - benediktbergmann.eu: 1 (6.2%) add_share=100.0% reject_share=0.0% mix=candidate_add_heavy (benedikt-bergmann)
-    - benitezhere.blogspot.com: 1 (6.2%) add_share=100.0% reject_share=0.0% mix=candidate_add_heavy (benitezhere)
-    - blog.allandecastro.com: 1 (6.2%) add_share=100.0% reject_share=0.0% mix=candidate_add_heavy (allandecastro)
-    - d365goddess.com: 1 (6.2%) add_share=0.0% reject_share=100.0% mix=candidate_reject_heavy (d365goddess)
+    - medium.com: 4 (22.2%) add_share=0.0% reject_share=100.0% mix=candidate_reject_heavy (itnext-medium, medium-tag-microsoft365, medium-tag-powerplatform, towards-data-science-llm)
+    - benediktbergmann.eu: 1 (5.6%) add_share=100.0% reject_share=0.0% mix=candidate_add_heavy (benedikt-bergmann)
+    - benitezhere.blogspot.com: 1 (5.6%) add_share=100.0% reject_share=0.0% mix=candidate_add_heavy (benitezhere)
+    - blog.allandecastro.com: 1 (5.6%) add_share=100.0% reject_share=0.0% mix=candidate_add_heavy (allandecastro)
+    - d365goddess.com: 1 (5.6%) add_share=0.0% reject_share=100.0% mix=candidate_reject_heavy (d365goddess)
   - Promotion queue detail (rank/cohort/items):
     - #1: azure-sdk-blog (Azure SDK Blog) [candidate_add, items=25, domain=devblogs.microsoft.com, reason=machine_ingestable]
       - https://devblogs.microsoft.com/azure-sdk/feed/
@@ -66,27 +75,31 @@ Generated: 2026-03-06T05:48:38Z
       - https://benediktbergmann.eu/feed/
     - #6: itaintboring (It Ain't Boring (Alex Shlega)) [candidate_add, items=10, domain=itaintboring.com, reason=machine_ingestable]
       - https://www.itaintboring.com/feed/
-    - #7: itnext-medium (ITNEXT on Medium) [candidate_add, items=10, domain=medium.com, reason=machine_ingestable]
-      - https://medium.com/feed/itnext
-    - #8: joegill (Joe Gill) [candidate_add, items=10, domain=joegill.com, reason=machine_ingestable]
+    - #7: joegill (Joe Gill) [candidate_add, items=10, domain=joegill.com, reason=machine_ingestable]
       - https://joegill.com/feed/
-    - #9: platformsofpower (Platforms of Power (Craig White)) [candidate_add, items=10, domain=platformsofpower.net, reason=machine_ingestable]
+    - #8: journeyofthegeek (Journey Of The Geek (Eric Woodruff)) [candidate_add, items=10, domain=journeyofthegeek.com, reason=machine_ingestable]
+      - https://journeyofthegeek.com/feed/
+    - #9: nikki-chapple (Nikki Chapple) [candidate_add, items=10, domain=nikkichapple.com, reason=machine_ingestable]
+      - https://nikkichapple.com/feed/
+    - #10: platformsofpower (Platforms of Power (Craig White)) [candidate_add, items=10, domain=platformsofpower.net, reason=machine_ingestable]
       - https://platformsofpower.net/feed/
-    - #10: pwmather (Paul Mather) [candidate_add, items=10, domain=pwmather.wordpress.com, reason=machine_ingestable]
+    - #11: pwmather (Paul Mather) [candidate_add, items=10, domain=pwmather.wordpress.com, reason=machine_ingestable]
       - https://pwmather.wordpress.com/feed/
-    - #11: towards-data-science-llm (Towards Data Science (LLM/agents scan)) [candidate_add, items=10, domain=medium.com, reason=machine_ingestable]
-      - https://medium.com/feed/towards-data-science
-    - #12: d365goddess (d365goddess) [candidate_reject, items=10, domain=d365goddess.com, reason=machine_ingestable]
+    - #12: d365goddess (d365goddess) [candidate_reject, items=10, domain=d365goddess.com, reason=machine_ingestable, policy_block_type=topic_noise, policy_reason=Feed is now reachable but remains excluded pending manual quality/topicality review for this newsletter focus.]
       - https://d365goddess.com/feed/
-    - #13: medium-tag-microsoft365 (medium-tag-microsoft365) [candidate_reject, items=10, domain=medium.com, reason=machine_ingestable]
+    - #13: itnext-medium (itnext-medium) [candidate_reject, items=10, domain=medium.com, reason=machine_ingestable, policy_block_type=publication_noise, policy_reason=Removed from candidate intake: publication feed (not individual practitioner) with broad topic drift and low Microsoft-specific precision.]
+      - https://medium.com/feed/itnext
+    - #14: medium-tag-microsoft365 (medium-tag-microsoft365) [candidate_reject, items=10, domain=medium.com, reason=machine_ingestable, policy_block_type=topic_noise, policy_reason=High-noise aggregator tag feed; weak fit for individual-practitioner-first sourcing policy.]
       - https://medium.com/feed/tag/microsoft-365
-    - #14: medium-tag-powerplatform (medium-tag-powerplatform) [candidate_reject, items=10, domain=medium.com, reason=machine_ingestable]
+    - #15: medium-tag-powerplatform (medium-tag-powerplatform) [candidate_reject, items=10, domain=medium.com, reason=machine_ingestable, policy_block_type=topic_noise, policy_reason=High-noise aggregator tag feed; weak fit for individual-practitioner-first sourcing policy.]
       - https://medium.com/feed/tag/power-platform
-    - #15: mmsharepoint (mmsharepoint) [candidate_reject, items=10, domain=mmsharepoint.wordpress.com, reason=machine_ingestable]
+    - #16: mmsharepoint (mmsharepoint) [candidate_reject, items=10, domain=mmsharepoint.wordpress.com, reason=machine_ingestable, policy_block_type=other_policy, policy_reason=Content quality is strong but recent activity is stale for this newsletter cadence.]
       - https://mmsharepoint.wordpress.com/feed/
-    - #16: powertricks (powertricks) [candidate_reject, items=10, domain=powertricks.io, reason=machine_ingestable]
+    - #17: powertricks (powertricks) [candidate_reject, items=10, domain=powertricks.io, reason=machine_ingestable, policy_block_type=topic_noise, policy_reason=Feed is now reachable but remains excluded: quality/topical fit to Microsoft Agentic AI Weekly not yet validated.]
       - https://powertricks.io/feed/
-- Candidate add failed ids (4): james-yao-medium, m365-platform-community, microsoft-ai-medium, nick-doelman-medium
+    - #18: towards-data-science-llm (towards-data-science-llm) [candidate_reject, items=10, domain=medium.com, reason=machine_ingestable, policy_block_type=topic_noise, policy_reason=Removed from candidate intake: publication-level high-volume Medium feed with weak individual-practitioner signal; increases noise versus newsletter sourcing policy.]
+      - https://medium.com/feed/towards-data-science
+- Candidate add failed ids (2): james-yao-medium, nick-doelman-medium
 - Candidate add non-ingestable ids (0): none
 - Candidate add non-ingestable priority ids (0): none
   - machine_ingestable: none
@@ -94,8 +107,8 @@ Generated: 2026-03-06T05:48:38Z
   - unsupported_root_tag: none
   - fetch_failed: none
   - unknown: none
-- Candidate reject revival-candidate ids (5): d365goddess, medium-tag-microsoft365, medium-tag-powerplatform, mmsharepoint, powertricks
-- Candidate reject still-blocked ids (3): holgerimbery, the-custom-engine-github, tom-riha
+- Candidate reject revival-candidate ids (7): d365goddess, itnext-medium, medium-tag-microsoft365, medium-tag-powerplatform, mmsharepoint, powertricks, towards-data-science-llm
+- Candidate reject still-blocked ids (5): holgerimbery, m365-platform-community, microsoft-ai-medium, the-custom-engine-github, tom-riha
 - Candidate reject healthy-but-non-ingestable ids (0): none
 - Candidate reject non-ingestable priority ids (0): none
   - machine_ingestable: none
@@ -106,28 +119,30 @@ Generated: 2026-03-06T05:48:38Z
 
 ## Candidate Add Feed Checks
 - `allandecastro` — OK — HTTP 200 — root: rss — items: 10 — ingestable — reason: machine_ingestable
+- `azure-sdk-blog` — OK — HTTP 200 — root: rss — items: 25 — ingestable — reason: machine_ingestable
 - `benedikt-bergmann` — OK — HTTP 200 — root: rss — items: 10 — ingestable — reason: machine_ingestable
 - `benitezhere` — OK — HTTP 200 — root: rss — items: 25 — ingestable — reason: machine_ingestable
 - `itaintboring` — OK — HTTP 200 — root: rss — items: 10 — ingestable — reason: machine_ingestable
+- `james-yao-medium` — FAIL — HTTP 404 — root: n/a — items: 0 — non-ingestable — reason: fetch_failed
 - `joegill` — OK — HTTP 200 — root: rss — items: 10 — ingestable — reason: machine_ingestable
+- `journeyofthegeek` — OK — HTTP 200 — root: rss — items: 10 — ingestable — reason: machine_ingestable
 - `lowcodelewis` — OK — HTTP 200 — root: rss — items: 15 — ingestable — reason: machine_ingestable
+- `nick-doelman-medium` — FAIL — HTTP 404 — root: n/a — items: 0 — non-ingestable — reason: fetch_failed
+- `nikki-chapple` — OK — HTTP 200 — root: rss — items: 10 — ingestable — reason: machine_ingestable
 - `platformsofpower` — OK — HTTP 200 — root: rss — items: 10 — ingestable — reason: machine_ingestable
 - `pwmather` — OK — HTTP 200 — root: rss — items: 10 — ingestable — reason: machine_ingestable
-- `microsoft-ai-medium` — FAIL — HTTP 404 — root: n/a — items: 0 — non-ingestable — reason: fetch_failed
-- `towards-data-science-llm` — OK — HTTP 200 — root: rss — items: 10 — ingestable — reason: machine_ingestable
-- `itnext-medium` — OK — HTTP 200 — root: rss — items: 10 — ingestable — reason: machine_ingestable
-- `nick-doelman-medium` — FAIL — HTTP 404 — root: n/a — items: 0 — non-ingestable — reason: fetch_failed
-- `james-yao-medium` — FAIL — HTTP 404 — root: n/a — items: 0 — non-ingestable — reason: fetch_failed
-- `azure-sdk-blog` — OK — HTTP 200 — root: rss — items: 25 — ingestable — reason: machine_ingestable
-- `m365-platform-community` — FAIL — HTTP 404 — root: n/a — items: 0 — non-ingestable — reason: fetch_failed
 
 ## Rejected Feed Re-check
 - `d365goddess` — NOW_OK — HTTP 200 — root: rss — items: 10 — ingestable — reason: machine_ingestable
 - `holgerimbery` — STILL_BLOCKED — HTTP 404 — root: n/a — items: 0 — non-ingestable — reason: fetch_failed
+- `itnext-medium` — NOW_OK — HTTP 200 — root: rss — items: 10 — ingestable — reason: machine_ingestable
+- `m365-platform-community` — STILL_BLOCKED — HTTP 404 — root: n/a — items: 0 — non-ingestable — reason: fetch_failed
 - `medium-tag-microsoft365` — NOW_OK — HTTP 200 — root: rss — items: 10 — ingestable — reason: machine_ingestable
 - `medium-tag-powerplatform` — NOW_OK — HTTP 200 — root: rss — items: 10 — ingestable — reason: machine_ingestable
+- `microsoft-ai-medium` — STILL_BLOCKED — HTTP 404 — root: n/a — items: 0 — non-ingestable — reason: fetch_failed
 - `mmsharepoint` — NOW_OK — HTTP 200 — root: rss — items: 10 — ingestable — reason: machine_ingestable
 - `powertricks` — NOW_OK — HTTP 200 — root: rss — items: 10 — ingestable — reason: machine_ingestable
 - `the-custom-engine-github` — STILL_BLOCKED — not well-formed (invalid token): line 21, column 75 — root: n/a — items: 0 — non-ingestable — reason: fetch_failed
 - `tom-riha` — STILL_BLOCKED — HTTP 403 — root: n/a — items: 0 — non-ingestable — reason: fetch_failed
+- `towards-data-science-llm` — NOW_OK — HTTP 200 — root: rss — items: 10 — ingestable — reason: machine_ingestable
 

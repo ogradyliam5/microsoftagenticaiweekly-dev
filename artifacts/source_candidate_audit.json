@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-06T05:48:38Z",
+  "generated_at": "2026-03-06T07:19:22Z",
   "sources_path": "data/sources.json",
   "candidate_add": [
     {
@@ -12,6 +12,20 @@
       "final_url": "https://www.blog.allandecastro.com/feed/",
       "root_tag": "rss",
       "item_count": 10,
+      "machine_ingestable": true,
+      "ingestability_reason": "machine_ingestable",
+      "error": null
+    },
+    {
+      "id": "azure-sdk-blog",
+      "name": "Azure SDK Blog",
+      "url": "https://devblogs.microsoft.com/azure-sdk/feed/",
+      "ok": true,
+      "status_code": 200,
+      "content_type": "application/rss+xml; charset=UTF-8",
+      "final_url": "https://devblogs.microsoft.com/azure-sdk/feed/",
+      "root_tag": "rss",
+      "item_count": 25,
       "machine_ingestable": true,
       "ingestability_reason": "machine_ingestable",
       "error": null
@@ -59,6 +73,20 @@
       "error": null
     },
     {
+      "id": "james-yao-medium",
+      "name": "James Yao (Medium author feed)",
+      "url": "https://medium.com/feed/@james.yao",
+      "ok": false,
+      "status_code": 404,
+      "content_type": null,
+      "final_url": "https://medium.com/feed/@james.yao",
+      "root_tag": null,
+      "item_count": 0,
+      "machine_ingestable": false,
+      "ingestability_reason": "fetch_failed",
+      "error": "HTTP 404: Not Found"
+    },
+    {
       "id": "joegill",
       "name": "Joe Gill",
       "url": "https://joegill.com/feed/",
@@ -66,6 +94,20 @@
       "status_code": 200,
       "content_type": "application/rss+xml; charset=UTF-8",
       "final_url": "https://joegill.com/feed/",
+      "root_tag": "rss",
+      "item_count": 10,
+      "machine_ingestable": true,
+      "ingestability_reason": "machine_ingestable",
+      "error": null
+    },
+    {
+      "id": "journeyofthegeek",
+      "name": "Journey Of The Geek (Eric Woodruff)",
+      "url": "https://journeyofthegeek.com/feed/",
+      "ok": true,
+      "status_code": 200,
+      "content_type": "application/rss+xml; charset=UTF-8",
+      "final_url": "https://journeyofthegeek.com/feed/",
       "root_tag": "rss",
       "item_count": 10,
       "machine_ingestable": true,
@@ -82,6 +124,34 @@
       "final_url": "https://www.lewisdoes.dev/rss/",
       "root_tag": "rss",
       "item_count": 15,
+      "machine_ingestable": true,
+      "ingestability_reason": "machine_ingestable",
+      "error": null
+    },
+    {
+      "id": "nick-doelman-medium",
+      "name": "Nick Doelman (Medium author feed)",
+      "url": "https://medium.com/feed/@readyxrm",
+      "ok": false,
+      "status_code": 404,
+      "content_type": null,
+      "final_url": "https://medium.com/feed/@readyxrm",
+      "root_tag": null,
+      "item_count": 0,
+      "machine_ingestable": false,
+      "ingestability_reason": "fetch_failed",
+      "error": "HTTP 404: Not Found"
+    },
+    {
+      "id": "nikki-chapple",
+      "name": "Nikki Chapple",
+      "url": "https://nikkichapple.com/feed/",
+      "ok": true,
+      "status_code": 200,
+      "content_type": "application/rss+xml; charset=UTF-8",
+      "final_url": "https://nikkichapple.com/feed/",
+      "root_tag": "rss",
+      "item_count": 10,
       "machine_ingestable": true,
       "ingestability_reason": "machine_ingestable",
       "error": null
@@ -113,104 +183,6 @@
       "machine_ingestable": true,
       "ingestability_reason": "machine_ingestable",
       "error": null
-    },
-    {
-      "id": "microsoft-ai-medium",
-      "name": "Microsoft AI on Medium",
-      "url": "https://medium.com/feed/microsoftai",
-      "ok": false,
-      "status_code": 404,
-      "content_type": null,
-      "final_url": "https://medium.com/feed/microsoftai",
-      "root_tag": null,
-      "item_count": 0,
-      "machine_ingestable": false,
-      "ingestability_reason": "fetch_failed",
-      "error": "HTTP 404: Not Found"
-    },
-    {
-      "id": "towards-data-science-llm",
-      "name": "Towards Data Science (LLM/agents scan)",
-      "url": "https://medium.com/feed/towards-data-science",
-      "ok": true,
-      "status_code": 200,
-      "content_type": "text/xml; charset=UTF-8",
-      "final_url": "https://medium.com/feed/towards-data-science",
-      "root_tag": "rss",
-      "item_count": 10,
-      "machine_ingestable": true,
-      "ingestability_reason": "machine_ingestable",
-      "error": null
-    },
-    {
-      "id": "itnext-medium",
-      "name": "ITNEXT on Medium",
-      "url": "https://medium.com/feed/itnext",
-      "ok": true,
-      "status_code": 200,
-      "content_type": "text/xml; charset=UTF-8",
-      "final_url": "https://medium.com/feed/itnext",
-      "root_tag": "rss",
-      "item_count": 10,
-      "machine_ingestable": true,
-      "ingestability_reason": "machine_ingestable",
-      "error": null
-    },
-    {
-      "id": "nick-doelman-medium",
-      "name": "Nick Doelman (Medium author feed)",
-      "url": "https://medium.com/feed/@readyxrm",
-      "ok": false,
-      "status_code": 404,
-      "content_type": null,
-      "final_url": "https://medium.com/feed/@readyxrm",
-      "root_tag": null,
-      "item_count": 0,
-      "machine_ingestable": false,
-      "ingestability_reason": "fetch_failed",
-      "error": "HTTP 404: Not Found"
-    },
-    {
-      "id": "james-yao-medium",
-      "name": "James Yao (Medium author feed)",
-      "url": "https://medium.com/feed/@james.yao",
-      "ok": false,
-      "status_code": 404,
-      "content_type": null,
-      "final_url": "https://medium.com/feed/@james.yao",
-      "root_tag": null,
-      "item_count": 0,
-      "machine_ingestable": false,
-      "ingestability_reason": "fetch_failed",
-      "error": "HTTP 404: Not Found"
-    },
-    {
-      "id": "azure-sdk-blog",
-      "name": "Azure SDK Blog",
-      "url": "https://devblogs.microsoft.com/azure-sdk/feed/",
-      "ok": true,
-      "status_code": 200,
-      "content_type": "application/rss+xml; charset=UTF-8",
-      "final_url": "https://devblogs.microsoft.com/azure-sdk/feed/",
-      "root_tag": "rss",
-      "item_count": 25,
-      "machine_ingestable": true,
-      "ingestability_reason": "machine_ingestable",
-      "error": null
-    },
-    {
-      "id": "m365-platform-community",
-      "name": "Microsoft 365 Platform Community",
-      "url": "https://techcommunity.microsoft.com/gxcuf89792/rss/board?board.id=Microsoft365Platform",
-      "ok": false,
-      "status_code": 404,
-      "content_type": null,
-      "final_url": "https://techcommunity.microsoft.com/gxcuf89792/rss/board?board.id=Microsoft365Platform",
-      "root_tag": null,
-      "item_count": 0,
-      "machine_ingestable": false,
-      "ingestability_reason": "fetch_failed",
-      "error": "HTTP 404: Not Found"
     }
   ],
   "candidate_reject": [
@@ -236,6 +208,34 @@
       "status_code": 404,
       "content_type": null,
       "final_url": "https://holgerimbery.blog/feed/",
+      "root_tag": null,
+      "item_count": 0,
+      "machine_ingestable": false,
+      "ingestability_reason": "fetch_failed",
+      "error": "HTTP 404: Not Found"
+    },
+    {
+      "id": "itnext-medium",
+      "url": "https://medium.com/feed/itnext",
+      "expected_reject_reason": "Removed from candidate intake: publication feed (not individual practitioner) with broad topic drift and low Microsoft-specific precision.",
+      "ok": true,
+      "status_code": 200,
+      "content_type": "text/xml; charset=UTF-8",
+      "final_url": "https://medium.com/feed/itnext",
+      "root_tag": "rss",
+      "item_count": 10,
+      "machine_ingestable": true,
+      "ingestability_reason": "machine_ingestable",
+      "error": null
+    },
+    {
+      "id": "m365-platform-community",
+      "url": "https://techcommunity.microsoft.com/gxcuf89792/rss/board?board.id=Microsoft365Platform",
+      "expected_reject_reason": "Removed from candidate intake: forum/community board feed is discussion-heavy and not an individual practitioner blog source.",
+      "ok": false,
+      "status_code": 404,
+      "content_type": null,
+      "final_url": "https://techcommunity.microsoft.com/gxcuf89792/rss/board?board.id=Microsoft365Platform",
       "root_tag": null,
       "item_count": 0,
       "machine_ingestable": false,
@@ -269,6 +269,20 @@
       "machine_ingestable": true,
       "ingestability_reason": "machine_ingestable",
       "error": null
+    },
+    {
+      "id": "microsoft-ai-medium",
+      "url": "https://medium.com/feed/microsoftai",
+      "expected_reject_reason": "Removed from candidate intake: official publication duplicates coverage from existing Microsoft dev blogs and is not individual-practitioner-led.",
+      "ok": false,
+      "status_code": 404,
+      "content_type": null,
+      "final_url": "https://medium.com/feed/microsoftai",
+      "root_tag": null,
+      "item_count": 0,
+      "machine_ingestable": false,
+      "ingestability_reason": "fetch_failed",
+      "error": "HTTP 404: Not Found"
     },
     {
       "id": "mmsharepoint",
@@ -325,30 +339,44 @@
       "machine_ingestable": false,
       "ingestability_reason": "fetch_failed",
       "error": "HTTP 403: Forbidden"
+    },
+    {
+      "id": "towards-data-science-llm",
+      "url": "https://medium.com/feed/towards-data-science",
+      "expected_reject_reason": "Removed from candidate intake: publication-level high-volume Medium feed with weak individual-practitioner signal; increases noise versus newsletter sourcing policy.",
+      "ok": true,
+      "status_code": 200,
+      "content_type": "text/xml; charset=UTF-8",
+      "final_url": "https://medium.com/feed/towards-data-science",
+      "root_tag": "rss",
+      "item_count": 10,
+      "machine_ingestable": true,
+      "ingestability_reason": "machine_ingestable",
+      "error": null
     }
   ],
   "summary": {
     "candidate_add_ok": 11,
-    "candidate_add_failed": 4,
+    "candidate_add_failed": 2,
     "candidate_add_non_ingestable": 0,
     "candidate_add_non_ingestable_no_items": 0,
     "candidate_add_non_ingestable_unsupported_root": 0,
-    "candidate_reject_still_blocked": 3,
-    "candidate_reject_now_ok": 5,
-    "candidate_reject_now_ingestable": 5,
+    "candidate_reject_still_blocked": 5,
+    "candidate_reject_now_ok": 7,
+    "candidate_reject_now_ingestable": 7,
     "candidate_reject_now_non_ingestable": 0,
     "candidate_add_reason_counts": {
       "machine_ingestable": 11,
       "no_items": 0,
       "unsupported_root_tag": 0,
-      "fetch_failed": 4,
+      "fetch_failed": 2,
       "unknown": 0
     },
     "candidate_reject_reason_counts": {
-      "machine_ingestable": 5,
+      "machine_ingestable": 7,
       "no_items": 0,
       "unsupported_root_tag": 0,
-      "fetch_failed": 3,
+      "fetch_failed": 5,
       "unknown": 0
     },
     "candidate_add_non_ingestable_ids_by_reason": {
@@ -371,32 +399,34 @@
       "benedikt-bergmann",
       "benitezhere",
       "itaintboring",
-      "itnext-medium",
       "joegill",
+      "journeyofthegeek",
       "lowcodelewis",
+      "nikki-chapple",
       "platformsofpower",
-      "pwmather",
-      "towards-data-science-llm"
+      "pwmather"
     ],
     "candidate_add_non_ingestable_ids": [],
     "candidate_add_non_ingestable_priority_ids": [],
     "candidate_add_failed_ids": [
       "james-yao-medium",
-      "m365-platform-community",
-      "microsoft-ai-medium",
       "nick-doelman-medium"
     ],
     "candidate_reject_revival_candidate_ids": [
       "d365goddess",
+      "itnext-medium",
       "medium-tag-microsoft365",
       "medium-tag-powerplatform",
       "mmsharepoint",
-      "powertricks"
+      "powertricks",
+      "towards-data-science-llm"
     ],
     "candidate_reject_non_ingestable_ids": [],
     "candidate_reject_non_ingestable_priority_ids": [],
     "candidate_reject_still_blocked_ids": [
       "holgerimbery",
+      "m365-platform-community",
+      "microsoft-ai-medium",
       "the-custom-engine-github",
       "tom-riha"
     ],
@@ -407,20 +437,22 @@
       "allandecastro",
       "benedikt-bergmann",
       "itaintboring",
-      "itnext-medium",
       "joegill",
+      "journeyofthegeek",
+      "nikki-chapple",
       "platformsofpower",
       "pwmather",
-      "towards-data-science-llm",
       "d365goddess",
+      "itnext-medium",
       "medium-tag-microsoft365",
       "medium-tag-powerplatform",
       "mmsharepoint",
-      "powertricks"
+      "powertricks",
+      "towards-data-science-llm"
     ],
     "promotion_opportunity_breakdown": {
       "candidate_add": 11,
-      "candidate_reject": 5
+      "candidate_reject": 7
     },
     "promotion_opportunity_rows": [
       {
@@ -431,6 +463,8 @@
         "item_count": 25,
         "domain": "devblogs.microsoft.com",
         "ingestability_reason": "machine_ingestable",
+        "policy_reject_reason": "",
+        "policy_block_type": "",
         "priority_rank": 1
       },
       {
@@ -441,6 +475,8 @@
         "item_count": 25,
         "domain": "benitezhere.blogspot.com",
         "ingestability_reason": "machine_ingestable",
+        "policy_reject_reason": "",
+        "policy_block_type": "",
         "priority_rank": 2
       },
       {
@@ -451,6 +487,8 @@
         "item_count": 15,
         "domain": "lowcodelewis.com",
         "ingestability_reason": "machine_ingestable",
+        "policy_reject_reason": "",
+        "policy_block_type": "",
         "priority_rank": 3
       },
       {
@@ -461,6 +499,8 @@
         "item_count": 10,
         "domain": "blog.allandecastro.com",
         "ingestability_reason": "machine_ingestable",
+        "policy_reject_reason": "",
+        "policy_block_type": "",
         "priority_rank": 4
       },
       {
@@ -471,6 +511,8 @@
         "item_count": 10,
         "domain": "benediktbergmann.eu",
         "ingestability_reason": "machine_ingestable",
+        "policy_reject_reason": "",
+        "policy_block_type": "",
         "priority_rank": 5
       },
       {
@@ -481,17 +523,9 @@
         "item_count": 10,
         "domain": "itaintboring.com",
         "ingestability_reason": "machine_ingestable",
+        "policy_reject_reason": "",
+        "policy_block_type": "",
         "priority_rank": 6
-      },
-      {
-        "id": "itnext-medium",
-        "name": "ITNEXT on Medium",
-        "url": "https://medium.com/feed/itnext",
-        "source_cohort": "candidate_add",
-        "item_count": 10,
-        "domain": "medium.com",
-        "ingestability_reason": "machine_ingestable",
-        "priority_rank": 7
       },
       {
         "id": "joegill",
@@ -501,7 +535,33 @@
         "item_count": 10,
         "domain": "joegill.com",
         "ingestability_reason": "machine_ingestable",
+        "policy_reject_reason": "",
+        "policy_block_type": "",
+        "priority_rank": 7
+      },
+      {
+        "id": "journeyofthegeek",
+        "name": "Journey Of The Geek (Eric Woodruff)",
+        "url": "https://journeyofthegeek.com/feed/",
+        "source_cohort": "candidate_add",
+        "item_count": 10,
+        "domain": "journeyofthegeek.com",
+        "ingestability_reason": "machine_ingestable",
+        "policy_reject_reason": "",
+        "policy_block_type": "",
         "priority_rank": 8
+      },
+      {
+        "id": "nikki-chapple",
+        "name": "Nikki Chapple",
+        "url": "https://nikkichapple.com/feed/",
+        "source_cohort": "candidate_add",
+        "item_count": 10,
+        "domain": "nikkichapple.com",
+        "ingestability_reason": "machine_ingestable",
+        "policy_reject_reason": "",
+        "policy_block_type": "",
+        "priority_rank": 9
       },
       {
         "id": "platformsofpower",
@@ -511,7 +571,9 @@
         "item_count": 10,
         "domain": "platformsofpower.net",
         "ingestability_reason": "machine_ingestable",
-        "priority_rank": 9
+        "policy_reject_reason": "",
+        "policy_block_type": "",
+        "priority_rank": 10
       },
       {
         "id": "pwmather",
@@ -521,16 +583,8 @@
         "item_count": 10,
         "domain": "pwmather.wordpress.com",
         "ingestability_reason": "machine_ingestable",
-        "priority_rank": 10
-      },
-      {
-        "id": "towards-data-science-llm",
-        "name": "Towards Data Science (LLM/agents scan)",
-        "url": "https://medium.com/feed/towards-data-science",
-        "source_cohort": "candidate_add",
-        "item_count": 10,
-        "domain": "medium.com",
-        "ingestability_reason": "machine_ingestable",
+        "policy_reject_reason": "",
+        "policy_block_type": "",
         "priority_rank": 11
       },
       {
@@ -541,7 +595,21 @@
         "item_count": 10,
         "domain": "d365goddess.com",
         "ingestability_reason": "machine_ingestable",
+        "policy_reject_reason": "Feed is now reachable but remains excluded pending manual quality/topicality review for this newsletter focus.",
+        "policy_block_type": "topic_noise",
         "priority_rank": 12
+      },
+      {
+        "id": "itnext-medium",
+        "name": "itnext-medium",
+        "url": "https://medium.com/feed/itnext",
+        "source_cohort": "candidate_reject",
+        "item_count": 10,
+        "domain": "medium.com",
+        "ingestability_reason": "machine_ingestable",
+        "policy_reject_reason": "Removed from candidate intake: publication feed (not individual practitioner) with broad topic drift and low Microsoft-specific precision.",
+        "policy_block_type": "publication_noise",
+        "priority_rank": 13
       },
       {
         "id": "medium-tag-microsoft365",
@@ -551,7 +619,9 @@
         "item_count": 10,
         "domain": "medium.com",
         "ingestability_reason": "machine_ingestable",
-        "priority_rank": 13
+        "policy_reject_reason": "High-noise aggregator tag feed; weak fit for individual-practitioner-first sourcing policy.",
+        "policy_block_type": "topic_noise",
+        "priority_rank": 14
       },
       {
         "id": "medium-tag-powerplatform",
@@ -561,7 +631,9 @@
         "item_count": 10,
         "domain": "medium.com",
         "ingestability_reason": "machine_ingestable",
-        "priority_rank": 14
+        "policy_reject_reason": "High-noise aggregator tag feed; weak fit for individual-practitioner-first sourcing policy.",
+        "policy_block_type": "topic_noise",
+        "priority_rank": 15
       },
       {
         "id": "mmsharepoint",
@@ -571,7 +643,9 @@
         "item_count": 10,
         "domain": "mmsharepoint.wordpress.com",
         "ingestability_reason": "machine_ingestable",
-        "priority_rank": 15
+        "policy_reject_reason": "Content quality is strong but recent activity is stale for this newsletter cadence.",
+        "policy_block_type": "other_policy",
+        "priority_rank": 16
       },
       {
         "id": "powertricks",
@@ -581,7 +655,21 @@
         "item_count": 10,
         "domain": "powertricks.io",
         "ingestability_reason": "machine_ingestable",
-        "priority_rank": 16
+        "policy_reject_reason": "Feed is now reachable but remains excluded: quality/topical fit to Microsoft Agentic AI Weekly not yet validated.",
+        "policy_block_type": "topic_noise",
+        "priority_rank": 17
+      },
+      {
+        "id": "towards-data-science-llm",
+        "name": "towards-data-science-llm",
+        "url": "https://medium.com/feed/towards-data-science",
+        "source_cohort": "candidate_reject",
+        "item_count": 10,
+        "domain": "medium.com",
+        "ingestability_reason": "machine_ingestable",
+        "policy_reject_reason": "Removed from candidate intake: publication-level high-volume Medium feed with weak individual-practitioner signal; increases noise versus newsletter sourcing policy.",
+        "policy_block_type": "topic_noise",
+        "priority_rank": 18
       }
     ],
     "promotion_opportunity_top_rows": [
@@ -593,6 +681,8 @@
         "item_count": 25,
         "domain": "devblogs.microsoft.com",
         "ingestability_reason": "machine_ingestable",
+        "policy_reject_reason": "",
+        "policy_block_type": "",
         "priority_rank": 1
       },
       {
@@ -603,6 +693,8 @@
         "item_count": 25,
         "domain": "benitezhere.blogspot.com",
         "ingestability_reason": "machine_ingestable",
+        "policy_reject_reason": "",
+        "policy_block_type": "",
         "priority_rank": 2
       },
       {
@@ -613,6 +705,8 @@
         "item_count": 15,
         "domain": "lowcodelewis.com",
         "ingestability_reason": "machine_ingestable",
+        "policy_reject_reason": "",
+        "policy_block_type": "",
         "priority_rank": 3
       },
       {
@@ -623,6 +717,8 @@
         "item_count": 10,
         "domain": "blog.allandecastro.com",
         "ingestability_reason": "machine_ingestable",
+        "policy_reject_reason": "",
+        "policy_block_type": "",
         "priority_rank": 4
       },
       {
@@ -633,6 +729,8 @@
         "item_count": 10,
         "domain": "benediktbergmann.eu",
         "ingestability_reason": "machine_ingestable",
+        "policy_reject_reason": "",
+        "policy_block_type": "",
         "priority_rank": 5
       }
     ],
@@ -644,8 +742,8 @@
       "benedikt-bergmann"
     ],
     "promotion_opportunity_cohort_percentages": {
-      "candidate_add": 68.8,
-      "candidate_reject": 31.2
+      "candidate_add": 61.1,
+      "candidate_reject": 38.9
     },
     "promotion_opportunity_domain_counts": {
       "medium.com": 4,
@@ -656,54 +754,57 @@
       "devblogs.microsoft.com": 1,
       "itaintboring.com": 1,
       "joegill.com": 1,
+      "journeyofthegeek.com": 1,
       "lowcodelewis.com": 1,
       "mmsharepoint.wordpress.com": 1,
+      "nikkichapple.com": 1,
       "platformsofpower.net": 1,
       "powertricks.io": 1,
       "pwmather.wordpress.com": 1
     },
     "promotion_opportunity_domain_percentages": {
-      "medium.com": 25.0,
-      "benediktbergmann.eu": 6.2,
-      "benitezhere.blogspot.com": 6.2,
-      "blog.allandecastro.com": 6.2,
-      "d365goddess.com": 6.2,
-      "devblogs.microsoft.com": 6.2,
-      "itaintboring.com": 6.2,
-      "joegill.com": 6.2,
-      "lowcodelewis.com": 6.2,
-      "mmsharepoint.wordpress.com": 6.2,
-      "platformsofpower.net": 6.2,
-      "powertricks.io": 6.2,
-      "pwmather.wordpress.com": 6.2
+      "medium.com": 22.2,
+      "benediktbergmann.eu": 5.6,
+      "benitezhere.blogspot.com": 5.6,
+      "blog.allandecastro.com": 5.6,
+      "d365goddess.com": 5.6,
+      "devblogs.microsoft.com": 5.6,
+      "itaintboring.com": 5.6,
+      "joegill.com": 5.6,
+      "journeyofthegeek.com": 5.6,
+      "lowcodelewis.com": 5.6,
+      "mmsharepoint.wordpress.com": 5.6,
+      "nikkichapple.com": 5.6,
+      "platformsofpower.net": 5.6,
+      "powertricks.io": 5.6,
+      "pwmather.wordpress.com": 5.6
     },
     "promotion_opportunity_top_domains": [
       {
         "domain": "medium.com",
         "count": 4,
-        "percent": 25.0,
+        "percent": 22.2,
         "ids": [
           "itnext-medium",
           "medium-tag-microsoft365",
           "medium-tag-powerplatform",
           "towards-data-science-llm"
         ],
-        "candidate_add_ids": [
+        "candidate_add_ids": [],
+        "candidate_reject_ids": [
           "itnext-medium",
+          "medium-tag-microsoft365",
+          "medium-tag-powerplatform",
           "towards-data-science-llm"
         ],
-        "candidate_reject_ids": [
-          "medium-tag-microsoft365",
-          "medium-tag-powerplatform"
-        ],
-        "candidate_add_share_percent": 50.0,
-        "candidate_reject_share_percent": 50.0,
-        "cohort_mix_level": "balanced"
+        "candidate_add_share_percent": 0.0,
+        "candidate_reject_share_percent": 100.0,
+        "cohort_mix_level": "candidate_reject_heavy"
       },
       {
         "domain": "benediktbergmann.eu",
         "count": 1,
-        "percent": 6.2,
+        "percent": 5.6,
         "ids": [
           "benedikt-bergmann"
         ],
@@ -718,7 +819,7 @@
       {
         "domain": "benitezhere.blogspot.com",
         "count": 1,
-        "percent": 6.2,
+        "percent": 5.6,
         "ids": [
           "benitezhere"
         ],
@@ -733,7 +834,7 @@
       {
         "domain": "blog.allandecastro.com",
         "count": 1,
-        "percent": 6.2,
+        "percent": 5.6,
         "ids": [
           "allandecastro"
         ],
@@ -748,7 +849,7 @@
       {
         "domain": "d365goddess.com",
         "count": 1,
-        "percent": 6.2,
+        "percent": 5.6,
         "ids": [
           "d365goddess"
         ],
@@ -768,43 +869,87 @@
       "blog.allandecastro.com",
       "d365goddess.com"
     ],
-    "promotion_opportunity_top_domain_share_percent": 25.0,
+    "promotion_opportunity_top_domain_share_percent": 22.2,
     "promotion_opportunity_top_domain_id_count": 4,
-    "promotion_opportunity_top_domain_candidate_reject_id_count": 2,
-    "promotion_opportunity_top_domain_candidate_reject_share_percent": 50.0,
+    "promotion_opportunity_top_domain_candidate_reject_id_count": 4,
+    "promotion_opportunity_top_domain_candidate_reject_share_percent": 100.0,
     "promotion_opportunity_top_domain_candidate_reject_ids": [
-      "medium-tag-microsoft365",
-      "medium-tag-powerplatform"
-    ],
-    "promotion_opportunity_top_domain_candidate_add_id_count": 2,
-    "promotion_opportunity_top_domain_candidate_add_share_percent": 50.0,
-    "promotion_opportunity_top_domain_candidate_add_ids": [
       "itnext-medium",
+      "medium-tag-microsoft365",
+      "medium-tag-powerplatform",
       "towards-data-science-llm"
     ],
-    "promotion_opportunity_top_domain_cohort_mix_level": "balanced",
+    "promotion_opportunity_top_domain_candidate_add_id_count": 0,
+    "promotion_opportunity_top_domain_candidate_add_share_percent": 0.0,
+    "promotion_opportunity_top_domain_candidate_add_ids": [],
+    "promotion_opportunity_top_domain_cohort_mix_level": "candidate_reject_heavy",
     "promotion_opportunity_domain_concentration_level": "low",
+    "promotion_opportunity_candidate_reject_policy_blocked_ids": [
+      "d365goddess",
+      "itnext-medium",
+      "medium-tag-microsoft365",
+      "medium-tag-powerplatform",
+      "mmsharepoint",
+      "powertricks",
+      "towards-data-science-llm"
+    ],
+    "promotion_opportunity_candidate_reject_policy_blocked_count": 7,
+    "promotion_opportunity_candidate_reject_policy_blocked_share_percent": 100.0,
+    "promotion_opportunity_candidate_reject_policy_blocked_ids_by_type": {
+      "publication_noise": [
+        "itnext-medium"
+      ],
+      "topic_noise": [
+        "d365goddess",
+        "medium-tag-microsoft365",
+        "medium-tag-powerplatform",
+        "powertricks",
+        "towards-data-science-llm"
+      ],
+      "community_forum": [],
+      "stale_or_low_signal": [],
+      "manual_review_hold": [],
+      "other_policy": [
+        "mmsharepoint"
+      ]
+    },
+    "promotion_opportunity_candidate_reject_policy_blocked_counts_by_type": {
+      "publication_noise": 1,
+      "topic_noise": 5,
+      "community_forum": 0,
+      "stale_or_low_signal": 0,
+      "manual_review_hold": 0,
+      "other_policy": 1
+    },
+    "promotion_opportunity_top_domain_policy_blocked_ids": [
+      "itnext-medium",
+      "medium-tag-microsoft365",
+      "medium-tag-powerplatform",
+      "towards-data-science-llm"
+    ],
+    "promotion_opportunity_top_domain_policy_blocked_count": 4,
+    "promotion_opportunity_top_domain_policy_blocked_share_percent": 100.0,
     "candidate_add_reason_percentages": {
-      "machine_ingestable": 73.3,
+      "machine_ingestable": 84.6,
       "no_items": 0.0,
       "unsupported_root_tag": 0.0,
-      "fetch_failed": 26.7,
+      "fetch_failed": 15.4,
       "unknown": 0.0
     },
     "candidate_reject_reason_percentages": {
-      "machine_ingestable": 62.5,
+      "machine_ingestable": 58.3,
       "no_items": 0.0,
       "unsupported_root_tag": 0.0,
-      "fetch_failed": 37.5,
+      "fetch_failed": 41.7,
       "unknown": 0.0
     },
     "candidate_add_top_ingestability_reason": "machine_ingestable",
     "candidate_reject_top_ingestability_reason": "machine_ingestable",
     "candidate_add_vs_reject_reason_percentage_delta": {
-      "machine_ingestable": 10.8,
+      "machine_ingestable": 26.3,
       "no_items": 0.0,
       "unsupported_root_tag": 0.0,
-      "fetch_failed": -10.8,
+      "fetch_failed": -26.3,
       "unknown": 0.0
     }
   }

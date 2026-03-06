@@ -626,3 +626,13 @@ Purpose: prevent stop/start drift and force delivery through ordered stages.
 
 ## Stage completion log (current cycle)
 - [x] Stage 72 complete — top-domain cohort-balance severity parity added to source-audit outputs; see `docs/STAGE72_CANDIDATE_PROMOTION_TOP_DOMAIN_COHORT_BALANCE_SEVERITY_PARITY.md` (latest develop commit)
+
+## Stage Plan (next cycle)
+
+### Stage 73 — Candidate-Reject Policy-Blocked Promotion Signal Parity
+- Tag promotion-opportunity rows originating from `candidates.reject` with normalized policy block types.
+- Emit cohort-level policy-blocked queue counters + IDs for faster reject-review triage.
+- Surface top-domain policy-blocked share so concentration checks expose policy-risk-heavy domains immediately.
+
+## Stage completion log (next cycle)
+- [x] Stage 73 complete — policy-blocked promotion signal parity added to source-audit outputs; see `docs/STAGE73_CANDIDATE_REJECT_POLICY_BLOCKED_PROMOTION_SIGNAL_PARITY.md` (latest develop commit)
