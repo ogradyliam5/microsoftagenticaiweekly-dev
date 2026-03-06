@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-06T02:47:19Z",
+  "generated_at": "2026-03-06T04:18:18Z",
   "sources_path": "data/sources.json",
   "candidate_add": [
     {
@@ -687,7 +687,16 @@
           "medium-tag-microsoft365",
           "medium-tag-powerplatform",
           "towards-data-science-llm"
-        ]
+        ],
+        "candidate_add_ids": [
+          "itnext-medium",
+          "towards-data-science-llm"
+        ],
+        "candidate_reject_ids": [
+          "medium-tag-microsoft365",
+          "medium-tag-powerplatform"
+        ],
+        "candidate_reject_share_percent": 50.0
       },
       {
         "domain": "benediktbergmann.eu",
@@ -695,7 +704,12 @@
         "percent": 6.2,
         "ids": [
           "benedikt-bergmann"
-        ]
+        ],
+        "candidate_add_ids": [
+          "benedikt-bergmann"
+        ],
+        "candidate_reject_ids": [],
+        "candidate_reject_share_percent": 0.0
       },
       {
         "domain": "benitezhere.blogspot.com",
@@ -703,7 +717,12 @@
         "percent": 6.2,
         "ids": [
           "benitezhere"
-        ]
+        ],
+        "candidate_add_ids": [
+          "benitezhere"
+        ],
+        "candidate_reject_ids": [],
+        "candidate_reject_share_percent": 0.0
       },
       {
         "domain": "blog.allandecastro.com",
@@ -711,7 +730,12 @@
         "percent": 6.2,
         "ids": [
           "allandecastro"
-        ]
+        ],
+        "candidate_add_ids": [
+          "allandecastro"
+        ],
+        "candidate_reject_ids": [],
+        "candidate_reject_share_percent": 0.0
       },
       {
         "domain": "d365goddess.com",
@@ -719,7 +743,12 @@
         "percent": 6.2,
         "ids": [
           "d365goddess"
-        ]
+        ],
+        "candidate_add_ids": [],
+        "candidate_reject_ids": [
+          "d365goddess"
+        ],
+        "candidate_reject_share_percent": 100.0
       }
     ],
     "promotion_opportunity_top_domain_ids": [
@@ -731,6 +760,16 @@
     ],
     "promotion_opportunity_top_domain_share_percent": 25.0,
     "promotion_opportunity_top_domain_id_count": 4,
+    "promotion_opportunity_top_domain_candidate_reject_id_count": 2,
+    "promotion_opportunity_top_domain_candidate_reject_share_percent": 50.0,
+    "promotion_opportunity_top_domain_candidate_reject_ids": [
+      "medium-tag-microsoft365",
+      "medium-tag-powerplatform"
+    ],
+    "promotion_opportunity_top_domain_candidate_add_ids": [
+      "itnext-medium",
+      "towards-data-science-llm"
+    ],
     "promotion_opportunity_domain_concentration_level": "low",
     "candidate_add_reason_percentages": {
       "machine_ingestable": 73.3,

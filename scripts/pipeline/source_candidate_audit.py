@@ -228,6 +228,10 @@ def audit_sources(sources_path: Path) -> dict:
             "promotion_opportunity_top_domain_ids": [],
             "promotion_opportunity_top_domain_share_percent": 0.0,
             "promotion_opportunity_top_domain_id_count": 0,
+            "promotion_opportunity_top_domain_candidate_reject_id_count": 0,
+            "promotion_opportunity_top_domain_candidate_reject_share_percent": 0.0,
+            "promotion_opportunity_top_domain_candidate_reject_ids": [],
+            "promotion_opportunity_top_domain_candidate_add_ids": [],
             "promotion_opportunity_domain_concentration_level": "none",
         },
     }
@@ -381,10 +385,16 @@ def audit_sources(sources_path: Path) -> dict:
 
     domain_counts: dict[str, int] = {}
     domain_ids: dict[str, list[str]] = {}
+    domain_candidate_add_ids: dict[str, list[str]] = {}
+    domain_candidate_reject_ids: dict[str, list[str]] = {}
     for row in ranked_promotion_candidates:
         domain = row.get("domain") or _extract_domain(row.get("url", "")) or "unknown"
         domain_counts[domain] = domain_counts.get(domain, 0) + 1
         domain_ids.setdefault(domain, []).append(row["id"])
+        if row.get("source_cohort") == "candidate_add":
+            domain_candidate_add_ids.setdefault(domain, []).append(row["id"])
+        elif row.get("source_cohort") == "candidate_reject":
+            domain_candidate_reject_ids.setdefault(domain, []).append(row["id"])
     sorted_domains = sorted(domain_counts.items(), key=lambda pair: (-pair[1], pair[0]))
     results["summary"]["promotion_opportunity_domain_counts"] = {domain: count for domain, count in sorted_domains}
     if total_promotion > 0:
@@ -399,6 +409,9 @@ def audit_sources(sources_path: Path) -> dict:
             "count": count,
             "percent": results["summary"]["promotion_opportunity_domain_percentages"].get(domain, 0.0),
             "ids": _sorted_unique(domain_ids.get(domain, [])),
+            "candidate_add_ids": _sorted_unique(domain_candidate_add_ids.get(domain, [])),
+            "candidate_reject_ids": _sorted_unique(domain_candidate_reject_ids.get(domain, [])),
+            "candidate_reject_share_percent": round((len(domain_candidate_reject_ids.get(domain, [])) / count) * 100, 1) if count else 0.0,
         }
         for domain, count in sorted_domains[:5]
     ]
@@ -411,6 +424,18 @@ def audit_sources(sources_path: Path) -> dict:
         top_share = top_domain_row.get("percent", 0.0)
         results["summary"]["promotion_opportunity_top_domain_share_percent"] = top_share
         results["summary"]["promotion_opportunity_top_domain_id_count"] = top_domain_row.get("count", 0)
+        results["summary"]["promotion_opportunity_top_domain_candidate_reject_id_count"] = len(
+            top_domain_row.get("candidate_reject_ids", [])
+        )
+        results["summary"]["promotion_opportunity_top_domain_candidate_reject_share_percent"] = top_domain_row.get(
+            "candidate_reject_share_percent", 0.0
+        )
+        results["summary"]["promotion_opportunity_top_domain_candidate_reject_ids"] = top_domain_row.get(
+            "candidate_reject_ids", []
+        )
+        results["summary"]["promotion_opportunity_top_domain_candidate_add_ids"] = top_domain_row.get(
+            "candidate_add_ids", []
+        )
         if top_share >= 60.0:
             concentration_level = "high"
         elif top_share >= 35.0:
@@ -483,11 +508,22 @@ def write_markdown_report(report: dict, path: Path) -> None:
     lines.append(
         f"  - Top-domain concentration: {s.get('promotion_opportunity_domain_concentration_level', 'none')} ({s.get('promotion_opportunity_top_domain_share_percent', 0.0):.1f}% / {s.get('promotion_opportunity_top_domain_id_count', 0)} ids)"
     )
+    lines.append(
+        f"  - Top-domain candidate_reject share: {s.get('promotion_opportunity_top_domain_candidate_reject_share_percent', 0.0):.1f}% ({s.get('promotion_opportunity_top_domain_candidate_reject_id_count', 0)} ids)"
+    )
+    lines.append(
+        "    - candidate_add ids: "
+        + (", ".join(s.get("promotion_opportunity_top_domain_candidate_add_ids", [])) or "none")
+    )
+    lines.append(
+        "    - candidate_reject ids: "
+        + (", ".join(s.get("promotion_opportunity_top_domain_candidate_reject_ids", [])) or "none")
+    )
     if s.get("promotion_opportunity_top_domains"):
         lines.append("  - Promotion top-domain detail (domain/count/ids):")
         for domain_row in s.get("promotion_opportunity_top_domains", []):
             lines.append(
-                f"    - {domain_row.get('domain')}: {domain_row.get('count', 0)} ({domain_row.get('percent', 0.0):.1f}%) ({', '.join(domain_row.get('ids', [])) or 'none'})"
+                f"    - {domain_row.get('domain')}: {domain_row.get('count', 0)} ({domain_row.get('percent', 0.0):.1f}%) reject_share={domain_row.get('candidate_reject_share_percent', 0.0):.1f}% ({', '.join(domain_row.get('ids', [])) or 'none'})"
             )
     if s.get("promotion_opportunity_rows"):
         lines.append("  - Promotion queue detail (rank/cohort/items):")

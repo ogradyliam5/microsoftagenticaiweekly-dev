@@ -606,3 +606,13 @@ Purpose: prevent stop/start drift and force delivery through ordered stages.
 
 ## Stage completion log (current cycle)
 - [x] Stage 70 complete — promotion domain percentage + concentration severity parity added to source-audit outputs; see `docs/STAGE70_CANDIDATE_PROMOTION_DOMAIN_CONCENTRATION_SEVERITY_PARITY.md` (latest develop commit)
+
+## Stage Plan (next cycle)
+
+### Stage 71 — Candidate Promotion Top-Domain Cohort Mix Parity
+- Add top-domain cohort-mix metadata so operator triage can spot reject-heavy domain concentration instantly.
+- Surface top-domain candidate-add vs candidate-reject IDs and reject-share percent in source-audit JSON + markdown output.
+- Regenerate source-audit artifacts and document parity behavior in runbook + dedicated stage note.
+
+## Stage completion log (next cycle)
+- [x] Stage 71 complete — top-domain cohort-mix parity added to source-audit outputs; see `docs/STAGE71_CANDIDATE_PROMOTION_TOP_DOMAIN_COHORT_MIX_PARITY.md` (latest develop commit)
