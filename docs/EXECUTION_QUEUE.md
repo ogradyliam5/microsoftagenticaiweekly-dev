@@ -696,3 +696,13 @@ Purpose: prevent stop/start drift and force delivery through ordered stages.
 
 ## Stage completion log (next cycle)
 - [x] Stage 79 complete — homepage latest-edition card emphasis + refreshed freshness line shipped; see `docs/STAGE79_HOMEPAGE_LATEST_EDITION_CARD_EMPHASIS.md` (latest develop commit)
+
+## Stage Plan (current cycle)
+
+### Stage 80 — Homepage Latest-Link Audit Parity
+- Extend release audit checks so homepage links labeled `latest edition` must match the RSS first-item issue slug.
+- Fail fast when nav/hero latest links drift to stale issue pages.
+- Document parity behavior and local verification command in runbook + dedicated stage note.
+
+## Stage completion log (current cycle)
+- [x] Stage 80 complete — homepage latest-link parity checks added to release audit; see `docs/STAGE80_HOMEPAGE_LATEST_LINK_AUDIT_PARITY.md` (latest develop commit)

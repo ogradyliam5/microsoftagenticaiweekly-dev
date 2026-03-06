@@ -18,6 +18,10 @@ import xml.etree.ElementTree as ET
 ROOT_HTML = ["index.html", "archive.html", "about.html", "sources.html", "corrections.html"]
 HREF_SRC_RE = re.compile(r'(?:href|src)="([^"]+)"')
 ISSUE_LINK_RE = re.compile(r'href="(posts/issue-[0-9]+(?:-[0-9]+)?\.html)"')
+INDEX_LATEST_LINK_RE = re.compile(
+    r'<a\b[^>]*href="(posts/issue-[0-9]+(?:-[0-9]+)?\.html)"[^>]*>([^<]*latest edition[^<]*)</a>',
+    re.IGNORECASE,
+)
 
 
 def html_files(root: Path) -> list[Path]:
@@ -77,8 +81,36 @@ def feed_issue_slugs(root: Path) -> set[str]:
     return slugs
 
 
+def latest_feed_issue_slug(root: Path) -> str | None:
+    feed = root / "feed.xml"
+    if not feed.exists():
+        raise FileNotFoundError("feed.xml not found")
+    tree = ET.parse(feed)
+    channel = tree.getroot().find("channel")
+    if channel is None:
+        return None
+    first_item = channel.find("item")
+    if first_item is None:
+        return None
+    link = first_item.findtext("link", default="")
+    if "/posts/" in link and link.endswith(".html"):
+        return Path(link).stem
+    return None
+
+
 def published_issue_slugs(root: Path) -> set[str]:
     return {p.stem for p in (root / "posts").glob("issue-*.html")}
+
+
+def index_latest_links(root: Path) -> list[tuple[str, str]]:
+    index = root / "index.html"
+    if not index.exists():
+        return []
+    text = index.read_text(encoding="utf-8")
+    matches: list[tuple[str, str]] = []
+    for href, label in INDEX_LATEST_LINK_RE.findall(text):
+        matches.append((Path(href).stem, " ".join(label.split())))
+    return matches
 
 
 def main() -> int:
@@ -92,12 +124,24 @@ def main() -> int:
     missing_links = check_internal_links(root, files)
     archive_slugs = archive_issue_slugs(root)
     feed_slugs = feed_issue_slugs(root)
+    latest_feed_slug = latest_feed_issue_slug(root)
     published_slugs = published_issue_slugs(root)
+    latest_links = index_latest_links(root)
 
     archive_missing = sorted(published_slugs - archive_slugs)
     feed_missing = sorted(published_slugs - feed_slugs)
     archive_stale = sorted(archive_slugs - published_slugs)
     feed_stale = sorted(feed_slugs - published_slugs)
+
+    latest_link_errors: list[str] = []
+    if latest_feed_slug:
+        if not latest_links:
+            latest_link_errors.append("index.html has no 'latest edition' links")
+        for slug, label in latest_links:
+            if slug != latest_feed_slug:
+                latest_link_errors.append(
+                    f"index.html latest-edition link '{label}' points to {slug}, expected {latest_feed_slug}"
+                )
 
     print(f"Audited HTML files: {len(files)}")
     print(f"Published issues: {len(published_slugs)}")
@@ -111,8 +155,13 @@ def main() -> int:
     print(f"Feed missing issues: {feed_missing or 'none'}")
     print(f"Archive stale issues: {archive_stale or 'none'}")
     print(f"Feed stale issues: {feed_stale or 'none'}")
+    if latest_feed_slug:
+        print(f"Expected latest issue slug (feed first item): {latest_feed_slug}")
+    else:
+        print("Expected latest issue slug (feed first item): none")
+    print(f"Index latest-edition link errors: {latest_link_errors or 'none'}")
 
-    if missing_links or archive_missing or feed_missing or archive_stale or feed_stale:
+    if missing_links or archive_missing or feed_missing or archive_stale or feed_stale or latest_link_errors:
         return 1
 
     print("Release audit OK")
