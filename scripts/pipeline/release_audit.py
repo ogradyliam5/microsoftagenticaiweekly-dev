@@ -9,6 +9,7 @@ Checks:
 from __future__ import annotations
 
 import argparse
+from email.utils import parsedate_to_datetime
 import re
 import sys
 from pathlib import Path
@@ -26,6 +27,11 @@ HOMEPAGE_LATEST_CARD_RE = re.compile(
     r'<article\b[^>]*>.*?<p[^>]*>\s*Start here\s*[·\-]\s*Latest edition\s*</p>.*?<a[^>]*href="(posts/issue-[0-9]+(?:-[0-9]+)?\.html)"',
     re.IGNORECASE | re.DOTALL,
 )
+HOMEPAGE_LATEST_CARD_META_RE = re.compile(
+    r'<article\b[^>]*>.*?<p[^>]*>\s*Start here\s*[·\-]\s*Latest edition\s*</p>\s*<p[^>]*>([^<]+)</p>',
+    re.IGNORECASE | re.DOTALL,
+)
+HOMEPAGE_FRESHNESS_LINE_RE = re.compile(r'<p[^>]*>\s*Latest:\s*([^<]+)</p>', re.IGNORECASE)
 
 
 def html_files(root: Path) -> list[Path]:
@@ -85,7 +91,7 @@ def feed_issue_slugs(root: Path) -> set[str]:
     return slugs
 
 
-def latest_feed_issue_slug(root: Path) -> str | None:
+def latest_feed_item_metadata(root: Path) -> dict[str, str] | None:
     feed = root / "feed.xml"
     if not feed.exists():
         raise FileNotFoundError("feed.xml not found")
@@ -96,10 +102,20 @@ def latest_feed_issue_slug(root: Path) -> str | None:
     first_item = channel.find("item")
     if first_item is None:
         return None
+
     link = first_item.findtext("link", default="")
-    if "/posts/" in link and link.endswith(".html"):
-        return Path(link).stem
-    return None
+    slug = Path(link).stem if "/posts/" in link and link.endswith(".html") else ""
+
+    title = first_item.findtext("title", default="").strip()
+    week_label = title.split("—", 1)[0].strip() if title else ""
+
+    pub_date = first_item.findtext("pubDate", default="").strip()
+    full_date = ""
+    if pub_date:
+        dt = parsedate_to_datetime(pub_date)
+        full_date = dt.strftime("%A, %d %B %Y")
+
+    return {"slug": slug, "week_label": week_label, "full_date": full_date}
 
 
 def published_issue_slugs(root: Path) -> set[str]:
@@ -125,6 +141,25 @@ def index_latest_card_slugs(root: Path) -> list[str]:
     return [Path(href).stem for href in HOMEPAGE_LATEST_CARD_RE.findall(text)]
 
 
+def index_latest_card_meta_lines(root: Path) -> list[str]:
+    index = root / "index.html"
+    if not index.exists():
+        return []
+    text = index.read_text(encoding="utf-8")
+    return [" ".join(line.split()) for line in HOMEPAGE_LATEST_CARD_META_RE.findall(text)]
+
+
+def index_hero_freshness_line(root: Path) -> str | None:
+    index = root / "index.html"
+    if not index.exists():
+        return None
+    text = index.read_text(encoding="utf-8")
+    match = HOMEPAGE_FRESHNESS_LINE_RE.search(text)
+    if not match:
+        return None
+    return " ".join(match.group(1).split())
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="Run static release audit checks")
     parser.add_argument("--root", default=".", help="Project root path")
@@ -136,10 +171,12 @@ def main() -> int:
     missing_links = check_internal_links(root, files)
     archive_slugs = archive_issue_slugs(root)
     feed_slugs = feed_issue_slugs(root)
-    latest_feed_slug = latest_feed_issue_slug(root)
+    latest_item = latest_feed_item_metadata(root)
     published_slugs = published_issue_slugs(root)
     latest_links = index_latest_links(root)
     latest_card_slugs = index_latest_card_slugs(root)
+    latest_card_meta_lines = index_latest_card_meta_lines(root)
+    hero_freshness_line = index_hero_freshness_line(root)
 
     archive_missing = sorted(published_slugs - archive_slugs)
     feed_missing = sorted(published_slugs - feed_slugs)
@@ -148,6 +185,11 @@ def main() -> int:
 
     latest_link_errors: list[str] = []
     latest_card_errors: list[str] = []
+    freshness_errors: list[str] = []
+    latest_feed_slug = latest_item["slug"] if latest_item else ""
+    expected_week_label = latest_item["week_label"] if latest_item else ""
+    expected_full_date = latest_item["full_date"] if latest_item else ""
+
     if latest_feed_slug:
         if not latest_links:
             latest_link_errors.append("index.html has no 'latest edition' links")
@@ -167,6 +209,32 @@ def main() -> int:
                     f"index.html latest-edition card points to {slug}, expected {latest_feed_slug}"
                 )
 
+        if len(latest_card_meta_lines) != 1:
+            latest_card_errors.append(
+                "index.html latest-edition card must include exactly one metadata date line"
+            )
+        for meta_line in latest_card_meta_lines:
+            if expected_week_label and expected_week_label not in meta_line:
+                latest_card_errors.append(
+                    f"index.html latest-edition card metadata missing week label '{expected_week_label}'"
+                )
+            if expected_full_date and expected_full_date not in meta_line:
+                latest_card_errors.append(
+                    f"index.html latest-edition card metadata missing date '{expected_full_date}'"
+                )
+
+        if hero_freshness_line is None:
+            freshness_errors.append("index.html is missing hero freshness line prefixed with 'Latest:'")
+        else:
+            if expected_week_label and expected_week_label not in hero_freshness_line:
+                freshness_errors.append(
+                    f"index.html hero freshness line missing week label '{expected_week_label}'"
+                )
+            if expected_full_date and expected_full_date not in hero_freshness_line:
+                freshness_errors.append(
+                    f"index.html hero freshness line missing date '{expected_full_date}'"
+                )
+
     print(f"Audited HTML files: {len(files)}")
     print(f"Published issues: {len(published_slugs)}")
 
@@ -183,8 +251,13 @@ def main() -> int:
         print(f"Expected latest issue slug (feed first item): {latest_feed_slug}")
     else:
         print("Expected latest issue slug (feed first item): none")
+    if expected_week_label:
+        print(f"Expected latest week label: {expected_week_label}")
+    if expected_full_date:
+        print(f"Expected latest full date: {expected_full_date}")
     print(f"Index latest-edition link errors: {latest_link_errors or 'none'}")
     print(f"Index latest-edition card errors: {latest_card_errors or 'none'}")
+    print(f"Index freshness-line errors: {freshness_errors or 'none'}")
 
     if (
         missing_links
@@ -194,6 +267,7 @@ def main() -> int:
         or feed_stale
         or latest_link_errors
         or latest_card_errors
+        or freshness_errors
     ):
         return 1
 

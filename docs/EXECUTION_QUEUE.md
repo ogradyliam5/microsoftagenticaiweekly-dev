@@ -716,3 +716,13 @@ Purpose: prevent stop/start drift and force delivery through ordered stages.
 
 ## Stage completion log (next cycle)
 - [x] Stage 81 complete — homepage latest-card parity checks added to release audit; see `docs/STAGE81_HOMEPAGE_LATEST_CARD_AUDIT_PARITY.md` (latest develop commit)
+
+## Stage Plan (current cycle)
+
+### Stage 82 — Homepage Freshness Text Metadata Parity
+- Extend release audit checks so homepage freshness copy (`Latest: …`) matches RSS first-item metadata.
+- Require latest-edition card metadata line to include the same week/date metadata as RSS first item.
+- Document parity behavior and local verification command in runbook + dedicated stage note.
+
+## Stage completion log (current cycle)
+- [x] Stage 82 complete — homepage freshness text + latest-card metadata parity checks added to release audit; see `docs/STAGE82_HOMEPAGE_FRESHNESS_TEXT_METADATA_PARITY.md` (latest develop commit)
