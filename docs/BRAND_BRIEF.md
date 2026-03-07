@@ -1,12 +1,12 @@
 # Microsoft Agentic AI Weekly — Brand Brief
 
 ## 1) Purpose
-A weekly briefing for people building and running Microsoft agentic AI in production.
+A weekly briefing for people building and running Microsoft agentic AI.
 
 **Coverage promise:** practical, cross-stack intelligence spanning:
 - Copilot Studio + Power Platform
-- Azure AI Foundry + model/agent tooling
-- Microsoft 365 + Graph + Teams surfaces
+- Microsoft Foundry
+- Microsoft 365 Agents
 - Governance, security, ALM, operations, and adoption
 
 ## 2) Who It’s For
