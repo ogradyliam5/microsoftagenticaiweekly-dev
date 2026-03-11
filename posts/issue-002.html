@@ -1,78 +1,15 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script>
-    (function () {
-      var key = 'maiw-theme';
-      var theme = 'dark';
-      try {
-        var stored = localStorage.getItem(key);
-        if (stored === 'light' || stored === 'dark') {
-          theme = stored;
-        } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-          theme = 'dark';
-        } else {
-          theme = 'light';
-        }
-      } catch (e) {}
-      var root = document.documentElement;
-      root.setAttribute('data-theme', theme);
-      root.classList.remove('theme-dark', 'theme-light');
-      root.classList.add(theme === 'dark' ? 'theme-dark' : 'theme-light');
-      root.style.colorScheme = theme;
-    })();
-  </script>
-  <title>Week of 12 Jan 2026 — Agent operations is the new differentiator</title>
-  <meta name="description" content="Week of 12 Jan 2026: MCP tooling, telemetry, and agent readiness patterns for enterprise teams." />
-  <link rel="stylesheet" href="../assets/legacy.css?v=20260306" />
-  <link rel="stylesheet" href="../assets/theme-shared.css?v=20260306" />
+  <title>Moved: Microsoft Agentic AI Weekly</title>
+  <meta http-equiv="refresh" content="0; url=/posts/issue-002" />
+  <link rel="canonical" href="/posts/issue-002" />
+  <meta name="robots" content="noindex,follow" />
+  <script>window.location.replace('/posts/issue-002');</script>
 </head>
 <body>
-  <header class="site-header"><div class="container"><a class="brand" href="../index.html">Microsoft Agentic AI Weekly</a><nav class="nav">
-        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle color mode">🌙 Dark</button><a href="../index.html">Home</a><a class="active" href="../archive.html">Archive</a><a href="../about.html">Methodology</a><a href="../about.html">About</a></nav></div></header>
-  <main>
-    <div class="container issue-layout">
-      <article>
-        <p class="kicker">Week of 12 Jan 2026 · Sun 11 Jan 2026 · 21:00 Europe/London · 9 min read</p>
-        <h1>Agent operations is the new differentiator: MCP tooling, telemetry, and enterprise readiness patterns</h1>
-        <section class="panel" id="summary">
-          <h2>Executive summary</h2>
-          <ul>
-            <li>Independent implementation content is now outpacing official guidance in operational depth.</li>
-            <li>Microsoft’s readiness framing is useful when converted into measurable weekly controls.</li>
-            <li>Winning teams are building operating systems for agents, not standalone showcases.</li>
-          </ul>
-        </section>
-        <h2 id="signals">What changed this week</h2>
-        <section class="grid">
-          <article class="signal-card"><span class="badge high">Adopt</span><span class="badge">Official</span><h3>6 pillars of agent readiness in 2026</h3><p><strong>Microsoft updated:</strong> Converts broad guidance into auditable controls across security, operations, and adoption.</p><p class="small">Best fit for Platform Owner, Leader.</p><p class="small"><a href="https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/the-6-pillars-that-will-define-agent-readiness-in-2026/">Source</a></p></article>
-          <article class="signal-card"><span class="badge medium">Pilot</span><span class="badge">Reputable community</span><h3>Environment-aware flow design via metadata APIs</h3><p><strong>The community published:</strong> Reduces deployment breakage when moving across dev/test/prod environments.</p><p class="small">Best fit for Builder, Platform Owner.</p><p class="small"><a href="https://www.powercommunity.com/how-to-build-environment-aware-flows-by-fetching-crm-metadata-dynamically-in-power-automate/">Source</a></p></article>
-          <article class="signal-card"><span class="badge watch">Watch</span><span class="badge">Reputable community</span><h3>Implementation troubleshooting constraints in Dataverse surfaces</h3><p><strong>The community published:</strong> Small platform constraints can block release schedules unless captured in preflight checks.</p><p class="small">Best fit for Builder, Platform Owner.</p><p class="small"><a href="https://nishantrana.me/2026/02/10/renaming-sitemap-display-name-in-dataverse-dynamics-365/">Source</a></p></article>
-        </section>
-        <h2 id="deep-dive">Deep dive: operating model beats feature chasing</h2>
-        <div class="panel">
-          <p>Most agent programs still over-index on capability announcements. Better outcomes come from boring disciplines: release gates, eval cadence, telemetry ownership, and shared tool contracts. Features accelerate teams that already have operator habits; without those habits, feature velocity just increases risk.</p>
-        </div>
-        <h2 id="build-next">Build next checklist</h2>
-        <div class="signal-card">
-          <ol>
-            <li>Define an issue-response runbook for low-confidence answers and failed tool calls.</li>
-            <li>Add one reliability KPI per agent (task completion rate or validated answer rate).</li>
-            <li>Run a weekly governance review: permissions, connectors, data boundaries.</li>
-          </ol>
-        </div>
-      </article>
-      <aside class="sidebar panel">
-        <h3>Jump links</h3>
-        <p><a href="#summary">Summary</a><br><a href="#signals">Signals</a><br><a href="#deep-dive">Deep dive</a><br><a href="#build-next">Build next</a></p>
-        <hr class="sep">
-        <p class="small">Distribution remains approval-first. No autonomous send.</p>
-      </aside>
-    </div>
-  </main>
-  <footer class="footer"><div class="container">© 2026 Microsoft Agentic AI Weekly</div></footer>
-  <script src="../assets/theme.js?v=20260306"></script>
+  <p>This issue moved to <a href="/posts/issue-002">/posts/issue-002</a>.</p>
 </body>
 </html>

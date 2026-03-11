@@ -1,73 +1,15 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script>
-    (function () {
-      var key = 'maiw-theme';
-      var theme = 'dark';
-      try {
-        var stored = localStorage.getItem(key);
-        if (stored === 'light' || stored === 'dark') {
-          theme = stored;
-        } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-          theme = 'dark';
-        } else {
-          theme = 'light';
-        }
-      } catch (e) {}
-      var root = document.documentElement;
-      root.setAttribute('data-theme', theme);
-      root.classList.remove('theme-dark', 'theme-light');
-      root.classList.add(theme === 'dark' ? 'theme-dark' : 'theme-light');
-      root.style.colorScheme = theme;
-    })();
-  </script>
-  <title>Corrections — Microsoft Agentic AI Weekly</title>
-  <meta name="description" content="Correction policy and changelog for Microsoft Agentic AI Weekly." />
-  <link rel="stylesheet" href="assets/legacy.css?v=20260306" />
-  <link rel="stylesheet" href="assets/theme-shared.css?v=20260306" />
+  <title>Moved: Microsoft Agentic AI Weekly</title>
+  <meta http-equiv="refresh" content="0; url=/corrections" />
+  <link rel="canonical" href="/corrections" />
+  <meta name="robots" content="noindex,follow" />
+  <script>window.location.replace('/corrections');</script>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <a class="brand" href="index.html">Microsoft Agentic AI Weekly</a>
-      <nav class="nav">
-        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle color mode">🌙 Dark</button>
-        <a href="index.html">Home</a>
-        <a href="posts/issue-005.html">Latest Issue</a>
-        <a href="archive.html">Archive</a>
-        <a href="about.html">Methodology</a>
-        <a href="about.html">About</a>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <div class="container grid">
-      <section class="panel">
-        <p class="kicker">Transparency</p>
-        <h1>Corrections policy</h1>
-        <ul>
-          <li>We correct factual errors quickly and visibly.</li>
-          <li>Substantive post-publication changes are logged with timestamp and reason.</li>
-          <li>No silent rewrites on claims that affect architectural or operational decisions.</li>
-        </ul>
-        <p>Report a correction: <a href="mailto:hello@microsoftagenticaiweekly.com?subject=Correction%20Request">hello@microsoftagenticaiweekly.com</a></p>
-      </section>
-
-      <section class="signal-card">
-        <h3>Correction log</h3>
-        <p class="meta">No corrections logged yet for 2026 issues.</p>
-        <p class="small">When a correction occurs, this page records issue number, change summary, and UTC timestamp.</p>
-      </section>
-    </div>
-  </main>
-
-  <footer class="footer">
-    <div class="container">© 2026 Microsoft Agentic AI Weekly</div>
-  </footer>
-  <script src="assets/theme.js?v=20260306"></script>
+  <p>This page moved to <a href="/corrections">/corrections</a>.</p>
 </body>
 </html>

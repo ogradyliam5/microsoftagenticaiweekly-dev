@@ -1,0 +1,58 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Agent Delivery Baseline | Microsoft Agentic AI Weekly</title><script>
+      (() => {
+        const key = "maiw-theme";
+        const stored = window.localStorage.getItem(key);
+        const theme = stored === "dark" || stored === "light" ? stored : "light";
+        document.documentElement.setAttribute("data-theme", theme);
+        document.documentElement.classList.toggle("theme-dark", theme === "dark");
+        document.documentElement.classList.toggle("theme-light", theme === "light");
+      })();
+    </script><link rel="stylesheet" href="/_astro/about.Cvl3Svt3.css"></head> <body> <div class="site-shell"> <header class="site-header"> <div class="site-wrap site-header__row"> <a class="site-brand" href="/">Microsoft Agentic AI Weekly</a> <div class="site-header__actions"> <nav class="site-nav" aria-label="Primary"> <a class="site-nav__link" href="/"> Home </a><a class="site-nav__link" href="/latest"> Latest </a><a class="site-nav__link" href="/archive"> Archive </a><a class="site-nav__link" href="/topics"> Topics </a><a class="site-nav__link is-active" href="/playbooks" aria-current="page"> Playbooks </a><a class="site-nav__link" href="/about"> Method </a><a class="site-nav__link" href="/subscribe"> Subscribe </a><a class="site-nav__link" href="/corrections"> Corrections </a><a class="site-nav__link" href="/sources"> Sources </a> </nav> <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle theme" aria-pressed="false">
+Theme
+</button> </div> </div> </header> <main class="site-main"> <div class="site-wrap stack">  <section class="hero-panel fade-up"> <p class="kicker">Playbook</p> <h1>Agent Delivery Baseline</h1> <p>A minimum operational baseline for shipping Microsoft-first agents with governance, observability, and controlled rollout.</p> <p class="meta">Updated 07 Mar 2026 - Status: published</p>  </section> <section class="surface-panel fade-up"> <h1 id="agent-delivery-baseline">Agent Delivery Baseline</h1>
+<p>Use this playbook as the minimum operating standard for production agent delivery. It is designed for teams shipping weekly with approval-first governance.</p>
+<h2 id="release-discipline">Release discipline</h2>
+<ul>
+<li>Define release rings and promotion criteria in advance.</li>
+<li>Require evidence for waivers when a gate is bypassed.</li>
+<li>Tie publish approval to the same quality gates used for deployment approval.</li>
+</ul>
+<h2 id="governance-discipline">Governance discipline</h2>
+<ul>
+<li>Keep policy controls versioned and environment-aware.</li>
+<li>Record tool-calling permissions and high-risk connector usage.</li>
+<li>Validate fallback behavior for critical agent actions.</li>
+</ul>
+<h2 id="operational-discipline">Operational discipline</h2>
+<ul>
+<li>Publish escalation and rollback instructions in a single runbook.</li>
+<li>Track post-release incidents against release decisions.</li>
+<li>Update baselines when recurring failure modes are observed.</li>
+</ul> </section> <section class="surface-panel signal-card fade-up"> <h3 class="signal-card__title">Checklist</h3> <ul> <li>Define release owner, incident owner, and rollback owner before first production deployment</li><li>Require canonical source links and confidence labels for every published issue item</li><li>Enforce pre-production validation gates for policy, permissions, and telemetry coverage</li><li>Gate promotion on evaluation and regression checks with explicit waiver logging</li><li>Document and test human escalation paths for tool failures and unsafe behavior</li> </ul> </section><section class="surface-panel signal-card fade-up"> <h3 class="signal-card__title">Anti-patterns</h3> <ul> <li>Publishing agent changes without clear runtime ownership</li><li>Relying on subjective readiness instead of measurable eval gates</li><li>Allowing one-off environment configuration with no reusable baseline</li><li>Treating observability as optional post-launch work</li> </ul> </section><section class="surface-panel signal-card fade-up"> <h3 class="signal-card__title">Metrics</h3> <ul> <li>Percent of releases passing mandatory eval gates</li><li>Mean time to rollback for failed or unsafe changes</li><li>Coverage of telemetry baseline across active agents</li><li>Incident rate per release ring</li> </ul> </section> </div> </main> <footer class="site-footer"> <div class="site-wrap site-footer__row"> <span>Microsoft Agentic AI Weekly - Approval-first editorial workflow</span> <span> <a href="/feed.xml">RSS</a> - <a href="/corrections">Corrections</a> </span> </div> </footer> </div> <script>
+      (() => {
+        const key = "maiw-theme";
+        const root = document.documentElement;
+        const toggles = Array.from(document.querySelectorAll("[data-theme-toggle]"));
+
+        const applyTheme = (theme) => {
+          root.setAttribute("data-theme", theme);
+          root.classList.toggle("theme-dark", theme === "dark");
+          root.classList.toggle("theme-light", theme === "light");
+          toggles.forEach((toggle) => {
+            toggle.setAttribute("aria-pressed", theme === "dark" ? "true" : "false");
+            toggle.textContent = theme === "dark" ? "Light" : "Dark";
+          });
+        };
+
+        const current = root.getAttribute("data-theme") === "dark" ? "dark" : "light";
+        applyTheme(current);
+
+        toggles.forEach((toggle) => {
+          toggle.addEventListener("click", () => {
+            const next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+            window.localStorage.setItem(key, next);
+            applyTheme(next);
+          });
+        });
+      })();
+    </script> </body> </html>

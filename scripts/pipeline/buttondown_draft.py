@@ -9,7 +9,10 @@ import urllib.parse
 import urllib.request
 
 ROOT = pathlib.Path(__file__).resolve().parents[2]
-STATE = ROOT / "artifacts" / "buttondown_drafts.json"
+STATE = pathlib.Path(
+    os.getenv("BUTTONDOWN_DRAFT_STATE_PATH", str(ROOT / "artifacts" / "buttondown_drafts.json"))
+)
+API_BASE = os.getenv("BUTTONDOWN_API_BASE_URL", "https://api.buttondown.email/v1").rstrip("/")
 
 
 def log(level, message, **fields):
@@ -41,7 +44,7 @@ def read_http_error(err):
 
 
 def api(method, path, token, payload=None):
-    url = f"https://api.buttondown.email/v1{path}"
+    url = f"{API_BASE}{path}"
     body = json.dumps(payload).encode("utf-8") if payload is not None else None
     req = urllib.request.Request(url, data=body, method=method)
     req.add_header("Authorization", f"Token {token}")

@@ -1,0 +1,70 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Method | Microsoft Agentic AI Weekly</title><script>
+      (() => {
+        const key = "maiw-theme";
+        const stored = window.localStorage.getItem(key);
+        const theme = stored === "dark" || stored === "light" ? stored : "light";
+        document.documentElement.setAttribute("data-theme", theme);
+        document.documentElement.classList.toggle("theme-dark", theme === "dark");
+        document.documentElement.classList.toggle("theme-light", theme === "light");
+      })();
+    </script><link rel="stylesheet" href="/_astro/about.Cvl3Svt3.css"></head> <body> <div class="site-shell"> <header class="site-header"> <div class="site-wrap site-header__row"> <a class="site-brand" href="/">Microsoft Agentic AI Weekly</a> <div class="site-header__actions"> <nav class="site-nav" aria-label="Primary"> <a class="site-nav__link" href="/"> Home </a><a class="site-nav__link" href="/latest"> Latest </a><a class="site-nav__link" href="/archive"> Archive </a><a class="site-nav__link" href="/topics"> Topics </a><a class="site-nav__link" href="/playbooks"> Playbooks </a><a class="site-nav__link is-active" href="/about" aria-current="page"> Method </a><a class="site-nav__link" href="/subscribe"> Subscribe </a><a class="site-nav__link" href="/corrections"> Corrections </a><a class="site-nav__link" href="/sources"> Sources </a> </nav> <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle theme" aria-pressed="false">
+Theme
+</button> </div> </div> </header> <main class="site-main"> <div class="site-wrap stack">  <section class="hero-panel fade-up"> <p class="kicker">Method</p> <h1>Editorial method and source policy</h1> <p>Automation builds candidate queues, but human approval is mandatory before publish/send.</p> <p class="meta">Corrections route: /corrections</p>  </section> <section class="surface-panel"> <h2>Source Selection and Validation Policy</h2> <p class="meta">
+Policy version 2.0 - Updated 07 Mar 2026 </p> <h2 id="editorial-method">Editorial method</h2>
+<p>Microsoft Agentic AI Weekly is an approval-first briefing.</p>
+<p>Automation produces candidate items and draft summaries. Human review is mandatory before publication and email send.</p>
+<h2 id="canonical-story-unit">Canonical story unit</h2>
+<p>Every accepted issue item is rendered as:</p>
+<ul>
+<li>Signal</li>
+<li>Mini-abstract</li>
+<li>Why click</li>
+<li>Source confidence</li>
+</ul>
+<h2 id="quality-gates">Quality gates</h2>
+<p>Candidates are rejected when they fail one or more gates:</p>
+<ul>
+<li>Duplicate or near-duplicate coverage</li>
+<li>Generic or boilerplate phrasing</li>
+<li>Weak Microsoft or direct implementation relevance</li>
+<li>Excessive concentration from a single source bucket</li>
+</ul>
+<h2 id="source-policy">Source policy</h2>
+<ul>
+<li>Source list changes require explicit owner approval.</li>
+<li>Every item must include canonical URL and publisher.</li>
+<li>Confidence labels must reflect source type and evidence quality.</li>
+</ul>
+<h2 id="corrections-policy">Corrections policy</h2>
+<ul>
+<li>Corrections are logged and reviewed by a human editor.</li>
+<li>Material factual/link errors are corrected transparently.</li>
+<li>Publish/send automation never bypasses correction workflow.</li>
+</ul> </section><section class="surface-panel trust-panel fade-up"> <h2>Operational commitments</h2> <ul> <li>No autonomous publish and no autonomous email send.</li><li>No tracked-source changes without Liam approval.</li><li>Every published item includes canonical provenance fields.</li> </ul> </section> <section class="surface-panel cta-module fade-up"> <div> <h2>Need to report an error?</h2> <p class="small-note">Submit correction requests with issue slug and authoritative source URL.</p> </div> <a class="cta-module__button" href="/corrections">Submit correction</a> </section>  </div> </main> <footer class="site-footer"> <div class="site-wrap site-footer__row"> <span>Microsoft Agentic AI Weekly - Approval-first editorial workflow</span> <span> <a href="/feed.xml">RSS</a> - <a href="/corrections">Corrections</a> </span> </div> </footer> </div> <script>
+      (() => {
+        const key = "maiw-theme";
+        const root = document.documentElement;
+        const toggles = Array.from(document.querySelectorAll("[data-theme-toggle]"));
+
+        const applyTheme = (theme) => {
+          root.setAttribute("data-theme", theme);
+          root.classList.toggle("theme-dark", theme === "dark");
+          root.classList.toggle("theme-light", theme === "light");
+          toggles.forEach((toggle) => {
+            toggle.setAttribute("aria-pressed", theme === "dark" ? "true" : "false");
+            toggle.textContent = theme === "dark" ? "Light" : "Dark";
+          });
+        };
+
+        const current = root.getAttribute("data-theme") === "dark" ? "dark" : "light";
+        applyTheme(current);
+
+        toggles.forEach((toggle) => {
+          toggle.addEventListener("click", () => {
+            const next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+            window.localStorage.setItem(key, next);
+            applyTheme(next);
+          });
+        });
+      })();
+    </script> </body> </html>

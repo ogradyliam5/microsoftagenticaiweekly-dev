@@ -1,51 +1,15 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script>
-    (function () {
-      var key = 'maiw-theme';
-      var theme = 'dark';
-      try {
-        var stored = localStorage.getItem(key);
-        if (stored === 'light' || stored === 'dark') {
-          theme = stored;
-        } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-          theme = 'dark';
-        } else {
-          theme = 'light';
-        }
-      } catch (e) {}
-      var root = document.documentElement;
-      root.setAttribute('data-theme', theme);
-      root.classList.remove('theme-dark', 'theme-light');
-      root.classList.add(theme === 'dark' ? 'theme-dark' : 'theme-light');
-      root.style.colorScheme = theme;
-    })();
-  </script>
-  <title>Week of 19 Jan 2026 — From prototypes to managed agents</title>
-  <meta name="description" content="Week of 19 Jan 2026: ALM templates, deployment rings, and runtime safety checks for Microsoft agent teams." />
-  <link rel="stylesheet" href="../assets/legacy.css?v=20260306" />
-  <link rel="stylesheet" href="../assets/theme-shared.css?v=20260306" />
+  <title>Moved: Microsoft Agentic AI Weekly</title>
+  <meta http-equiv="refresh" content="0; url=/posts/issue-003" />
+  <link rel="canonical" href="/posts/issue-003" />
+  <meta name="robots" content="noindex,follow" />
+  <script>window.location.replace('/posts/issue-003');</script>
 </head>
 <body>
-  <header class="site-header"><div class="container"><a class="brand" href="../index.html">Microsoft Agentic AI Weekly</a><nav class="nav">
-        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle color mode">🌙 Dark</button><a href="../index.html">Home</a><a class="active" href="../archive.html">Archive</a><a href="../about.html">Methodology</a><a href="../about.html">About</a></nav></div></header>
-  <main><div class="container issue-layout"><article>
-    <p class="kicker">Week of 19 Jan 2026 · Sun 18 Jan 2026 · 21:00 Europe/London · 10 min read</p>
-    <h1>From prototypes to managed agents: ALM templates, deployment rings, and runtime safety checks</h1>
-    <section class="panel" id="summary"><h2>Executive summary</h2><ul><li>Agent programs are graduating from pilot artifacts to governed release pipelines.</li><li>Deployment rings and kill-switch patterns are now mandatory for enterprise confidence.</li><li>Teams with explicit runtime ownership are seeing faster adoption and fewer rollback events.</li></ul></section>
-    <h2 id="signals">What changed this week</h2>
-    <section class="grid">
-      <article class="signal-card"><span class="badge high">Adopt</span><span class="badge">Official</span><h3>Azure AI agent observability guidance expansion</h3><p><strong>Microsoft updated:</strong> Gives teams baseline telemetry dimensions for production triage.</p><p class="small">Best fit for Platform Owner, Leader.</p><p class="small"><a href="https://learn.microsoft.com/azure/ai-foundry/">Source</a></p></article>
-      <article class="signal-card"><span class="badge medium">Pilot</span><span class="badge">Reputable community</span><h3>ALM templating for Copilot environments</h3><p><strong>The community published:</strong> Reduces manual drift between dev/test/prod and shortens incident recovery.</p><p class="small">Best fit for Builder, Platform Owner.</p><p class="small"><a href="https://www.powercommunity.com/">Source</a></p></article>
-      <article class="signal-card"><span class="badge watch">Watch</span><span class="badge">Early signal</span><h3>Dynamic safety policy injection in runtime prompts</h3><p><strong>Early practitioners are exploring:</strong> Promising for rapid policy updates, but still lacks robust benchmark consensus.</p><p class="small">Best fit for Builder.</p></article>
-    </section>
-    <h2 id="build-next">Build next</h2><div class="panel"><ol><li>Implement ringed release strategy (canary team → business unit → enterprise).</li><li>Define rollback triggers based on objective thresholds (failure rate, unsafe output rate).</li><li>Assign a named runtime owner for each agent in production.</li></ol></div>
-    <h2 id="risk-notes">Governance and risk notes</h2><div class="signal-card"><ul><li>Separate feature flags from policy controls so emergency risk response does not require full redeploy.</li><li>Log all prompt/policy revisions with timestamps for post-incident audits.</li></ul></div>
-  </article><aside class="sidebar panel"><h3>Practical sections</h3><p><a href="#summary">Summary</a><br><a href="#signals">Signals</a><br><a href="#build-next">Build next</a><br><a href="#risk-notes">Risk notes</a></p><hr class="sep"><p class="small">Status: published after human approval.</p></aside></div></main>
-  <footer class="footer"><div class="container">© 2026 Microsoft Agentic AI Weekly</div></footer>
-  <script src="../assets/theme.js?v=20260306"></script>
+  <p>This issue moved to <a href="/posts/issue-003">/posts/issue-003</a>.</p>
 </body>
 </html>

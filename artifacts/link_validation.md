@@ -1,0 +1,104 @@
+# Issue Link Validation
+
+- Total unique links: `40`
+- OK: `40`
+- Warning: `0`
+- Error: `0`
+
+All validated links returned healthy responses.
+
+## By Issue
+
+- `issue-001` (`published`): 6 link(s)
+- `issue-002` (`published`): 6 link(s)
+- `issue-003` (`published`): 3 link(s)
+- `issue-004` (`published`): 3 link(s)
+- `issue-005` (`published`): 6 link(s)
+- `issue-006` (`published`): 3 link(s)
+- `issue-007` (`published`): 3 link(s)
+- `issue-008` (`published`): 3 link(s)
+- `issue-2026-09` (`published`): 24 link(s)
+- `issue-2026-10` (`published`): 8 link(s)
+
+## Link Results
+
+- [OK] `200` http://aka.ms/MicrosoftSovereignCloudDisconnectedBlog
+  - issues: issue-2026-09
+- [OK] `200` https://azure.microsoft.com/en-us/blog/azure-reliability-resiliency-and-recoverability-build-continuity-by-design/
+  - issues: issue-2026-09
+- [OK] `200` https://azure.microsoft.com/en-us/blog/the-data-behind-the-design-how-pantone-built-agentic-ai-with-an-ai-ready-database/
+  - issues: issue-2026-10
+- [OK] `200` https://blogs.microsoft.com/blog/2026/02/18/a-milestone-achievement-in-our-journey-to-carbon-negative/
+  - issues: issue-2026-09
+- [OK] `200` https://blogs.microsoft.com/blog/2026/02/20/asha-sharma-named-evp-and-ceo-microsoft-gaming/
+  - issues: issue-2026-09
+- [OK] `200` https://blogs.microsoft.com/blog/2026/02/27/microsoft-and-openai-joint-statement-on-continuing-partnership/
+  - issues: issue-2026-09
+- [OK] `200` https://devblogs.microsoft.com/azure-sql/introducing-budget-bytes/
+  - issues: issue-2026-09
+- [OK] `200` https://devblogs.microsoft.com/microsoft365dev/increased-control-over-office-add-in-user-experiences/
+  - issues: issue-2026-09
+- [OK] `200` https://devblogs.microsoft.com/microsoft365dev/sharepoint-framework-spfx-roadmap-update-february-2026/
+  - issues: issue-2026-09
+- [OK] `200` https://devblogs.microsoft.com/semantic-kernel/from-local-models-to-agent-workflows-building-a-deep-research-solution-with-microsoft-agent-framework-on-microsoft-foundry-local/
+  - issues: issue-2026-10
+- [OK] `200` https://devblogs.microsoft.com/semantic-kernel/migrate-your-semantic-kernel-and-autogen-projects-to-microsoft-agent-framework-release-candidate/
+  - issues: issue-2026-09, issue-2026-10
+- [OK] `200` https://dianabirkelbach.wordpress.com/2026/02/28/how-to-make-deep-links-with-code-apps-and-call-them-from-model-driven-apps/
+  - issues: issue-2026-09
+- [OK] `200` https://forwardforever.com/what-does-vibe-coding-mean-for-low-code-platforms/
+  - issues: issue-2026-09
+- [OK] `200` https://learn.microsoft.com/azure/ai-foundry/
+  - issues: issue-003
+- [OK] `200` https://learn.microsoft.com/azure/ai-services/openai/how-to/content-filters
+  - issues: issue-003
+- [OK] `200` https://learn.microsoft.com/en-us/azure/foundry/how-to/evaluate-generative-ai-app
+  - issues: issue-004
+- [OK] `200` https://learn.microsoft.com/microsoft-copilot-studio/
+  - issues: issue-004
+- [OK] `200` https://meganvwalker.com/calculate-working-day-connector-in-power-automate/
+  - issues: issue-2026-09
+- [OK] `200` https://meganvwalker.com/show-loading-screen-in-your-custom-page/
+  - issues: issue-2026-09
+- [OK] `200` https://michelcarlo.com/2026/03/01/powerfx-formula-columns-to-overcome-some-power-pages-table-permissions-limitations-for-webapi-access-in-power-pages/
+  - issues: issue-2026-09
+- [OK] `200` https://nishantrana.me/2026/02/10/renaming-sitemap-display-name-in-dataverse-dynamics-365/
+  - issues: issue-001, issue-002
+- [OK] `200` https://robquickenden.blog/2026/02/building-ai-agents-nube-to-pro/
+  - issues: issue-2026-09, issue-2026-10
+- [OK] `200` https://robquickenden.blog/2026/02/new-windows365-devices/
+  - issues: issue-2026-09
+- [OK] `200` https://robquickenden.blog/2026/02/writing-better-ai-prompts/
+  - issues: issue-2026-09, issue-2026-10
+- [OK] `200` https://sharepains.com/2026/02/24/migrate-sharepoint-site-designs-and-scripts-to-a-new-tenant/
+  - issues: issue-2026-09
+- [OK] `200` https://sharepains.com/2026/02/27/connect-your-vibe-coded-apps-with-git/
+  - issues: issue-2026-09
+- [OK] `200` https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/claude-sonnet-4-6-in-microsoft-foundry-frontier-performance-for-scale/4494873
+  - issues: issue-2026-09, issue-2026-10
+- [OK] `200` https://www.karlex.fi/autonomous-agents-in-action/
+  - issues: issue-2026-10
+- [OK] `200` https://www.karlex.fi/autonomous-agents-in-action/#utm_source=rss&utm_medium=rss
+  - issues: issue-2026-09
+- [OK] `200` https://www.karlex.fi/forged-but-valid-how-to-test-api-authentication-and-rbac-safely/#utm_source=rss&utm_medium=rss
+  - issues: issue-2026-09
+- [OK] `200` https://www.karlex.fi/mastering-power-automate-flows-structure-error-handling-child-flows-and-ai-in-real-projects/#utm_source=rss&utm_medium=rss
+  - issues: issue-2026-09
+- [OK] `200` https://www.matthewdevaney.com/
+  - issues: issue-004
+- [OK] `200` https://www.matthewdevaney.com/copilot-studio-generate-powerpoint-file-from-a-template/
+  - issues: issue-2026-09
+- [OK] `200` https://www.matthewdevaney.com/copilot-studio-search-multiline-text-file-dataverse-fields/
+  - issues: issue-001, issue-002
+- [OK] `200` https://www.matthewdevaney.com/video-copilot-studio-generate-powerpoint-file-using-a-prompt/
+  - issues: issue-2026-10
+- [OK] `200` https://www.matthewdevaney.com/video-create-an-mcp-server-and-deploy-to-copilot-studio/
+  - issues: issue-001, issue-002
+- [OK] `200` https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/the-6-pillars-that-will-define-agent-readiness-in-2026/
+  - issues: issue-001, issue-002, issue-005, issue-006, issue-007, issue-008
+- [OK] `200` https://www.microsoft.com/en-us/power-platform/blog/2026/01/27/announcing-the-public-preview-of-the-new-usage-page-in-the-power-platform-admin-center/
+  - issues: issue-001, issue-002, issue-005, issue-006, issue-007, issue-008
+- [OK] `200` https://www.powercommunity.com/
+  - issues: issue-003
+- [OK] `200` https://www.powercommunity.com/how-to-build-environment-aware-flows-by-fetching-crm-metadata-dynamically-in-power-automate/
+  - issues: issue-001, issue-002, issue-005, issue-006, issue-007, issue-008

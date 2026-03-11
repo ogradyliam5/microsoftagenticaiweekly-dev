@@ -5,23 +5,24 @@
 - Artifact check: `ok`
 - Source audit: `ok`
 - Buttondown: `skipped`
-- Run started: `2026-03-05T11:33:06.518102Z`
-- Run finished: `2026-03-05T11:34:03.467067Z`
-- Run duration (s): `56.949`
+- Run started: `2026-03-07T12:42:20.023515Z`
+- Run finished: `2026-03-07T12:43:20.522227Z`
+- Run duration (s): `60.499`
 
 ## Step timings
 
-- build_queue: status=`ok`, duration=`43.4`, started=`2026-03-05T11:33:06.518253Z`, finished=`2026-03-05T11:33:49.917719Z`
-- validate_queue: status=`ok`, duration=`0.086`, started=`2026-03-05T11:33:49.917785Z`, finished=`2026-03-05T11:33:50.004013Z`
-- generate_issue: status=`ok`, duration=`0.086`, started=`2026-03-05T11:33:50.004064Z`, finished=`2026-03-05T11:33:50.090312Z`
-- render_issue_html: status=`ok`, duration=`0.092`, started=`2026-03-05T11:33:50.090353Z`, finished=`2026-03-05T11:33:50.182815Z`
-- run_report: status=`ok`, duration=`0.087`, started=`2026-03-05T11:33:50.182857Z`, finished=`2026-03-05T11:33:50.270058Z`
-- source_candidate_audit: status=`ok`, duration=`13.196`, started=`2026-03-05T11:33:50.270171Z`, finished=`2026-03-05T11:34:03.466486Z`
+- build_queue: status=`ok`, duration=`43.208`, started=`2026-03-07T12:42:20.023677Z`, finished=`2026-03-07T12:43:03.231571Z`
+- validate_queue: status=`ok`, duration=`0.197`, started=`2026-03-07T12:43:03.232061Z`, finished=`2026-03-07T12:43:03.429072Z`
+- generate_issue: status=`ok`, duration=`0.155`, started=`2026-03-07T12:43:03.429174Z`, finished=`2026-03-07T12:43:03.584018Z`
+- render_issue_html: status=`ok`, duration=`0.162`, started=`2026-03-07T12:43:03.584107Z`, finished=`2026-03-07T12:43:03.746539Z`
+- run_report: status=`ok`, duration=`0.186`, started=`2026-03-07T12:43:03.746634Z`, finished=`2026-03-07T12:43:03.932105Z`
+- source_candidate_audit: status=`ok`, duration=`16.588`, started=`2026-03-07T12:43:03.932330Z`, finished=`2026-03-07T12:43:20.519844Z`
 
 ## Output artifacts
 
 - queue_json: `present` — `artifacts/editorial_queue-2026-10.json`
 - queue_markdown: `present` — `artifacts/editorial_queue-2026-10.md`
+- curation_manifest_json: `present` — `artifacts/curation_manifest-2026-10.json`
 - run_report: `present` — `artifacts/run_report-2026-10.md`
 - issue_markdown: `present` — `posts/issue-2026-10.md`
 - issue_html: `present` — `posts/issue-2026-10.html`
@@ -44,13 +45,13 @@
 
 ## Run history snapshot
 
-- JSON snapshot: `artifacts/run_history/last_run-2026-10-20260305T113403Z.json`
-- Markdown snapshot: `artifacts/run_history/last_run-2026-10-20260305T113403Z.md`
+- JSON snapshot: `artifacts/run_history/last_run-2026-10-20260307T124320Z.json`
+- Markdown snapshot: `artifacts/run_history/last_run-2026-10-20260307T124320Z.md`
 - Retention limit: `30`
 - Index JSON: `artifacts/run_history/index.json`
 - Index markdown: `artifacts/run_history/index.md`
-- Retained run snapshot count: `7`
-- Retained JSON snapshot count: `7`
-- Retained markdown snapshot count: `7`
+- Retained run snapshot count: `13`
+- Retained JSON snapshot count: `13`
+- Retained markdown snapshot count: `13`
 - Orphan JSON snapshot count: `0`
 - Orphan markdown snapshot count: `0`

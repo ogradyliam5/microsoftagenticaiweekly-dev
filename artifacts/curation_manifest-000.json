@@ -1,0 +1,45 @@
+{
+  "contract_version": "v2",
+  "issue_id": "000",
+  "generated_at": "2026-03-08T16:06:46Z",
+  "selected_item_ids": [
+    "sample-official-copilot-studio",
+    "sample-community-foundry"
+  ],
+  "excluded_items": [],
+  "reason_counts": {},
+  "domain_diversity": {
+    "domain_cap": 2,
+    "selected_domain_counts": {
+      "example.com": 1,
+      "example.org": 1
+    },
+    "selected_unique_domains": 2,
+    "cap_exceeded": false
+  },
+  "source_bucket_mix": {
+    "official_count": 1,
+    "independent_count": 1,
+    "official_pct": 0.5,
+    "independent_pct": 0.5
+  },
+  "quality_gate_results": {
+    "relevance_threshold": 0.55,
+    "domain_cap": 2,
+    "target_min_items": 8,
+    "target_max_items": 10,
+    "composition_override": {
+      "enabled": true,
+      "reason": "Sample fixture intentionally below production issue size."
+    },
+    "counts": {
+      "domain_cap": 2,
+      "duplicate_rejections": 0,
+      "blandness_rejections": 0,
+      "low_relevance_rejections": 0,
+      "selection_count": 2,
+      "selected_unique_domains": 2,
+      "top_domain_share_percent": 50.0
+    }
+  }
+}

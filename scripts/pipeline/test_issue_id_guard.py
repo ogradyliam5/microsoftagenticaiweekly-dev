@@ -45,7 +45,8 @@ def main() -> None:
         expect_invalid(f"{year}-{max_week + 1:02d}", f"for {year}")
 
     # Sanity check against Python ISO calendar behavior.
-    for year in range(dt.datetime.utcnow().year - 1, dt.datetime.utcnow().year + 2):
+    current_year = dt.datetime.now(dt.timezone.utc).year
+    for year in range(current_year - 1, current_year + 2):
         assert issue_id_max_week(year) == dt.date(year, 12, 28).isocalendar().week
 
     print("issue_id_guard regression tests: PASS")

@@ -1,0 +1,26 @@
+---
+import { getCollection } from "astro:content";
+import HeroPanel from "../../components/HeroPanel.astro";
+import PlaybookCard from "../../components/PlaybookCard.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { SITE_TITLE, preferPublishedPlaybooks } from "../_shared";
+
+const playbooks = preferPublishedPlaybooks(await getCollection("playbooks"));
+---
+
+<BaseLayout title={`Playbooks | ${SITE_TITLE}`} activePath="/playbooks">
+  <HeroPanel
+    kicker="Playbooks hub"
+    title="Operational playbooks"
+    summary="Structured playbooks covering rollout, governance, and operational quality."
+    meta={`${playbooks.length} playbook(s) in collection.`}
+  />
+
+  <section class="surface-panel">
+    <div class="grid-auto">
+      {playbooks.map((playbook) => (
+        <PlaybookCard playbook={playbook} />
+      ))}
+    </div>
+  </section>
+</BaseLayout>

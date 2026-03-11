@@ -1,3 +1,3 @@
-# Weekly Editorial Queue — 000
+# Weekly Editorial Queue - 000
 
-Sample pipeline artifact for verification.
+Sample v2 queue artifact for verification.

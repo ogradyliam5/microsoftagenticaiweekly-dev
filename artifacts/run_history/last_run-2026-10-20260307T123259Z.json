@@ -1,0 +1,173 @@
+{
+  "issue_id": "2026-10",
+  "generated_at": "2026-03-07T12:32:59.609310Z",
+  "run_started_at": "2026-03-07T12:32:15.170728Z",
+  "run_finished_at": "2026-03-07T12:32:59.609310Z",
+  "run_duration_seconds": 44.439,
+  "pipeline_status": "ok",
+  "failed_step": null,
+  "step_results": [
+    {
+      "name": "build_queue",
+      "status": "ok",
+      "command": [
+        "C:\\Python313\\python.exe",
+        "C:\\Users\\LiamO'Grady\\source\\repos\\microsoftagenticaiweekly-dev\\scripts\\pipeline\\build_queue.py",
+        "--issue-id",
+        "2026-10"
+      ],
+      "started_at": "2026-03-07T12:32:15.171525Z",
+      "finished_at": "2026-03-07T12:32:58.820239Z",
+      "duration_seconds": 43.649
+    },
+    {
+      "name": "validate_queue",
+      "status": "ok",
+      "command": [
+        "C:\\Python313\\python.exe",
+        "C:\\Users\\LiamO'Grady\\source\\repos\\microsoftagenticaiweekly-dev\\scripts\\pipeline\\validate_queue.py",
+        "--issue-id",
+        "2026-10"
+      ],
+      "started_at": "2026-03-07T12:32:58.820958Z",
+      "finished_at": "2026-03-07T12:32:59.047967Z",
+      "duration_seconds": 0.227
+    },
+    {
+      "name": "generate_issue",
+      "status": "ok",
+      "command": [
+        "C:\\Python313\\python.exe",
+        "C:\\Users\\LiamO'Grady\\source\\repos\\microsoftagenticaiweekly-dev\\scripts\\pipeline\\generate_issue.py",
+        "--issue-id",
+        "2026-10"
+      ],
+      "started_at": "2026-03-07T12:32:59.048162Z",
+      "finished_at": "2026-03-07T12:32:59.207146Z",
+      "duration_seconds": 0.159
+    },
+    {
+      "name": "render_issue_html",
+      "status": "ok",
+      "command": [
+        "C:\\Python313\\python.exe",
+        "C:\\Users\\LiamO'Grady\\source\\repos\\microsoftagenticaiweekly-dev\\scripts\\pipeline\\render_issue_html.py",
+        "--issue-id",
+        "2026-10"
+      ],
+      "started_at": "2026-03-07T12:32:59.207221Z",
+      "finished_at": "2026-03-07T12:32:59.411732Z",
+      "duration_seconds": 0.205
+    },
+    {
+      "name": "run_report",
+      "status": "ok",
+      "command": [
+        "C:\\Python313\\python.exe",
+        "C:\\Users\\LiamO'Grady\\source\\repos\\microsoftagenticaiweekly-dev\\scripts\\pipeline\\run_report.py",
+        "--issue-id",
+        "2026-10"
+      ],
+      "started_at": "2026-03-07T12:32:59.411809Z",
+      "finished_at": "2026-03-07T12:32:59.608075Z",
+      "duration_seconds": 0.196
+    }
+  ],
+  "buttondown": "skipped",
+  "source_candidate_audit": "skipped",
+  "artifact_check": "ok",
+  "missing_artifacts": [],
+  "artifacts": [
+    "artifacts/editorial_queue-2026-10.json",
+    "artifacts/editorial_queue-2026-10.md",
+    "artifacts/curation_manifest-2026-10.json",
+    "artifacts/run_report-2026-10.md",
+    "posts/issue-2026-10.md",
+    "posts/issue-2026-10.html",
+    "drafts/email-2026-10.md"
+  ],
+  "artifact_checks": {
+    "artifacts/editorial_queue-2026-10.json": true,
+    "artifacts/editorial_queue-2026-10.md": true,
+    "artifacts/curation_manifest-2026-10.json": true,
+    "artifacts/run_report-2026-10.md": true,
+    "posts/issue-2026-10.md": true,
+    "posts/issue-2026-10.html": true,
+    "drafts/email-2026-10.md": true
+  },
+  "output_artifacts": {
+    "queue_json": "artifacts/editorial_queue-2026-10.json",
+    "queue_markdown": "artifacts/editorial_queue-2026-10.md",
+    "curation_manifest_json": "artifacts/curation_manifest-2026-10.json",
+    "run_report": "artifacts/run_report-2026-10.md",
+    "issue_markdown": "posts/issue-2026-10.md",
+    "issue_html": "posts/issue-2026-10.html",
+    "email_draft": "drafts/email-2026-10.md",
+    "source_audit_json": "artifacts/source_candidate_audit.json",
+    "source_audit_markdown": "artifacts/source_candidate_audit.md",
+    "buttondown_drafts": "artifacts/buttondown_drafts.json",
+    "run_summary_json": "artifacts/last_run.json",
+    "run_summary_markdown": "artifacts/last_run.md",
+    "run_history_index_json": "artifacts/run_history/index.json",
+    "run_history_index_markdown": "artifacts/run_history/index.md"
+  },
+  "output_artifact_checks": {
+    "queue_json": {
+      "path": "artifacts/editorial_queue-2026-10.json",
+      "exists": true
+    },
+    "queue_markdown": {
+      "path": "artifacts/editorial_queue-2026-10.md",
+      "exists": true
+    },
+    "curation_manifest_json": {
+      "path": "artifacts/curation_manifest-2026-10.json",
+      "exists": true
+    },
+    "run_report": {
+      "path": "artifacts/run_report-2026-10.md",
+      "exists": true
+    },
+    "issue_markdown": {
+      "path": "posts/issue-2026-10.md",
+      "exists": true
+    },
+    "issue_html": {
+      "path": "posts/issue-2026-10.html",
+      "exists": true
+    },
+    "email_draft": {
+      "path": "drafts/email-2026-10.md",
+      "exists": true
+    },
+    "source_audit_json": {
+      "path": "artifacts/source_candidate_audit.json",
+      "exists": true
+    },
+    "source_audit_markdown": {
+      "path": "artifacts/source_candidate_audit.md",
+      "exists": true
+    },
+    "buttondown_drafts": {
+      "path": "artifacts/buttondown_drafts.json",
+      "exists": true
+    },
+    "run_summary_json": {
+      "path": "artifacts/last_run.json",
+      "exists": true
+    },
+    "run_summary_markdown": {
+      "path": "artifacts/last_run.md",
+      "exists": true
+    },
+    "run_history_index_json": {
+      "path": "artifacts/run_history/index.json",
+      "exists": true
+    },
+    "run_history_index_markdown": {
+      "path": "artifacts/run_history/index.md",
+      "exists": true
+    }
+  },
+  "enforce_artifacts": true
+}

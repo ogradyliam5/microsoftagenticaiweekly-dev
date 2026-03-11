@@ -1,46 +1,52 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Editorial Queue",
+  "title": "Editorial Queue v2",
   "type": "object",
-  "required": ["issue_id", "generated_at", "items", "clusters", "excluded"],
+  "required": ["contract_version", "issue_id", "generated_at", "window_start_utc", "window_end_utc", "items", "excluded", "mix_target", "mix_actual", "quality_summary"],
   "properties": {
+    "contract_version": { "const": "v2" },
     "issue_id": { "type": "string" },
-    "generated_at": { "type": "string" },
+    "generated_at": { "type": "string", "format": "date-time" },
+    "window_start_utc": { "type": "string", "format": "date-time" },
+    "window_end_utc": { "type": "string", "format": "date-time" },
     "items": {
       "type": "array",
       "items": {
         "type": "object",
-        "required": ["id", "title", "canonical_url", "publisher", "published_at", "product_area", "confidence"],
+        "required": ["id", "title", "canonical_url", "publisher", "published_at_utc", "source_mix_bucket", "signal", "mini_abstract", "why_click", "confidence_label", "selection_reason", "score_total", "score_relevance", "score_quality", "score_freshness", "domain"],
         "properties": {
           "id": { "type": "string" },
-          "title": { "type": "string", "minLength": 5 },
-          "url": { "type": "string" },
-          "canonical_url": { "type": "string", "minLength": 8 },
-          "author": { "type": "string" },
+          "title": { "type": "string" },
+          "canonical_url": { "type": "string", "format": "uri" },
           "publisher": { "type": "string" },
-          "published_at": { "type": "string" },
-          "product_area": { "type": "string" },
-          "source_type": { "type": "string" },
-          "summary_bullets": {
-            "type": "array",
-            "items": { "type": "string", "maxLength": 220 },
-            "maxItems": 4
-          },
-          "why_it_matters": { "type": "string", "maxLength": 180 },
-          "audience": { "type": "string" },
-          "effort": { "type": "string" },
-          "confidence": { "type": "string", "enum": ["High", "Medium", "Low"] },
-          "tags": { "type": "array", "items": { "type": "string" } },
-          "evidence": {
-            "type": "array",
-            "items": { "type": "string", "maxLength": 140 },
-            "description": "Short support excerpts for internal review only."
-          }
+          "published_at_utc": { "type": "string", "format": "date-time" },
+          "source_mix_bucket": { "type": "string" },
+          "signal": { "type": "string" },
+          "mini_abstract": { "type": "string", "maxLength": 220 },
+          "why_click": { "type": "string" },
+          "confidence_label": { "type": "string", "enum": ["high", "medium", "low"] },
+          "selection_reason": { "type": "string" },
+          "score_total": { "type": "number" },
+          "score_relevance": { "type": "number" },
+          "score_quality": { "type": "number" },
+          "score_freshness": { "type": "number" },
+          "domain": { "type": "string" }
         }
       }
     },
-    "clusters": { "type": "array" },
-    "excluded": { "type": "array" },
-    "questions_for_liam": { "type": "array", "items": { "type": "string" } }
+    "excluded": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "reason_code"],
+        "properties": {
+          "id": { "type": "string" },
+          "reason_code": { "type": "string", "enum": ["duplicate", "low_relevance", "bland_summary", "domain_cap_exceeded", "missing_required_fields", "outside_collection_window"] }
+        }
+      }
+    },
+    "mix_target": { "type": "object" },
+    "mix_actual": { "type": "object" },
+    "quality_summary": { "type": "object" }
   }
 }

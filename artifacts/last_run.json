@@ -1,9 +1,9 @@
 {
   "issue_id": "2026-10",
-  "generated_at": "2026-03-05T11:34:03.467067Z",
-  "run_started_at": "2026-03-05T11:33:06.518102Z",
-  "run_finished_at": "2026-03-05T11:34:03.467067Z",
-  "run_duration_seconds": 56.949,
+  "generated_at": "2026-03-07T12:43:20.522227Z",
+  "run_started_at": "2026-03-07T12:42:20.023515Z",
+  "run_finished_at": "2026-03-07T12:43:20.522227Z",
+  "run_duration_seconds": 60.499,
   "pipeline_status": "ok",
   "failed_step": null,
   "step_results": [
@@ -11,77 +11,77 @@
       "name": "build_queue",
       "status": "ok",
       "command": [
-        "python3",
-        "/home/liam_vm/.openclaw/workspace/microsoftagenticaiweekly/scripts/pipeline/build_queue.py",
+        "C:\\Python313\\python.exe",
+        "C:\\Users\\LiamO'Grady\\source\\repos\\microsoftagenticaiweekly-dev\\scripts\\pipeline\\build_queue.py",
         "--issue-id",
         "2026-10"
       ],
-      "started_at": "2026-03-05T11:33:06.518253Z",
-      "finished_at": "2026-03-05T11:33:49.917719Z",
-      "duration_seconds": 43.4
+      "started_at": "2026-03-07T12:42:20.023677Z",
+      "finished_at": "2026-03-07T12:43:03.231571Z",
+      "duration_seconds": 43.208
     },
     {
       "name": "validate_queue",
       "status": "ok",
       "command": [
-        "python3",
-        "/home/liam_vm/.openclaw/workspace/microsoftagenticaiweekly/scripts/pipeline/validate_queue.py",
+        "C:\\Python313\\python.exe",
+        "C:\\Users\\LiamO'Grady\\source\\repos\\microsoftagenticaiweekly-dev\\scripts\\pipeline\\validate_queue.py",
         "--issue-id",
         "2026-10"
       ],
-      "started_at": "2026-03-05T11:33:49.917785Z",
-      "finished_at": "2026-03-05T11:33:50.004013Z",
-      "duration_seconds": 0.086
+      "started_at": "2026-03-07T12:43:03.232061Z",
+      "finished_at": "2026-03-07T12:43:03.429072Z",
+      "duration_seconds": 0.197
     },
     {
       "name": "generate_issue",
       "status": "ok",
       "command": [
-        "python3",
-        "/home/liam_vm/.openclaw/workspace/microsoftagenticaiweekly/scripts/pipeline/generate_issue.py",
+        "C:\\Python313\\python.exe",
+        "C:\\Users\\LiamO'Grady\\source\\repos\\microsoftagenticaiweekly-dev\\scripts\\pipeline\\generate_issue.py",
         "--issue-id",
         "2026-10"
       ],
-      "started_at": "2026-03-05T11:33:50.004064Z",
-      "finished_at": "2026-03-05T11:33:50.090312Z",
-      "duration_seconds": 0.086
+      "started_at": "2026-03-07T12:43:03.429174Z",
+      "finished_at": "2026-03-07T12:43:03.584018Z",
+      "duration_seconds": 0.155
     },
     {
       "name": "render_issue_html",
       "status": "ok",
       "command": [
-        "python3",
-        "/home/liam_vm/.openclaw/workspace/microsoftagenticaiweekly/scripts/pipeline/render_issue_html.py",
+        "C:\\Python313\\python.exe",
+        "C:\\Users\\LiamO'Grady\\source\\repos\\microsoftagenticaiweekly-dev\\scripts\\pipeline\\render_issue_html.py",
         "--issue-id",
         "2026-10"
       ],
-      "started_at": "2026-03-05T11:33:50.090353Z",
-      "finished_at": "2026-03-05T11:33:50.182815Z",
-      "duration_seconds": 0.092
+      "started_at": "2026-03-07T12:43:03.584107Z",
+      "finished_at": "2026-03-07T12:43:03.746539Z",
+      "duration_seconds": 0.162
     },
     {
       "name": "run_report",
       "status": "ok",
       "command": [
-        "python3",
-        "/home/liam_vm/.openclaw/workspace/microsoftagenticaiweekly/scripts/pipeline/run_report.py",
+        "C:\\Python313\\python.exe",
+        "C:\\Users\\LiamO'Grady\\source\\repos\\microsoftagenticaiweekly-dev\\scripts\\pipeline\\run_report.py",
         "--issue-id",
         "2026-10"
       ],
-      "started_at": "2026-03-05T11:33:50.182857Z",
-      "finished_at": "2026-03-05T11:33:50.270058Z",
-      "duration_seconds": 0.087
+      "started_at": "2026-03-07T12:43:03.746634Z",
+      "finished_at": "2026-03-07T12:43:03.932105Z",
+      "duration_seconds": 0.186
     },
     {
       "name": "source_candidate_audit",
       "status": "ok",
       "command": [
-        "python3",
-        "/home/liam_vm/.openclaw/workspace/microsoftagenticaiweekly/scripts/pipeline/source_candidate_audit.py"
+        "C:\\Python313\\python.exe",
+        "C:\\Users\\LiamO'Grady\\source\\repos\\microsoftagenticaiweekly-dev\\scripts\\pipeline\\source_candidate_audit.py"
       ],
-      "started_at": "2026-03-05T11:33:50.270171Z",
-      "finished_at": "2026-03-05T11:34:03.466486Z",
-      "duration_seconds": 13.196
+      "started_at": "2026-03-07T12:43:03.932330Z",
+      "finished_at": "2026-03-07T12:43:20.519844Z",
+      "duration_seconds": 16.588
     }
   ],
   "buttondown": "skipped",
@@ -91,6 +91,7 @@
   "artifacts": [
     "artifacts/editorial_queue-2026-10.json",
     "artifacts/editorial_queue-2026-10.md",
+    "artifacts/curation_manifest-2026-10.json",
     "artifacts/run_report-2026-10.md",
     "posts/issue-2026-10.md",
     "posts/issue-2026-10.html",
@@ -101,6 +102,7 @@
   "artifact_checks": {
     "artifacts/editorial_queue-2026-10.json": true,
     "artifacts/editorial_queue-2026-10.md": true,
+    "artifacts/curation_manifest-2026-10.json": true,
     "artifacts/run_report-2026-10.md": true,
     "posts/issue-2026-10.md": true,
     "posts/issue-2026-10.html": true,
@@ -111,6 +113,7 @@
   "output_artifacts": {
     "queue_json": "artifacts/editorial_queue-2026-10.json",
     "queue_markdown": "artifacts/editorial_queue-2026-10.md",
+    "curation_manifest_json": "artifacts/curation_manifest-2026-10.json",
     "run_report": "artifacts/run_report-2026-10.md",
     "issue_markdown": "posts/issue-2026-10.md",
     "issue_html": "posts/issue-2026-10.html",
@@ -130,6 +133,10 @@
     },
     "queue_markdown": {
       "path": "artifacts/editorial_queue-2026-10.md",
+      "exists": true
+    },
+    "curation_manifest_json": {
+      "path": "artifacts/curation_manifest-2026-10.json",
       "exists": true
     },
     "run_report": {
@@ -179,14 +186,14 @@
   },
   "enforce_artifacts": true,
   "run_history": {
-    "json": "artifacts/run_history/last_run-2026-10-20260305T113403Z.json",
-    "markdown": "artifacts/run_history/last_run-2026-10-20260305T113403Z.md",
+    "json": "artifacts/run_history/last_run-2026-10-20260307T124320Z.json",
+    "markdown": "artifacts/run_history/last_run-2026-10-20260307T124320Z.md",
     "index_json": "artifacts/run_history/index.json",
     "index_markdown": "artifacts/run_history/index.md",
     "retention_limit": 30,
-    "retained_run_count": 7,
-    "retained_json_count": 7,
-    "retained_markdown_count": 7,
+    "retained_run_count": 13,
+    "retained_json_count": 13,
+    "retained_markdown_count": 13,
     "orphan_json_count": 0,
     "orphan_markdown_count": 0
   }

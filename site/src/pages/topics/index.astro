@@ -1,0 +1,26 @@
+---
+import { getCollection } from "astro:content";
+import HeroPanel from "../../components/HeroPanel.astro";
+import TopicTile from "../../components/TopicTile.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { SITE_TITLE, preferPublishedTopics } from "../_shared";
+
+const topics = preferPublishedTopics(await getCollection("topics"));
+---
+
+<BaseLayout title={`Topics | ${SITE_TITLE}`} activePath="/topics">
+  <HeroPanel
+    kicker="Topics hub"
+    title="Topic coverage surfaces"
+    summary="Focused topic pages for Microsoft-first agentic AI coverage."
+    meta={`${topics.length} topic(s) in collection.`}
+  />
+
+  <section class="surface-panel">
+    <div class="grid-auto">
+      {topics.map((topic) => (
+        <TopicTile topic={topic} />
+      ))}
+    </div>
+  </section>
+</BaseLayout>

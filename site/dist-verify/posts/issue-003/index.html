@@ -1,0 +1,80 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>From prototypes to managed agents: ALM templates, deployment rings, and runtime safety checks | Microsoft Agentic AI Weekly</title><meta name="description" content="ALM templates, deployment rings, and runtime safety checks for Microsoft agent teams."><script>
+      (() => {
+        const key = "maiw-theme";
+        const stored = window.localStorage.getItem(key);
+        const theme = stored === "dark" || stored === "light" ? stored : "light";
+        document.documentElement.setAttribute("data-theme", theme);
+        document.documentElement.classList.toggle("theme-dark", theme === "dark");
+        document.documentElement.classList.toggle("theme-light", theme === "light");
+      })();
+    </script><link rel="canonical" href="https://microsoftagenticaiweekly.com/posts/issue-003"><link rel="stylesheet" href="/_astro/about.Cvl3Svt3.css"></head> <body> <div class="site-shell"> <header class="site-header"> <div class="site-wrap site-header__row"> <a class="site-brand" href="/">Microsoft Agentic AI Weekly</a> <div class="site-header__actions"> <nav class="site-nav" aria-label="Primary"> <a class="site-nav__link" href="/"> Home </a><a class="site-nav__link" href="/latest"> Latest </a><a class="site-nav__link is-active" href="/archive" aria-current="page"> Archive </a><a class="site-nav__link" href="/topics"> Topics </a><a class="site-nav__link" href="/playbooks"> Playbooks </a><a class="site-nav__link" href="/about"> Method </a><a class="site-nav__link" href="/subscribe"> Subscribe </a><a class="site-nav__link" href="/corrections"> Corrections </a><a class="site-nav__link" href="/sources"> Sources </a> </nav> <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle theme" aria-pressed="false">
+Theme
+</button> </div> </div> </header> <main class="site-main"> <div class="site-wrap stack">   <section class="hero-panel fade-up"> <p class="kicker">Issue</p> <h1>From prototypes to managed agents: ALM templates, deployment rings, and runtime safety checks</h1> <p>Agent programs are graduating from pilot artifacts to governed release pipelines. Deployment rings and kill-switch patterns are now mandatory for enterprise confidence.</p> <p class="meta">Published 18 Jan 2026 - Updated 18 Jan 2026</p>  <p class="small-note"> <span class="pill"> published </span> <span class="pill">confidence: high</span> </p>  </section> <section class="surface-panel fade-up"> <h2 id="executive-summary">Executive summary</h2>
+<ul>
+<li>Agent programs are graduating from pilot artifacts to governed release pipelines.</li>
+<li>Deployment rings and kill-switch patterns are now mandatory for enterprise confidence.</li>
+<li>Teams with explicit runtime ownership are seeing faster adoption and fewer rollback events.</li>
+</ul>
+<h2 id="what-changed-this-week">What changed this week</h2>
+<h3 id="azure-ai-agent-observability-guidance-expansion">Azure AI agent observability guidance expansion</h3>
+<ul>
+<li>Signal: Azure AI agent observability guidance expansion</li>
+<li>Mini-abstract: Gives teams baseline telemetry dimensions for production triage.</li>
+<li>Why click: Read for Azure AI observability guidance.</li>
+<li>Source confidence: official</li>
+<li>Source: <a href="https://learn.microsoft.com/azure/ai-foundry/">Microsoft</a></li>
+</ul>
+<h3 id="alm-templating-for-copilot-environments">ALM templating for Copilot environments</h3>
+<ul>
+<li>Signal: ALM templating for Copilot environments</li>
+<li>Mini-abstract: Reduces manual drift between dev/test/prod and shortens incident recovery.</li>
+<li>Why click: Read for ALM templating techniques.</li>
+<li>Source confidence: reputable community</li>
+<li>Source: <a href="https://www.powercommunity.com/">Power Community</a></li>
+</ul>
+<h3 id="dynamic-safety-policy-injection-in-runtime-prompts">Dynamic safety policy injection in runtime prompts</h3>
+<ul>
+<li>Signal: Dynamic safety policy injection in runtime prompts</li>
+<li>Mini-abstract: Promising for rapid policy updates, but still lacks robust benchmark consensus.</li>
+<li>Why click: Read for dynamic safety policy exploration.</li>
+<li>Source confidence: early signal</li>
+<li>Source: <a href="https://learn.microsoft.com/azure/ai-services/openai/how-to/content-filters">Azure OpenAI safety and filters</a></li>
+</ul>
+<h2 id="build-next">Build next</h2>
+<ol>
+<li>Implement ringed release strategy (canary team â†’ business unit â†’ enterprise).</li>
+<li>Define rollback triggers based on objective thresholds (failure rate, unsafe output rate).</li>
+<li>Assign a named runtime owner for each agent in production.</li>
+</ol>
+<h2 id="governance-and-risk-notes">Governance and risk notes</h2>
+<ul>
+<li>Separate feature flags from policy controls so emergency risk response does not require full redeploy.</li>
+<li>Log all prompt/policy revisions with timestamps for post-incident audits.</li>
+</ul> </section> <section class="surface-panel signal-card fade-up"> <h3 class="signal-card__title">Issue metadata</h3> <ul> <li>Published: 18 Jan 2026</li><li>Updated: 18 Jan 2026</li><li>Status: published</li><li>Confidence: high</li><li>Slug: issue-003</li><li>Canonical issue path: /posts/issue-003</li> </ul> </section> <section class="surface-panel trust-panel fade-up"> <h2>Issue linkage</h2> <ul> <li>Tags: agentic-ai, microsoft, weekly-digest, azure-ai, observability, alm</li><li>Topics: none</li><li>Playbooks: none</li> </ul> </section>  </div> </main> <footer class="site-footer"> <div class="site-wrap site-footer__row"> <span>Microsoft Agentic AI Weekly - Approval-first editorial workflow</span> <span> <a href="/feed.xml">RSS</a> - <a href="/corrections">Corrections</a> </span> </div> </footer> </div> <script>
+      (() => {
+        const key = "maiw-theme";
+        const root = document.documentElement;
+        const toggles = Array.from(document.querySelectorAll("[data-theme-toggle]"));
+
+        const applyTheme = (theme) => {
+          root.setAttribute("data-theme", theme);
+          root.classList.toggle("theme-dark", theme === "dark");
+          root.classList.toggle("theme-light", theme === "light");
+          toggles.forEach((toggle) => {
+            toggle.setAttribute("aria-pressed", theme === "dark" ? "true" : "false");
+            toggle.textContent = theme === "dark" ? "Light" : "Dark";
+          });
+        };
+
+        const current = root.getAttribute("data-theme") === "dark" ? "dark" : "light";
+        applyTheme(current);
+
+        toggles.forEach((toggle) => {
+          toggle.addEventListener("click", () => {
+            const next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+            window.localStorage.setItem(key, next);
+            applyTheme(next);
+          });
+        });
+      })();
+    </script> </body> </html>

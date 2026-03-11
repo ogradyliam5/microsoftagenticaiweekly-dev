@@ -1,0 +1,24 @@
+---
+import type { CollectionEntry } from "astro:content";
+import { dateLabel, normalizeStatus, playbookPath } from "../pages/_shared";
+
+interface Props {
+  playbook: CollectionEntry<"playbooks">;
+}
+
+const { playbook } = Astro.props;
+---
+
+<article class="card playbook-card fade-up">
+  <p class="meta">Updated {dateLabel(playbook.data.updated_at)}</p>
+  <h3 class="playbook-card__title">
+    <a href={playbookPath(playbook)}>{playbook.data.title}</a>
+  </h3>
+  <p>{playbook.data.summary}</p>
+  <p class="small-note">
+    <span class={`pill ${playbook.data.status !== "published" ? "warn" : ""}`.trim()}>
+      {normalizeStatus(playbook.data.status)}
+    </span>
+  </p>
+</article>
+

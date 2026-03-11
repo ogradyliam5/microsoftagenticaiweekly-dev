@@ -1,77 +1,87 @@
 # Microsoft Agentic AI Weekly
 
-A GitHub-friendly static newsletter site for Microsoft Agentic AI professionals.
+Engineering and editorial source for `Microsoft Agentic AI Weekly`, a practitioner-focused newsletter covering the Microsoft agentic AI ecosystem.
 
-## What this includes
+## Intent
+`Microsoft Agentic AI Weekly` exists to help builders quickly understand what changed, what matters, and what is actionable each week across agentic AI tools, platforms, and practices.
 
-- Static website (`index.html`, `about.html`, `archive.html`)
-- First issue page (`posts/issue-001.html`)
-- Newsletter source markdown (`posts/issue-001.md`)
-- Tailwind-built homepage styling (`assets/styles.css`) + legacy stylesheet for existing pages (`assets/legacy.css`)
-- Issue cover assets (`assets/covers/issue-XXX-cover.svg`) using a consistent 16:9 editorial format
-- Project plan and publishing workflow (`docs/`)
+The project is designed to:
+- Cut through hype with source-grounded, verifiable reporting
+- Translate weekly updates into practical implications for teams shipping real systems
+- Maintain a repeatable editorial and publishing workflow with audit visibility
 
-## Run locally
+Primary audience:
+- Engineers and architects building agentic AI systems
+- Technical leads evaluating tooling, patterns, and platform direction
+- Practitioners who need concise weekly signal, not noisy trend summaries
 
-Because this is static HTML/CSS, you can open `index.html` directly or run a local server:
+## What this repo contains
+- Astro static site architecture in [`site/`](site/)
+- Pipeline v2 for weekly curation and quality-gated mini-abstract summaries
+- Historical archive content and publication assets
+- Multi-agent runbooks and operational documentation
 
-```bash
-python3 -m http.server 8080
-# then open http://localhost:8080/microsoftagenticaiweekly/
-```
+## Quick start
+From the repository root:
 
-## Suggested GitHub setup
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
+2. Start local preview:
+   ```bash
+   npm run site:dev
+   ```
+3. Open `http://localhost:4321`
 
-1. Create a repo (e.g. `microsoftagenticaiweekly`)
-2. Push this folder to the repo root
-3. Enable GitHub Pages from `main` branch root
-4. (Optional) connect custom domain (`microsoftagenticaiweekly.com`)
-
-## Publishing workflow
-
-1. Duplicate `docs/ISSUE_TEMPLATE.md`
-2. Curate weekly links (target 60% independent / 40% official)
-3. Publish markdown + html issue page
-4. Add issue to `archive.html`
-
-## Email automation (Buttondown)
-
-A simple API helper is included at `scripts/buttondown.py`.
+For a production-style local preview:
 
 ```bash
-python3 scripts/buttondown.py list --status draft
-python3 scripts/buttondown.py create --subject "Microsoft Agentic AI Weekly #002" --body-file docs/EMAIL_DRAFT_ISSUE_002.txt
+npm run site:build
+npm run site:preview
 ```
 
-Setup + operating notes: `docs/BUTTONDOWN_AUTOMATION.md`
+## GitHub Pages deployment
+- The site deploys automatically from GitHub Actions on every push to `main`.
+- Manual deploys are available via the `deploy-pages` workflow (`workflow_dispatch`).
+- Ensure repository settings use Pages source: `GitHub Actions`.
 
-## Dev preview sync
+## Script reference
 
-Sync `develop` branch content to the separate dev preview Pages site:
+| Command | Purpose |
+| --- | --- |
+| `npm run site:dev` | Start Astro dev server from repo root |
+| `npm run site:build` | Build the Astro site |
+| `npm run site:preview` | Preview the built Astro site locally |
+| `npm run site:check` | Run Astro checks |
+| `npm run build:css` | Build root Tailwind CSS assets |
+| `npm run build` | Alias for `build:css` |
+| `npm run test:e2e` | Run Playwright end-to-end tests |
 
-```bash
-./scripts/sync-dev-site.sh
-```
+## Repository map
 
-Dev URL: `https://ogradyliam5.github.io/microsoftagenticaiweekly-dev/`
+| Path | Purpose |
+| --- | --- |
+| [`site/`](site/) | Astro app, routes, components, and content collections |
+| [`posts/`](posts/) | Issue content and newsletter source material |
+| [`docs/`](docs/) | Operating handbook, pipeline docs, launch/runbook docs |
+| [`scripts/`](scripts/) | Automation scripts (pipeline, Buttondown, sync helpers) |
+| [`artifacts/`](artifacts/) | Generated outputs and audit artifacts |
+| [`drafts/`](drafts/) | Working drafts for issues and email content |
+| [`assets/`](assets/) | Shared static assets and styles |
+| [`tests/`](tests/) | Playwright test suite |
 
-## Weekly pipeline (approval-first)
+## Start here
+- [plan.md](plan.md)
+- [AGENT.md](AGENT.md)
+- [docs/OPERATING_HANDBOOK.md](docs/OPERATING_HANDBOOK.md)
+- [docs/WEEKLY_PIPELINE.md](docs/WEEKLY_PIPELINE.md)
 
-Run locally:
+## Core principles
+- Approval-first publish and send
+- Source-grounded editorial quality
+- Clear, concise, non-hype writing
+- Repeatable weekly operations with visible audit artifacts
 
-```bash
-python3 scripts/pipeline/run_weekly.py
-```
-
-What it creates:
-- `artifacts/editorial_queue-<issue_id>.json`
-- `artifacts/editorial_queue-<issue_id>.md`
-- `posts/issue-<issue_id>.md`
-- `drafts/email-<issue_id>.md`
-- `artifacts/buttondown_drafts.json` (if Buttondown draft created)
-
-Full runbook: `docs/WEEKLY_PIPELINE.md`
-
-## License
-
-Personal project; add a license file when ready.
+## Legacy compatibility
+Legacy root `.html` routes (for example `index.html`, `archive.html`, `about.html`) are maintained as redirect shims to canonical Astro routes to prevent drift during transition.

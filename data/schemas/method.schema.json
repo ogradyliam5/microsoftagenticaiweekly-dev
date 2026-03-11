@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Method Content Schema",
+  "type": "object",
+  "required": ["id", "title", "updated_at", "policy_version"],
+  "properties": {
+    "id": { "type": "string" },
+    "title": { "type": "string" },
+    "updated_at": { "type": "string", "format": "date-time" },
+    "policy_version": { "type": "string" }
+  }
+}

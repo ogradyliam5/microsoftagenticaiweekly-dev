@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Issue Content Schema",
+  "type": "object",
+  "required": ["id", "slug", "title", "status", "published_at", "updated_at", "summary", "tags", "confidence", "canonical_url", "seo"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^issue-\\d{4}-\\d{2}$" },
+    "slug": { "type": "string" },
+    "title": { "type": "string" },
+    "status": { "type": "string", "enum": ["draft", "scheduled", "published", "corrected"] },
+    "published_at": { "type": "string", "format": "date-time" },
+    "updated_at": { "type": "string", "format": "date-time" },
+    "summary": { "type": "string", "maxLength": 220 },
+    "tags": { "type": "array", "items": { "type": "string" }, "minItems": 3, "maxItems": 7 },
+    "confidence": { "type": "string", "enum": ["low", "medium", "high"] },
+    "canonical_url": { "type": "string", "format": "uri" },
+    "seo": {
+      "type": "object",
+      "required": ["meta_title", "meta_description"],
+      "properties": {
+        "meta_title": { "type": "string" },
+        "meta_description": { "type": "string" }
+      }
+    },
+    "source_refs": { "type": "array", "items": { "type": "string" } },
+    "topics": { "type": "array", "items": { "type": "string" } },
+    "playbooks": { "type": "array", "items": { "type": "string" } }
+  }
+}

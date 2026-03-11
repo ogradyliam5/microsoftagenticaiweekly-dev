@@ -1,0 +1,31 @@
+---
+import { NAV_LINKS, SITE_TITLE, isNavActive } from "../pages/_shared";
+
+interface Props {
+  activePath?: string;
+}
+
+const { activePath = "" } = Astro.props;
+---
+
+<header class="site-header">
+  <div class="site-wrap site-header__row">
+    <a class="site-brand" href="/">{SITE_TITLE}</a>
+    <div class="site-header__actions">
+      <nav class="site-nav" aria-label="Primary">
+        {NAV_LINKS.map((link) => (
+          <a
+            class={`site-nav__link ${isNavActive(activePath, link.href) ? "is-active" : ""}`.trim()}
+            href={link.href}
+            aria-current={isNavActive(activePath, link.href) ? "page" : undefined}
+          >
+            {link.label}
+          </a>
+        ))}
+      </nav>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle theme" aria-pressed="false">
+        Theme
+      </button>
+    </div>
+  </div>
+</header>

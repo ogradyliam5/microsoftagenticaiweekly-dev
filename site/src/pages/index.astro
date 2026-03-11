@@ -1,0 +1,90 @@
+---
+import { getCollection } from "astro:content";
+import CtaModule from "../components/CtaModule.astro";
+import HeroPanel from "../components/HeroPanel.astro";
+import IssueCard from "../components/IssueCard.astro";
+import PlaybookCard from "../components/PlaybookCard.astro";
+import TopicTile from "../components/TopicTile.astro";
+import TrustPanel from "../components/TrustPanel.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import {
+  SITE_DESCRIPTION,
+  SITE_TITLE,
+  dateLabel,
+  issuePath,
+  preferPublishedIssues,
+  preferPublishedPlaybooks,
+  preferPublishedTopics,
+  sortIssuesDesc,
+} from "./_shared";
+
+const allIssues = sortIssuesDesc(await getCollection("issues"));
+const issues = preferPublishedIssues(allIssues);
+const topics = preferPublishedTopics(await getCollection("topics"));
+const playbooks = preferPublishedPlaybooks(await getCollection("playbooks"));
+const latest = issues[0] ?? null;
+const latestMeta = latest
+  ? `Latest issue: ${dateLabel(latest.data.published_at)}`
+  : "No issues are available yet.";
+---
+
+<BaseLayout title={SITE_TITLE} description={SITE_DESCRIPTION} activePath="/">
+  <HeroPanel
+    kicker="Weekly briefing"
+    title="Signal-dense Microsoft agentic AI intelligence for delivery teams."
+    summary="Every item is presented as Signal, Mini-abstract, Why click, and Source confidence. Automation drafts; humans approve."
+    meta={latestMeta}
+  >
+    {latest ? (
+      <p class="small-note">
+        Read latest: <a href={issuePath(latest)}>{latest.data.title}</a>
+      </p>
+    ) : null}
+  </HeroPanel>
+
+  <section class="surface-panel">
+    <h2>Latest Issues</h2>
+    <div class="grid-auto">
+      {issues.slice(0, 6).map((issue) => (
+        <IssueCard issue={issue} />
+      ))}
+    </div>
+  </section>
+
+  <section class="grid-two">
+    <section class="surface-panel">
+      <h2>Topics</h2>
+      <div class="stack">
+        {topics.slice(0, 3).map((topic) => (
+          <TopicTile topic={topic} />
+        ))}
+      </div>
+      <p class="small-note"><a href="/topics">Browse all topics</a></p>
+    </section>
+    <section class="surface-panel">
+      <h2>Playbooks</h2>
+      <div class="stack">
+        {playbooks.slice(0, 3).map((playbook) => (
+          <PlaybookCard playbook={playbook} />
+        ))}
+      </div>
+      <p class="small-note"><a href="/playbooks">Browse all playbooks</a></p>
+    </section>
+  </section>
+
+  <TrustPanel
+    title="Trust and provenance"
+    points={[
+      "Approval-first workflow enforced before publish/send.",
+      "Coverage is Microsoft-first with adjacent implementation relevance.",
+      "Each issue records confidence labels and canonical links.",
+    ]}
+  />
+
+  <CtaModule
+    title="Get the weekly briefing"
+    body="Use the subscribe route for delivery setup and verification."
+    href="/subscribe"
+    label="Subscribe"
+  />
+</BaseLayout>

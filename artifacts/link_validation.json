@@ -1,0 +1,570 @@
+{
+  "generated_at": "2026-03-08T16:08:12.839703Z",
+  "issues": [
+    {
+      "file": "site/src/content/issues/issue-001.md",
+      "slug": "issue-001",
+      "status": "published",
+      "links": [
+        "https://www.matthewdevaney.com/video-create-an-mcp-server-and-deploy-to-copilot-studio/",
+        "https://www.matthewdevaney.com/copilot-studio-search-multiline-text-file-dataverse-fields/",
+        "https://nishantrana.me/2026/02/10/renaming-sitemap-display-name-in-dataverse-dynamics-365/",
+        "https://www.powercommunity.com/how-to-build-environment-aware-flows-by-fetching-crm-metadata-dynamically-in-power-automate/",
+        "https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/the-6-pillars-that-will-define-agent-readiness-in-2026/",
+        "https://www.microsoft.com/en-us/power-platform/blog/2026/01/27/announcing-the-public-preview-of-the-new-usage-page-in-the-power-platform-admin-center/"
+      ]
+    },
+    {
+      "file": "site/src/content/issues/issue-002.md",
+      "slug": "issue-002",
+      "status": "published",
+      "links": [
+        "https://www.matthewdevaney.com/video-create-an-mcp-server-and-deploy-to-copilot-studio/",
+        "https://www.matthewdevaney.com/copilot-studio-search-multiline-text-file-dataverse-fields/",
+        "https://www.powercommunity.com/how-to-build-environment-aware-flows-by-fetching-crm-metadata-dynamically-in-power-automate/",
+        "https://nishantrana.me/2026/02/10/renaming-sitemap-display-name-in-dataverse-dynamics-365/",
+        "https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/the-6-pillars-that-will-define-agent-readiness-in-2026/",
+        "https://www.microsoft.com/en-us/power-platform/blog/2026/01/27/announcing-the-public-preview-of-the-new-usage-page-in-the-power-platform-admin-center/"
+      ]
+    },
+    {
+      "file": "site/src/content/issues/issue-003.md",
+      "slug": "issue-003",
+      "status": "published",
+      "links": [
+        "https://learn.microsoft.com/azure/ai-foundry/",
+        "https://www.powercommunity.com/",
+        "https://learn.microsoft.com/azure/ai-services/openai/how-to/content-filters"
+      ]
+    },
+    {
+      "file": "site/src/content/issues/issue-004.md",
+      "slug": "issue-004",
+      "status": "published",
+      "links": [
+        "https://learn.microsoft.com/microsoft-copilot-studio/",
+        "https://www.matthewdevaney.com/",
+        "https://learn.microsoft.com/en-us/azure/foundry/how-to/evaluate-generative-ai-app"
+      ]
+    },
+    {
+      "file": "site/src/content/issues/issue-005.md",
+      "slug": "issue-005",
+      "status": "published",
+      "links": [
+        "https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/the-6-pillars-that-will-define-agent-readiness-in-2026/",
+        "https://www.powercommunity.com/how-to-build-environment-aware-flows-by-fetching-crm-metadata-dynamically-in-power-automate/",
+        "https://www.microsoft.com/en-us/power-platform/blog/2026/01/27/announcing-the-public-preview-of-the-new-usage-page-in-the-power-platform-admin-center/",
+        "https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/the-6-pillars-that-will-define-agent-readiness-in-2026/",
+        "https://www.powercommunity.com/how-to-build-environment-aware-flows-by-fetching-crm-metadata-dynamically-in-power-automate/",
+        "https://www.microsoft.com/en-us/power-platform/blog/2026/01/27/announcing-the-public-preview-of-the-new-usage-page-in-the-power-platform-admin-center/"
+      ]
+    },
+    {
+      "file": "site/src/content/issues/issue-006.md",
+      "slug": "issue-006",
+      "status": "published",
+      "links": [
+        "https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/the-6-pillars-that-will-define-agent-readiness-in-2026/",
+        "https://www.powercommunity.com/how-to-build-environment-aware-flows-by-fetching-crm-metadata-dynamically-in-power-automate/",
+        "https://www.microsoft.com/en-us/power-platform/blog/2026/01/27/announcing-the-public-preview-of-the-new-usage-page-in-the-power-platform-admin-center/"
+      ]
+    },
+    {
+      "file": "site/src/content/issues/issue-007.md",
+      "slug": "issue-007",
+      "status": "published",
+      "links": [
+        "https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/the-6-pillars-that-will-define-agent-readiness-in-2026/",
+        "https://www.powercommunity.com/how-to-build-environment-aware-flows-by-fetching-crm-metadata-dynamically-in-power-automate/",
+        "https://www.microsoft.com/en-us/power-platform/blog/2026/01/27/announcing-the-public-preview-of-the-new-usage-page-in-the-power-platform-admin-center/"
+      ]
+    },
+    {
+      "file": "site/src/content/issues/issue-008.md",
+      "slug": "issue-008",
+      "status": "published",
+      "links": [
+        "https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/the-6-pillars-that-will-define-agent-readiness-in-2026/",
+        "https://www.powercommunity.com/how-to-build-environment-aware-flows-by-fetching-crm-metadata-dynamically-in-power-automate/",
+        "https://www.microsoft.com/en-us/power-platform/blog/2026/01/27/announcing-the-public-preview-of-the-new-usage-page-in-the-power-platform-admin-center/"
+      ]
+    },
+    {
+      "file": "site/src/content/issues/issue-2026-09.md",
+      "slug": "issue-2026-09",
+      "status": "published",
+      "links": [
+        "https://www.karlex.fi/forged-but-valid-how-to-test-api-authentication-and-rbac-safely/#utm_source=rss&utm_medium=rss",
+        "https://dianabirkelbach.wordpress.com/2026/02/28/how-to-make-deep-links-with-code-apps-and-call-them-from-model-driven-apps/",
+        "https://sharepains.com/2026/02/27/connect-your-vibe-coded-apps-with-git/",
+        "https://www.matthewdevaney.com/copilot-studio-generate-powerpoint-file-from-a-template/",
+        "https://michelcarlo.com/2026/03/01/powerfx-formula-columns-to-overcome-some-power-pages-table-permissions-limitations-for-webapi-access-in-power-pages/",
+        "https://forwardforever.com/what-does-vibe-coding-mean-for-low-code-platforms/",
+        "https://meganvwalker.com/show-loading-screen-in-your-custom-page/",
+        "https://meganvwalker.com/calculate-working-day-connector-in-power-automate/",
+        "https://sharepains.com/2026/02/24/migrate-sharepoint-site-designs-and-scripts-to-a-new-tenant/",
+        "https://www.karlex.fi/mastering-power-automate-flows-structure-error-handling-child-flows-and-ai-in-real-projects/#utm_source=rss&utm_medium=rss",
+        "https://www.karlex.fi/autonomous-agents-in-action/#utm_source=rss&utm_medium=rss",
+        "https://devblogs.microsoft.com/microsoft365dev/sharepoint-framework-spfx-roadmap-update-february-2026/",
+        "https://devblogs.microsoft.com/microsoft365dev/increased-control-over-office-add-in-user-experiences/",
+        "https://robquickenden.blog/2026/02/building-ai-agents-nube-to-pro/",
+        "http://aka.ms/MicrosoftSovereignCloudDisconnectedBlog",
+        "https://devblogs.microsoft.com/semantic-kernel/migrate-your-semantic-kernel-and-autogen-projects-to-microsoft-agent-framework-release-candidate/",
+        "https://devblogs.microsoft.com/azure-sql/introducing-budget-bytes/",
+        "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/claude-sonnet-4-6-in-microsoft-foundry-frontier-performance-for-scale/4494873",
+        "https://azure.microsoft.com/en-us/blog/azure-reliability-resiliency-and-recoverability-build-continuity-by-design/",
+        "https://robquickenden.blog/2026/02/writing-better-ai-prompts/",
+        "https://robquickenden.blog/2026/02/new-windows365-devices/",
+        "https://blogs.microsoft.com/blog/2026/02/27/microsoft-and-openai-joint-statement-on-continuing-partnership/",
+        "https://blogs.microsoft.com/blog/2026/02/20/asha-sharma-named-evp-and-ceo-microsoft-gaming/",
+        "https://blogs.microsoft.com/blog/2026/02/18/a-milestone-achievement-in-our-journey-to-carbon-negative/"
+      ]
+    },
+    {
+      "file": "site/src/content/issues/issue-2026-10.md",
+      "slug": "issue-2026-10",
+      "status": "published",
+      "links": [
+        "https://www.karlex.fi/autonomous-agents-in-action/",
+        "https://www.matthewdevaney.com/video-copilot-studio-generate-powerpoint-file-using-a-prompt/",
+        "https://robquickenden.blog/2026/02/building-ai-agents-nube-to-pro/",
+        "https://devblogs.microsoft.com/semantic-kernel/migrate-your-semantic-kernel-and-autogen-projects-to-microsoft-agent-framework-release-candidate/",
+        "https://devblogs.microsoft.com/semantic-kernel/from-local-models-to-agent-workflows-building-a-deep-research-solution-with-microsoft-agent-framework-on-microsoft-foundry-local/",
+        "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/claude-sonnet-4-6-in-microsoft-foundry-frontier-performance-for-scale/4494873",
+        "https://azure.microsoft.com/en-us/blog/the-data-behind-the-design-how-pantone-built-agentic-ai-with-an-ai-ready-database/",
+        "https://robquickenden.blog/2026/02/writing-better-ai-prompts/"
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "url": "http://aka.ms/MicrosoftSovereignCloudDisconnectedBlog",
+      "ok": true,
+      "kind": "ok",
+      "status_code": 200,
+      "error": "",
+      "issues": [
+        "issue-2026-09"
+      ]
+    },
+    {
+      "url": "https://azure.microsoft.com/en-us/blog/azure-reliability-resiliency-and-recoverability-build-continuity-by-design/",
+      "ok": true,
+      "kind": "ok",
+      "status_code": 200,
+      "error": "",
+      "issues": [
+        "issue-2026-09"
+      ]
+    },
+    {
+      "url": "https://azure.microsoft.com/en-us/blog/the-data-behind-the-design-how-pantone-built-agentic-ai-with-an-ai-ready-database/",
+      "ok": true,
+      "kind": "ok",
+      "status_code": 200,
+      "error": "",
+      "issues": [
+        "issue-2026-10"
+      ]
+    },
+    {
+      "url": "https://blogs.microsoft.com/blog/2026/02/18/a-milestone-achievement-in-our-journey-to-carbon-negative/",
+      "ok": true,
+      "kind": "ok",
+      "status_code": 200,
+      "error": "",
+      "issues": [
+        "issue-2026-09"
+      ]
+    },
+    {
+      "url": "https://blogs.microsoft.com/blog/2026/02/20/asha-sharma-named-evp-and-ceo-microsoft-gaming/",
+      "ok": true,
+      "kind": "ok",
+      "status_code": 200,
+      "error": "",
+      "issues": [
+        "issue-2026-09"
+      ]
+    },
+    {
+      "url": "https://blogs.microsoft.com/blog/2026/02/27/microsoft-and-openai-joint-statement-on-continuing-partnership/",
+      "ok": true,
+      "kind": "ok",
+      "status_code": 200,
+      "error": "",
+      "issues": [
+        "issue-2026-09"
+      ]
+    },
+    {
+      "url": "https://devblogs.microsoft.com/azure-sql/introducing-budget-bytes/",
+      "ok": true,
+      "kind": "ok",
+      "status_code": 200,
+      "error": "",
+      "issues": [
+        "issue-2026-09"
+      ]
+    },
+    {
+      "url": "https://devblogs.microsoft.com/microsoft365dev/increased-control-over-office-add-in-user-experiences/",
+      "ok": true,
+      "kind": "ok",
+      "status_code": 200,
+      "error": "",
+      "issues": [
+        "issue-2026-09"
+      ]
+    },
+    {
+      "url": "https://devblogs.microsoft.com/microsoft365dev/sharepoint-framework-spfx-roadmap-update-february-2026/",
+      "ok": true,
+      "kind": "ok",
+      "status_code": 200,
+      "error": "",
+      "issues": [
+        "issue-2026-09"
+      ]
+    },
+    {
+      "url": "https://devblogs.microsoft.com/semantic-kernel/from-local-models-to-agent-workflows-building-a-deep-research-solution-with-microsoft-agent-framework-on-microsoft-foundry-local/",
+      "ok": true,
+      "kind": "ok",
+      "status_code": 200,
+      "error": "",
+      "issues": [
+        "issue-2026-10"
+      ]
+    },
+    {
+      "url": "https://devblogs.microsoft.com/semantic-kernel/migrate-your-semantic-kernel-and-autogen-projects-to-microsoft-agent-framework-release-candidate/",
+      "ok": true,
+      "kind": "ok",
+      "status_code": 200,
+      "error": "",
+      "issues": [
+        "issue-2026-09",
+        "issue-2026-10"
+      ]
+    },
+    {
+      "url": "https://dianabirkelbach.wordpress.com/2026/02/28/how-to-make-deep-links-with-code-apps-and-call-them-from-model-driven-apps/",
+      "ok": true,
+      "kind": "ok",
+      "status_code": 200,
+      "error": "",
+      "issues": [
+        "issue-2026-09"
+      ]
+    },
+    {
+      "url": "https://forwardforever.com/what-does-vibe-coding-mean-for-low-code-platforms/",
+      "ok": true,
+      "kind": "ok",
+      "status_code": 200,
+      "error": "",
+      "issues": [
+        "issue-2026-09"
+      ]
+    },
+    {
+      "url": "https://learn.microsoft.com/azure/ai-foundry/",
+      "ok": true,
+      "kind": "ok",
+      "status_code": 200,
+      "error": "",
+      "issues": [
+        "issue-003"
+      ]
+    },
+    {
+      "url": "https://learn.microsoft.com/azure/ai-services/openai/how-to/content-filters",
+      "ok": true,
+      "kind": "ok",
+      "status_code": 200,
+      "error": "",
+      "issues": [
+        "issue-003"
+      ]
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/how-to/evaluate-generative-ai-app",
+      "ok": true,
+      "kind": "ok",
+      "status_code": 200,
+      "error": "",
+      "issues": [
+        "issue-004"
+      ]
+    },
+    {
+      "url": "https://learn.microsoft.com/microsoft-copilot-studio/",
+      "ok": true,
+      "kind": "ok",
+      "status_code": 200,
+      "error": "",
+      "issues": [
+        "issue-004"
+      ]
+    },
+    {
+      "url": "https://meganvwalker.com/calculate-working-day-connector-in-power-automate/",
+      "ok": true,
+      "kind": "ok",
+      "status_code": 200,
+      "error": "",
+      "issues": [
+        "issue-2026-09"
+      ]
+    },
+    {
+      "url": "https://meganvwalker.com/show-loading-screen-in-your-custom-page/",
+      "ok": true,
+      "kind": "ok",
+      "status_code": 200,
+      "error": "",
+      "issues": [
+        "issue-2026-09"
+      ]
+    },
+    {
+      "url": "https://michelcarlo.com/2026/03/01/powerfx-formula-columns-to-overcome-some-power-pages-table-permissions-limitations-for-webapi-access-in-power-pages/",
+      "ok": true,
+      "kind": "ok",
+      "status_code": 200,
+      "error": "",
+      "issues": [
+        "issue-2026-09"
+      ]
+    },
+    {
+      "url": "https://nishantrana.me/2026/02/10/renaming-sitemap-display-name-in-dataverse-dynamics-365/",
+      "ok": true,
+      "kind": "ok",
+      "status_code": 200,
+      "error": "",
+      "issues": [
+        "issue-001",
+        "issue-002"
+      ]
+    },
+    {
+      "url": "https://robquickenden.blog/2026/02/building-ai-agents-nube-to-pro/",
+      "ok": true,
+      "kind": "ok",
+      "status_code": 200,
+      "error": "",
+      "issues": [
+        "issue-2026-09",
+        "issue-2026-10"
+      ]
+    },
+    {
+      "url": "https://robquickenden.blog/2026/02/new-windows365-devices/",
+      "ok": true,
+      "kind": "ok",
+      "status_code": 200,
+      "error": "",
+      "issues": [
+        "issue-2026-09"
+      ]
+    },
+    {
+      "url": "https://robquickenden.blog/2026/02/writing-better-ai-prompts/",
+      "ok": true,
+      "kind": "ok",
+      "status_code": 200,
+      "error": "",
+      "issues": [
+        "issue-2026-09",
+        "issue-2026-10"
+      ]
+    },
+    {
+      "url": "https://sharepains.com/2026/02/24/migrate-sharepoint-site-designs-and-scripts-to-a-new-tenant/",
+      "ok": true,
+      "kind": "ok",
+      "status_code": 200,
+      "error": "",
+      "issues": [
+        "issue-2026-09"
+      ]
+    },
+    {
+      "url": "https://sharepains.com/2026/02/27/connect-your-vibe-coded-apps-with-git/",
+      "ok": true,
+      "kind": "ok",
+      "status_code": 200,
+      "error": "",
+      "issues": [
+        "issue-2026-09"
+      ]
+    },
+    {
+      "url": "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/claude-sonnet-4-6-in-microsoft-foundry-frontier-performance-for-scale/4494873",
+      "ok": true,
+      "kind": "ok",
+      "status_code": 200,
+      "error": "",
+      "issues": [
+        "issue-2026-09",
+        "issue-2026-10"
+      ]
+    },
+    {
+      "url": "https://www.karlex.fi/autonomous-agents-in-action/",
+      "ok": true,
+      "kind": "ok",
+      "status_code": 200,
+      "error": "",
+      "issues": [
+        "issue-2026-10"
+      ]
+    },
+    {
+      "url": "https://www.karlex.fi/autonomous-agents-in-action/#utm_source=rss&utm_medium=rss",
+      "ok": true,
+      "kind": "ok",
+      "status_code": 200,
+      "error": "",
+      "issues": [
+        "issue-2026-09"
+      ]
+    },
+    {
+      "url": "https://www.karlex.fi/forged-but-valid-how-to-test-api-authentication-and-rbac-safely/#utm_source=rss&utm_medium=rss",
+      "ok": true,
+      "kind": "ok",
+      "status_code": 200,
+      "error": "",
+      "issues": [
+        "issue-2026-09"
+      ]
+    },
+    {
+      "url": "https://www.karlex.fi/mastering-power-automate-flows-structure-error-handling-child-flows-and-ai-in-real-projects/#utm_source=rss&utm_medium=rss",
+      "ok": true,
+      "kind": "ok",
+      "status_code": 200,
+      "error": "",
+      "issues": [
+        "issue-2026-09"
+      ]
+    },
+    {
+      "url": "https://www.matthewdevaney.com/",
+      "ok": true,
+      "kind": "ok",
+      "status_code": 200,
+      "error": "",
+      "issues": [
+        "issue-004"
+      ]
+    },
+    {
+      "url": "https://www.matthewdevaney.com/copilot-studio-generate-powerpoint-file-from-a-template/",
+      "ok": true,
+      "kind": "ok",
+      "status_code": 200,
+      "error": "",
+      "issues": [
+        "issue-2026-09"
+      ]
+    },
+    {
+      "url": "https://www.matthewdevaney.com/copilot-studio-search-multiline-text-file-dataverse-fields/",
+      "ok": true,
+      "kind": "ok",
+      "status_code": 200,
+      "error": "",
+      "issues": [
+        "issue-001",
+        "issue-002"
+      ]
+    },
+    {
+      "url": "https://www.matthewdevaney.com/video-copilot-studio-generate-powerpoint-file-using-a-prompt/",
+      "ok": true,
+      "kind": "ok",
+      "status_code": 200,
+      "error": "",
+      "issues": [
+        "issue-2026-10"
+      ]
+    },
+    {
+      "url": "https://www.matthewdevaney.com/video-create-an-mcp-server-and-deploy-to-copilot-studio/",
+      "ok": true,
+      "kind": "ok",
+      "status_code": 200,
+      "error": "",
+      "issues": [
+        "issue-001",
+        "issue-002"
+      ]
+    },
+    {
+      "url": "https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/the-6-pillars-that-will-define-agent-readiness-in-2026/",
+      "ok": true,
+      "kind": "ok",
+      "status_code": 200,
+      "error": "",
+      "issues": [
+        "issue-001",
+        "issue-002",
+        "issue-005",
+        "issue-006",
+        "issue-007",
+        "issue-008"
+      ]
+    },
+    {
+      "url": "https://www.microsoft.com/en-us/power-platform/blog/2026/01/27/announcing-the-public-preview-of-the-new-usage-page-in-the-power-platform-admin-center/",
+      "ok": true,
+      "kind": "ok",
+      "status_code": 200,
+      "error": "",
+      "issues": [
+        "issue-001",
+        "issue-002",
+        "issue-005",
+        "issue-006",
+        "issue-007",
+        "issue-008"
+      ]
+    },
+    {
+      "url": "https://www.powercommunity.com/",
+      "ok": true,
+      "kind": "ok",
+      "status_code": 200,
+      "error": "",
+      "issues": [
+        "issue-003"
+      ]
+    },
+    {
+      "url": "https://www.powercommunity.com/how-to-build-environment-aware-flows-by-fetching-crm-metadata-dynamically-in-power-automate/",
+      "ok": true,
+      "kind": "ok",
+      "status_code": 200,
+      "error": "",
+      "issues": [
+        "issue-001",
+        "issue-002",
+        "issue-005",
+        "issue-006",
+        "issue-007",
+        "issue-008"
+      ]
+    }
+  ],
+  "summary": {
+    "total": 40,
+    "ok": 40,
+    "warning": 0,
+    "error": 0
+  }
+}

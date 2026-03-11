@@ -1,0 +1,39 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Sources | Microsoft Agentic AI Weekly</title><script>
+      (() => {
+        const key = "maiw-theme";
+        const stored = window.localStorage.getItem(key);
+        const theme = stored === "dark" || stored === "light" ? stored : "light";
+        document.documentElement.setAttribute("data-theme", theme);
+        document.documentElement.classList.toggle("theme-dark", theme === "dark");
+        document.documentElement.classList.toggle("theme-light", theme === "light");
+      })();
+    </script><link rel="stylesheet" href="/_astro/about.Cvl3Svt3.css"></head> <body> <div class="site-shell"> <header class="site-header"> <div class="site-wrap site-header__row"> <a class="site-brand" href="/">Microsoft Agentic AI Weekly</a> <div class="site-header__actions"> <nav class="site-nav" aria-label="Primary"> <a class="site-nav__link" href="/"> Home </a><a class="site-nav__link" href="/latest"> Latest </a><a class="site-nav__link" href="/archive"> Archive </a><a class="site-nav__link" href="/topics"> Topics </a><a class="site-nav__link" href="/playbooks"> Playbooks </a><a class="site-nav__link" href="/about"> Method </a><a class="site-nav__link" href="/subscribe"> Subscribe </a><a class="site-nav__link" href="/corrections"> Corrections </a><a class="site-nav__link is-active" href="/sources" aria-current="page"> Sources </a> </nav> <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle theme" aria-pressed="false">
+Theme
+</button> </div> </div> </header> <main class="site-main"> <div class="site-wrap stack">  <section class="hero-panel fade-up"> <p class="kicker">Sources</p> <h1>Provenance and method references</h1> <p>Method and source-policy surfaces used by the weekly curation pipeline.</p>   </section> <section class="surface-panel trust-panel fade-up"> <h2>Current policy surface</h2> <ul> <li>Method document: Source Selection and Validation Policy</li><li>Policy version: 2.0</li><li>Full methodology page: /about</li> </ul> </section>  </div> </main> <footer class="site-footer"> <div class="site-wrap site-footer__row"> <span>Microsoft Agentic AI Weekly - Approval-first editorial workflow</span> <span> <a href="/feed.xml">RSS</a> - <a href="/corrections">Corrections</a> </span> </div> </footer> </div> <script>
+      (() => {
+        const key = "maiw-theme";
+        const root = document.documentElement;
+        const toggles = Array.from(document.querySelectorAll("[data-theme-toggle]"));
+
+        const applyTheme = (theme) => {
+          root.setAttribute("data-theme", theme);
+          root.classList.toggle("theme-dark", theme === "dark");
+          root.classList.toggle("theme-light", theme === "light");
+          toggles.forEach((toggle) => {
+            toggle.setAttribute("aria-pressed", theme === "dark" ? "true" : "false");
+            toggle.textContent = theme === "dark" ? "Light" : "Dark";
+          });
+        };
+
+        const current = root.getAttribute("data-theme") === "dark" ? "dark" : "light";
+        applyTheme(current);
+
+        toggles.forEach((toggle) => {
+          toggle.addEventListener("click", () => {
+            const next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+            window.localStorage.setItem(key, next);
+            applyTheme(next);
+          });
+        });
+      })();
+    </script> </body> </html>

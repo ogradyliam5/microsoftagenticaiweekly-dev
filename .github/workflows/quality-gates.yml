@@ -1,0 +1,62 @@
+name: quality-gates
+
+on:
+  pull_request:
+    branches:
+      - develop
+      - main
+  push:
+    branches:
+      - develop
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  pipeline-unit-and-snapshot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Generate deterministic sample queue artifacts
+        run: |
+          python scripts/pipeline/make_sample_issue000.py
+          python scripts/pipeline/validate_queue.py --issue-id 000
+          python scripts/pipeline/generate_issue.py --issue-id 000
+          python scripts/pipeline/render_issue_html.py --issue-id 000
+          python scripts/pipeline/run_report.py --issue-id 000
+
+      - name: Run pipeline unit and snapshot tests
+        run: |
+          python -m unittest discover -s tests -p "test_*.py"
+
+  route-and-theme-smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Astro site dependencies
+        run: npm --prefix site ci
+
+      - name: Validate Astro content/schema
+        run: npm --prefix site run check
+
+      - name: Install Playwright browsers
+        run: npx playwright install --with-deps chromium
+
+      - name: Run Playwright smoke suite
+        run: npx playwright test tests/theme-toggle.spec.js tests/nav-integrity.spec.js tests/accessibility.spec.js

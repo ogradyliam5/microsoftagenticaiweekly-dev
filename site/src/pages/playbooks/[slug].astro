@@ -1,0 +1,49 @@
+﻿---
+import { getCollection } from "astro:content";
+import HeroPanel from "../../components/HeroPanel.astro";
+import SignalCard from "../../components/SignalCard.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import {
+  SITE_TITLE,
+  dateLabel,
+  normalizeStatus,
+  preferPublishedPlaybooks,
+} from "../_shared";
+
+export async function getStaticPaths() {
+  const playbooks = preferPublishedPlaybooks(await getCollection("playbooks"));
+  return playbooks.map((playbook) => ({
+    params: { slug: playbook.slug },
+    props: { playbook },
+  }));
+}
+
+const { playbook } = Astro.props;
+const { Content } = await playbook.render();
+---
+
+<BaseLayout title={`${playbook.data.title} | ${SITE_TITLE}`} activePath="/playbooks">
+  <HeroPanel
+    kicker="Playbook"
+    title={playbook.data.title}
+    summary={playbook.data.summary}
+    meta={`Updated ${dateLabel(playbook.data.updated_at)} - Status: ${normalizeStatus(playbook.data.status)}`}
+  />
+
+  <section class="surface-panel fade-up">
+    <Content />
+  </section>
+
+  {playbook.data.checklist?.length ? (
+    <SignalCard title="Checklist" lines={playbook.data.checklist} />
+  ) : null}
+
+  {playbook.data.anti_patterns?.length ? (
+    <SignalCard title="Anti-patterns" lines={playbook.data.anti_patterns} />
+  ) : null}
+
+  {playbook.data.metrics?.length ? (
+    <SignalCard title="Metrics" lines={playbook.data.metrics} />
+  ) : null}
+</BaseLayout>
+

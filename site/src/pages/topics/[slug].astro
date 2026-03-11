@@ -1,0 +1,43 @@
+---
+import { getCollection } from "astro:content";
+import HeroPanel from "../../components/HeroPanel.astro";
+import SignalCard from "../../components/SignalCard.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { SITE_TITLE, normalizeStatus, preferPublishedTopics, topicPath } from "../_shared";
+
+export async function getStaticPaths() {
+  const topics = preferPublishedTopics(await getCollection("topics"));
+  return topics.map((topic) => ({
+    params: { slug: topic.slug },
+    props: { topic },
+  }));
+}
+
+const { topic } = Astro.props;
+const { Content } = await topic.render();
+---
+
+<BaseLayout title={`${topic.data.title} | ${SITE_TITLE}`} activePath="/topics">
+  <HeroPanel
+    kicker="Topic"
+    title={topic.data.title}
+    summary={topic.data.summary}
+    meta={`Status: ${normalizeStatus(topic.data.status)}`}
+  />
+
+  <section class="surface-panel fade-up">
+    <Content />
+  </section>
+
+  <SignalCard
+    title="Related links"
+    lines={[
+      "Back to topics: /topics",
+      `Canonical topic path: ${topicPath(topic)}`,
+      topic.data.related_topics?.length ? `Related topics: ${topic.data.related_topics.join(", ")}` : "Related topics: none",
+      topic.data.related_playbooks?.length
+        ? `Related playbooks: ${topic.data.related_playbooks.join(", ")}`
+        : "Related playbooks: none",
+    ]}
+  />
+</BaseLayout>

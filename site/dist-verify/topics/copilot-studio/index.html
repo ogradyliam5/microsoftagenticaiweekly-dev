@@ -1,0 +1,58 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Copilot Studio and Power Platform Agents | Microsoft Agentic AI Weekly</title><script>
+      (() => {
+        const key = "maiw-theme";
+        const stored = window.localStorage.getItem(key);
+        const theme = stored === "dark" || stored === "light" ? stored : "light";
+        document.documentElement.setAttribute("data-theme", theme);
+        document.documentElement.classList.toggle("theme-dark", theme === "dark");
+        document.documentElement.classList.toggle("theme-light", theme === "light");
+      })();
+    </script><link rel="stylesheet" href="/_astro/about.Cvl3Svt3.css"></head> <body> <div class="site-shell"> <header class="site-header"> <div class="site-wrap site-header__row"> <a class="site-brand" href="/">Microsoft Agentic AI Weekly</a> <div class="site-header__actions"> <nav class="site-nav" aria-label="Primary"> <a class="site-nav__link" href="/"> Home </a><a class="site-nav__link" href="/latest"> Latest </a><a class="site-nav__link" href="/archive"> Archive </a><a class="site-nav__link is-active" href="/topics" aria-current="page"> Topics </a><a class="site-nav__link" href="/playbooks"> Playbooks </a><a class="site-nav__link" href="/about"> Method </a><a class="site-nav__link" href="/subscribe"> Subscribe </a><a class="site-nav__link" href="/corrections"> Corrections </a><a class="site-nav__link" href="/sources"> Sources </a> </nav> <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle theme" aria-pressed="false">
+Theme
+</button> </div> </div> </header> <main class="site-main"> <div class="site-wrap stack">  <section class="hero-panel fade-up"> <p class="kicker">Topic</p> <h1>Copilot Studio and Power Platform Agents</h1> <p>Platform-level patterns for building, governing, and operating Copilot Studio agents in enterprise Microsoft environments.</p> <p class="meta">Status: published</p>  </section> <section class="surface-panel fade-up"> <h1 id="copilot-studio-and-power-platform-agents">Copilot Studio and Power Platform Agents</h1>
+<p>Copilot Studio is the fastest path from idea to production agent in many Microsoft estates. It is also where governance debt appears first when teams ship quickly without shared controls.</p>
+<h2 id="what-matters">What matters</h2>
+<ul>
+<li>Treat Copilot Studio as part of an operating platform, not a standalone low-code tool.</li>
+<li>Standardize connector approvals, tool-permission boundaries, and escalation paths before scale.</li>
+<li>Keep telemetry and evaluation requirements mandatory for every release ring.</li>
+</ul>
+<h2 id="common-failure-modes">Common failure modes</h2>
+<ul>
+<li>Teams publish capabilities without defining runtime ownership and rollback authority.</li>
+<li>Environment promotion steps differ by team, causing drift and incident risk.</li>
+<li>Agent telemetry exists but is not tied to release gates.</li>
+</ul>
+<h2 id="implementation-signals-to-track">Implementation signals to track</h2>
+<ul>
+<li>Reusable environment-aware deployment patterns in Power Platform ALM.</li>
+<li>Stronger permission segmentation for tools and connectors.</li>
+<li>Admin surfaces that improve usage diagnostics and evaluation confidence.</li>
+</ul> </section> <section class="surface-panel signal-card fade-up"> <h3 class="signal-card__title">Related links</h3> <ul> <li>Back to topics: /topics</li><li>Canonical topic path: /topics/copilot-studio</li><li>Related topics: agent-governance, foundry-agents</li><li>Related playbooks: agent-delivery-baseline</li> </ul> </section>  </div> </main> <footer class="site-footer"> <div class="site-wrap site-footer__row"> <span>Microsoft Agentic AI Weekly - Approval-first editorial workflow</span> <span> <a href="/feed.xml">RSS</a> - <a href="/corrections">Corrections</a> </span> </div> </footer> </div> <script>
+      (() => {
+        const key = "maiw-theme";
+        const root = document.documentElement;
+        const toggles = Array.from(document.querySelectorAll("[data-theme-toggle]"));
+
+        const applyTheme = (theme) => {
+          root.setAttribute("data-theme", theme);
+          root.classList.toggle("theme-dark", theme === "dark");
+          root.classList.toggle("theme-light", theme === "light");
+          toggles.forEach((toggle) => {
+            toggle.setAttribute("aria-pressed", theme === "dark" ? "true" : "false");
+            toggle.textContent = theme === "dark" ? "Light" : "Dark";
+          });
+        };
+
+        const current = root.getAttribute("data-theme") === "dark" ? "dark" : "light";
+        applyTheme(current);
+
+        toggles.forEach((toggle) => {
+          toggle.addEventListener("click", () => {
+            const next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+            window.localStorage.setItem(key, next);
+            applyTheme(next);
+          });
+        });
+      })();
+    </script> </body> </html>

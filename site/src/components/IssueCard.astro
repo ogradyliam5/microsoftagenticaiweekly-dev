@@ -1,0 +1,25 @@
+---
+import type { CollectionEntry } from "astro:content";
+import { dateLabel, issuePath, normalizeStatus } from "../pages/_shared";
+
+interface Props {
+  issue: CollectionEntry<"issues">;
+}
+
+const { issue } = Astro.props;
+---
+
+<article class="card issue-card fade-up">
+  <p class="meta">{dateLabel(issue.data.published_at)}</p>
+  <h3 class="issue-card__title">
+    <a href={issuePath(issue)}>{issue.data.title}</a>
+  </h3>
+  <p>{issue.data.summary}</p>
+  <p class="small-note">
+    <span class={`pill ${issue.data.status !== "published" ? "warn" : ""}`.trim()}>
+      {normalizeStatus(issue.data.status)}
+    </span>
+    <span class="pill">confidence: {issue.data.confidence}</span>
+  </p>
+</article>
+

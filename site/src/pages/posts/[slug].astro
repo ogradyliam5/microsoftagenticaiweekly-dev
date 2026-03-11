@@ -1,0 +1,70 @@
+﻿---
+import { getCollection } from "astro:content";
+import HeroPanel from "../../components/HeroPanel.astro";
+import SignalCard from "../../components/SignalCard.astro";
+import TrustPanel from "../../components/TrustPanel.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import {
+  SITE_TITLE,
+  dateLabel,
+  issuePath,
+  normalizeStatus,
+  preferPublishedIssues,
+} from "../_shared";
+
+export async function getStaticPaths() {
+  const issues = preferPublishedIssues(await getCollection("issues"));
+  return issues.map((issue) => ({
+    params: { slug: issue.slug },
+    props: { issue },
+  }));
+}
+
+const { issue } = Astro.props;
+const { Content } = await issue.render();
+const metadataLines = [
+  `Published: ${dateLabel(issue.data.published_at)}`,
+  `Updated: ${dateLabel(issue.data.updated_at)}`,
+  `Status: ${normalizeStatus(issue.data.status)}`,
+  `Confidence: ${issue.data.confidence}`,
+  `Slug: ${issue.slug}`,
+  `Canonical issue path: ${issuePath(issue)}`,
+];
+---
+
+<BaseLayout
+  title={`${issue.data.title} | ${SITE_TITLE}`}
+  description={issue.data.seo.meta_description}
+  activePath="/archive"
+>
+  <link rel="canonical" href={issue.data.canonical_url} slot="head" />
+  <HeroPanel
+    kicker="Issue"
+    title={issue.data.title}
+    summary={issue.data.summary}
+    meta={`Published ${dateLabel(issue.data.published_at)} - Updated ${dateLabel(issue.data.updated_at)}`}
+  >
+    <p class="small-note">
+      <span class={`pill ${issue.data.status !== "published" ? "warn" : ""}`.trim()}>
+        {normalizeStatus(issue.data.status)}
+      </span>
+      <span class="pill">confidence: {issue.data.confidence}</span>
+    </p>
+  </HeroPanel>
+
+  <section class="surface-panel fade-up">
+    <Content />
+  </section>
+
+  <SignalCard title="Issue metadata" lines={metadataLines} />
+
+  <TrustPanel
+    title="Issue linkage"
+    points={[
+      issue.data.tags.length ? `Tags: ${issue.data.tags.join(", ")}` : "Tags: none",
+      issue.data.topics?.length ? `Topics: ${issue.data.topics.join(", ")}` : "Topics: none",
+      issue.data.playbooks?.length ? `Playbooks: ${issue.data.playbooks.join(", ")}` : "Playbooks: none",
+    ]}
+  />
+</BaseLayout>
+

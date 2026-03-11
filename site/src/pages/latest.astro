@@ -1,0 +1,14 @@
+---
+import { getCollection } from "astro:content";
+import { preferPublishedIssues, sortIssuesDesc } from "./_shared";
+
+const allIssues = sortIssuesDesc(await getCollection("issues"));
+const issues = preferPublishedIssues(allIssues);
+const latest = issues[0];
+
+if (!latest) {
+  throw new Response("No issues found", { status: 404 });
+}
+
+return Astro.redirect(`/posts/${latest.slug}`, 302);
+---

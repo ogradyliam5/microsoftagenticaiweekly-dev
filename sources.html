@@ -1,87 +1,15 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script>
-    (function () {
-      var key = 'maiw-theme';
-      var theme = 'dark';
-      try {
-        var stored = localStorage.getItem(key);
-        if (stored === 'light' || stored === 'dark') {
-          theme = stored;
-        } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-          theme = 'dark';
-        } else {
-          theme = 'light';
-        }
-      } catch (e) {}
-      var root = document.documentElement;
-      root.setAttribute('data-theme', theme);
-      root.classList.remove('theme-dark', 'theme-light');
-      root.classList.add(theme === 'dark' ? 'theme-dark' : 'theme-light');
-      root.style.colorScheme = theme;
-    })();
-  </script>
-  <title>Sources & Method — Microsoft Agentic AI Weekly</title>
-  <meta name="description" content="Sourcing method and verification standards used in Microsoft Agentic AI Weekly." />
-  <link rel="stylesheet" href="assets/legacy.css?v=20260306" />
-  <link rel="stylesheet" href="assets/theme-shared.css?v=20260306" />
+  <title>Moved: Microsoft Agentic AI Weekly</title>
+  <meta http-equiv="refresh" content="0; url=/sources" />
+  <link rel="canonical" href="/sources" />
+  <meta name="robots" content="noindex,follow" />
+  <script>window.location.replace('/sources');</script>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <a class="brand" href="index.html">Microsoft Agentic AI Weekly</a>
-      <nav class="nav">
-        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle color mode">🌙 Dark</button>
-        <a href="index.html">Home</a>
-        <a href="posts/issue-008.html">Latest Issue</a>
-        <a href="archive.html">Archive</a>
-        <a class="active" href="sources.html">Sources</a>
-        <a href="about.html">About</a>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <div class="container grid">
-      <section class="panel">
-        <p class="kicker">Method</p>
-        <h1>Sources, verification, and weighting model</h1>
-        <p>We intentionally blend official Microsoft updates with independent implementation evidence to reduce blind spots and increase operational usefulness.</p>
-      </section>
-
-      <section class="grid two">
-        <article class="signal-card">
-          <h3>Source mix target</h3>
-          <ul>
-            <li>~60% independent/community technical analysis</li>
-            <li>~40% official Microsoft announcements and documentation</li>
-          </ul>
-          <p class="small">Independent/official ratio can flex per week depending on signal quality.</p>
-        </article>
-        <article class="signal-card">
-          <h3>Verification labels</h3>
-          <ul>
-            <li><strong>Official</strong> — primary Microsoft source</li>
-            <li><strong>Reputable community</strong> — known expert with reproducible detail</li>
-            <li><strong>Early signal</strong> — plausible but requires validation</li>
-          </ul>
-        </article>
-      </section>
-
-      <section class="panel">
-        <h3>Change control</h3>
-        <p>Tracked sources are maintained in <code>data/sources.json</code>. Adding/removing tracked feeds requires human approval before merge.</p>
-        <p>Source suggestion: <a href="mailto:hello@microsoftagenticaiweekly.com?subject=Source%20Suggestion">hello@microsoftagenticaiweekly.com</a></p>
-      </section>
-    </div>
-  </main>
-
-  <footer class="footer">
-    <div class="container">© 2026 Microsoft Agentic AI Weekly · <a href="corrections.html">Corrections policy</a></div>
-  </footer>
-  <script src="assets/theme.js?v=20260306"></script>
+  <p>This page moved to <a href="/sources">/sources</a>.</p>
 </body>
 </html>

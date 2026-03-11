@@ -1,37 +1,60 @@
-# Microsoft Agentic AI Weekly — Issue [YYYY-WW]
+﻿# Issue Template - v2
 
-**Published:** [Day, DD Month YYYY]
-**Coverage window (UTC):** [YYYY-MM-DDThh:mm:ss+00:00] to [YYYY-MM-DDThh:mm:ss+00:00] (end exclusive)
+Use this template for issue content in the overhaul format.
 
-## What changed this week
-[One short setup line. Keep it practical and focused on agentic AI delivery impact.]
-
-## Power Platform
-### [Headline]
-- Microsoft / [Creator]: [one-line impact tied to Copilot Studio, Power Apps, Dataverse, automation, or governance]. [Read source](URL)
-
-## M365
-### [Headline]
-- Microsoft / [Creator]: [one-line impact tied to Microsoft 365 Copilot, Teams AI, Graph automation, or governance]. [Read source](URL)
-
-## Microsoft Foundry
-### [Headline]
-- Microsoft / [Creator]: [one-line impact tied to Foundry, Azure AI, agents, evaluation, orchestration, or guardrails]. [Read source](URL)
-
-## Everything else
-### [Headline]
-- Microsoft / [Creator]: [one-line impact; include only if still useful for AI builders]. [Read source](URL)
-
-## Builder takeaway
-[One short practical instruction for next week’s planning.]
-
-## Corrections
-If you spot an error or context miss, email [address].
-
+```md
+---
+id: issue-YYYY-WW
+slug: issue-YYYY-WW
+title: "Week of DD Mon YYYY"
+status: draft
+published_at: "YYYY-MM-DDTHH:MM:SSZ"
+updated_at: "YYYY-MM-DDTHH:MM:SSZ"
+summary: "One-sentence issue summary."
+tags:
+  - copilot-studio
+  - azure-ai-foundry
+confidence: medium
+canonical_url: "https://microsoftagenticaiweekly.com/posts/issue-YYYY-WW"
+seo:
+  meta_title: "Microsoft Agentic AI Weekly - Week of DD Mon YYYY"
+  meta_description: "High-signal Microsoft-first weekly briefing."
 ---
 
-Rules:
-- Single weekly digest only.
-- Exactly 4 sections (Power Platform, M365, Microsoft Foundry, Everything else).
-- No repeated items across sections (each item appears once only).
-- Prefer agentic AI/Copilot/Foundry/automation/governance relevance; exclude weakly related posts.
+# Week of DD Mon YYYY
+
+## Executive summary
+- Bullet 1
+- Bullet 2
+- Bullet 3
+
+## Signals
+
+### Signal title
+- Signal: one sentence describing what changed.
+- Mini-abstract: up to two concise sentences.
+- Why click: one sentence on why the source is worth opening.
+- Source confidence: official | reputable community | early signal.
+- Source: [Publisher - Article title](https://example.com)
+
+### Signal title
+- Signal: ...
+- Mini-abstract: ...
+- Why click: ...
+- Source confidence: ...
+- Source: [...](...)
+
+## Related topics
+- Topic link
+
+## Related playbooks
+- Playbook link
+
+## Corrections
+If you spot an error, open a correction request via the corrections page.
+```
+
+## Rules
+- Keep mini-abstracts concise and non-repetitive.
+- Do not use role-based directive language.
+- Every signal must include a source link and confidence label.

@@ -1,10 +1,10 @@
 const { test, expect } = require('@playwright/test');
 
 const pages = [
-  { name: 'index', path: '/index.html' },
-  { name: 'archive', path: '/archive.html' },
-  { name: 'latest-post', path: '/posts/issue-2026-10.html' },
-  { name: 'older-post', path: '/posts/issue-001.html' }
+  { name: 'home', path: '/' },
+  { name: 'archive', path: '/archive' },
+  { name: 'about', path: '/about' },
+  { name: 'older-post', path: '/posts/issue-001' }
 ];
 
 async function currentTheme(page) {
@@ -42,7 +42,7 @@ test.describe('theme toggle and persistence', () => {
   }
 });
 
-test('shared header visuals match between home and post pages in both modes', async ({ page }) => {
+test('shared header visuals match between home and issue pages in both modes', async ({ page }) => {
   async function headerSnapshot(path, theme) {
     await page.goto(path);
     await page.evaluate((t) => {
@@ -56,7 +56,7 @@ test('shared header visuals match between home and post pages in both modes', as
     return page.evaluate(() => {
       const header = document.querySelector('header.sticky, header.site-header');
       const toggle = document.querySelector('[data-theme-toggle]');
-      const navLink = document.querySelector('header nav a');
+      const navLink = document.querySelector('header nav a[href="/topics"]');
       const csHeader = getComputedStyle(header);
       const csToggle = getComputedStyle(toggle);
       const csNavLink = getComputedStyle(navLink);
@@ -71,8 +71,8 @@ test('shared header visuals match between home and post pages in both modes', as
   }
 
   for (const theme of ['light', 'dark']) {
-    const home = await headerSnapshot('/index.html', theme);
-    const post = await headerSnapshot('/posts/issue-2026-10.html', theme);
+    const home = await headerSnapshot('/', theme);
+    const post = await headerSnapshot('/posts/issue-001', theme);
 
     expect(home).toEqual(post);
   }

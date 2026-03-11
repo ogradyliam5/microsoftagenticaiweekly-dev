@@ -1,0 +1,31 @@
+---
+import CtaModule from "../components/CtaModule.astro";
+import HeroPanel from "../components/HeroPanel.astro";
+import SignalCard from "../components/SignalCard.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { SITE_TITLE } from "./_shared";
+---
+
+<BaseLayout title={`Subscribe | ${SITE_TITLE}`} activePath="/subscribe">
+  <HeroPanel
+    kicker="Subscribe"
+    title="Get the weekly briefing"
+    summary="Delivery is approval-first. Drafts are generated automatically and sent only after manual sign-off."
+  />
+
+  <SignalCard
+    title="Subscription path"
+    lines={[
+      "Use the production newsletter form after launch.",
+      "Confirm your email via provider verification.",
+      "Receive one curated issue per week (default Monday cycle).",
+    ]}
+  />
+
+  <CtaModule
+    title="Interim request channel"
+    body="Until provider wiring is finalized, send a subscribe request via email."
+    href="mailto:ogradyliam5@gmail.com?subject=MAIW%20Subscribe%20Request"
+    label="Email request"
+  />
+</BaseLayout>

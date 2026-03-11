@@ -1,94 +1,15 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script>
-    (function () {
-      var key = 'maiw-theme';
-      var theme = 'dark';
-      try {
-        var stored = localStorage.getItem(key);
-        if (stored === 'light' || stored === 'dark') {
-          theme = stored;
-        } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-          theme = 'dark';
-        } else {
-          theme = 'light';
-        }
-      } catch (e) {}
-      var root = document.documentElement;
-      root.setAttribute('data-theme', theme);
-      root.classList.remove('theme-dark', 'theme-light');
-      root.classList.add(theme === 'dark' ? 'theme-dark' : 'theme-light');
-      root.style.colorScheme = theme;
-    })();
-  </script>
-  <title>Week of 5 Jan 2026 — From MCP deployment patterns to admin telemetry</title>
-  <meta name="description" content="Week of 5 Jan 2026: operational signals for Microsoft agent teams, including MCP deployment patterns and admin telemetry." />
-  <link rel="stylesheet" href="../assets/legacy.css?v=20260306" />
-  <link rel="stylesheet" href="../assets/theme-shared.css?v=20260306" />
+  <title>Moved: Microsoft Agentic AI Weekly</title>
+  <meta http-equiv="refresh" content="0; url=/posts/issue-001" />
+  <link rel="canonical" href="/posts/issue-001" />
+  <meta name="robots" content="noindex,follow" />
+  <script>window.location.replace('/posts/issue-001');</script>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <a class="brand" href="../index.html">Microsoft Agentic AI Weekly</a>
-      <nav class="nav">
-        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle color mode">🌙 Dark</button>
-        <a href="../index.html">Home</a><a class="active" href="../archive.html">Archive</a><a href="../about.html">Methodology</a><a href="../about.html">About</a>
-      </nav>
-    </div>
-  </header>
-  <main>
-    <div class="container issue-layout">
-      <article>
-        <p class="kicker">Week of 5 Jan 2026 · Sun 04 Jan 2026 · 21:00 Europe/London · 8 min read</p>
-        <h1>From MCP deployment patterns to admin telemetry: what Microsoft agent teams should operationalize now</h1>
-        <p class="meta">Audience: Builder · Platform Owner · Leader</p>
-
-        <section class="panel" id="summary">
-          <h2>Executive summary</h2>
-          <ul>
-            <li>Teams moving fastest have standardized tool contracts before scaling agent count.</li>
-            <li>Grounding quality and observability are now the main blockers, not model access.</li>
-            <li>Admin telemetry features are becoming core for proving adoption and risk posture.</li>
-          </ul>
-        </section>
-
-        <h2 id="signals">What changed this week</h2>
-        <section class="grid">
-          <article class="signal-card"><span class="badge high">Adopt</span><span class="badge">Confidence: Reputable community</span><h3>MCP server deployment pattern into Copilot Studio</h3><p><strong>The community published:</strong> Repeatable tool integration cuts cycle time and lowers runtime surprises.</p><p class="small">Best fit for Builder, Platform Owner.</p><p class="small"><a href="https://www.matthewdevaney.com/video-create-an-mcp-server-and-deploy-to-copilot-studio/">Primary source</a></p></article>
-          <article class="signal-card"><span class="badge medium">Pilot</span><span class="badge">Confidence: Reputable community</span><h3>Dataverse multiline and file-field search grounding pattern</h3><p><strong>The community published:</strong> Better retrieval coverage boosts answer quality for enterprise knowledge workflows.</p><p class="small">Best fit for Builder.</p><p class="small"><a href="https://www.matthewdevaney.com/copilot-studio-search-multiline-text-file-dataverse-fields/">Primary source</a></p></article>
-          <article class="signal-card"><span class="badge watch">Watch</span><span class="badge">Confidence: Official</span><h3>Power Platform admin center usage page public preview</h3><p><strong>Microsoft updated:</strong> Teams can quantify adoption and detect capability drift earlier.</p><p class="small">Best fit for Platform Owner, Leader.</p><p class="small"><a href="https://www.microsoft.com/en-us/power-platform/blog/2026/01/27/announcing-the-public-preview-of-the-new-usage-page-in-the-power-platform-admin-center/">Primary source</a></p></article>
-        </section>
-
-        <h2 id="build-next">Build next (next 7 days)</h2>
-        <div class="panel">
-          <ol>
-            <li>Define one MCP contract standard (naming, auth, retries, timeout budget).</li>
-            <li>Add a retrieval quality smoke test before each release (10 canonical queries).</li>
-            <li>Publish a weekly telemetry note: active users, success rate, fallback rate.</li>
-          </ol>
-        </div>
-
-        <h2 id="governance">Risks and caveats</h2>
-        <div class="signal-card">
-          <ul>
-            <li>Community patterns may omit enterprise controls (key rotation, DLP, tenant boundary checks).</li>
-            <li>Public preview metrics can change semantics—treat trend direction as signal, not absolute truth.</li>
-          </ul>
-        </div>
-      </article>
-      <aside class="sidebar panel">
-        <h3>Issue controls</h3>
-        <p class="small">Action bias: ship safely, then scale.</p>
-        <p><a href="#summary">Summary</a><br><a href="#signals">Signals</a><br><a href="#build-next">Build next</a><br><a href="#governance">Risks</a></p>
-        <hr class="sep">
-        <p class="small">Approval-first: draft assembled automatically; publication requires human approval.</p>
-      </aside>
-    </div>
-  </main>
-  <footer class="footer"><div class="container">© 2026 Microsoft Agentic AI Weekly</div></footer>
-  <script src="../assets/theme.js?v=20260306"></script>
+  <p>This issue moved to <a href="/posts/issue-001">/posts/issue-001</a>.</p>
 </body>
 </html>

@@ -1,0 +1,18 @@
+﻿---
+interface Props {
+  siteTitle: string;
+}
+
+const { siteTitle } = Astro.props;
+---
+
+<footer class="site-footer">
+  <div class="site-wrap site-footer__row">
+    <span>{siteTitle} - Approval-first editorial workflow</span>
+    <span>
+      <a href="/feed.xml">RSS</a> - <a href="/corrections">Corrections</a>
+    </span>
+  </div>
+</footer>
+
+

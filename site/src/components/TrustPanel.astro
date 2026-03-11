@@ -1,0 +1,18 @@
+---
+interface Props {
+  title: string;
+  points: string[];
+}
+
+const { title, points } = Astro.props;
+---
+
+<section class="surface-panel trust-panel fade-up">
+  <h2>{title}</h2>
+  <ul>
+    {points.map((point) => (
+      <li>{point}</li>
+    ))}
+  </ul>
+</section>
+

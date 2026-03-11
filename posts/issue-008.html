@@ -1,57 +1,15 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script>
-    (function () {
-      var key = 'maiw-theme';
-      var theme = 'dark';
-      try {
-        var stored = localStorage.getItem(key);
-        if (stored === 'light' || stored === 'dark') {
-          theme = stored;
-        } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-          theme = 'dark';
-        } else {
-          theme = 'light';
-        }
-      } catch (e) {}
-      var root = document.documentElement;
-      root.setAttribute('data-theme', theme);
-      root.classList.remove('theme-dark', 'theme-light');
-      root.classList.add(theme === 'dark' ? 'theme-dark' : 'theme-light');
-      root.style.colorScheme = theme;
-    })();
-  </script>
-  <title>Week of 23 Feb 2026 — Platform teams standardize agent delivery: reusable patterns, guardrail kits, and operating SLAs</title>
-  <meta name="description" content="Week of 23 Feb 2026: standard delivery patterns, reusable guardrails, and service-level expectations for Microsoft agent platforms." />
-  <link rel="stylesheet" href="../assets/legacy.css?v=20260306" />
-  <link rel="stylesheet" href="../assets/theme-shared.css?v=20260306" />
+  <title>Moved: Microsoft Agentic AI Weekly</title>
+  <meta http-equiv="refresh" content="0; url=/posts/issue-008" />
+  <link rel="canonical" href="/posts/issue-008" />
+  <meta name="robots" content="noindex,follow" />
+  <script>window.location.replace('/posts/issue-008');</script>
 </head>
 <body>
-  <header class="site-header"><div class="container"><a class="brand" href="../index.html">Microsoft Agentic AI Weekly</a><nav class="nav">
-        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle color mode">🌙 Dark</button><a href="../index.html">Home</a><a class="active" href="../archive.html">Archive</a><a href="../about.html">Methodology</a><a href="../about.html">About</a></nav></div></header>
-  <main><div class="container issue-layout"><article>
-    <p class="kicker">Week of 23 Feb 2026 · Sun 22 Feb 2026 · 21:00 Europe/London · 11 min read</p>
-    <h1>Platform teams standardize agent delivery: reusable patterns, guardrail kits, and operating SLAs</h1>
-    <section class="panel" id="summary"><h2>Executive summary</h2><ul><li>Enterprises are codifying governance rules into deployment and runtime checks.</li><li>Observability baselines are becoming minimum launch criteria for new agents.</li><li>Teams shipping safely combine platform controls with explicit human escalation paths.</li></ul></section>
-    <h2 id="signals">What changed this week</h2>
-    <section class="grid">
-      <article class="signal-card"><span class="badge high">Adopt</span><span class="badge">Official</span><h3>Copilot Studio readiness and governance framing for 2026</h3><p><strong>Microsoft updated:</strong> Strong executive language to secure budget for governance automation, not just feature work.</p><p class="small">Best fit for Leader, Platform Owner.</p><p class="small"><a href="https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/the-6-pillars-that-will-define-agent-readiness-in-2026/">Source</a></p></article>
-      <article class="signal-card"><span class="badge medium">Pilot</span><span class="badge">Reputable community</span><h3>Environment-aware deployment mechanics for Power Platform artifacts</h3><p><strong>The community published:</strong> Makes policy testing feasible before broad rollout.</p><p class="small">Best fit for Builder, Platform Owner.</p><p class="small"><a href="https://www.powercommunity.com/how-to-build-environment-aware-flows-by-fetching-crm-metadata-dynamically-in-power-automate/">Source</a></p></article>
-      <article class="signal-card"><span class="badge watch">Watch</span><span class="badge">Reputable community</span><h3>Agent telemetry interpretation practices still fragmented</h3><p><strong>The community published:</strong> Without shared definitions, cross-team metrics comparisons remain noisy.</p><p class="small">Best fit for Leader.</p><p class="small"><a href="https://www.microsoft.com/en-us/power-platform/blog/2026/01/27/announcing-the-public-preview-of-the-new-usage-page-in-the-power-platform-admin-center/">Source</a></p></article>
-    </section>
-    <h2 id="deep-dive">Deep dive: operational consistency beats one-off heroics</h2>
-    <div class="panel"><p>The strongest teams are converging on repeatable operating systems: common templates, explicit ownership, and measurable quality bars. Instead of debating standards each sprint, they ship from pre-agreed patterns and focus attention on real exceptions.</p></div>
-    <h2 id="build-next">What to do next (practical)</h2>
-    <div class="signal-card"><ol><li>Define a weekly operator scorecard (incident response readiness, eval coverage, change risk, owner clarity, rollback speed).</li><li>Automate one high-friction handoff this week (build→platform or platform→operations).</li><li>Run a rehearsal for one failure mode and capture lessons in your runbook.</li></ol></div>
-    <h2 id="watchlist">Keep an eye on</h2>
-    <div class="signal-card"><ul><li>Tool-calling permission granularity in Copilot surfaces.</li><li>Cross-tenant audit reporting patterns for enterprise CoEs.</li><li>Standardized eval harnesses tied to release approvals.</li></ul></div>
-    <h2 id="references">References</h2>
-    <div class="panel"><ul><li><a href="https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/the-6-pillars-that-will-define-agent-readiness-in-2026/">Microsoft Copilot Studio blog</a></li><li><a href="https://www.powercommunity.com/how-to-build-environment-aware-flows-by-fetching-crm-metadata-dynamically-in-power-automate/">Power Community tutorial</a></li><li><a href="https://www.microsoft.com/en-us/power-platform/blog/2026/01/27/announcing-the-public-preview-of-the-new-usage-page-in-the-power-platform-admin-center/">Power Platform admin usage preview</a></li></ul></div>
-  </article><aside class="sidebar panel"><h3>Jump links</h3><p><a href="#summary">Summary</a><br><a href="#signals">Signals</a><br><a href="#deep-dive">Deep dive</a><br><a href="#build-next">Build next</a><br><a href="#watchlist">Watchlist</a><br><a href="#references">References</a></p><hr class="sep"><p class="small">Pipeline note: draft creation automated, publication gated by explicit approval.</p></aside></div></main>
-  <footer class="footer"><div class="container">© 2026 Microsoft Agentic AI Weekly</div></footer>
-  <script src="../assets/theme.js?v=20260306"></script>
+  <p>This issue moved to <a href="/posts/issue-008">/posts/issue-008</a>.</p>
 </body>
 </html>

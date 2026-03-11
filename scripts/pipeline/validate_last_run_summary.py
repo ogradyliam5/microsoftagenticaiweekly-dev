@@ -179,7 +179,7 @@ def _validate_run_history_index(summary, run_history):
         mtime_iso = run.get("mtime_iso")
         mtime_dt = _parse_utc_timestamp(mtime_iso, f"run-history index runs[{idx}].mtime_iso")
 
-        expected_mtime_dt = dt.datetime.utcfromtimestamp(mtime)
+        expected_mtime_dt = dt.datetime.fromtimestamp(mtime, dt.timezone.utc).replace(tzinfo=None)
         _assert(
             abs((expected_mtime_dt - mtime_dt).total_seconds()) <= 1.0,
             f"run-history index runs[{idx}].mtime_iso must match mtime within 1 second",
@@ -296,6 +296,16 @@ def validate(summary):
     output_artifact_checks = summary["output_artifact_checks"]
     _assert(isinstance(output_artifacts, dict), "output_artifacts must be an object")
     _assert(isinstance(output_artifact_checks, dict), "output_artifact_checks must be an object")
+
+    _assert(
+        "curation_manifest_json" in output_artifacts,
+        "output_artifacts must include curation_manifest_json",
+    )
+    curation_manifest_path = output_artifacts.get("curation_manifest_json")
+    _assert(
+        isinstance(curation_manifest_path, str) and curation_manifest_path.startswith("artifacts/curation_manifest-"),
+        "output_artifacts.curation_manifest_json has unexpected format",
+    )
 
     for label, path in output_artifacts.items():
         _assert(label in output_artifact_checks, f"output_artifact_checks missing label: {label}")

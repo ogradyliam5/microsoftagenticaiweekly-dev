@@ -1,98 +1,15 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script>
-    (function () {
-      var key = 'maiw-theme';
-      var theme = 'dark';
-      try {
-        var stored = localStorage.getItem(key);
-        if (stored === 'light' || stored === 'dark') {
-          theme = stored;
-        } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-          theme = 'dark';
-        } else {
-          theme = 'light';
-        }
-      } catch (e) {}
-      var root = document.documentElement;
-      root.setAttribute('data-theme', theme);
-      root.classList.remove('theme-dark', 'theme-light');
-      root.classList.add(theme === 'dark' ? 'theme-dark' : 'theme-light');
-      root.style.colorScheme = theme;
-    })();
-  </script>
-  <title>About — Microsoft Agentic AI Weekly</title>
-  <meta name="description" content="Editorial charter and audience promise for Microsoft Agentic AI Weekly." />
-  <link rel="stylesheet" href="assets/legacy.css?v=20260306" />
-  <link rel="stylesheet" href="assets/theme-shared.css?v=20260306" />
+  <title>Moved: Microsoft Agentic AI Weekly</title>
+  <meta http-equiv="refresh" content="0; url=/about" />
+  <link rel="canonical" href="/about" />
+  <meta name="robots" content="noindex,follow" />
+  <script>window.location.replace('/about');</script>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <a class="brand" href="index.html">Microsoft Agentic AI Weekly</a>
-      <nav class="nav">
-        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle color mode">🌙 Dark</button>
-        <a href="index.html">Home</a>
-        <a href="posts/issue-2026-10.html">Latest Issue</a>
-        <a href="archive.html">Archive</a>
-        <a href="about.html">Methodology</a>
-        <a class="active" href="about.html">About</a>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <div class="container grid">
-      <section class="panel">
-        <p class="kicker">Editorial Charter</p>
-        <h1>Decision-useful intelligence for the Microsoft agentic stack.</h1>
-        <p>Microsoft Agentic AI Weekly serves three audiences every week: builders, platform owners, and technical leaders. We prioritize implementation realities over product marketing.</p>
-      </section>
-
-      <section class="grid two">
-        <article class="signal-card">
-          <h3>What we cover</h3>
-          <ul>
-            <li>Copilot Studio, Power Platform, and M365 extensibility patterns</li>
-            <li>Azure AI model/platform shifts with practical implications</li>
-            <li>Security, governance, cost, ALM, and production operations</li>
-            <li>Independent field lessons and community implementation guidance</li>
-          </ul>
-        </article>
-        <article class="signal-card">
-          <h3>How each issue is structured</h3>
-          <ul>
-            <li><strong>Why it matters</strong> in one line</li>
-            <li><strong>Who should care</strong> (Builder / Platform Owner / Leader)</li>
-            <li><strong>Decision context</strong> (concise human summary for fast evaluation)</li>
-            <li><strong>Confidence level</strong> (Official / Reputable / Early signal)</li>
-          </ul>
-        </article>
-      </section>
-
-      <section class="panel">
-        <h3>Trust + provenance at a glance</h3>
-        <ul>
-          <li><strong>Active machine-ingestable sources:</strong> 26</li>
-          <li><strong>Candidate feeds under audit:</strong> 15+</li>
-          <li><strong>Rejected/non-ingestable watchlist:</strong> explicitly tracked with reasons in <code>data/sources.json</code></li>
-        </ul>
-        <p>We removed the dedicated Sources page from primary navigation to reduce clutter. Provenance remains transparent here plus in the repository audit artifacts.</p>
-      </section>
-      <section class="panel">
-        <h3>Approval-first policy (non-negotiable)</h3>
-        <p>Automation prepares source queues and issue drafts. Final publish to the site and newsletter send always require explicit human approval.</p>
-        <p class="meta">Contact: <a href="mailto:hello@microsoftagenticaiweekly.com?subject=Editorial%20query">hello@microsoftagenticaiweekly.com</a></p>
-      </section>
-    </div>
-  </main>
-
-  <footer class="footer">
-    <div class="container">© 2026 Microsoft Agentic AI Weekly</div>
-  </footer>
-  <script src="assets/theme.js?v=20260306"></script>
+  <p>This page moved to <a href="/about">/about</a>.</p>
 </body>
 </html>

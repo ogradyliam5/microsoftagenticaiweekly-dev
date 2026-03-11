@@ -1,0 +1,19 @@
+---
+interface Props {
+  kicker?: string;
+  title: string;
+  summary?: string;
+  meta?: string;
+}
+
+const { kicker, title, summary, meta } = Astro.props;
+---
+
+<section class="hero-panel fade-up">
+  {kicker ? <p class="kicker">{kicker}</p> : null}
+  <h1>{title}</h1>
+  {summary ? <p>{summary}</p> : null}
+  {meta ? <p class="meta">{meta}</p> : null}
+  <slot />
+</section>
+

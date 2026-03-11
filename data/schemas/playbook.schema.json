@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Playbook Content Schema",
+  "type": "object",
+  "required": ["id", "slug", "title", "summary", "status", "updated_at"],
+  "properties": {
+    "id": { "type": "string" },
+    "slug": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+    "title": { "type": "string" },
+    "summary": { "type": "string" },
+    "status": { "type": "string", "enum": ["draft", "published"] },
+    "updated_at": { "type": "string", "format": "date-time" },
+    "checklist": { "type": "array", "items": { "type": "string" } },
+    "anti_patterns": { "type": "array", "items": { "type": "string" } },
+    "metrics": { "type": "array", "items": { "type": "string" } }
+  }
+}

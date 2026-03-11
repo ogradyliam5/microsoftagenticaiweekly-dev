@@ -1,0 +1,22 @@
+---
+interface Props {
+  title: string;
+  lines?: string[];
+}
+
+const { title, lines = [] } = Astro.props;
+---
+
+<section class="surface-panel signal-card fade-up">
+  <h3 class="signal-card__title">{title}</h3>
+  {lines.length ? (
+    <ul>
+      {lines.map((line) => (
+        <li>{line}</li>
+      ))}
+    </ul>
+  ) : (
+    <slot />
+  )}
+</section>
+

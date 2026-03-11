@@ -5,6 +5,7 @@ import json
 import pathlib
 import shutil
 import subprocess
+import sys
 import time
 
 from issue_id_guard import validate_issue_id
@@ -17,10 +18,15 @@ RUN_HISTORY_DIR.mkdir(exist_ok=True)
 RUN_HISTORY_LIMIT = 30
 RUN_HISTORY_INDEX_JSON = RUN_HISTORY_DIR / "index.json"
 RUN_HISTORY_INDEX_MARKDOWN = RUN_HISTORY_DIR / "index.md"
+PYTHON_EXECUTABLE = sys.executable
+
+
+def _relpath(path):
+    return path.relative_to(ROOT).as_posix()
 
 
 def issue_id_today():
-    now = dt.datetime.utcnow()
+    now = dt.datetime.now(dt.timezone.utc)
     y, w, _ = now.isocalendar()
     return f"{y}-{w:02d}"
 
@@ -41,12 +47,15 @@ def _build_output_artifacts(issue_id):
     return {
         "queue_json": f"artifacts/editorial_queue-{issue_id}.json",
         "queue_markdown": f"artifacts/editorial_queue-{issue_id}.md",
+        "curation_manifest_json": f"artifacts/curation_manifest-{issue_id}.json",
         "run_report": f"artifacts/run_report-{issue_id}.md",
         "issue_markdown": f"posts/issue-{issue_id}.md",
         "issue_html": f"posts/issue-{issue_id}.html",
         "email_draft": f"drafts/email-{issue_id}.md",
         "source_audit_json": "artifacts/source_candidate_audit.json",
         "source_audit_markdown": "artifacts/source_candidate_audit.md",
+        "link_validation_json": "artifacts/link_validation.json",
+        "link_validation_markdown": "artifacts/link_validation.md",
         "buttondown_drafts": "artifacts/buttondown_drafts.json",
         "run_summary_json": "artifacts/last_run.json",
         "run_summary_markdown": "artifacts/last_run.md",
@@ -56,16 +65,16 @@ def _build_output_artifacts(issue_id):
 
 
 def _run_step(label, command):
-    started_at = dt.datetime.utcnow()
+    started_at = dt.datetime.now(dt.timezone.utc)
     started_monotonic = time.monotonic()
     subprocess.check_call(command)
-    finished_at = dt.datetime.utcnow()
+    finished_at = dt.datetime.now(dt.timezone.utc)
     return {
         "name": label,
         "status": "ok",
         "command": command,
-        "started_at": started_at.isoformat() + "Z",
-        "finished_at": finished_at.isoformat() + "Z",
+        "started_at": started_at.isoformat().replace("+00:00", "Z"),
+        "finished_at": finished_at.isoformat().replace("+00:00", "Z"),
         "duration_seconds": round(time.monotonic() - started_monotonic, 3),
     }
 
@@ -93,16 +102,16 @@ def _collect_history_runs():
 
 def _write_run_history_index(retained_runs):
     index_payload = {
-        "generated_at": dt.datetime.utcnow().isoformat() + "Z",
+        "generated_at": dt.datetime.now(dt.timezone.utc).isoformat().replace("+00:00", "Z"),
         "retention_limit": RUN_HISTORY_LIMIT,
         "retained_run_count": len(retained_runs),
         "runs": [
             {
                 "stem": run["stem"],
-                "json": str(run["json"].relative_to(ROOT)) if run["json"] else None,
-                "markdown": str(run["md"].relative_to(ROOT)) if run["md"] else None,
+                "json": _relpath(run["json"]) if run["json"] else None,
+                "markdown": _relpath(run["md"]) if run["md"] else None,
                 "mtime": run["mtime"],
-                "mtime_iso": dt.datetime.utcfromtimestamp(run["mtime"]).isoformat() + "Z",
+                "mtime_iso": dt.datetime.fromtimestamp(run["mtime"], dt.timezone.utc).isoformat().replace("+00:00", "Z"),
             }
             for run in retained_runs
         ],
@@ -125,12 +134,14 @@ def _write_run_history_index(retained_runs):
         lines.append("- None")
     else:
         for run in retained_runs:
-            json_path = str(run["json"].relative_to(ROOT)) if run["json"] else "n/a"
-            markdown_path = str(run["md"].relative_to(ROOT)) if run["md"] else "n/a"
+            json_path = _relpath(run["json"]) if run["json"] else "n/a"
+            markdown_path = _relpath(run["md"]) if run["md"] else "n/a"
             lines.append(f"- `{run['stem']}`")
             lines.append(f"  - json: `{json_path}`")
             lines.append(f"  - markdown: `{markdown_path}`")
-            lines.append(f"  - mtime: `{dt.datetime.utcfromtimestamp(run['mtime']).isoformat()}Z`")
+            lines.append(
+                f"  - mtime: `{dt.datetime.fromtimestamp(run['mtime'], dt.timezone.utc).isoformat().replace('+00:00', 'Z')}`"
+            )
 
     RUN_HISTORY_INDEX_MARKDOWN.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
@@ -166,10 +177,10 @@ def _write_run_history_snapshot(issue_id, run_finished_at):
     _write_run_history_index(retained_runs)
 
     return {
-        "json": str(history_json.relative_to(ROOT)),
-        "markdown": str(history_md.relative_to(ROOT)),
-        "index_json": str(RUN_HISTORY_INDEX_JSON.relative_to(ROOT)),
-        "index_markdown": str(RUN_HISTORY_INDEX_MARKDOWN.relative_to(ROOT)),
+        "json": _relpath(history_json),
+        "markdown": _relpath(history_md),
+        "index_json": _relpath(RUN_HISTORY_INDEX_JSON),
+        "index_markdown": _relpath(RUN_HISTORY_INDEX_MARKDOWN),
         "retention_limit": RUN_HISTORY_LIMIT,
         "retained_run_count": len(retained_runs),
         "retained_json_count": retained_json_count,
@@ -179,10 +190,10 @@ def _write_run_history_snapshot(issue_id, run_finished_at):
     }
 
 
-def run(issue_id=None, skip_buttondown=False, skip_source_audit=False, enforce_artifacts=True):
+def run(issue_id=None, skip_buttondown=False, skip_source_audit=False, skip_link_validation=False, enforce_artifacts=True):
     issue_id = issue_id or issue_id_today()
 
-    run_started_at = dt.datetime.utcnow()
+    run_started_at = dt.datetime.now(dt.timezone.utc)
     run_started_monotonic = time.monotonic()
 
     pipeline_status = "ok"
@@ -196,6 +207,7 @@ def run(issue_id=None, skip_buttondown=False, skip_source_audit=False, enforce_a
     required_artifacts = [
         output_artifacts["queue_json"],
         output_artifacts["queue_markdown"],
+        output_artifacts["curation_manifest_json"],
         output_artifacts["run_report"],
         output_artifacts["issue_markdown"],
         output_artifacts["issue_html"],
@@ -208,15 +220,22 @@ def run(issue_id=None, skip_buttondown=False, skip_source_audit=False, enforce_a
             output_artifacts["source_audit_markdown"],
         ])
 
+    if not skip_link_validation:
+        required_artifacts.extend([
+            output_artifacts["link_validation_json"],
+            output_artifacts["link_validation_markdown"],
+        ])
+
     source_audit_status = "skipped"
+    link_validation_status = "skipped"
     buttondown_status = "skipped"
 
     core_steps = [
-        ("build_queue", ["python3", str(ROOT / "scripts/pipeline/build_queue.py"), "--issue-id", issue_id]),
-        ("validate_queue", ["python3", str(ROOT / "scripts/pipeline/validate_queue.py"), "--issue-id", issue_id]),
-        ("generate_issue", ["python3", str(ROOT / "scripts/pipeline/generate_issue.py"), "--issue-id", issue_id]),
-        ("render_issue_html", ["python3", str(ROOT / "scripts/pipeline/render_issue_html.py"), "--issue-id", issue_id]),
-        ("run_report", ["python3", str(ROOT / "scripts/pipeline/run_report.py"), "--issue-id", issue_id]),
+        ("build_queue", [PYTHON_EXECUTABLE, str(ROOT / "scripts/pipeline/build_queue.py"), "--issue-id", issue_id]),
+        ("validate_queue", [PYTHON_EXECUTABLE, str(ROOT / "scripts/pipeline/validate_queue.py"), "--issue-id", issue_id]),
+        ("generate_issue", [PYTHON_EXECUTABLE, str(ROOT / "scripts/pipeline/generate_issue.py"), "--issue-id", issue_id]),
+        ("render_issue_html", [PYTHON_EXECUTABLE, str(ROOT / "scripts/pipeline/render_issue_html.py"), "--issue-id", issue_id]),
+        ("run_report", [PYTHON_EXECUTABLE, str(ROOT / "scripts/pipeline/run_report.py"), "--issue-id", issue_id]),
     ]
 
     try:
@@ -224,44 +243,64 @@ def run(issue_id=None, skip_buttondown=False, skip_source_audit=False, enforce_a
             step_results.append(_run_step(label, command))
 
         if not skip_source_audit:
-            command = ["python3", str(ROOT / "scripts/pipeline/source_candidate_audit.py")]
-            started_at = dt.datetime.utcnow()
+            command = [PYTHON_EXECUTABLE, str(ROOT / "scripts/pipeline/source_candidate_audit.py")]
+            started_at = dt.datetime.now(dt.timezone.utc)
             started_monotonic = time.monotonic()
             rc = subprocess.call(command)
-            finished_at = dt.datetime.utcnow()
+            finished_at = dt.datetime.now(dt.timezone.utc)
             source_audit_status = "ok" if rc == 0 else f"failed_exit_{rc}"
             step_results.append({
                 "name": "source_candidate_audit",
                 "status": source_audit_status,
                 "command": command,
-                "started_at": started_at.isoformat() + "Z",
-                "finished_at": finished_at.isoformat() + "Z",
+                "started_at": started_at.isoformat().replace("+00:00", "Z"),
+                "finished_at": finished_at.isoformat().replace("+00:00", "Z"),
+                "duration_seconds": round(time.monotonic() - started_monotonic, 3),
+            })
+
+        if not skip_link_validation:
+            command = [
+                PYTHON_EXECUTABLE,
+                str(ROOT / "scripts/pipeline/validate_issue_links.py"),
+                "--allow-warnings",
+            ]
+            started_at = dt.datetime.now(dt.timezone.utc)
+            started_monotonic = time.monotonic()
+            rc = subprocess.call(command)
+            finished_at = dt.datetime.now(dt.timezone.utc)
+            link_validation_status = "ok" if rc == 0 else f"failed_exit_{rc}"
+            step_results.append({
+                "name": "validate_issue_links",
+                "status": link_validation_status,
+                "command": command,
+                "started_at": started_at.isoformat().replace("+00:00", "Z"),
+                "finished_at": finished_at.isoformat().replace("+00:00", "Z"),
                 "duration_seconds": round(time.monotonic() - started_monotonic, 3),
             })
 
         draft_path = ROOT / "drafts" / f"email-{issue_id}.md"
         if draft_path.exists() and not skip_buttondown:
             command = [
-                "python3",
+                PYTHON_EXECUTABLE,
                 str(ROOT / "scripts/pipeline/buttondown_draft.py"),
                 "--issue-id",
                 issue_id,
                 "--subject",
-                f"Microsoft Agentic AI Weekly — Issue {issue_id}",
+                f"Microsoft Agentic AI Weekly - Issue {issue_id}",
                 "--body-file",
                 str(draft_path),
             ]
-            started_at = dt.datetime.utcnow()
+            started_at = dt.datetime.now(dt.timezone.utc)
             started_monotonic = time.monotonic()
             rc = subprocess.call(command)
-            finished_at = dt.datetime.utcnow()
+            finished_at = dt.datetime.now(dt.timezone.utc)
             buttondown_status = "ok" if rc == 0 else f"failed_exit_{rc}"
             step_results.append({
                 "name": "buttondown_draft",
                 "status": buttondown_status,
                 "command": command,
-                "started_at": started_at.isoformat() + "Z",
-                "finished_at": finished_at.isoformat() + "Z",
+                "started_at": started_at.isoformat().replace("+00:00", "Z"),
+                "finished_at": finished_at.isoformat().replace("+00:00", "Z"),
                 "duration_seconds": round(time.monotonic() - started_monotonic, 3),
             })
 
@@ -272,13 +311,13 @@ def run(issue_id=None, skip_buttondown=False, skip_source_audit=False, enforce_a
             "command": exc.cmd,
             "exit_code": exc.returncode,
         }
-        failed_at = dt.datetime.utcnow()
+        failed_at = dt.datetime.now(dt.timezone.utc)
         step_results.append({
             "name": failed_step["name"],
             "status": f"failed_exit_{exc.returncode}",
             "command": exc.cmd,
             "started_at": None,
-            "finished_at": failed_at.isoformat() + "Z",
+            "finished_at": failed_at.isoformat().replace("+00:00", "Z"),
             "duration_seconds": None,
         })
 
@@ -292,19 +331,20 @@ def run(issue_id=None, skip_buttondown=False, skip_source_audit=False, enforce_a
     }
     missing_artifacts = [path for path, exists in artifact_checks.items() if not exists]
 
-    run_finished_at = dt.datetime.utcnow()
+    run_finished_at = dt.datetime.now(dt.timezone.utc)
 
     summary = {
         "issue_id": issue_id,
-        "generated_at": run_finished_at.isoformat() + "Z",
-        "run_started_at": run_started_at.isoformat() + "Z",
-        "run_finished_at": run_finished_at.isoformat() + "Z",
+        "generated_at": run_finished_at.isoformat().replace("+00:00", "Z"),
+        "run_started_at": run_started_at.isoformat().replace("+00:00", "Z"),
+        "run_finished_at": run_finished_at.isoformat().replace("+00:00", "Z"),
         "run_duration_seconds": round(time.monotonic() - run_started_monotonic, 3),
         "pipeline_status": pipeline_status,
         "failed_step": failed_step,
         "step_results": step_results,
         "buttondown": buttondown_status,
         "source_candidate_audit": source_audit_status,
+        "link_validation": link_validation_status,
         "artifact_check": "ok" if not missing_artifacts else "missing_artifacts",
         "missing_artifacts": missing_artifacts,
         "artifacts": required_artifacts,
@@ -317,7 +357,7 @@ def run(issue_id=None, skip_buttondown=False, skip_source_audit=False, enforce_a
     def write_latest_summary_files(summary_payload):
         (ART / "last_run.json").write_text(json.dumps(summary_payload, indent=2), encoding="utf-8")
         markdown_rc_local = subprocess.call([
-            "python3",
+            PYTHON_EXECUTABLE,
             str(ROOT / "scripts/pipeline/run_summary_markdown.py"),
             "--input",
             str(ART / "last_run.json"),
@@ -360,11 +400,13 @@ if __name__ == "__main__":
     ap.add_argument("--issue-id", help="Override ISO week issue id (YYYY-WW).")
     ap.add_argument("--skip-buttondown", action="store_true", help="Generate site/email artifacts without Buttondown draft API call.")
     ap.add_argument("--skip-source-audit", action="store_true", help="Skip source candidate feed health audit artifact generation.")
+    ap.add_argument("--skip-link-validation", action="store_true", help="Skip published-issue external link validation.")
     ap.add_argument("--no-enforce-artifacts", action="store_true", help="Do not fail the run when required output artifacts are missing.")
     args = ap.parse_args()
     run(
         issue_id=args.issue_id,
         skip_buttondown=args.skip_buttondown,
         skip_source_audit=args.skip_source_audit,
+        skip_link_validation=args.skip_link_validation,
         enforce_artifacts=not args.no_enforce_artifacts,
     )

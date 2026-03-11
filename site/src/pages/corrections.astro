@@ -1,0 +1,31 @@
+---
+import CtaModule from "../components/CtaModule.astro";
+import HeroPanel from "../components/HeroPanel.astro";
+import TrustPanel from "../components/TrustPanel.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { SITE_TITLE } from "./_shared";
+---
+
+<BaseLayout title={`Corrections | ${SITE_TITLE}`} activePath="/corrections">
+  <HeroPanel
+    kicker="Corrections"
+    title="Report factual or link errors"
+    summary="Corrections are logged and published transparently after human review."
+  />
+
+  <TrustPanel
+    title="How to submit"
+    points={[
+      "Include issue slug and section/item context.",
+      "Provide authoritative source URL for the correction.",
+      "Describe exactly what statement is incorrect.",
+    ]}
+  />
+
+  <CtaModule
+    title="Correction mailbox"
+    body="Send correction requests directly to the editorial owner."
+    href="mailto:ogradyliam5@gmail.com?subject=MAIW%20Correction%20Request"
+    label="Send correction"
+  />
+</BaseLayout>

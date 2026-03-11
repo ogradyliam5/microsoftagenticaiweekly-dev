@@ -1,0 +1,80 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Retrieval quality becomes a board-level risk: data lineage, confidence scoring, and answer accountability | Microsoft Agentic AI Weekly</title><meta name="description" content="data lineage, confidence scoring, and answer accountability in enterprise agent programs."><script>
+      (() => {
+        const key = "maiw-theme";
+        const stored = window.localStorage.getItem(key);
+        const theme = stored === "dark" || stored === "light" ? stored : "light";
+        document.documentElement.setAttribute("data-theme", theme);
+        document.documentElement.classList.toggle("theme-dark", theme === "dark");
+        document.documentElement.classList.toggle("theme-light", theme === "light");
+      })();
+    </script><link rel="canonical" href="https://microsoftagenticaiweekly.com/posts/issue-004"><link rel="stylesheet" href="/_astro/about.Cvl3Svt3.css"></head> <body> <div class="site-shell"> <header class="site-header"> <div class="site-wrap site-header__row"> <a class="site-brand" href="/">Microsoft Agentic AI Weekly</a> <div class="site-header__actions"> <nav class="site-nav" aria-label="Primary"> <a class="site-nav__link" href="/"> Home </a><a class="site-nav__link" href="/latest"> Latest </a><a class="site-nav__link is-active" href="/archive" aria-current="page"> Archive </a><a class="site-nav__link" href="/topics"> Topics </a><a class="site-nav__link" href="/playbooks"> Playbooks </a><a class="site-nav__link" href="/about"> Method </a><a class="site-nav__link" href="/subscribe"> Subscribe </a><a class="site-nav__link" href="/corrections"> Corrections </a><a class="site-nav__link" href="/sources"> Sources </a> </nav> <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle theme" aria-pressed="false">
+Theme
+</button> </div> </div> </header> <main class="site-main"> <div class="site-wrap stack">   <section class="hero-panel fade-up"> <p class="kicker">Issue</p> <h1>Retrieval quality becomes a board-level risk: data lineage, confidence scoring, and answer accountability</h1> <p>Leaders now ask for confidence traceability, not just usage growth. Source lineage and answer citation quality affect audit discussions.</p> <p class="meta">Published 25 Jan 2026 - Updated 25 Jan 2026</p>  <p class="small-note"> <span class="pill"> published </span> <span class="pill">confidence: high</span> </p>  </section> <section class="surface-panel fade-up"> <h2 id="executive-summary">Executive summary</h2>
+<ul>
+<li>Leaders are now asking for confidence traceability, not just chatbot usage growth.</li>
+<li>Source lineage and answer citation quality directly affect audit and compliance discussions.</li>
+<li>Practical response: retrieval governance should be treated as product quality, not optional hygiene.</li>
+</ul>
+<h2 id="what-changed-this-week">What changed this week</h2>
+<h3 id="securitygovernance-guidance-for-enterprise-copilot-data-boundaries">Security/governance guidance for enterprise copilot data boundaries</h3>
+<ul>
+<li>Signal: Security/governance guidance for enterprise copilot data boundaries</li>
+<li>Mini-abstract: Clarifies tenancy and authorization assumptions for multi-team deployments.</li>
+<li>Why click: Read for enterprise copilot security guidance.</li>
+<li>Source confidence: official</li>
+<li>Source: <a href="https://learn.microsoft.com/microsoft-copilot-studio/">Microsoft</a></li>
+</ul>
+<h3 id="retrieval-confidence-scorecards-in-dataverse-backed-copilots">Retrieval confidence scorecards in Dataverse-backed copilots</h3>
+<ul>
+<li>Signal: Retrieval confidence scorecards in Dataverse-backed copilots</li>
+<li>Mini-abstract: Turns anecdotal quality complaints into measurable regression signals.</li>
+<li>Why click: Read for retrieval confidence techniques.</li>
+<li>Source confidence: reputable community</li>
+<li>Source: <a href="https://www.matthewdevaney.com/">Matthew Devaney</a></li>
+</ul>
+<h3 id="automated-citation-integrity-checks-in-ci">Automated citation integrity checks in CI</h3>
+<ul>
+<li>Signal: Automated citation integrity checks in CI</li>
+<li>Mini-abstract: Useful direction, but tooling maturity still varies across stacks.</li>
+<li>Why click: Read for automated citation checks.</li>
+<li>Source confidence: early signal</li>
+<li>Source: <a href="https://learn.microsoft.com/en-us/azure/foundry/how-to/evaluate-generative-ai-app">Azure AI evaluation documentation</a></li>
+</ul>
+<h2 id="build-next">Build next</h2>
+<ol>
+<li>Define mandatory citation fields for production answers touching policy/compliance topics.</li>
+<li>Introduce a retrieval regression suite for high-value business intents.</li>
+<li>Add weekly lineage review in architecture governance meeting.</li>
+</ol>
+<h2 id="caveats">Caveats</h2>
+<ul>
+<li>Confidence scores can create false certainty unless paired with quality sampling.</li>
+<li>Governance overhead should scale with risk tier, not blanket on all use cases.</li>
+</ul> </section> <section class="surface-panel signal-card fade-up"> <h3 class="signal-card__title">Issue metadata</h3> <ul> <li>Published: 25 Jan 2026</li><li>Updated: 25 Jan 2026</li><li>Status: published</li><li>Confidence: high</li><li>Slug: issue-004</li><li>Canonical issue path: /posts/issue-004</li> </ul> </section> <section class="surface-panel trust-panel fade-up"> <h2>Issue linkage</h2> <ul> <li>Tags: agentic-ai, microsoft, weekly-digest, retrieval, data-lineage, confidence-scoring</li><li>Topics: none</li><li>Playbooks: none</li> </ul> </section>  </div> </main> <footer class="site-footer"> <div class="site-wrap site-footer__row"> <span>Microsoft Agentic AI Weekly - Approval-first editorial workflow</span> <span> <a href="/feed.xml">RSS</a> - <a href="/corrections">Corrections</a> </span> </div> </footer> </div> <script>
+      (() => {
+        const key = "maiw-theme";
+        const root = document.documentElement;
+        const toggles = Array.from(document.querySelectorAll("[data-theme-toggle]"));
+
+        const applyTheme = (theme) => {
+          root.setAttribute("data-theme", theme);
+          root.classList.toggle("theme-dark", theme === "dark");
+          root.classList.toggle("theme-light", theme === "light");
+          toggles.forEach((toggle) => {
+            toggle.setAttribute("aria-pressed", theme === "dark" ? "true" : "false");
+            toggle.textContent = theme === "dark" ? "Light" : "Dark";
+          });
+        };
+
+        const current = root.getAttribute("data-theme") === "dark" ? "dark" : "light";
+        applyTheme(current);
+
+        toggles.forEach((toggle) => {
+          toggle.addEventListener("click", () => {
+            const next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+            window.localStorage.setItem(key, next);
+            applyTheme(next);
+          });
+        });
+      })();
+    </script> </body> </html>

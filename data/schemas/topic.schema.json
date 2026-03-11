@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Topic Content Schema",
+  "type": "object",
+  "required": ["id", "slug", "title", "summary", "status"],
+  "properties": {
+    "id": { "type": "string" },
+    "slug": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+    "title": { "type": "string" },
+    "summary": { "type": "string" },
+    "status": { "type": "string", "enum": ["draft", "published"] },
+    "related_topics": { "type": "array", "items": { "type": "string" } },
+    "related_playbooks": { "type": "array", "items": { "type": "string" } }
+  }
+}

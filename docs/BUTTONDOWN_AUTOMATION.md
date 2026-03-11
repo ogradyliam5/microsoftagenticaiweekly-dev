@@ -1,38 +1,47 @@
-# Buttondown Automation (Microsoft Agentic AI Weekly)
+﻿# Buttondown Automation - v2
 
-This project now includes a lightweight API workflow so OpenClaw can operate your newsletter with minimal manual steps.
+## Purpose
+Create or update Buttondown drafts from generated issue content.
 
-## Prereqs
+This integration is draft-only. Sending remains manual and approval-gated.
 
-Set env vars in OpenClaw config (`~/.openclaw/openclaw.json`):
-
+## Required environment variables
 - `BUTTONDOWN_API_KEY`
-- `BUTTONDOWN_REPLY_TO`
-- `BUTTONDOWN_FROM_NAME`
+- `BUTTONDOWN_REPLY_TO` (optional but recommended)
+- `BUTTONDOWN_FROM_NAME` (optional)
+- `BUTTONDOWN_API_BASE_URL` (optional, defaults to `https://api.buttondown.email/v1`; used for local/mock verification)
+- `BUTTONDOWN_DRAFT_STATE_PATH` (optional, overrides `artifacts/buttondown_drafts.json`)
 
-## Commands
-
-From repo root:
-
+## Core commands
+List drafts:
 ```bash
 python3 scripts/buttondown.py list --status draft
-python3 scripts/buttondown.py create \
-  --subject "Microsoft Agentic AI Weekly #002" \
-  --body-file docs/EMAIL_DRAFT_ISSUE_002.txt \
-  --description "Weekly curation for Microsoft Agentic AI builders"
-python3 scripts/buttondown.py get <email_id>
 ```
 
-## Operating model
+Create draft directly:
+```bash
+python3 scripts/buttondown.py create --subject "Microsoft Agentic AI Weekly - Issue 2026-10" --body-file drafts/email-2026-10.md
+```
 
-1. Draft issue content in `posts/issue-XXX.md` and/or `docs/EMAIL_DRAFT_ISSUE_XXX.txt`
-2. Create Buttondown draft via API (`scripts/buttondown.py create`)
-3. Review in Buttondown UI
-4. Send/schedule from Buttondown UI (safest)
-5. Publish matching issue page in this repo and push to GitHub Pages
+Pipeline-driven draft creation:
+```bash
+python3 scripts/pipeline/run_weekly.py
+```
 
-## Why this setup
+## Idempotency requirements
+- Draft creation/update metadata must be persisted (for reruns).
+- Re-running the same issue should update or create predictably without duplicate send actions.
 
-- High automation via API for draft creation/retrieval
-- Keeps final send decision in UI for safety/compliance checks
-- Works cleanly with your existing GitHub Pages archive
+Verification:
+```bash
+python -m unittest tests.pipeline.test_buttondown_draft_unit
+```
+
+## Approval-first workflow
+1. Generate issue + email draft.
+2. Create/update Buttondown draft.
+3. Review draft in Buttondown UI.
+4. Approve site publish.
+5. Approve manual send in Buttondown UI.
+
+No autonomous send is allowed.

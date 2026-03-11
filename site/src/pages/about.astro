@@ -1,0 +1,54 @@
+﻿---
+import { getCollection } from "astro:content";
+import CtaModule from "../components/CtaModule.astro";
+import HeroPanel from "../components/HeroPanel.astro";
+import TrustPanel from "../components/TrustPanel.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { SITE_TITLE, dateLabel } from "./_shared";
+
+const methodEntries = await getCollection("method");
+const method = methodEntries[0] ?? null;
+const renderResult = method ? await method.render() : null;
+const Content = renderResult?.Content;
+---
+
+<BaseLayout title={`Method | ${SITE_TITLE}`} activePath="/about">
+  <HeroPanel
+    kicker="Method"
+    title="Editorial method and source policy"
+    summary="Automation builds candidate queues, but human approval is mandatory before publish/send."
+    meta="Corrections route: /corrections"
+  />
+
+  {method ? (
+    <section class="surface-panel">
+      <h2>{method.data.title}</h2>
+      <p class="meta">
+        Policy version {method.data.policy_version} - Updated {dateLabel(method.data.updated_at)}
+      </p>
+      {Content ? <Content /> : <p class="small-note">No method body available.</p>}
+    </section>
+  ) : (
+    <section class="surface-panel">
+      <h2>No method document found</h2>
+      <p class="small-note">Add a content entry in `src/content/method`.</p>
+    </section>
+  )}
+
+  <TrustPanel
+    title="Operational commitments"
+    points={[
+      "No autonomous publish and no autonomous email send.",
+      "No tracked-source changes without Liam approval.",
+      "Every published item includes canonical provenance fields.",
+    ]}
+  />
+
+  <CtaModule
+    title="Need to report an error?"
+    body="Submit correction requests with issue slug and authoritative source URL."
+    href="/corrections"
+    label="Submit correction"
+  />
+</BaseLayout>
+

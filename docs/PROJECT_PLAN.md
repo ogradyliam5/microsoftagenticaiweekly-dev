@@ -1,42 +1,32 @@
-# Microsoft Agentic AI Weekly — Execution Plan
+﻿# Project Plan - Overhaul Program
 
-## Goal
-Launch a weekly curated newsletter + website focused on Microsoft Agentic AI professionals, with a strong independent-community signal.
+This file is the program summary. The execution breakdown is maintained in [plan.md](../plan.md).
 
-## Scope for MVP (completed in this project)
+## Program objective
+Ship a complete product and editorial overhaul for `Microsoft Agentic AI Weekly`.
 
-- Brand starter: **Microsoft Agentic AI Weekly**
-- Static website skeleton
-- First issue drafted and published in-site
-- GitHub-ready structure
+## Workstream structure
+The program runs through these parallel workstreams:
+- WS0 Contracts and integration guardrails
+- WS1 Astro scaffold
+- WS2 Design system and shared components
+- WS3 Content collections and schema enforcement
+- WS4 Route and page implementation
+- WS5 Pipeline v2 and quality gates
+- WS6 Full archive re-curation
+- WS7 Documentation and operating model rewrite
+- WS8 Test and CI hardening
 
-## Content strategy
+See [docs/WORKSTREAM_OWNERSHIP.md](WORKSTREAM_OWNERSHIP.md) for exact file ownership.
 
-- **Audience:** Microsoft agent builders (Copilot Studio, Dataverse, Azure AI, M365 extensibility)
-- **Mix target:** 60% independent/community, 40% official Microsoft
-- **Issue format:**
-  - Top stories
-  - Why it matters
-  - Builder takeaway
-  - Action checklist
+## Delivery approach
+- Phased integration with branch ownership
+- No conflicting edits across active streams
+- Approval-first retained for publish/send/source changes
 
-## Weekly operating cadence
-
-- **Monday–Tuesday:** Source collection
-- **Wednesday:** Draft + validation
-- **Thursday 09:00 UTC:** Publish/send
-
-## Quality bar
-
-- Every link must be live
-- No duplicate stories
-- Each story gets a one-sentence practical takeaway
-- Keep issue readable in <7 minutes
-
-## Automation roadmap
-
-1. Manual curation + static publish (now)
-2. Add source ingestion script (RSS aggregation)
-3. Add scoring/filtering script
-4. Add Beehiiv/Substack API publishing hook
-5. Add analytics report loop
+## Program completion criteria
+- Astro site replaces legacy static pages
+- Queue artifact contract v2 is active
+- Archive fully re-curated
+- Unified documentation set is complete
+- CI gates cover quality, routing, accessibility, and release parity

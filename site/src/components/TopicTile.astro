@@ -1,0 +1,23 @@
+---
+import type { CollectionEntry } from "astro:content";
+import { normalizeStatus, topicPath } from "../pages/_shared";
+
+interface Props {
+  topic: CollectionEntry<"topics">;
+}
+
+const { topic } = Astro.props;
+---
+
+<article class="card topic-tile fade-up">
+  <h3 class="topic-tile__title">
+    <a href={topicPath(topic)}>{topic.data.title}</a>
+  </h3>
+  <p>{topic.data.summary}</p>
+  <p class="small-note">
+    <span class={`pill ${topic.data.status !== "published" ? "warn" : ""}`.trim()}>
+      {normalizeStatus(topic.data.status)}
+    </span>
+  </p>
+</article>
+

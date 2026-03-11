@@ -1,89 +1,15 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script>
-    (function () {
-      var key = 'maiw-theme';
-      var theme = 'dark';
-      try {
-        var stored = localStorage.getItem(key);
-        if (stored === 'light' || stored === 'dark') {
-          theme = stored;
-        } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-          theme = 'dark';
-        } else {
-          theme = 'light';
-        }
-      } catch (e) {}
-      var root = document.documentElement;
-      root.setAttribute('data-theme', theme);
-      root.classList.remove('theme-dark', 'theme-light');
-      root.classList.add(theme === 'dark' ? 'theme-dark' : 'theme-light');
-      root.style.colorScheme = theme;
-    })();
-  </script>
-  <title>Week of 23 Feb 2026 — Microsoft Agentic AI Weekly</title>
-  <link rel="stylesheet" href="../assets/legacy.css?v=20260306" />
-  <link rel="stylesheet" href="../assets/theme-shared.css?v=20260306" />
+  <title>Moved: Microsoft Agentic AI Weekly</title>
+  <meta http-equiv="refresh" content="0; url=/posts/issue-2026-09" />
+  <link rel="canonical" href="/posts/issue-2026-09" />
+  <meta name="robots" content="noindex,follow" />
+  <script>window.location.replace('/posts/issue-2026-09');</script>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <a class="brand" href="../index.html">Microsoft Agentic AI Weekly</a>
-      <nav class="nav">
-        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle color mode">🌙 Dark</button>
-        <a href="../index.html">Home</a>
-        <a href="../archive.html">Archive</a>
-        <a href="../about.html">Methodology</a>
-      </nav>
-    </div>
-  </header>
-  <main>
-    <div class="container content-shell">
-      <article class="panel">
-        <p class="kicker">Week of 23 Feb 2026</p>
-        <h1>Microsoft Agentic AI Weekly</h1>
-        <p class="meta">Published: Monday, 02 March 2026</p>
-        <p class="meta">Coverage window (UTC): unknown to unknown (end exclusive).</p>
-
-        <h2>Power Platform</h2>
-      <article class="signal-card"><h3>Forged but Valid: How to Test API Authentication and RBAC Safely</h3><p><strong>Karl-Johan Spiik (Karlex):</strong> Practical security testing approach for auth and role boundaries.</p><p class="small"><a href="https://www.karlex.fi/forged-but-valid-how-to-test-api-authentication-and-rbac-safely/#utm_source=rss&amp;utm_medium=rss">Source</a></p></article>
-      <article class="signal-card"><h3>How to make Deep Links with Code Apps and call them from Model Driven Apps</h3><p><strong>Diana Birkelbach (PCF Lady):</strong> How to make Deep Links with Code Apps and call them from Model Driven Apps — useful if this is in your active delivery scope.</p><p class="small"><a href="https://dianabirkelbach.wordpress.com/2026/02/28/how-to-make-deep-links-with-code-apps-and-call-them-from-model-driven-apps/">Source</a></p></article>
-      <article class="signal-card"><h3>5 Steps to Connect your Vibe Coded Apps with Git</h3><p><strong>SharePains (Pieter Veenstra):</strong> 5 Steps to Connect your Vibe Coded Apps with Git — useful if this is in your active delivery scope.</p><p class="small"><a href="https://sharepains.com/2026/02/27/connect-your-vibe-coded-apps-with-git/">Source</a></p></article>
-      <article class="signal-card"><h3>Copilot Studio: Generate PowerPoint File From A Template</h3><p><strong>Matthew Devaney:</strong> Copilot Studio: Generate PowerPoint File From A Template — useful if this is in your active delivery scope.</p><p class="small"><a href="https://www.matthewdevaney.com/copilot-studio-generate-powerpoint-file-from-a-template/">Source</a></p></article>
-      <article class="signal-card"><h3>PowerFx Formula Columns to overcome some Power Pages table permissions limitations for WebAPI access in Power Pages</h3><p><strong>Michel Mendes:</strong> PowerFx Formula Columns to overcome some Power Pages table permissions limitations for WebAPI access in Power Pages — useful if this is in your active delivery scope.</p><p class="small"><a href="https://michelcarlo.com/2026/03/01/powerfx-formula-columns-to-overcome-some-power-pages-table-permissions-limitations-for-webapi-access-in-power-pages/">Source</a></p></article>
-      <article class="signal-card"><h3>What Does Vibe Coding Mean for Low-Code Platforms?</h3><p><strong>Forward Forever:</strong> What Does Vibe Coding Mean for Low-Code Platforms? — useful if this is in your active delivery scope.</p><p class="small"><a href="https://forwardforever.com/what-does-vibe-coding-mean-for-low-code-platforms/">Source</a></p></article>
-      <article class="signal-card"><h3>Show Loading Screen In Your Custom Page While Your Collection Is Created</h3><p><strong>Megan V. Walker:</strong> Show Loading Screen In Your Custom Page While Your Collection Is Created — useful if this is in your active delivery scope.</p><p class="small"><a href="https://meganvwalker.com/show-loading-screen-in-your-custom-page/">Source</a></p></article>
-      <article class="signal-card"><h3>Calculate Working Day Connector In Power Automate</h3><p><strong>Megan V. Walker:</strong> Calculate Working Day Connector In Power Automate — useful if this is in your active delivery scope.</p><p class="small"><a href="https://meganvwalker.com/calculate-working-day-connector-in-power-automate/">Source</a></p></article>
-      <article class="signal-card"><h3>Migrate SharePoint Site Designs and Scripts to a new Tenant</h3><p><strong>SharePains (Pieter Veenstra):</strong> Migrate SharePoint Site Designs and Scripts to a new Tenant — useful if this is in your active delivery scope.</p><p class="small"><a href="https://sharepains.com/2026/02/24/migrate-sharepoint-site-designs-and-scripts-to-a-new-tenant/">Source</a></p></article>
-      <article class="signal-card"><h3>Mastering Power Automate Flows: Structure, Error Handling, Child Flows, and AI in Real Projects</h3><p><strong>Karl-Johan Spiik (Karlex):</strong> Mastering Power Automate Flows: Structure, Error Handling, Child Flows, and AI in Real Projects — useful if this is in your active delivery scope.</p><p class="small"><a href="https://www.karlex.fi/mastering-power-automate-flows-structure-error-handling-child-flows-and-ai-in-real-projects/#utm_source=rss&amp;utm_medium=rss">Source</a></p></article>
-      <article class="signal-card"><h3>Autonomous Agents in Action</h3><p><strong>Karl-Johan Spiik (Karlex):</strong> Autonomous Agents in Action — useful if this is in your active delivery scope.</p><p class="small"><a href="https://www.karlex.fi/autonomous-agents-in-action/#utm_source=rss&amp;utm_medium=rss">Source</a></p></article>
-
-        <h2>M365</h2>
-      <article class="signal-card"><h3>SharePoint Framework (SPFx) roadmap update – February 2026</h3><p><strong>Microsoft:</strong> SharePoint Framework (SPFx) roadmap update – February 2026 — useful if this is in your active delivery scope.</p><p class="small"><a href="https://devblogs.microsoft.com/microsoft365dev/sharepoint-framework-spfx-roadmap-update-february-2026/">Source</a></p></article>
-      <article class="signal-card"><h3>Increased control over Office Add-in user experiences</h3><p><strong>Microsoft:</strong> Increased control over Office Add-in user experiences — useful if this is in your active delivery scope.</p><p class="small"><a href="https://devblogs.microsoft.com/microsoft365dev/increased-control-over-office-add-in-user-experiences/">Source</a></p></article>
-
-        <h2>Microsoft Foundry</h2>
-      <article class="signal-card"><h3>Ways to Build Agents: Nube to Pro</h3><p><strong>Rob Quickenden:</strong> Ways to Build Agents: Nube to Pro — useful if this is in your active delivery scope.</p><p class="small"><a href="https://robquickenden.blog/2026/02/building-ai-agents-nube-to-pro/">Source</a></p></article>
-      <article class="signal-card"><h3>Microsoft Sovereign Cloud adds governance, productivity, and support for large AI models securely running even when completely disconnected</h3><p><strong>Microsoft:</strong> Microsoft Sovereign Cloud adds governance, productivity, and support for large AI models securely running even when completely disconnected — useful if this is in your active delivery scope.</p><p class="small"><a href="http://aka.ms/MicrosoftSovereignCloudDisconnectedBlog">Source</a></p></article>
-      <article class="signal-card"><h3>Migrate your Semantic Kernel and AutoGen projects to Microsoft Agent Framework Release Candidate</h3><p><strong>Microsoft:</strong> Migrate your Semantic Kernel and AutoGen projects to Microsoft Agent Framework Release Candidate — useful if this is in your active delivery scope.</p><p class="small"><a href="https://devblogs.microsoft.com/semantic-kernel/migrate-your-semantic-kernel-and-autogen-projects-to-microsoft-agent-framework-release-candidate/">Source</a></p></article>
-      <article class="signal-card"><h3>Introducing Budget Bytes: Build powerful AI apps for under $25</h3><p><strong>Microsoft:</strong> Introducing Budget Bytes: Build powerful AI apps for under $25 — useful if this is in your active delivery scope.</p><p class="small"><a href="https://devblogs.microsoft.com/azure-sql/introducing-budget-bytes/">Source</a></p></article>
-      <article class="signal-card"><h3>Claude Sonnet 4.6 in Microsoft Foundry-Frontier Performance for Scale</h3><p><strong>Microsoft:</strong> Claude Sonnet 4.6 in Microsoft Foundry-Frontier Performance for Scale — useful if this is in your active delivery scope.</p><p class="small"><a href="https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/claude-sonnet-4-6-in-microsoft-foundry-frontier-performance-for-scale/4494873">Source</a></p></article>
-      <article class="signal-card"><h3>Azure reliability, resiliency, and recoverability: Build continuity by design</h3><p><strong>Microsoft:</strong> Azure reliability, resiliency, and recoverability: Build continuity by design — useful if this is in your active delivery scope.</p><p class="small"><a href="https://azure.microsoft.com/en-us/blog/azure-reliability-resiliency-and-recoverability-build-continuity-by-design/">Source</a></p></article>
-
-        <h2>Everything else</h2>
-      <article class="signal-card"><h3>AI Prompting Guide: Get Better Results with Copilot and ChatGPT</h3><p><strong>Rob Quickenden:</strong> AI Prompting Guide: Get Better Results with Copilot and ChatGPT — useful if this is in your active delivery scope.</p><p class="small"><a href="https://robquickenden.blog/2026/02/writing-better-ai-prompts/">Source</a></p></article>
-      <article class="signal-card"><h3>Windows 365 Devices: ASUS, Dell, and Microsoft Expand the Cloud PC Ecosystem</h3><p><strong>Rob Quickenden:</strong> Windows 365 Devices: ASUS, Dell, and Microsoft Expand the Cloud PC Ecosystem — useful if this is in your active delivery scope.</p><p class="small"><a href="https://robquickenden.blog/2026/02/new-windows365-devices/">Source</a></p></article>
-      <article class="signal-card"><h3>Microsoft and OpenAI joint statement on continuing partnership</h3><p><strong>Microsoft:</strong> Microsoft and OpenAI joint statement on continuing partnership — useful if this is in your active delivery scope.</p><p class="small"><a href="https://blogs.microsoft.com/blog/2026/02/27/microsoft-and-openai-joint-statement-on-continuing-partnership/">Source</a></p></article>
-      <article class="signal-card"><h3>Asha Sharma named EVP and CEO, Microsoft Gaming</h3><p><strong>Microsoft:</strong> Asha Sharma named EVP and CEO, Microsoft Gaming — useful if this is in your active delivery scope.</p><p class="small"><a href="https://blogs.microsoft.com/blog/2026/02/20/asha-sharma-named-evp-and-ceo-microsoft-gaming/">Source</a></p></article>
-      <article class="signal-card"><h3>A milestone achievement in our journey to carbon negative</h3><p><strong>Microsoft:</strong> A milestone achievement in our journey to carbon negative — useful if this is in your active delivery scope.</p><p class="small"><a href="https://blogs.microsoft.com/blog/2026/02/18/a-milestone-achievement-in-our-journey-to-carbon-negative/">Source</a></p></article>
-
-        <p>This edition is a curated weekly digest — use what fits your context.</p>
-      </article>
-    </div>
-  </main>
-  <script src="../assets/theme.js?v=20260306"></script>
+  <p>This issue moved to <a href="/posts/issue-2026-09">/posts/issue-2026-09</a>.</p>
 </body>
 </html>

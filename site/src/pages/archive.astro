@@ -1,0 +1,27 @@
+---
+import { getCollection } from "astro:content";
+import HeroPanel from "../components/HeroPanel.astro";
+import IssueCard from "../components/IssueCard.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { SITE_TITLE, preferPublishedIssues, sortIssuesDesc } from "./_shared";
+
+const allIssues = sortIssuesDesc(await getCollection("issues"));
+const issues = preferPublishedIssues(allIssues);
+---
+
+<BaseLayout title={`Archive | ${SITE_TITLE}`} activePath="/archive">
+  <HeroPanel
+    kicker="Archive"
+    title="All issues"
+    summary="Full publication archive with normalized metadata and confidence labels."
+    meta={`${issues.length} issue(s) currently available.`}
+  />
+
+  <section class="surface-panel">
+    <div class="grid-auto">
+      {issues.map((issue) => (
+        <IssueCard issue={issue} />
+      ))}
+    </div>
+  </section>
+</BaseLayout>

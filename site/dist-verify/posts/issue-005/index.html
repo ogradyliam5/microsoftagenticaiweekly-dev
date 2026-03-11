@@ -1,0 +1,89 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Governance gets practical: agent policy-as-code, observability baselines, and rollout controls | Microsoft Agentic AI Weekly</title><meta name="description" content="policy-as-code, observability baselines, and rollout controls for Microsoft agent operations."><script>
+      (() => {
+        const key = "maiw-theme";
+        const stored = window.localStorage.getItem(key);
+        const theme = stored === "dark" || stored === "light" ? stored : "light";
+        document.documentElement.setAttribute("data-theme", theme);
+        document.documentElement.classList.toggle("theme-dark", theme === "dark");
+        document.documentElement.classList.toggle("theme-light", theme === "light");
+      })();
+    </script><link rel="canonical" href="https://microsoftagenticaiweekly.com/posts/issue-005"><link rel="stylesheet" href="/_astro/about.Cvl3Svt3.css"></head> <body> <div class="site-shell"> <header class="site-header"> <div class="site-wrap site-header__row"> <a class="site-brand" href="/">Microsoft Agentic AI Weekly</a> <div class="site-header__actions"> <nav class="site-nav" aria-label="Primary"> <a class="site-nav__link" href="/"> Home </a><a class="site-nav__link" href="/latest"> Latest </a><a class="site-nav__link is-active" href="/archive" aria-current="page"> Archive </a><a class="site-nav__link" href="/topics"> Topics </a><a class="site-nav__link" href="/playbooks"> Playbooks </a><a class="site-nav__link" href="/about"> Method </a><a class="site-nav__link" href="/subscribe"> Subscribe </a><a class="site-nav__link" href="/corrections"> Corrections </a><a class="site-nav__link" href="/sources"> Sources </a> </nav> <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle theme" aria-pressed="false">
+Theme
+</button> </div> </div> </header> <main class="site-main"> <div class="site-wrap stack">   <section class="hero-panel fade-up"> <p class="kicker">Issue</p> <h1>Governance gets practical: agent policy-as-code, observability baselines, and rollout controls</h1> <p>Enterprises codify governance into deployment/runtime checks; observability baselines are now minimum launch criteria. Safe teams combine platform controls with human escalation paths.</p> <p class="meta">Published 01 Feb 2026 - Updated 01 Feb 2026</p>  <p class="small-note"> <span class="pill"> published </span> <span class="pill">confidence: high</span> </p>  </section> <section class="surface-panel fade-up"> <h2 id="executive-summary">Executive summary</h2>
+<ul>
+<li>Enterprises are codifying governance rules into deployment and runtime checks.</li>
+<li>Observability baselines are becoming minimum launch criteria for new agents.</li>
+<li>Teams shipping safely combine platform controls with explicit human escalation paths.</li>
+</ul>
+<h2 id="what-changed-this-week">What changed this week</h2>
+<h3 id="copilot-studio-readiness-and-governance-framing-for-2026">Copilot Studio readiness and governance framing for 2026</h3>
+<ul>
+<li>Signal: Copilot Studio readiness and governance framing for 2026</li>
+<li>Mini-abstract: Strong executive language to secure budget for governance automation, not just feature work.</li>
+<li>Why click: Read for Copilot Studio governance framework.</li>
+<li>Source confidence: official</li>
+<li>Source: <a href="https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/the-6-pillars-that-will-define-agent-readiness-in-2026/">Microsoft</a></li>
+</ul>
+<h3 id="environment-aware-deployment-mechanics-for-power-platform-artifacts">Environment-aware deployment mechanics for Power Platform artifacts</h3>
+<ul>
+<li>Signal: Environment-aware deployment mechanics for Power Platform artifacts</li>
+<li>Mini-abstract: Makes policy testing feasible before broad rollout.</li>
+<li>Why click: Read for environment-aware deployment.</li>
+<li>Source confidence: reputable community</li>
+<li>Source: <a href="https://www.powercommunity.com/how-to-build-environment-aware-flows-by-fetching-crm-metadata-dynamically-in-power-automate/">Power Community</a></li>
+</ul>
+<h3 id="agent-telemetry-interpretation-practices-still-fragmented">Agent telemetry interpretation practices still fragmented</h3>
+<ul>
+<li>Signal: Agent telemetry interpretation practices still fragmented</li>
+<li>Mini-abstract: Without shared definitions, cross-team metrics comparisons remain noisy.</li>
+<li>Why click: Read for agent telemetry practices.</li>
+<li>Source confidence: reputable community</li>
+<li>Source: <a href="https://www.microsoft.com/en-us/power-platform/blog/2026/01/27/announcing-the-public-preview-of-the-new-usage-page-in-the-power-platform-admin-center/">Microsoft</a></li>
+</ul>
+<h2 id="deep-dive-policy-as-code-is-the-inflection-point">Deep dive: policy-as-code is the inflection point</h2>
+<p>Most agent governance programs fail because controls live in PDFs and meetings, not execution paths. The teams pulling ahead are encoding guardrails directly into CI/CD checks, connector access policies, and runtime tool constraints. This is slower in week one and dramatically faster in month three.</p>
+<h2 id="what-to-do-next-practical">What to do next (practical)</h2>
+<ol>
+<li>Define 5 non-negotiable launch checks (auth boundary, logging coverage, fallback behavior, DLP, incident owner).</li>
+<li>Automate at least 2 checks in pipeline gates this sprint.</li>
+<li>Document a red-button rollback path and test it once in staging.</li>
+</ol>
+<h2 id="keep-an-eye-on">Keep an eye on</h2>
+<ul>
+<li>Tool-calling permission granularity in Copilot surfaces.</li>
+<li>Cross-tenant audit reporting patterns for enterprise CoEs.</li>
+<li>Standardized eval harnesses tied to release approvals.</li>
+</ul>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/the-6-pillars-that-will-define-agent-readiness-in-2026/">Microsoft Copilot Studio blog</a></li>
+<li><a href="https://www.powercommunity.com/how-to-build-environment-aware-flows-by-fetching-crm-metadata-dynamically-in-power-automate/">Power Community tutorial</a></li>
+<li><a href="https://www.microsoft.com/en-us/power-platform/blog/2026/01/27/announcing-the-public-preview-of-the-new-usage-page-in-the-power-platform-admin-center/">Power Platform admin usage preview</a></li>
+</ul> </section> <section class="surface-panel signal-card fade-up"> <h3 class="signal-card__title">Issue metadata</h3> <ul> <li>Published: 01 Feb 2026</li><li>Updated: 01 Feb 2026</li><li>Status: published</li><li>Confidence: high</li><li>Slug: issue-005</li><li>Canonical issue path: /posts/issue-005</li> </ul> </section> <section class="surface-panel trust-panel fade-up"> <h2>Issue linkage</h2> <ul> <li>Tags: agentic-ai, microsoft, weekly-digest, governance, policy-as-code, observability</li><li>Topics: none</li><li>Playbooks: none</li> </ul> </section>  </div> </main> <footer class="site-footer"> <div class="site-wrap site-footer__row"> <span>Microsoft Agentic AI Weekly - Approval-first editorial workflow</span> <span> <a href="/feed.xml">RSS</a> - <a href="/corrections">Corrections</a> </span> </div> </footer> </div> <script>
+      (() => {
+        const key = "maiw-theme";
+        const root = document.documentElement;
+        const toggles = Array.from(document.querySelectorAll("[data-theme-toggle]"));
+
+        const applyTheme = (theme) => {
+          root.setAttribute("data-theme", theme);
+          root.classList.toggle("theme-dark", theme === "dark");
+          root.classList.toggle("theme-light", theme === "light");
+          toggles.forEach((toggle) => {
+            toggle.setAttribute("aria-pressed", theme === "dark" ? "true" : "false");
+            toggle.textContent = theme === "dark" ? "Light" : "Dark";
+          });
+        };
+
+        const current = root.getAttribute("data-theme") === "dark" ? "dark" : "light";
+        applyTheme(current);
+
+        toggles.forEach((toggle) => {
+          toggle.addEventListener("click", () => {
+            const next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+            window.localStorage.setItem(key, next);
+            applyTheme(next);
+          });
+        });
+      })();
+    </script> </body> </html>

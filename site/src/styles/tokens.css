@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap");
+
+:root {
+  --color-bg: #f4f2ec;
+  --color-ink: #17140f;
+  --color-muted: #5f5a53;
+  --color-shell: #ede7dc;
+  --color-panel: #fffdf8;
+  --color-panel-strong: #f8f3ea;
+  --color-border: #d5cbb9;
+  --color-accent: #0b6c57;
+  --color-accent-ink: #0d3027;
+  --color-spot: #cb5632;
+  --color-warning: #9a3e25;
+  --color-header: rgb(244 242 236 / 93%);
+  --color-footer: rgb(255 253 248 / 84%);
+
+  --font-body: "IBM Plex Sans", "Avenir Next", "Segoe UI", sans-serif;
+  --font-display: "Fraunces", "Baskerville", serif;
+  --font-mono: "Consolas", "SFMono-Regular", monospace;
+
+  --text-xs: 0.78rem;
+  --text-sm: 0.9rem;
+  --text-base: 1rem;
+  --text-lg: 1.18rem;
+  --text-xl: 1.42rem;
+  --text-2xl: clamp(1.85rem, 3.3vw, 2.7rem);
+
+  --space-1: 0.35rem;
+  --space-2: 0.6rem;
+  --space-3: 0.9rem;
+  --space-4: 1.2rem;
+  --space-5: 1.7rem;
+  --space-6: 2.4rem;
+
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-pill: 999px;
+
+  --shadow-soft: 0 8px 24px rgb(30 24 14 / 8%);
+  --shadow-hover: 0 12px 30px rgb(32 24 16 / 14%);
+  --max-width: 1140px;
+}
+
+:root[data-theme="dark"] {
+  --color-bg: #11161c;
+  --color-ink: #e9edf2;
+  --color-muted: #a9b6c4;
+  --color-shell: #17202a;
+  --color-panel: #1b2631;
+  --color-panel-strong: #223142;
+  --color-border: #304154;
+  --color-accent: #4db69b;
+  --color-accent-ink: #cdeee5;
+  --color-spot: #e58f62;
+  --color-warning: #f2aa80;
+  --color-header: rgb(23 32 42 / 93%);
+  --color-footer: rgb(27 38 49 / 84%);
+  --shadow-soft: 0 10px 26px rgb(0 0 0 / 28%);
+  --shadow-hover: 0 14px 34px rgb(0 0 0 / 38%);
+}

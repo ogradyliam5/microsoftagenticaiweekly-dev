@@ -1,0 +1,31 @@
+---
+import { getCollection } from "astro:content";
+import HeroPanel from "../components/HeroPanel.astro";
+import TrustPanel from "../components/TrustPanel.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { SITE_TITLE } from "./_shared";
+
+const methodEntries = await getCollection("method");
+const method = methodEntries[0] ?? null;
+---
+
+<BaseLayout title={`Sources | ${SITE_TITLE}`} activePath="/sources">
+  <HeroPanel
+    kicker="Sources"
+    title="Provenance and method references"
+    summary="Method and source-policy surfaces used by the weekly curation pipeline."
+  />
+
+  <TrustPanel
+    title="Current policy surface"
+    points={
+      method
+        ? [
+            `Method document: ${method.data.title}`,
+            `Policy version: ${method.data.policy_version}`,
+            "Full methodology page: /about",
+          ]
+        : ["No method policy document found.", "Add a method entry under src/content/method."]
+    }
+  />
+</BaseLayout>

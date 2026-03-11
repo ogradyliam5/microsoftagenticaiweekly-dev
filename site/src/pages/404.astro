@@ -1,0 +1,20 @@
+---
+import HeroPanel from "../components/HeroPanel.astro";
+import CtaModule from "../components/CtaModule.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { SITE_TITLE } from "./_shared";
+---
+
+<BaseLayout title={`404 | ${SITE_TITLE}`}>
+  <HeroPanel
+    kicker="404"
+    title="Page not found"
+    summary="The requested route does not exist in the current site build."
+  />
+  <CtaModule
+    title="Return to briefing home"
+    body="Go back to the latest issues and coverage hubs."
+    href="/"
+    label="Go Home"
+  />
+</BaseLayout>
